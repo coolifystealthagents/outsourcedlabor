@@ -18,22 +18,50 @@ export const services = [
   {
     "slug": "operations-support",
     "title": "Operations Support",
-    "desc": "Operations Support for teams using outsourced labor with clear SOPs, weekly review, and measurable handoffs."
+    "desc": "Operations Support for teams using outsourced labor with clear SOPs, weekly review, and measurable handoffs.",
+    "bestTasks": ["order updates and vendor follow-up", "daily task boards and status notes", "SOP cleanup from recorded work", "simple research and list building"],
+    "qualityControls": ["daily done list with links", "weekly owner scorecard", "approval rules for refunds, spend, and customer promises"],
+    "firstWeek": ["share five real examples", "limit tool access to the first task lane", "review output each day before adding more work"],
+    "faqs": [
+      { "q": "What operations work should be outsourced first?", "a": "Start with repeat work that already has examples, such as updates, lists, checklists, and vendor follow-up." },
+      { "q": "Who should own process changes?", "a": "Keep process decisions with a manager. The outsourced staff member can suggest fixes, but an owner should approve changes." }
+    ]
   },
   {
     "slug": "customer-support",
     "title": "Customer Support",
-    "desc": "Customer Support for teams using outsourced labor with clear SOPs, weekly review, and measurable handoffs."
+    "desc": "Customer Support for teams using outsourced labor with clear SOPs, weekly review, and measurable handoffs.",
+    "bestTasks": ["ticket triage and tagging", "saved-reply support for common questions", "order status updates", "call notes and follow-up tasks"],
+    "qualityControls": ["sample replies before live sending", "response-time and CSAT review", "clear escalation list for refunds or angry customers"],
+    "firstWeek": ["train on the top 20 questions", "start with draft replies", "review ten real tickets together"],
+    "faqs": [
+      { "q": "Can outsourced labor answer customers directly?", "a": "Yes, after training. Start with drafts or low-risk replies, then open live responses once quality is steady." },
+      { "q": "What should stay with the business owner?", "a": "Refund decisions, policy exceptions, angry VIP customers, and anything that can change the customer relationship." }
+    ]
   },
   {
     "slug": "admin-support",
     "title": "Admin Support",
-    "desc": "Admin Support for teams using outsourced labor with clear SOPs, weekly review, and measurable handoffs."
+    "desc": "Admin Support for teams using outsourced labor with clear SOPs, weekly review, and measurable handoffs.",
+    "bestTasks": ["calendar cleanup and scheduling", "inbox sorting", "document formatting", "CRM updates and data cleanup"],
+    "qualityControls": ["access only to needed folders", "daily admin log", "manager approval before sending sensitive messages"],
+    "firstWeek": ["record the current admin process", "hand over one inbox or calendar lane", "check mistakes daily and update the SOP"],
+    "faqs": [
+      { "q": "Is admin support a good first outsourced role?", "a": "Often, yes. It works best when the tasks repeat and the owner can show examples of good work." },
+      { "q": "How much access should an admin assistant get?", "a": "Give the smallest access that lets the work get done. Add more only after the first tasks are stable." }
+    ]
   },
   {
     "slug": "reporting-and-qa",
     "title": "Reporting and QA",
-    "desc": "Reporting and QA for teams using outsourced labor with clear SOPs, weekly review, and measurable handoffs."
+    "desc": "Reporting and QA for teams using outsourced labor with clear SOPs, weekly review, and measurable handoffs.",
+    "bestTasks": ["weekly KPI updates", "sample checks on tickets or orders", "spreadsheet cleanup", "manager-ready summary notes"],
+    "qualityControls": ["source links for every number", "sample-size notes", "red flag list for odd data", "second check before reports go to clients"],
+    "firstWeek": ["pick one weekly report", "define the source of truth", "compare the first report against a manager version"],
+    "faqs": [
+      { "q": "Can outsourced staff own QA reporting?", "a": "They can prepare and check reports. A manager should still own the final business decision." },
+      { "q": "What makes QA handoff safe?", "a": "Use source links, a scorecard, and a clear list of issues that must be escalated." }
+    ]
   }
 ] as const;
 export const blogPosts = [
