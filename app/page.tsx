@@ -1,30 +1,121 @@
-import * as data from './data';
 import { Header, Footer, JsonLd } from './components';
-const d=data as any;
-const site=d.site||{};
-const services=(d.services||d.roles||d.industries||[]).slice(0,4);
-const posts=(d.blogPosts||[]).slice(0,3);
-const stats=(d.stats||[]).slice(0,3);
-const offer=d.staffingOffer||{};
-const pretty=(v:any)=>String(v||'virtual assistant support').replace(/\b\w/g,(m)=>m.toUpperCase());
-const title=(x:any)=>typeof x==='string'?x:(x.title||x.name||x.label||x.question||'Assistant role');
-const text=(x:any)=>typeof x==='string'?x:(x.desc||x.excerpt||x.note||x.body||(x.bestFor?`Best for ${x.bestFor.join(', ')}`:'Clear tasks, safe access, and review rules.'));
-const slug=(x:any)=>(x.slug||title(x).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,''));
-const primary=site.primary||site.brand||'virtual assistant support';
-const rolePhrase=String(primary).toLowerCase()
-  .replace(/^best\s+/,'')
-  .replace(/(company|companies|services|service|provider|providers)/g,'')
-  .replace(/(outsource|outsourced|outsourcing|offshore|overseas)/g,'')
-  .replace(/\s+/g,' ')
-  .trim() || 'business support';
-const roleLabel=pretty(rolePhrase.includes('assistant')?rolePhrase:`${rolePhrase} support`).replace(/\bVa\b/g,'VA');
-const domain=site.domain||site.brand||'Staffing Guide';
-const heroImage=site.heroImage||site.serviceImage||'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80';
-const tagline=site.angle||site.audience||'managed hiring support with clear scope, safe access, onboarding, and quality checks';
-export default function Home(){const schema={'@context':'https://schema.org','@type':'WebSite',name:site.brand,url:`https://${domain}`};return <><Header/><main className="belay"><JsonLd data={schema}/>
-<section className="hero"><div className="container hero-grid"><div className="copy"><p className="eyebrow">Premium staffing match</p><h1>Hire managed {roleLabel} without screening alone.</h1><p className="lead">Get clear communicators, business-hour coverage, and a managed launch plan for {tagline}.</p><div className="actions"><a className="btn primary" href="/contact">Request staffing plan</a><a className="btn secondary" href="#tasks">Get task ideas</a></div><p className="risk">No public rate card. Share the role first, then get a practical scope.</p></div><div className="match-card"><div className="portrait-wrap"><img src={heroImage} alt={site.alt||`${site.brand||roleLabel} managed staffing visual`}/><span className="badge">Top-fit match</span></div><div className="task-note note-a"><b>Daily handoff</b><span>clear owner brief</span></div><div className="task-note note-b"><b>Quality checks</b><span>work reviewed weekly</span></div><div className="task-note note-c"><b>21-day launch</b><span>scope → shadow → live QA</span></div></div></div><div className="container proof-bar"><span>Right role before right hire</span>{stats.length?stats.map((s:any,i:number)=><b key={i}>{s.value||s.label}</b>):['Scope first','7-21 days','5-10 tasks'].map((x,i)=><b key={i}>{x}</b>)}</div></section>
-<section className="container section" id="tasks"><div className="split-head"><div><p className="eyebrow">Task ideas</p><h2>Start with work that repeats every week.</h2></div><p>Inspired by premium VA and outsourcing competitors: make the hire feel human, specific, and low risk before the contact form.</p></div><div className="task-grid">{services.map((s:any,i:number)=><a key={i} href={`/services/${slug(s)}`}><span>{String(i+1).padStart(2,'0')}</span><h3>{title(s)}</h3><p>{text(s)}</p><b>See handoff →</b></a>)}</div></section>
-<section className="relationship"><div className="container rel-grid"><div><p className="eyebrow">Managed, not marketplace</p><h2>Your staffing plan should come with backup, onboarding, and quality checks.</h2></div><div className="rel-list">{(offer.included||['role planning call','candidate matching','onboarding guidance','managed support']).slice(0,4).map((x:string,i:number)=><article key={i}><span>✓</span><p>{x}</p></article>)}</div></div></section>
-<section className="container section guide-row"><div><p className="eyebrow">Before you hire</p><h2>Short guides for safer staffing decisions.</h2></div>{posts.map((p:any,i:number)=><a href={`/blog/${p.slug}`} key={i}><span>{p.minutes||7} min</span><strong>{title(p)}</strong><p>{text(p)}</p></a>)}</section>
-<section className="container final"><h2>Request the staffing plan before you interview.</h2><a className="btn primary" href="/contact">Request staffing plan</a></section>
-</main><Footer/></>}
+import { services, blogPosts, site } from './data';
+
+const roles = services.slice(0, 4);
+
+const checkpoints = [
+  { label: 'Work lane', value: 'One repeatable queue', note: 'Examples, owner, and finish line' },
+  { label: 'Decision line', value: 'Manager approvals', note: 'Money, policy, access, and promises' },
+  { label: 'Review loop', value: 'Daily at first', note: 'Fewer checks only after the work is steady' },
+];
+
+const launchSteps = [
+  ['01', 'Bring the real work', 'Share a week of tickets, reports, inbox items, or order updates. We use the actual queue, not a vague job title.'],
+  ['02', 'Set the guardrails', 'Write down what the Filipino specialist can finish and what still needs a manager. Keep access narrow at the start.'],
+  ['03', 'Run a short pilot', 'Review the first batch closely. Fix the instructions before adding more tasks or tools.'],
+];
+
+export default function Home() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: site.brand,
+    url: `https://${site.domain}`,
+    description: 'Practical planning for businesses hiring Filipino talent for recurring operations work.',
+  };
+
+  return <>
+    <Header />
+    <main className="labor-home" data-design="labor-ops-2026-07">
+      <JsonLd data={schema} />
+
+      <section className="labor-hero">
+        <div className="labor-shell hero-layout">
+          <div className="hero-copy">
+            <p className="labor-kicker"><span>Philippines-only staffing</span><i>Independent planning guide</i></p>
+            <h1>Build a Filipino operations bench without losing the controls.</h1>
+            <p className="hero-deck">Hand off the repeat work, keep the decisions that belong with your team. We help you shape a role for Filipino talent around real tasks, safe access, and a review routine you can stick to.</p>
+            <div className="hero-actions">
+              <a className="labor-button primary" href="/contact">Request a labor plan</a>
+              <a className="labor-button ghost" href="#work-lanes">See the work lanes</a>
+            </div>
+            <p className="routing-note">This is an independent referral site. Your request may be sent to a staffing partner that sources talent only in the Philippines.</p>
+          </div>
+
+          <div className="hero-visual" aria-label="Illustration of an operations specialist working through a task queue">
+            <div className="visual-tag"><span className="status-dot" /> Manila desk online</div>
+            <img src="/filipino-operations-specialist.svg" alt="Illustrated operations specialist working at a desk with a task board" />
+            <div className="queue-card">
+              <div><span>Today&apos;s handoff</span><b>Order update queue</b></div>
+              <strong>8 / 8</strong>
+            </div>
+            <div className="approval-card"><span>Needs your call</span><b>2 policy exceptions</b></div>
+          </div>
+        </div>
+        <div className="labor-shell control-strip" aria-label="Planning controls">
+          {checkpoints.map((item) => <article key={item.label}>
+            <span>{item.label}</span><b>{item.value}</b><p>{item.note}</p>
+          </article>)}
+        </div>
+      </section>
+
+      <section className="labor-shell work-section" id="work-lanes">
+        <div className="section-intro">
+          <div><p className="labor-kicker">Good first handoffs</p><h2>Start with a queue you can see.</h2></div>
+          <p>Filipino talent can take on plenty of recurring work. The safest first role has clear inputs, a visible result, and a manager who knows when to step in.</p>
+        </div>
+        <div className="work-grid">
+          {roles.map((role, index) => <a className="work-card" href={`/services/${role.slug}`} key={role.slug}>
+            <span className="work-number">0{index + 1}</span>
+            <div><h3>{role.title}</h3><p>{role.desc}</p></div>
+            <b>Open the handoff guide <span aria-hidden="true">↗</span></b>
+          </a>)}
+        </div>
+      </section>
+
+      <section className="decision-section">
+        <div className="labor-shell decision-layout">
+          <div className="decision-copy">
+            <p className="labor-kicker light">The decision line</p>
+            <h2>Your specialist runs the lane. Your manager owns the exceptions.</h2>
+            <p>A clean handoff does not dump every judgment call on a new hire. It separates routine work from the decisions that can change money, policy, customer promises, or account access.</p>
+            <a href="/blog/outsourced-labor-planning">Read the role planning guide <span aria-hidden="true">→</span></a>
+          </div>
+          <div className="decision-board">
+            <div className="board-head"><span>Example: order operations</span><i>Approval map</i></div>
+            <div className="board-row clear"><span>Filipino specialist</span><b>Check status, update the record, draft the customer note</b><em>Clear to finish</em></div>
+            <div className="board-row review"><span>Manager</span><b>Approve refunds, policy exceptions, and unusual promises</b><em>Stop and ask</em></div>
+            <p>Use your own rules. This example shows the level of detail the plan should reach.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="labor-shell launch-section">
+        <div className="section-intro compact">
+          <div><p className="labor-kicker">The first week</p><h2>Make the launch boring. That&apos;s a good thing.</h2></div>
+          <p>No grand rollout. Give one Filipino specialist a real work lane, check the output, and widen the scope only when the handoff holds up.</p>
+        </div>
+        <div className="launch-grid">
+          {launchSteps.map(([number, heading, body]) => <article key={number}>
+            <span>{number}</span><h3>{heading}</h3><p>{body}</p>
+          </article>)}
+        </div>
+      </section>
+
+      <section className="labor-shell guide-section">
+        <div className="guide-title"><p className="labor-kicker">Field notes</p><h2>Useful before you open the role.</h2></div>
+        <div className="guide-list">
+          {blogPosts.slice(0, 3).map((post) => <a href={`/blog/${post.slug}`} key={post.slug}>
+            <span>{post.minutes} min read</span><h3>{post.title}</h3><p>{post.excerpt}</p><b>Read guide →</b>
+          </a>)}
+        </div>
+      </section>
+
+      <section className="labor-shell labor-final">
+        <div><p className="labor-kicker light">One role. Clear boundaries.</p><h2>Bring the messy task list. Leave with a workable Filipino staffing brief.</h2></div>
+        <a className="labor-button warm" href="/contact">Request a labor plan</a>
+      </section>
+    </main>
+    <Footer />
+  </>;
+}

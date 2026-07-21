@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Site logo">
-  <rect width="96" height="96" rx="24" fill="#17324D"/>
-  <path d="M24 60V29h13l22 28V29h13v38H59L37 39v28H24z" fill="#FFF8EE"/>
-  <circle cx="70" cy="26" r="8" fill="#F27B3D"/>
-  <path d="M22 73c15-8 36-8 52 0" fill="none" stroke="#0F8F73" stroke-width="8" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Outsourced Labor task bench mark">
+  <rect width="96" height="96" rx="22" fill="#153E38"/>
+  <path d="M22 26h52v13H22zM22 48h38v13H22zM22 70h52v8H22z" fill="#F7F1DF"/>
+  <circle cx="70" cy="54.5" r="12.5" fill="#F58B49"/>
+  <path d="m64 55 4 4 8-10" fill="none" stroke="#153E38" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="22" y="22" width="52" height="6" rx="3" fill="#F6D46E"/>
 </svg>

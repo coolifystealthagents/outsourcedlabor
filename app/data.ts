@@ -3,63 +3,63 @@ export const site = {
   "slug": "outsourcedlabor",
   "brand": "Outsourced Labor",
   "primary": "outsourced labor",
-  "audience": "owners comparing outsourced labor models for recurring business work",
+  "audience": "owners comparing Philippines staffing models for recurring business work",
   "angle": "role scoping, plan controls, training, labor mix, and quality checks",
   "style": "Industrial staffing board",
   "dark": "#18181b",
   "color": "#52525b",
   "accent": "#f97316",
-  "heroImage": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
-  "serviceImage": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80",
-  "alt": "distributed team completing business operations tasks",
+  "heroImage": "/filipino-operations-specialist.svg",
+  "serviceImage": "/filipino-operations-specialist.svg",
+  "alt": "illustrated operations specialist working at a desk with a task board",
   "badge": "Labor model"
 } as const;
 export const services = [
   {
     "slug": "operations-support",
     "title": "Operations Support",
-    "desc": "Operations Support for teams using outsourced labor with clear SOPs, weekly review, and measurable handoffs.",
+    "desc": "Operations support with Filipino talent, clear SOPs, weekly review, and measurable handoffs.",
     "bestTasks": ["order updates and vendor follow-up", "daily task boards and status notes", "SOP cleanup from recorded work", "simple research and list building"],
     "qualityControls": ["daily done list with links", "weekly owner scorecard", "approval rules for refunds, spend, and customer promises"],
     "firstWeek": ["share five real examples", "limit tool access to the first task lane", "review output each day before adding more work"],
     "faqs": [
-      { "q": "What operations work should be outsourced first?", "a": "Start with repeat work that already has examples, such as updates, lists, checklists, and vendor follow-up." },
-      { "q": "Who should own process changes?", "a": "Keep process decisions with a manager. The outsourced staff member can suggest fixes, but an owner should approve changes." }
+      { "q": "What operations work should Filipino talent handle first?", "a": "Start with repeat work that already has examples, such as updates, lists, checklists, and vendor follow-up." },
+      { "q": "Who should own process changes?", "a": "Keep process decisions with a manager. The Filipino staff member can suggest fixes, but an owner should approve changes." }
     ]
   },
   {
     "slug": "customer-support",
     "title": "Customer Support",
-    "desc": "Customer Support for teams using outsourced labor with clear SOPs, weekly review, and measurable handoffs.",
+    "desc": "Customer support with Filipino talent, clear SOPs, weekly review, and measurable handoffs.",
     "bestTasks": ["ticket triage and tagging", "saved-reply support for common questions", "order status updates", "call notes and follow-up tasks"],
     "qualityControls": ["sample replies before live sending", "response-time and CSAT review", "clear escalation list for refunds or angry customers"],
     "firstWeek": ["train on the top 20 questions", "start with draft replies", "review ten real tickets together"],
     "faqs": [
-      { "q": "Can outsourced labor answer customers directly?", "a": "Yes, after training. Start with drafts or low-risk replies, then open live responses once quality is steady." },
+      { "q": "Can Filipino support talent answer customers directly?", "a": "Yes, after training. Start with drafts or low-risk replies, then open live responses once quality is steady." },
       { "q": "What should stay with the business owner?", "a": "Refund decisions, policy exceptions, angry VIP customers, and anything that can change the customer relationship." }
     ]
   },
   {
     "slug": "admin-support",
     "title": "Admin Support",
-    "desc": "Admin Support for teams using outsourced labor with clear SOPs, weekly review, and measurable handoffs.",
+    "desc": "Admin support with Filipino talent, clear SOPs, weekly review, and measurable handoffs.",
     "bestTasks": ["calendar cleanup and scheduling", "inbox sorting", "document formatting", "CRM updates and data cleanup"],
     "qualityControls": ["access only to needed folders", "daily admin log", "manager approval before sending sensitive messages"],
     "firstWeek": ["record the current admin process", "hand over one inbox or calendar lane", "check mistakes daily and update the SOP"],
     "faqs": [
-      { "q": "Is admin support a good first outsourced role?", "a": "Often, yes. It works best when the tasks repeat and the owner can show examples of good work." },
+      { "q": "Is admin support a good first role for Filipino talent?", "a": "Often, yes. It works best when the tasks repeat and the owner can show examples of good work." },
       { "q": "How much access should an admin assistant get?", "a": "Give the smallest access that lets the work get done. Add more only after the first tasks are stable." }
     ]
   },
   {
     "slug": "reporting-and-qa",
     "title": "Reporting and QA",
-    "desc": "Reporting and QA for teams using outsourced labor with clear SOPs, weekly review, and measurable handoffs.",
+    "desc": "Reporting and QA with Filipino talent, clear SOPs, weekly review, and measurable handoffs.",
     "bestTasks": ["weekly KPI updates", "sample checks on tickets or orders", "spreadsheet cleanup", "manager-ready summary notes"],
     "qualityControls": ["source links for every number", "sample-size notes", "red flag list for odd data", "second check before reports go to clients"],
     "firstWeek": ["pick one weekly report", "define the source of truth", "compare the first report against a manager version"],
     "faqs": [
-      { "q": "Can outsourced staff own QA reporting?", "a": "They can prepare and check reports. A manager should still own the final business decision." },
+      { "q": "Can Filipino staff own QA reporting?", "a": "They can prepare and check reports. A manager should still own the final business decision." },
       { "q": "What makes QA handoff safe?", "a": "Use source links, a scorecard, and a clear list of issues that must be escalated." }
     ]
   }
@@ -67,25 +67,25 @@ export const services = [
 export const blogPosts = [
   {
     "slug": "outsourced-labor-planning",
-    "title": "How to plan an outsourced labor role",
+    "title": "How to plan a Filipino staffing role",
     "excerpt": "Build a clear role scope, access plan, review routine, and first-week test before you hire.",
     "minutes": 10
   },
   {
     "slug": "outsourced-labor-tasks-to-outsource",
-    "title": "Outsourced Labor: What tasks should you outsource first?",
+    "title": "Filipino staffing: What tasks should you hand off first?",
     "excerpt": "Start with recurring work that has examples and clear review rules.",
     "minutes": 7
   },
   {
     "slug": "outsourced-labor-provider-questions",
-    "title": "Outsourced Labor: Questions to ask before hiring",
+    "title": "Filipino staffing: Questions to ask before hiring",
     "excerpt": "Use these questions before you sign with a provider or freelancer.",
     "minutes": 8
   },
   {
     "slug": "outsourced-labor-onboarding-checklist",
-    "title": "Outsourced Labor: First week onboarding checklist",
+    "title": "Filipino staffing: First week onboarding checklist",
     "excerpt": "A simple checklist for tools, SOPs, calls, QA, and reporting.",
     "minutes": 9
   }
@@ -116,7 +116,7 @@ export const blogDetails = {
       {
         heading: "Draw the decision line",
         paragraphs: [
-          "Outsourced staff can prepare work without owning every decision. A customer support worker may draft a reply but need approval for a large refund. An admin worker may prepare an invoice list but should not change bank details. A reporting worker may flag an odd number while a manager decides what it means for the business.",
+          "Filipino staff can prepare work without owning every decision. A customer support specialist may draft a reply but need approval for a large refund. An admin specialist may prepare an invoice list but should not change bank details. A reporting specialist may flag an odd number while a manager decides what it means for the business.",
           "Write these limits in plain words. Use two columns: the worker can do this, and a manager must approve this. Cover spending, customer promises, policy exceptions, account access, file deletion, public posts, and sensitive data. Add the name or role of the person who answers an escalation.",
           "Worker classification also needs a real review. The IRS says the label in a contract does not decide whether someone is an employee or an independent contractor. The working relationship and the level of control matter. Ask a qualified adviser about your setup rather than copying a contract from another business."
         ]
@@ -149,7 +149,7 @@ export const blogDetails = {
     faqs: [
       { q: "How many tasks should the first role include?", a: "Use a small set that fits one work lane. The exact count matters less than having examples, a clear finish point, and enough manager time to review the work." },
       { q: "Should I hire a generalist or a specialist?", a: "Choose based on the first work lane. A generalist can handle related admin tasks. Work that needs a specific tool, license, or technical judgment may need a specialist." },
-      { q: "Who should train outsourced staff?", a: "The person who knows the current work should lead the first examples. A manager should own approval rules even if another team member records the SOP." },
+      { q: "Who should train Filipino staff?", a: "The person who knows the current work should lead the first examples. A manager should own approval rules even if another team member records the SOP." },
       { q: "When can I add more responsibilities?", a: "Add work after the first lane is accurate, access is controlled, and the review routine catches problems. Expand one related task group at a time." }
     ],
     sources: [
@@ -161,15 +161,15 @@ export const blogDetails = {
   }
 } as const;
 
-export const stats = [{label:'Typical savings target',value:'30-60%',note:'depends on role, management, and local hiring plan'},{label:'Best pilot length',value:'14 days',note:'enough time to test quality before scaling'},{label:'Start with',value:'5-10 tasks',note:'clear recurring tasks beat vague job descriptions'}] as const;
+export const stats = [{label:'First work lane',value:'One queue',note:'a visible input and finish line make review easier'},{label:'Pilot review',value:'Daily',note:'reduce checks only after the work is steady'},{label:'Decision line',value:'Written',note:'money, policy, access, and customer promises stay controlled'}] as const;
 
 export const staffingOffer = {
-  partner: 'our staffing team',
-  promise: 'Get a managed offshore staffing plan built around the work you need removed from your plate.',
+  partner: 'a Philippines staffing partner',
+  promise: 'Get a staffing plan for Filipino talent built around the work you need removed from your plate.',
   fit: [
-    'business owners who need reliable remote staff but do not want to screen alone',
-    'teams that want trained support, backup coverage, and a clear manager path',
-    'companies that need help with admin, operations, customer support, calls, bookkeeping, development, or marketing work',
+    'business owners who need reliable Filipino talent but do not want to screen alone',
+    'teams that want trained Philippines-based support, backup coverage, and a clear manager path',
+    'companies that need Filipino talent for admin, operations, customer support, calls, bookkeeping, development, or marketing work',
   ],
   included: [
     'role planning call to turn your task list into a clear staffing scope',
@@ -195,9 +195,9 @@ export const leadQuestions = [
 
 export const staffingProcess = [
   { step: '1', title: 'Map the role', body: 'We turn messy tasks into one clear role with outcomes, tools, limits, and a first-week checklist.' },
-  { step: '2', title: 'Match the staff', body: 'our staffing team can help match remote staff to the work, schedule, communication style, and skill level you need.' },
+  { step: '2', title: 'Match the staff', body: 'A staffing partner can match Filipino talent to the work, schedule, communication style, and skill level you need.' },
   { step: '3', title: 'Launch with control', body: 'Start with SOPs, sample work, limited access, daily review, and a simple scorecard so quality is easy to see.' },
   { step: '4', title: 'Scale what works', body: 'Once the first tasks are stable, add more work, better reporting, and stronger delegation without guessing.' },
 ] as const;
 
-export const staffingFitNote = 'Every staffing plan depends on role scope, schedule, skills, tools, and management needs. Send the role details and our staffing team can guide the best fit.';
+export const staffingFitNote = 'Every plan depends on the role, schedule, skills, tools, and management needs. Send the details and we can route the request to a partner that sources talent only in the Philippines.';

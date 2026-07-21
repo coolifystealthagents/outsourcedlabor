@@ -25,7 +25,7 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
       {
         '@type': 'WebPage',
         '@id': `${serviceUrl}#webpage`,
-        name: `${service.title} outsourced labor planning`,
+        name: `${service.title} planning with Filipino talent`,
         url: serviceUrl,
         description: service.desc,
         mainEntity: { '@id': `${serviceUrl}#service` },
@@ -33,7 +33,7 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
       {
         '@type': 'Service',
         '@id': `${serviceUrl}#service`,
-        name: `${service.title} outsourced labor`,
+        name: `${service.title} with Filipino talent`,
         serviceType: service.title,
         provider: { '@type': 'Organization', name: site.brand, url: baseUrl },
         areaServed: 'United States',
@@ -68,12 +68,12 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
           <div className="container two">
             <div>
               <p className="eyebrow">{site.brand} service</p>
-              <h1>{service.title} for outsourced labor teams</h1>
+              <h1>{service.title} with Filipino talent</h1>
               <p className="lead">{service.desc}</p>
               <a className="btn" href="/contact">Plan this role</a>
             </div>
             <div className="hero-card">
-              <img src={site.serviceImage} alt={`${service.title} offshore service team`} />
+              <img src={site.serviceImage} alt="Illustrated operations specialist working at a desk with a task board" />
             </div>
           </div>
         </section>
@@ -100,7 +100,7 @@ export default async function Service({ params }: { params: Promise<{ slug: stri
             <div>
               <p className="eyebrow">Buyer questions</p>
               <h2>Ask these before you add staff.</h2>
-              <p>Good outsourced labor starts small. Use the first week to test examples, access, response time, and review rules before you move more work over.</p>
+              <p>A Filipino staffing handoff works better when it starts small. Use the first week to test examples, access, response time, and review rules before you move more work over.</p>
             </div>
             <div className="cards">
               {service.faqs.map((faq) => (

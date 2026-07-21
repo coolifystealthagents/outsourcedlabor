@@ -159,7 +159,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
 
           <section className="article-faq" aria-labelledby="faq-title">
             <p className="eyebrow">Buyer questions</p>
-            <h2 id="faq-title">Outsourced labor planning FAQ</h2>
+            <h2 id="faq-title">Filipino staffing planning FAQ</h2>
             <div className="cards">{detail.faqs.map((faq) => <div className="card" key={faq.q}><h3>{faq.q}</h3><p>{faq.a}</p></div>)}</div>
           </section>
 
