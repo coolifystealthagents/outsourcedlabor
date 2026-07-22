@@ -2,22 +2,22 @@ export const fleetServices = [
   {
     "slug": "workforce-scheduling",
     "title": "Workforce Scheduling",
-    "summary": "Workforce Scheduling delivered by Philippines-based specialists with a documented scope, review path, and owner approval rules.",
+    "summary": "A Filipino workforce scheduling specialist can prepare shift drafts, track availability, and flag coverage gaps before schedules go live. Your manager keeps control of staffing levels, overtime, leave decisions, and last-minute exceptions.",
     "tasks": [
-      "workforce scheduling queue preparation",
-      "source-record checks and updates",
-      "exception logging for manager review",
-      "daily handoff notes and follow-up"
+      "collect employee availability and approved leave",
+      "prepare shift drafts from coverage rules",
+      "flag open shifts, overlaps, and rest-time concerns",
+      "record swaps and send approved schedule notices"
     ],
     "controls": [
-      "Named owner for approvals and exceptions",
-      "Role-based access to required tools",
-      "Sample review before the work lane expands"
+      "A manager approves overtime, leave, and staffing changes",
+      "The specialist uses named access limited to scheduling tools",
+      "Every schedule draft includes a short list of gaps and exceptions"
     ],
     "launch": [
-      "Share current examples and source records",
-      "Document the finish line and escalation rule",
-      "Review the first work batch together"
+      "Share two recent schedules, availability records, and coverage rules",
+      "Draft one schedule without publishing or messaging the team",
+      "Review every exception together before the manager approves release"
     ]
   },
   {
