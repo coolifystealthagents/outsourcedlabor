@@ -66,6 +66,12 @@ export const services = [
 ] as const;
 export const blogPosts = [
   {
+    "slug": "philippines-outsourced-labor-business-continuity-plan",
+    "title": "Build a Philippines outsourced labor business continuity plan",
+    "excerpt": "A practical plan for typhoon triggers, backup work, data controls, and a tested recovery path for Philippines-based teams.",
+    "minutes": 15
+  },
+  {
     "slug": "outsourced-labor-planning",
     "title": "How to plan a Filipino staffing role",
     "excerpt": "Build a clear role scope, access plan, review routine, and first-week test before you hire.",

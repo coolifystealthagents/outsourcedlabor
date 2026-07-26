@@ -1,5 +1,10 @@
 import { CTA, Footer, Header, JsonLd } from '../../components';
 import { blogDetails, blogPosts, site } from '../../data';
+import PhilippinesContinuityArticle, {
+  continuityDescription,
+  continuitySlug,
+  continuityTitle,
+} from './philippines-continuity-article';
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -7,6 +12,15 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  if (slug === continuitySlug) {
+    const canonical = `https://${site.domain.toLowerCase()}/blog/${continuitySlug}`;
+    return {
+      title: continuityTitle,
+      description: continuityDescription,
+      alternates: { canonical },
+      openGraph: { title: continuityTitle, description: continuityDescription, url: canonical, type: 'article' },
+    };
+  }
   const post = blogPosts.find((item) => item.slug === slug);
   const canonical = `https://${site.domain.toLowerCase()}/blog/${slug}`;
   return {
@@ -26,6 +40,7 @@ type BlogDetail = (typeof blogDetails)[keyof typeof blogDetails];
 
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  if (slug === continuitySlug) return <PhilippinesContinuityArticle />;
   const post = blogPosts.find((item) => item.slug === slug) || blogPosts[0];
   const detail = (blogDetails as Record<string, BlogDetail | undefined>)[post.slug];
   const baseUrl = `https://${site.domain.toLowerCase()}`;
