@@ -192,7 +192,7 @@ export default function PhilippinesContinuityArticle() {
           <h2>Test the plan without waiting for a typhoon</h2>
           <p>Run a 30-minute desk test first. Say that one worker, one home connection, and one client system are unavailable, then ask the team to find the approved source record and name the next owner. Do not create a fake emergency or ask anyone to work extra hours for the exercise.</p>
           <p>Next, run one live transfer with low-risk sample work. Measure the time from activation to safe access, the time to the first accurate client note, and the number of missing records. A successful test ends with access removed or returned, source data checked, and the normal owner clearly restored.</p>
-          <p>Keep a short findings log. Record the date, tested failure, result, fix owner, due date, and retest date. Your <a href="/services/workforce-reporting">workforce reporting process</a> can hold this log, while the <a href="/blog/outsourced-labor-onboarding-checklist">first-week onboarding checklist</a> can make continuity part of every new start.</p>
+          <p>Keep a short findings log. Record the date, tested failure, result, fix owner, due date, and retest date. Your <a href="/services/workforce-reporting">workforce reporting process</a> can hold this log, while the <a href="/blog">first-week onboarding checklist</a> can make continuity part of every new start.</p>
           <p>The strongest plans are boring to use. People know where to look, the backup can reach only what is needed, and the client receives one clear update. After the event, check unfinished work and data changes before returning the queue to its normal owner.</p>
         </section>
 

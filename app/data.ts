@@ -76,26 +76,7 @@ export const blogPosts = [
     "title": "How to plan a Filipino staffing role",
     "excerpt": "Build a clear role scope, access plan, review routine, and first-week test before you hire.",
     "minutes": 10
-  },
-  {
-    "slug": "outsourced-labor-tasks-to-outsource",
-    "title": "Filipino staffing: What tasks should you hand off first?",
-    "excerpt": "Start with recurring work that has examples and clear review rules.",
-    "minutes": 7
-  },
-  {
-    "slug": "outsourced-labor-provider-questions",
-    "title": "Filipino staffing: Questions to ask before hiring",
-    "excerpt": "Use these questions before you sign with a provider or freelancer.",
-    "minutes": 8
-  },
-  {
-    "slug": "outsourced-labor-onboarding-checklist",
-    "title": "Filipino staffing: First week onboarding checklist",
-    "excerpt": "A simple checklist for tools, SOPs, calls, QA, and reporting.",
-    "minutes": 9
-  }
-] as const;
+  },] as const;
 
 export const blogDetails = {
   "outsourced-labor-planning": {

@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import { CTA, Footer, Header, JsonLd } from '../../components';
 import { blogDetails, blogPosts, site } from '../../data';
 import PhilippinesContinuityArticle, {
@@ -41,7 +42,8 @@ type BlogDetail = (typeof blogDetails)[keyof typeof blogDetails];
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   if (slug === continuitySlug) return <PhilippinesContinuityArticle />;
-  const post = blogPosts.find((item) => item.slug === slug) || blogPosts[0];
+  const post = blogPosts.find((item) => item.slug === slug);
+  if (!post) notFound();
   const detail = (blogDetails as Record<string, BlogDetail | undefined>)[post.slug];
   const baseUrl = `https://${site.domain.toLowerCase()}`;
   const postUrl = `${baseUrl}/blog/${post.slug}`;
