@@ -4,9 +4,9 @@ import { services, blogPosts, site } from './data';
 const roles = services.slice(0, 4);
 
 const checkpoints = [
-  { label: 'Work lane', value: 'One repeatable queue', note: 'Examples, owner, and finish line' },
-  { label: 'Decision line', value: 'Manager approvals', note: 'Money, policy, access, and promises' },
-  { label: 'Review loop', value: 'Daily at first', note: 'Fewer checks only after the work is steady' },
+  { label: 'Work lane', value: 'One repeatable queue', note: 'Examples, owner, and finish line', icon: '/icons/getillustrations/sharpie-office/work-queue.svg' },
+  { label: 'Decision line', value: 'Manager approvals', note: 'Money, policy, access, and promises', icon: '/icons/getillustrations/sharpie-office/decision-rules.svg' },
+  { label: 'Review loop', value: 'Daily at first', note: 'Fewer checks only after the work is steady', icon: '/icons/getillustrations/sharpie-office/review-target.svg' },
 ];
 
 const launchSteps = [
@@ -26,7 +26,7 @@ export default function Home() {
 
   return <>
     <Header />
-    <main className="labor-home" data-design="labor-ops-2026-07">
+    <main className="labor-home" data-design="labor-ops-2026-07" data-gi-rollout="two-illustration-packs-one-icon-pack">
       <JsonLd data={schema} />
 
       <section className="labor-hero">
@@ -44,7 +44,7 @@ export default function Home() {
 
           <div className="hero-visual" aria-label="Illustration of an operations specialist working through a task queue">
             <div className="visual-tag"><span className="status-dot" /> Manila desk online</div>
-            <img src="/filipino-operations-specialist.svg" alt="Illustrated operations specialist working at a desk with a task board" />
+            <img src="/illustrations/getillustrations/goodle-business/controlled-operations-team.svg" alt="Illustrated remote operations specialist working with an approval control" />
             <div className="queue-card">
               <div><span>Today&apos;s handoff</span><b>Order update queue</b></div>
               <strong>8 / 8</strong>
@@ -54,7 +54,8 @@ export default function Home() {
         </div>
         <div className="labor-shell control-strip" aria-label="Planning controls">
           {checkpoints.map((item) => <article key={item.label}>
-            <span>{item.label}</span><b>{item.value}</b><p>{item.note}</p>
+            <img className="control-icon" src={item.icon} alt="" aria-hidden="true" />
+            <div><span>{item.label}</span><b>{item.value}</b><p>{item.note}</p></div>
           </article>)}
         </div>
       </section>
@@ -82,6 +83,7 @@ export default function Home() {
             <a href="/blog/outsourced-labor-planning">Read the role planning guide <span aria-hidden="true">→</span></a>
           </div>
           <div className="decision-board">
+            <img className="supporting-illustration" src="/illustrations/getillustrations/goodle-team/operations-review.svg" alt="Team reviewing operations performance together" />
             <div className="board-head"><span>Example: order operations</span><i>Approval map</i></div>
             <div className="board-row clear"><span>Filipino specialist</span><b>Check status, update the record, draft the customer note</b><em>Clear to finish</em></div>
             <div className="board-row review"><span>Manager</span><b>Approve refunds, policy exceptions, and unusual promises</b><em>Stop and ask</em></div>
