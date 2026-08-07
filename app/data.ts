@@ -76,9 +76,30 @@ export const blogPosts = [
     "title": "How to plan a Filipino staffing role",
     "excerpt": "Build a clear role scope, access plan, review routine, and first-week test before you hire.",
     "minutes": 10
-  },] as const;
+  },
+  { slug: 'philippines-operations-support-sop', title: 'How to build an operations support SOP for Filipino talent', excerpt: 'Turn recurring operations work into a clear SOP with inputs, decisions, handoffs, and review checks.', minutes: 11 },
+  { slug: 'filipino-customer-support-training-plan', title: 'A practical customer support training plan for Filipino staff', excerpt: 'Build a staged training plan that moves from examples to supervised replies and dependable service.', minutes: 12 },
+  { slug: 'philippines-admin-assistant-onboarding', title: 'Philippines admin assistant onboarding checklist', excerpt: 'Set up tools, examples, access limits, and daily feedback before an admin assistant handles live work.', minutes: 9 },
+  { slug: 'outsourced-labor-quality-scorecard', title: 'Create a quality scorecard for outsourced labor', excerpt: 'Measure accuracy, completeness, speed, and escalation judgment without rewarding careless volume.', minutes: 10 },
+  { slug: 'filipino-virtual-assistant-daily-routine', title: 'A daily routine for a Filipino virtual assistant', excerpt: 'Use a visible queue, priorities, completion notes, and escalation rules to make daily support predictable.', minutes: 9 },
+  { slug: 'philippines-bookkeeping-support-controls', title: 'Controls for Philippines bookkeeping support', excerpt: 'Separate data preparation from financial approval with source checks, permissions, and a review trail.', minutes: 12 },
+  { slug: 'outsourced-labor-inbox-management', title: 'How to hand off inbox management safely', excerpt: 'Define triage labels, reply boundaries, sensitive messages, and a manager review loop for shared inboxes.', minutes: 10 },
+  { slug: 'filipino-lead-research-workflow', title: 'A repeatable lead research workflow for Filipino staff', excerpt: 'Create a research process with fit rules, source links, freshness checks, and clean handoffs to sales.', minutes: 10 },
+  { slug: 'philippines-ecommerce-order-support', title: 'Philippines support for ecommerce order operations', excerpt: 'Organize order checks, customer updates, exception handling, and escalation for an ecommerce queue.', minutes: 11 },
+  { slug: 'outsourced-labor-weekly-review-meeting', title: 'Run a useful weekly review with outsourced staff', excerpt: 'Keep weekly reviews focused on output, blockers, quality trends, and the next process improvement.', minutes: 8 },
+  { slug: 'filipino-staff-access-management', title: 'Access management for Philippines-based staff', excerpt: 'Grant only the access a role needs, document approvals, and close accounts cleanly when work changes.', minutes: 10 },
+  { slug: 'philippines-content-operations-workflow', title: 'A content operations workflow for Filipino talent', excerpt: 'Coordinate briefs, research, drafts, edits, metadata, and approvals with a simple publishing queue.', minutes: 12 },
+  { slug: 'outsourced-labor-call-handling-sop', title: 'Build a call-handling SOP for outsourced staff', excerpt: 'Give call support a clear script, verification steps, note format, and escalation path.', minutes: 10 },
+  { slug: 'filipino-data-entry-quality-checks', title: 'Data entry quality checks that scale', excerpt: 'Reduce rework with field rules, samples, source references, and exception handling.', minutes: 8 },
+  { slug: 'philippines-backup-coverage-schedule', title: 'Plan backup coverage for a Philippines support team', excerpt: 'Design handoffs and coverage notes so recurring work keeps moving when a primary worker is unavailable.', minutes: 10 },
+  { slug: 'outsourced-labor-task-queue-design', title: 'Design a task queue for outsourced labor', excerpt: 'Make work visible with clear priorities, owners, due times, definitions of done, and blocked states.', minutes: 9 },
+  { slug: 'filipino-staff-performance-feedback', title: 'Give effective feedback to Filipino staff', excerpt: 'Use specific examples, shared standards, and a consistent follow-up rhythm to improve work fairly.', minutes: 9 },
+  { slug: 'philippines-research-assistant-brief', title: 'Write a better research assistant brief', excerpt: 'Specify the question, acceptable sources, output format, freshness standard, and decision owner.', minutes: 8 },
+  { slug: 'outsourced-labor-process-improvement-loop', title: 'A simple process improvement loop for outsourced work', excerpt: 'Capture recurring errors, update the SOP, test the change, and measure whether the handoff improves.', minutes: 10 },
+  { slug: 'filipino-team-manager-handoff-plan', title: 'Plan the manager handoff for Filipino staff', excerpt: 'Clarify who trains, reviews, approves, and escalates as a staffing role becomes dependable.', minutes: 10 },
+] as const;
 
-export const blogDetails = {
+const baseBlogDetails = {
   "outsourced-labor-planning": {
     updated: "2026-07-21",
     takeaways: [
@@ -147,6 +168,66 @@ export const blogDetails = {
     ]
   }
 } as const;
+
+const batchTopics = [
+  ['philippines-operations-support-sop', 'Operations support SOPs', 'an operations support SOP', 'SBA hiring and managing employees'],
+  ['filipino-customer-support-training-plan', 'Customer support training', 'a customer support training plan', 'SBA hiring and managing employees'],
+  ['philippines-admin-assistant-onboarding', 'Admin onboarding', 'an admin assistant onboarding checklist', 'NIST Cybersecurity Framework 2.0'],
+  ['outsourced-labor-quality-scorecard', 'Quality scorecards', 'an outsourced labor quality scorecard', 'NIST Cybersecurity Framework 2.0'],
+  ['filipino-virtual-assistant-daily-routine', 'Virtual assistant routines', 'a virtual assistant daily routine', 'SBA hiring and managing employees'],
+  ['philippines-bookkeeping-support-controls', 'Bookkeeping support controls', 'bookkeeping support controls', 'IRS Independent Contractor Defined'],
+  ['outsourced-labor-inbox-management', 'Inbox management', 'a safe inbox management handoff', 'CISA Require Multifactor Authentication'],
+  ['filipino-lead-research-workflow', 'Lead research workflows', 'a lead research workflow', 'SBA hiring and managing employees'],
+  ['philippines-ecommerce-order-support', 'Ecommerce order support', 'ecommerce order support', 'SBA hiring and managing employees'],
+  ['outsourced-labor-weekly-review-meeting', 'Weekly reviews', 'a weekly outsourced labor review', 'SBA hiring and managing employees'],
+  ['filipino-staff-access-management', 'Staff access management', 'staff access management', 'CISA Require Multifactor Authentication'],
+  ['philippines-content-operations-workflow', 'Content operations', 'a content operations workflow', 'NIST Cybersecurity Framework 2.0'],
+  ['outsourced-labor-call-handling-sop', 'Call handling', 'a call-handling SOP', 'SBA hiring and managing employees'],
+  ['filipino-data-entry-quality-checks', 'Data entry checks', 'data entry quality checks', 'NIST Cybersecurity Framework 2.0'],
+  ['philippines-backup-coverage-schedule', 'Backup coverage', 'a Philippines backup coverage schedule', 'SBA hiring and managing employees'],
+  ['outsourced-labor-task-queue-design', 'Task queues', 'an outsourced labor task queue', 'SBA hiring and managing employees'],
+  ['filipino-staff-performance-feedback', 'Performance feedback', 'feedback for Filipino staff', 'SBA hiring and managing employees'],
+  ['philippines-research-assistant-brief', 'Research briefs', 'a research assistant brief', 'SBA hiring and managing employees'],
+  ['outsourced-labor-process-improvement-loop', 'Process improvement', 'an outsourced labor improvement loop', 'NIST Cybersecurity Framework 2.0'],
+  ['filipino-team-manager-handoff-plan', 'Manager handoffs', 'a manager handoff plan', 'SBA hiring and managing employees'],
+] as const;
+
+const batchSources: Record<string, { name: string; url: string; note: string }> = {
+  'SBA hiring and managing employees': { name: 'SBA: Hire and Manage Employees', url: 'https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees', note: 'Small-business guidance for hiring, managing, and setting expectations.' },
+  'NIST Cybersecurity Framework 2.0': { name: 'NIST Cybersecurity Framework 2.0', url: 'https://www.nist.gov/cyberframework', note: 'A practical reference for identifying and managing access and operational risk.' },
+  'IRS Independent Contractor Defined': { name: 'IRS: Independent Contractor Defined', url: 'https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-defined', note: 'Worker classification depends on the facts of the working relationship.' },
+  'CISA Require Multifactor Authentication': { name: 'CISA: Require Multifactor Authentication', url: 'https://www.cisa.gov/audiences/small-and-medium-businesses/secure-your-business/require-multifactor-authentication', note: 'Guidance for adding an extra layer of account protection.' },
+};
+
+const batchDetails = Object.fromEntries(batchTopics.map(([slug, topic, phrase, sourceKey], index) => {
+  const previous = blogPosts[(index + 1) % blogPosts.length];
+  const next = blogPosts[(index + 2) % blogPosts.length];
+  const source = batchSources[sourceKey];
+  return [slug, {
+    updated: '2026-08-07',
+    takeaways: [`Keep ${phrase} narrow enough to review every day.`, 'Write the decision line before granting access.', 'Use examples, a scorecard, and a named escalation owner.'],
+    fitRows: [
+      { signal: 'Good first scope', example: 'Repeatable records, updates, checks, or drafts', reason: 'The finished output is visible and easy to sample' },
+      { signal: 'Needs approval', example: 'Money, policy exceptions, sensitive data, or promises', reason: 'A manager must retain the decision' },
+      { signal: 'Not ready', example: 'Own the whole function without a queue or examples', reason: 'The scope cannot be trained or measured yet' },
+    ],
+    sections: [
+      { heading: `Define ${topic.toLowerCase()} as a work lane`, paragraphs: [`Start with one repeatable queue for ${phrase}. Name where work arrives, what a complete item contains, and what evidence proves it is done. A narrow lane lets a manager compare real output against an example instead of judging vague effort.`, 'Collect five recent examples before training. Mark the source, the expected finish, common exceptions, and the person who made the final decision. Turn those examples into short steps and a checklist.', 'Keep the first week small. Review every item, record questions, and add a task only after the first one is accurate and predictable.'] },
+      { heading: 'Set the decision and access boundaries', paragraphs: ['Separate preparation from approval. The staff member can gather, update, draft, tag, and flag work inside the SOP. A manager should approve refunds, unusual commitments, access changes, deletions, and policy exceptions.', 'Use a named account and the smallest useful permission. Keep an access list with the tool, permission, owner, approval date, and offboarding action. Never make a shared password the process.', 'Add an escalation route with a response expectation. A blocked item should show the source, the question, the deadline, and the person who can decide.'] },
+      { heading: 'Measure quality before speed', paragraphs: ['A useful scorecard checks accuracy, completeness, source links, judgment, and timeliness. Count output only after the work meets the definition of done. One clear error pattern is more useful than a large volume number.', 'Run a daily review during launch, then move to samples when the work is steady. Discuss one strong example, one correction, and one instruction change. Keep the scorecard visible to both the worker and manager.', 'At the end of the first week, keep the scope, repair the SOP and retest, or stop the handoff. Do not expand a process that still hides repeated errors.'] },
+    ],
+    brief: [`Role goal: Complete the ${phrase} queue by the agreed daily cutoff.`, 'Work source: The named board, inbox, or report supplied by the manager.', 'Done means: The required fields are complete, the source is linked, and the next action is recorded.', 'Worker may decide: Standard tags, formatting, and actions listed in the SOP.', 'Manager approves: Exceptions involving money, policy, access, deletion, or customer promises.', 'Daily report: Completed items, blocked items, errors found, and questions.'],
+    faqs: [
+      { q: 'How should the first week be structured?', a: 'Use examples and practice on day one, supervised work on days two and three, lighter review on day four, and a scope decision on day five.' },
+      { q: 'What should stay with the manager?', a: 'Keep financial approvals, policy exceptions, sensitive access, unusual customer promises, and process changes with a named manager.' },
+      { q: 'When can the role expand?', a: 'Expand after the first lane is accurate, access is controlled, and the review process catches exceptions early.' },
+    ],
+    sources: [source],
+    related: [previous.slug, next.slug, 'outsourced-labor-planning'],
+  }];
+}));
+
+export const blogDetails = { ...baseBlogDetails, ...batchDetails } as const;
 
 export const stats = [{label:'First work lane',value:'One queue',note:'a visible input and finish line make review easier'},{label:'Pilot review',value:'Daily',note:'reduce checks only after the work is steady'},{label:'Decision line',value:'Written',note:'money, policy, access, and customer promises stay controlled'}] as const;
 

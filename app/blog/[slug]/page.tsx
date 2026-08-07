@@ -47,6 +47,8 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const detail = (blogDetails as Record<string, BlogDetail | undefined>)[post.slug];
   const baseUrl = `https://${site.domain.toLowerCase()}`;
   const postUrl = `${baseUrl}/blog/${post.slug}`;
+  const relatedSlugs = ((detail as BlogDetail & { related?: string[] }).related || blogPosts.filter((item) => item.slug !== post.slug).slice(0, 3).map((item) => item.slug)).slice(0, 3);
+  const bodyLinks = relatedSlugs.slice(0, 2).map((relatedSlug) => blogPosts.find((item) => item.slug === relatedSlug)).filter(Boolean);
 
   if (!detail) {
     return (
@@ -165,6 +167,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                 {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </section>
             ))}
+            <p>For the next step, compare this workflow with <a href={`/blog/${bodyLinks[0]?.slug}`}>{bodyLinks[0]?.title || 'the role planning guide'}</a> and <a href={`/blog/${bodyLinks[1]?.slug}`}>{bodyLinks[1]?.title || 'the operations guide'}</a>. For access and oversight, use the <a href={detail.sources[0].url} target="_blank" rel="noreferrer">authoritative planning reference</a> alongside your own policy.</p>
           </div>
 
           <section className="brief-box" aria-labelledby="brief-title">
@@ -184,6 +187,14 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
             <p className="eyebrow">Sources</p>
             <h2 id="sources-title">Planning references</h2>
             <ol>{detail.sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.name}</a><p>{source.note}</p></li>)}</ol>
+          </section>
+          <section className="article-related" aria-labelledby="related-title">
+            <p className="eyebrow">Keep planning</p>
+            <h2 id="related-title">Related articles</h2>
+            <div className="cards">{relatedSlugs.map((relatedSlug) => {
+              const related = blogPosts.find((item) => item.slug === relatedSlug);
+              return related ? <div className="card" key={related.slug}><h3><a href={`/blog/${related.slug}`}>{related.title}</a></h3><p>{related.excerpt}</p></div> : null;
+            })}</div>
           </section>
         </article>
         <CTA />
