@@ -210,7 +210,7 @@ export const fleetServices = [
     ]
   }
 ] as const;
-export const researchPosts: ReadonlyArray<{slug:string;title:string;excerpt:string;published:string;body:readonly string[];image?:string;sources?:readonly {name:string;url:string}[];related?:readonly string[];cta?:string}> = [
+const baseResearchPosts: ReadonlyArray<{slug:string;title:string;excerpt:string;published:string;body:readonly string[];image?:string;sources?:readonly {name:string;url:string}[];related?:readonly string[];cta?:string}> = [
   {
     slug: 'daily-research-workflow-for-outsourced-operations',
     title: 'A Daily Research Workflow for Outsourced Operations',
@@ -259,6 +259,33 @@ export const researchPosts: ReadonlyArray<{slug:string;title:string;excerpt:stri
     slug: 'research-content-audit-trail', title: 'Keep an Audit Trail for Daily Research Content', excerpt: 'A lightweight audit trail makes content corrections, source decisions, and deployment evidence recoverable for the next review.', published: '2026-08-07', image: '/research/content-audit-trail.svg', sources: [{name:'NIST Cybersecurity Framework 2.0',url:'https://www.nist.gov/cyberframework'}], related: ['research-brief-for-outsourced-operations','daily-research-workflow-for-outsourced-operations'], cta: 'Make daily content operations easier to inspect and improve.', body: ['Record the question, owner, reviewer, source ledger, article slug, and publication date. These fields explain why the article exists and who can resolve a question about it.', 'Keep validation evidence close to the release record: the build result, exact commit, representative routes, and any known exceptions. Do not rely on an empty index or an older library as proof of a new batch.', 'When content changes, note what changed and why. A narrow correction should not erase the source context or make the original decision impossible to understand.', 'Use the audit trail to improve the routine. Repeated missing images, weak internal links, or late metadata fixes are process signals worth addressing in the next batch.']
   }
 ] as const;
+const batchSources = [
+  {name:'NIST Cybersecurity Framework 2.0',url:'https://www.nist.gov/cyberframework'},
+  {name:'NIST Privacy Framework',url:'https://www.nist.gov/privacy-framework'},
+  {name:'CISA Cybersecurity Performance Goals',url:'https://www.cisa.gov/cybersecurity-performance-goals'},
+  {name:'SBA Hire and manage employees',url:'https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees'},
+  {name:'SBA Write your business plan',url:'https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan'},
+  {name:'Google Search Central SEO starter guide',url:'https://developers.google.com/search/docs/fundamentals/seo-starter-guide'},
+  {name:'Google structured data introduction',url:'https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data'},
+  {name:'OWASP ASVS',url:'https://owasp.org/www-project-application-security-verification-standard/'},
+  {name:'World Bank Data for Better Lives',url:'https://www.worldbank.org/en/publication/wdr2021'},
+  {name:'ILO Decent Work and the 2030 Agenda',url:'https://www.ilo.org/global/topics/sdg-2030/lang--en/index.htm'}
+] as const;
+const researchBatch = [
+  ['research-queue-sampling','How to sample a daily Research queue','A practical sampling method catches evidence and duplication issues without rereading every accepted article.'],
+  ['research-topic-cluster-mapping','Map Research topics into useful clusters','Cluster questions by audience, workflow, and evidence type so a daily library compounds instead of repeating itself.'],
+  ['research-claim-calculation','Show calculations behind Research claims','A visible calculation note helps reviewers distinguish sourced numbers from derived estimates and interpretations.'],
+  ['research-editor-handoff','Design the Research editor handoff','The editor packet should preserve the question, evidence, limitations, links, and exact next decision.'],
+  ['research-statistic-context','Add context around headline statistics','A headline number earns trust when its unit, population, date, denominator, and limitation are visible.'],
+  ['research-researcher-onboarding','Onboard a Research contributor with examples','A short example set and supervised first batch make quality expectations observable before independent work.'],
+  ['research-content-refresh','Refresh recurring Research content safely','A refresh pass should compare source freshness, intent, links, metadata, and prior claims before changing the article.'],
+  ['research-evidence-risk','Rank evidence risk in a Research queue','Risk ranking focuses review on volatile, consequential, uncertain, or weakly sourced claims.'],
+  ['research-approval-matrix','Create an approval matrix for Research publishing','Clear approval ownership separates research collection, editorial judgment, technical validation, and repository release.'],
+  ['research-search-intent','Validate search intent for Research topics','A search-intent check keeps the article’s question, title, sources, and internal links aligned.'],
+  ['research-link-audit','Run a family-specific Research link audit','A link audit checks routes, source URLs, related cards, and Blog/Research separation without touching deployment state.'],
+  ['research-batch-manifest','Keep a manifest for a Research batch','A manifest records target, accepted slugs, validators, staged files, and remote-head evidence for a reproducible handoff.']
+].map(([slug,title,excerpt],i)=>({slug,title,excerpt,published:'2026-08-08',sources:batchSources,related:['research-quality-checklist-for-publishing','research-source-ledger-for-daily-decisions','research-content-audit-trail'],cta:'Use this control in the next Research publishing routine.',body:[`${title} starts with a clearly stated decision and a bounded audience. Record scope, freshness, definitions, and exclusions before collecting evidence so the daily queue has a reviewable finish line.`, 'Use authoritative sources and map each material claim to the exact page that supports it. Keep dates, units, calculations, assumptions, and limitations visible; if a reviewer cannot reproduce the reasoning, narrow or remove the claim.', 'Close the handoff with the owner, validation result, related Research links, and next action. Preserve Blog and Research inventories separately, stage only intended Research files, and record the repository evidence at the GitHub-only boundary.']}));
+export const researchPosts = [...baseResearchPosts, ...researchBatch] as const;
 export const publicTiers = [
   {name:'Executive Assistants', price:'$10/hour', detail:'Philippines-based support for structured executive and administrative work.'},
   {name:'Senior Assistants', price:'$15/hour', detail:'Experienced Philippines-based support for specialized workflows and coordination.'},
