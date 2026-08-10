@@ -120,6 +120,29 @@ export const blogPosts = [
   { slug: 'outsourced-labor-coverage-risk-review', title: 'Review coverage risk in an outsourced labor team', excerpt: 'Identify single points of failure, backup needs, access gaps, and recovery actions.', minutes: 9 },
   { slug: 'philippines-content-calendar-controls', title: 'Control a content calendar with Philippines-based support', excerpt: 'Coordinate briefs, deadlines, approvals, metadata, and publishing ownership in one visible queue.', minutes: 10 },
   { slug: 'outsourced-labor-daily-briefing', title: 'Write a daily briefing for outsourced labor teams', excerpt: 'Give a remote team the priorities, context, decisions, and handoff details needed to start well.', minutes: 8 },
+  { slug: 'philippines-virtual-assistant-task-priorities', title: 'Set task priorities for a Philippines virtual assistant', excerpt: 'Turn a mixed request list into a clear daily order with deadlines, owner decisions, and a visible finish line.', minutes: 9 },
+  { slug: 'outsourced-labor-work-instructions', title: 'Write work instructions for outsourced labor', excerpt: 'Create instructions that show inputs, steps, examples, exceptions, and the evidence needed for review.', minutes: 10 },
+  { slug: 'filipino-operations-morning-checklist', title: 'Build a morning checklist for Filipino operations staff', excerpt: 'Give a remote operations team a dependable start with queue checks, priorities, risks, and handoff notes.', minutes: 8 },
+  { slug: 'philippines-customer-support-qa-sampling', title: 'Design QA sampling for Philippines customer support', excerpt: 'Use a fair sample of support interactions to catch quality issues while keeping review work manageable.', minutes: 10 },
+  { slug: 'outsourced-labor-shared-inbox-rules', title: 'Set shared inbox rules for outsourced labor', excerpt: 'Define ownership, labels, reply limits, and escalation paths before a remote team handles a shared inbox.', minutes: 9 },
+  { slug: 'filipino-staff-knowledge-transfer-plan', title: 'Plan knowledge transfer for Filipino staff', excerpt: 'Move process knowledge from an owner to a remote team with examples, practice, observation, and sign-off.', minutes: 11 },
+  { slug: 'philippines-order-status-workflow', title: 'Create an order status workflow for Philippines support', excerpt: 'Keep order updates accurate with source checks, customer language, exception rules, and dated follow-up.', minutes: 9 },
+  { slug: 'outsourced-labor-daily-output-report', title: 'Create a daily output report for outsourced labor', excerpt: 'Summarize completed work, quality signals, blockers, and decisions without turning reporting into busywork.', minutes: 8 },
+  { slug: 'filipino-admin-calendar-handoff', title: 'Plan a calendar handoff for Filipino admin support', excerpt: 'Share scheduling work safely with time-zone rules, sensitive-event limits, and approval checkpoints.', minutes: 9 },
+  { slug: 'philippines-remote-team-coverage-notes', title: 'Write coverage notes for a Philippines remote team', excerpt: 'Make backup coverage practical by documenting queues, current status, access, priorities, and escalation owners.', minutes: 9 },
+  { slug: 'outsourced-labor-source-checklist', title: 'Use a source checklist for outsourced labor research', excerpt: 'Help research staff capture current, authoritative sources and connect each finding to a business decision.', minutes: 10 },
+  { slug: 'filipino-staff-work-queue-review', title: 'Run a work queue review with Filipino staff', excerpt: 'Review queue age, blocked items, quality patterns, and next actions in a short manager routine.', minutes: 8 },
+  { slug: 'philippines-admin-document-retention', title: 'Set document retention rules for Philippines admin support', excerpt: 'Keep shared records findable and controlled with naming, retention, archive, and deletion boundaries.', minutes: 10 },
+  { slug: 'outsourced-labor-escalation-response-time', title: 'Set escalation response times for outsourced labor', excerpt: 'Define when a worker should pause, who responds, and how urgent exceptions are recorded.', minutes: 9 },
+  { slug: 'filipino-customer-support-reply-library', title: 'Build a reply library for Filipino customer support', excerpt: 'Turn approved answers into reusable replies with source notes, limits, review dates, and escalation triggers.', minutes: 10 },
+  { slug: 'philippines-workforce-absence-plan', title: 'Plan absence coverage for Philippines-based staff', excerpt: 'Protect recurring work with backup owners, current notes, access checks, and a simple return-to-work handoff.', minutes: 9 },
+  { slug: 'outsourced-labor-approval-matrix', title: 'Create an approval matrix for outsourced labor', excerpt: 'Map routine actions, approval thresholds, sensitive cases, and named decision owners in one practical table.', minutes: 10 },
+  { slug: 'filipino-research-claim-review', title: 'Review research claims with Filipino staff', excerpt: 'Check dates, definitions, source quality, caveats, and wording before research becomes published content.', minutes: 10 },
+  { slug: 'philippines-operations-weekly-scorecard', title: 'Build a weekly operations scorecard for Philippines staff', excerpt: 'Combine quality, timeliness, queue health, questions, and process improvements in a useful weekly review.', minutes: 9 },
+  { slug: 'outsourced-labor-process-audit', title: 'Audit an outsourced labor process', excerpt: 'Check whether a recurring work lane has clear inputs, permissions, quality checks, evidence, and ownership.', minutes: 11 },
+  { slug: 'filipino-staff-offboarding-checklist', title: 'Create an offboarding checklist for Filipino staff', excerpt: 'Close access, transfer work, preserve records, and document follow-up when a staffing role changes.', minutes: 10 },
+  { slug: 'philippines-content-brief-template', title: 'Create a content brief for Philippines-based writers', excerpt: 'Give writers a clear search intent, audience, evidence standard, structure, links, and approval path.', minutes: 10 },
+  { slug: 'outsourced-labor-handoff-quality-check', title: 'Add a quality check to every outsourced labor handoff', excerpt: 'Use a small evidence check to confirm that work is complete, understandable, and ready for the next owner.', minutes: 8 },
 ] as const;
 
 const baseBlogDetails = {
@@ -250,7 +273,7 @@ const batchDetails = Object.fromEntries(batchTopics.map(([slug, topic, phrase, s
   }];
 }));
 
-const nextBatchTopics = blogPosts.slice(-23).map((post, index) => [post.slug, post.title.replace(/^.*?for |^.*?a /i, '').replace(/:.*$/, ''), post.title.toLowerCase(), index % 3 === 0 ? 'NIST Cybersecurity Framework 2.0' : index % 3 === 1 ? 'SBA hiring and managing employees' : 'CISA Require Multifactor Authentication'] as const);
+const nextBatchTopics = blogPosts.slice(-46).map((post, index) => [post.slug, post.title.replace(/^.*?for |^.*?a /i, '').replace(/:.*$/, ''), post.title.toLowerCase(), index % 3 === 0 ? 'NIST Cybersecurity Framework 2.0' : index % 3 === 1 ? 'SBA hiring and managing employees' : 'CISA Require Multifactor Authentication'] as const);
 const nextBatchDetails = Object.fromEntries(nextBatchTopics.map(([slug, topic, phrase, sourceKey], index) => {
   const source = batchSources[sourceKey];
   const related = blogPosts.filter((post) => post.slug !== slug).slice((index % 10), (index % 10) + 3).map((post) => post.slug);
