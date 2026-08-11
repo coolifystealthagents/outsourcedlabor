@@ -304,11 +304,14 @@ const batchDetails = Object.fromEntries(batchTopics.map(([slug, topic, phrase, s
 }));
 
 const nextBatchTopics = allBlogPosts.slice(-46).map((post, index) => [post.slug, post.title.replace(/^.*?for |^.*?a /i, '').replace(/:.*$/, ''), post.title.toLowerCase(), index % 3 === 0 ? 'NIST Cybersecurity Framework 2.0' : index % 3 === 1 ? 'SBA hiring and managing employees' : 'CISA Require Multifactor Authentication'] as const);
+const explicitBlogDateOverrides = {
+  'philippines-virtual-assistant-task-priorities': '2026-08-10',
+} as const;
 const nextBatchDetails = Object.fromEntries(nextBatchTopics.map(([slug, topic, phrase, sourceKey], index) => {
   const source = batchSources[sourceKey];
   const related = blogPosts.filter((post) => post.slug !== slug).slice((index % 10), (index % 10) + 3).map((post) => post.slug);
   return [slug, {
-    updated: '2026-08-10',
+    updated: explicitBlogDateOverrides[slug as keyof typeof explicitBlogDateOverrides] || '2026-08-10',
     takeaways: [`Keep ${topic.toLowerCase()} focused on one repeatable queue.`, 'Write approval and access limits before launch.', 'Review examples and exceptions before expanding the role.'],
     fitRows: [
       { signal: 'Good first scope', example: 'Repeatable records, updates, checks, or drafts', reason: 'The finished output is visible and easy to sample' },
