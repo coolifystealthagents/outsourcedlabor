@@ -306,6 +306,7 @@ const batchDetails = Object.fromEntries(batchTopics.map(([slug, topic, phrase, s
 const nextBatchTopics = allBlogPosts.slice(-46).map((post, index) => [post.slug, post.title.replace(/^.*?for |^.*?a /i, '').replace(/:.*$/, ''), post.title.toLowerCase(), index % 3 === 0 ? 'NIST Cybersecurity Framework 2.0' : index % 3 === 1 ? 'SBA hiring and managing employees' : 'CISA Require Multifactor Authentication'] as const);
 const explicitBlogDateOverrides = {
   'philippines-virtual-assistant-task-priorities': '2026-08-10',
+  'outsourced-labor-work-instructions': '2026-08-10',
 } as const;
 const nextBatchDetails = Object.fromEntries(nextBatchTopics.map(([slug, topic, phrase, sourceKey], index) => {
   const source = batchSources[sourceKey];
