@@ -47,7 +47,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const detail = (blogDetails as Record<string, BlogDetail | undefined>)[post.slug];
   const baseUrl = `https://${site.domain.toLowerCase()}`;
   const postUrl = `${baseUrl}/blog/${post.slug}`;
-  const relatedSlugs = ((detail as BlogDetail & { related?: string[] }).related || blogPosts.filter((item) => item.slug !== post.slug).slice(0, 3).map((item) => item.slug)).slice(0, 3);
+  const relatedSlugs = ((detail as (BlogDetail & { related?: string[] }) | undefined)?.related || blogPosts.filter((item) => item.slug !== post.slug).slice(0, 3).map((item) => item.slug)).slice(0, 3);
   const bodyLinks = relatedSlugs.slice(0, 2).map((relatedSlug) => blogPosts.find((item) => item.slug === relatedSlug)).filter(Boolean);
 
   if (!detail) {
