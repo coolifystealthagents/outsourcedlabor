@@ -307,6 +307,7 @@ const nextBatchTopics = allBlogPosts.slice(-46).map((post, index) => [post.slug,
 const explicitBlogDateOverrides = {
   'philippines-virtual-assistant-task-priorities': '2026-08-10',
   'outsourced-labor-work-instructions': '2026-08-10',
+  'filipino-operations-morning-checklist': '2026-08-10',
 } as const;
 const nextBatchDetails = Object.fromEntries(nextBatchTopics.map(([slug, topic, phrase, sourceKey], index) => {
   const source = batchSources[sourceKey];
