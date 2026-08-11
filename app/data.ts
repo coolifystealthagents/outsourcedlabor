@@ -64,7 +64,7 @@ export const services = [
     ]
   }
 ] as const;
-export const blogPosts = [
+const allBlogPosts = [
   {
     "slug": "philippines-outsourced-labor-business-continuity-plan",
     "title": "Build a Philippines outsourced labor business continuity plan",
@@ -144,6 +144,36 @@ export const blogPosts = [
   { slug: 'philippines-content-brief-template', title: 'Create a content brief for Philippines-based writers', excerpt: 'Give writers a clear search intent, audience, evidence standard, structure, links, and approval path.', minutes: 10 },
   { slug: 'outsourced-labor-handoff-quality-check', title: 'Add a quality check to every outsourced labor handoff', excerpt: 'Use a small evidence check to confirm that work is complete, understandable, and ready for the next owner.', minutes: 8 },
 ] as const;
+
+const aug10BlogSlugs = new Set([
+  'philippines-virtual-assistant-task-priorities',
+  'outsourced-labor-work-instructions',
+  'filipino-operations-morning-checklist',
+  'philippines-customer-support-qa-sampling',
+  'outsourced-labor-shared-inbox-rules',
+  'filipino-staff-knowledge-transfer-plan',
+  'philippines-order-status-workflow',
+  'outsourced-labor-daily-output-report',
+  'filipino-admin-calendar-handoff',
+  'philippines-remote-team-coverage-notes',
+  'outsourced-labor-source-checklist',
+  'filipino-staff-work-queue-review',
+  'philippines-admin-document-retention',
+  'outsourced-labor-escalation-response-time',
+  'filipino-customer-support-reply-library',
+  'philippines-workforce-absence-plan',
+  'outsourced-labor-approval-matrix',
+  'filipino-research-claim-review',
+  'philippines-operations-weekly-scorecard',
+  'outsourced-labor-process-audit',
+  'filipino-staff-offboarding-checklist',
+  'philippines-content-brief-template',
+  'outsourced-labor-handoff-quality-check',
+]);
+
+export const blogPosts = [...allBlogPosts].sort((a, b) => {
+  return Number(aug10BlogSlugs.has(b.slug)) - Number(aug10BlogSlugs.has(a.slug));
+});
 
 const baseBlogDetails = {
   "outsourced-labor-planning": {
@@ -273,7 +303,7 @@ const batchDetails = Object.fromEntries(batchTopics.map(([slug, topic, phrase, s
   }];
 }));
 
-const nextBatchTopics = blogPosts.slice(-46).map((post, index) => [post.slug, post.title.replace(/^.*?for |^.*?a /i, '').replace(/:.*$/, ''), post.title.toLowerCase(), index % 3 === 0 ? 'NIST Cybersecurity Framework 2.0' : index % 3 === 1 ? 'SBA hiring and managing employees' : 'CISA Require Multifactor Authentication'] as const);
+const nextBatchTopics = allBlogPosts.slice(-46).map((post, index) => [post.slug, post.title.replace(/^.*?for |^.*?a /i, '').replace(/:.*$/, ''), post.title.toLowerCase(), index % 3 === 0 ? 'NIST Cybersecurity Framework 2.0' : index % 3 === 1 ? 'SBA hiring and managing employees' : 'CISA Require Multifactor Authentication'] as const);
 const nextBatchDetails = Object.fromEntries(nextBatchTopics.map(([slug, topic, phrase, sourceKey], index) => {
   const source = batchSources[sourceKey];
   const related = blogPosts.filter((post) => post.slug !== slug).slice((index % 10), (index % 10) + 3).map((post) => post.slug);

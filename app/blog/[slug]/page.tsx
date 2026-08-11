@@ -138,7 +138,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
             <p className="lead">{post.excerpt}</p>
             <div className="article-meta">
               <span>{post.minutes} min read</span>
-              <span>Updated {detail.updated}</span>
+              <time dateTime={detail.updated}>Updated {detail.updated}</time>
             </div>
           </header>
 
