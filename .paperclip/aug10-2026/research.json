@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "contract": "sites3-aug10-public-date-v6",
+  "targetDate": "2026-08-10",
+  "family": "research",
+  "domain": "outsourcedlabor.com",
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "branch": "main",
+  "minimum": 10,
+  "priorRunId": "3aea669f-5d6f-414c-b1a1-ee9286edbe1a",
+  "priorIssueId": "cbaf024e-1e15-4cec-be15-e46ad77feeda",
+  "validationCommands": ["npm run build", "node scripts/validate-aug10-research.mjs"],
+  "cleanBuildPassed": true,
+  "existingCompliancePassed": true,
+  "indexNewestFirstPassed": true,
+  "entries": [
+    {
+      "slug": "research-work-queue-prioritization",
+      "route": "/research/research-work-queue-prioritization",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "4497a8f3c9aaf219dd0f942757ee906b376bc2e5",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "article:published_time", "time[datetime]"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-review-capacity-planning",
+      "route": "/research/research-review-capacity-planning",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "4497a8f3c9aaf219dd0f942757ee906b376bc2e5",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "article:published_time", "time[datetime]"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-source-retrieval-notes",
+      "route": "/research/research-source-retrieval-notes",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "4497a8f3c9aaf219dd0f942757ee906b376bc2e5",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "article:published_time", "time[datetime]"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-article-question-scoping",
+      "route": "/research/research-article-question-scoping",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "4497a8f3c9aaf219dd0f942757ee906b376bc2e5",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "article:published_time", "time[datetime]"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-operations-decision-log",
+      "route": "/research/research-operations-decision-log",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "4497a8f3c9aaf219dd0f942757ee906b376bc2e5",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "article:published_time", "time[datetime]"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-content-risk-register",
+      "route": "/research/research-content-risk-register",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "4497a8f3c9aaf219dd0f942757ee906b376bc2e5",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "article:published_time", "time[datetime]"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-internal-link-intent",
+      "route": "/research/research-internal-link-intent",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "4497a8f3c9aaf219dd0f942757ee906b376bc2e5",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "article:published_time", "time[datetime]"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-article-source-diversity",
+      "route": "/research/research-article-source-diversity",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "4497a8f3c9aaf219dd0f942757ee906b376bc2e5",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "article:published_time", "time[datetime]"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-editorial-definition-of-done",
+      "route": "/research/research-editorial-definition-of-done",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "4497a8f3c9aaf219dd0f942757ee906b376bc2e5",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "article:published_time", "time[datetime]"],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "research-publishing-exception-routing",
+      "route": "/research/research-publishing-exception-routing",
+      "sourcePath": "app/fleet-content.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "4497a8f3c9aaf219dd0f942757ee906b376bc2e5",
+      "sourceDateField": "published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": ["datePublished", "article:published_time", "time[datetime]"],
+      "renderedDate": "2026-08-10"
+    }
+  ]
+}
