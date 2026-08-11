@@ -18,8 +18,10 @@ for (const entry of manifest.entries) {
   assert(/^[0-9a-f]{40}$/.test(entry.introducedByCommit), `invalid introducing commit for ${entry.slug}`);
   const parentSource = execFileSync('git', ['show', `${entry.introducedByCommit}^:${entry.sourcePath}`], { encoding: 'utf8' });
   const introducedSource = execFileSync('git', ['show', `${entry.introducedByCommit}:${entry.sourcePath}`], { encoding: 'utf8' });
-  assert(!parentSource.includes(`'${entry.slug}'`), `slug existed before introducing commit: ${entry.slug}`);
-  assert(introducedSource.includes(`'${entry.slug}'`), `slug absent at introducing commit: ${entry.slug}`);
+  const datedTuple = new RegExp(`\\['${entry.slug}',[^\\n]*,'2026-08-10'\\]`);
+  if (entry.provenance === 'original-aug10-batch') assert(!parentSource.includes(`'${entry.slug}'`), `slug existed before introducing commit: ${entry.slug}`);
+  else assert(!datedTuple.test(parentSource), `dated source record existed before repair: ${entry.slug}`);
+  assert(datedTuple.test(introducedSource), `exact dated source record absent at introducing commit: ${entry.slug}`);
   const builtPath = `.next/server/app${entry.route}.html`;
   assert(fs.existsSync(builtPath), `built route missing: ${entry.route}`);
   const built = fs.readFileSync(builtPath, 'utf8');
