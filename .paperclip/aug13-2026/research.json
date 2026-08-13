@@ -8,15 +8,15 @@
   "branch": "main",
   "requiredCount": 10,
   "entries": [
-    {"slug":"research-outsourced-demand-forecasting","route":"/research/research-outsourced-demand-forecasting"},
-    {"slug":"research-outsourced-role-boundary-design","route":"/research/research-outsourced-role-boundary-design"},
-    {"slug":"research-outsourced-onboarding-evidence","route":"/research/research-outsourced-onboarding-evidence"},
-    {"slug":"research-outsourced-customer-context","route":"/research/research-outsourced-customer-context"},
-    {"slug":"research-outsourced-knowledge-transfer","route":"/research/research-outsourced-knowledge-transfer"},
-    {"slug":"research-outsourced-accuracy-sampling","route":"/research/research-outsourced-accuracy-sampling"},
-    {"slug":"research-outsourced-work-acceptance","route":"/research/research-outsourced-work-acceptance"},
-    {"slug":"research-outsourced-manager-review","route":"/research/research-outsourced-manager-review"},
-    {"slug":"research-outsourced-service-recovery","route":"/research/research-outsourced-service-recovery"},
-    {"slug":"research-outsourced-work-lane-review","route":"/research/research-outsourced-work-lane-review"}
+    {"slug":"research-aug13-workload-variability","route":"/research/research-aug13-workload-variability"},
+    {"slug":"research-aug13-role-authority","route":"/research/research-aug13-role-authority"},
+    {"slug":"research-aug13-onboarding-learning","route":"/research/research-aug13-onboarding-learning"},
+    {"slug":"research-aug13-context-continuity","route":"/research/research-aug13-context-continuity"},
+    {"slug":"research-aug13-knowledge-dependence","route":"/research/research-aug13-knowledge-dependence"},
+    {"slug":"research-aug13-error-consequence","route":"/research/research-aug13-error-consequence"},
+    {"slug":"research-aug13-acceptance-evidence","route":"/research/research-aug13-acceptance-evidence"},
+    {"slug":"research-aug13-manager-attention","route":"/research/research-aug13-manager-attention"},
+    {"slug":"research-aug13-service-recovery","route":"/research/research-aug13-service-recovery"},
+    {"slug":"research-aug13-scope-expansion","route":"/research/research-aug13-scope-expansion"}
   ]
 }
