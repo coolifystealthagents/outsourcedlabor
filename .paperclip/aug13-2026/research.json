@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "contract": "sites3-aug13-creation-v1",
+  "targetDate": "2026-08-13",
+  "family": "research",
+  "domain": "outsourcedlabor.com",
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "branch": "main",
+  "requiredCount": 10,
+  "entries": [
+    {"slug":"research-outsourced-demand-forecasting","route":"/research/research-outsourced-demand-forecasting"},
+    {"slug":"research-outsourced-role-boundary-design","route":"/research/research-outsourced-role-boundary-design"},
+    {"slug":"research-outsourced-onboarding-evidence","route":"/research/research-outsourced-onboarding-evidence"},
+    {"slug":"research-outsourced-customer-context","route":"/research/research-outsourced-customer-context"},
+    {"slug":"research-outsourced-knowledge-transfer","route":"/research/research-outsourced-knowledge-transfer"},
+    {"slug":"research-outsourced-accuracy-sampling","route":"/research/research-outsourced-accuracy-sampling"},
+    {"slug":"research-outsourced-work-acceptance","route":"/research/research-outsourced-work-acceptance"},
+    {"slug":"research-outsourced-manager-review","route":"/research/research-outsourced-manager-review"},
+    {"slug":"research-outsourced-service-recovery","route":"/research/research-outsourced-service-recovery"},
+    {"slug":"research-outsourced-work-lane-review","route":"/research/research-outsourced-work-lane-review"}
+  ]
+}
