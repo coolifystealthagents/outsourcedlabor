@@ -138,7 +138,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
             <p className="lead">{post.excerpt}</p>
             <div className="article-meta">
               <span>{post.minutes} min read</span>
-              <time dateTime={detail.updated}>Updated {detail.updated}</time>
+              <time dateTime={detail.updated}>Updated {new Date(`${detail.updated}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time>
             </div>
           </header>
 
