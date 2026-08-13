@@ -11,7 +11,7 @@ if (manifest.requiredCount !== 22 || manifest.entries.length !== 22) throw new E
 if (new Set(manifest.entries.map((entry) => entry.slug)).size !== 22) throw new Error('duplicate slugs');
 if (!source.includes("const aug13BlogSlugs = new Set") || !source.includes("updated: '2026-08-13'")) throw new Error('batch date binding missing');
 if (!source.includes('aug13BlogSlugs.has(slug) ? 3')) throw new Error('new batch ordering missing');
-if (!route.includes('datePublished: detail.updated') || !route.includes('<time dateTime={detail.updated}>Updated {detail.updated}</time>')) throw new Error('date rendering wiring missing');
+if (!route.includes('datePublished: detail.updated') || !route.includes('<time dateTime={detail.updated}>') || !route.includes("toLocaleDateString('en-US'")) throw new Error('date rendering wiring missing');
 if (!sitemap.includes('...blogPosts.map(p=>`/blog/${p.slug}`)')) throw new Error('sitemap wiring missing');
 const builtRoot = path.join(root, '.next/server/app/blog');
 for (const entry of manifest.entries) {
