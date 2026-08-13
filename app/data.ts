@@ -390,7 +390,7 @@ const aug11Details = Object.fromEntries(aug11Topics.map(([slug, topic, phrase, s
   const source = batchSources[sourceKey];
   const related = blogPosts.filter((post) => post.slug !== slug).slice(index % 12, (index % 12) + 3).map((post) => post.slug);
   return [slug, {
-    updated: '2026-08-11',
+    updated: '2026-08-12',
     takeaways: [`Keep ${phrase} tied to a visible business outcome.`, 'Separate preparation from decisions involving money, policy, access, or customer promises.', 'Use a dated example and a named owner when work needs review.'],
     fitRows: [
       { signal: 'Good first scope', example: 'Repeatable records, updates, checks, or drafts', reason: 'The finished output is visible and easy to sample' },
