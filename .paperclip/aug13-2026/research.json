@@ -8,15 +8,15 @@
   "branch": "main",
   "requiredCount": 10,
   "entries": [
-    {"slug":"research-aug13-workload-variability","route":"/research/research-aug13-workload-variability"},
-    {"slug":"research-aug13-role-authority","route":"/research/research-aug13-role-authority"},
-    {"slug":"research-aug13-onboarding-learning","route":"/research/research-aug13-onboarding-learning"},
-    {"slug":"research-aug13-context-continuity","route":"/research/research-aug13-context-continuity"},
-    {"slug":"research-aug13-knowledge-dependence","route":"/research/research-aug13-knowledge-dependence"},
-    {"slug":"research-aug13-error-consequence","route":"/research/research-aug13-error-consequence"},
-    {"slug":"research-aug13-acceptance-evidence","route":"/research/research-aug13-acceptance-evidence"},
-    {"slug":"research-aug13-manager-attention","route":"/research/research-aug13-manager-attention"},
-    {"slug":"research-aug13-service-recovery","route":"/research/research-aug13-service-recovery"},
-    {"slug":"research-aug13-scope-expansion","route":"/research/research-aug13-scope-expansion"}
+    {"slug":"research-aug13-demand-shape","route":"/research/research-aug13-demand-shape"},
+    {"slug":"research-aug13-decision-rights","route":"/research/research-aug13-decision-rights"},
+    {"slug":"research-aug13-learning-transfer","route":"/research/research-aug13-learning-transfer"},
+    {"slug":"research-aug13-handoff-context","route":"/research/research-aug13-handoff-context"},
+    {"slug":"research-aug13-knowledge-dependencies","route":"/research/research-aug13-knowledge-dependencies"},
+    {"slug":"research-aug13-error-consequences","route":"/research/research-aug13-error-consequences"},
+    {"slug":"research-aug13-work-acceptance","route":"/research/research-aug13-work-acceptance"},
+    {"slug":"research-aug13-manager-review","route":"/research/research-aug13-manager-review"},
+    {"slug":"research-aug13-recovery-assumptions","route":"/research/research-aug13-recovery-assumptions"},
+    {"slug":"research-aug13-scope-evidence","route":"/research/research-aug13-scope-evidence"}
   ]
 }
