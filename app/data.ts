@@ -1,3 +1,5 @@
+import { august13BlogDetails, august13BlogPosts } from './blog/aug13-verified';
+
 export const site = {
   "domain": "OutsourcedLabor.com",
   "slug": "outsourcedlabor",
@@ -209,6 +211,7 @@ const allBlogPosts = [
   { slug: 'aug13-blog-replacement-training-case-notes', title: 'Write training case notes for Filipino staff', excerpt: 'Turn real examples into practical learning records with the rule, exception, result, and review date.', minutes: 10 },
   { slug: 'aug13-blog-replacement-service-recovery-intake', title: 'Prepare service recovery cases for owner decisions', excerpt: 'Give support staff a factual intake for recovery review without authorizing promises they cannot make.', minutes: 10 },
   { slug: 'aug13-blog-replacement-report-source-map', title: 'Map report fields to their source records', excerpt: 'Make outsourced reporting easier to trust by showing where each number came from and who reviews it.', minutes: 9 },
+  ...august13BlogPosts,
 ] as const;
 
 const aug10BlogSlugs = new Set([
@@ -239,12 +242,11 @@ const aug10BlogSlugs = new Set([
 const aug11BlogSlugs = new Set([
   'philippines-admin-inbox-triage','filipino-support-call-notes','outsourced-labor-workload-forecast','philippines-crm-cleanup-plan','filipino-vendor-follow-up-tracker','outsourced-labor-reporting-calendar','philippines-customer-feedback-coding','filipino-admin-travel-coordination','outsourced-labor-document-review','philippines-ecommerce-catalog-updates','filipino-staff-meeting-follow-up','outsourced-labor-quality-calibration','philippines-admin-invoice-preparation','filipino-research-source-freshness','outsourced-labor-work-sample-review','philippines-support-weekend-coverage','filipino-operations-exception-register','outsourced-labor-training-example-library','philippines-admin-permission-review','filipino-customer-status-updates','outsourced-labor-monthly-operations-review','philippines-remote-staff-goal-setting',
 ]);
-const aug13BlogSlugs = new Set([
-  'aug13-blog-replacement-order-exception-review','aug13-blog-replacement-support-case-context','aug13-blog-replacement-admin-request-intake','aug13-blog-replacement-vendor-record-check','aug13-blog-replacement-support-macro-review','aug13-blog-replacement-shared-drive-index','aug13-blog-replacement-returns-case-prep','aug13-blog-replacement-calendar-request-rules','aug13-blog-replacement-research-source-log','aug13-blog-replacement-customer-record-merge','aug13-blog-replacement-invoice-exception-queue','aug13-blog-replacement-operations-status-board','aug13-blog-replacement-support-policy-boundary','aug13-blog-replacement-file-request-tracker','aug13-blog-replacement-order-note-standard','aug13-blog-replacement-weekly-queue-sample','aug13-blog-replacement-access-review-cycle','aug13-blog-replacement-customer-followup-calendar','aug13-blog-replacement-backlog-age-review','aug13-blog-replacement-training-case-notes','aug13-blog-replacement-service-recovery-intake','aug13-blog-replacement-report-source-map',
-]);
+const aug13BlogSlugs: Set<string> = new Set(august13BlogPosts.map((post) => post.slug));
 
 const retiredAug13BlogSlugs = new Set([
   'philippines-outsourced-order-reconciliation','filipino-support-sla-expectations','outsourced-labor-knowledge-base-audit','philippines-admin-file-naming','filipino-ecommerce-shipping-status','outsourced-labor-manager-review-notes','philippines-remote-staff-timezone-planning','filipino-bookkeeping-receipt-index','outsourced-labor-work-handoff-template','philippines-crm-contact-deduplication','filipino-admin-approval-tracker','outsourced-labor-customer-commitment-log','philippines-vendor-onboarding-support','filipino-calendar-conflict-review','outsourced-labor-blocked-task-review','philippines-support-refund-evidence','filipino-operations-incident-notes','outsourced-labor-permission-change-log','philippines-admin-payment-support-boundaries','filipino-customer-complaint-triage','outsourced-labor-role-expansion-test','philippines-remote-staff-holiday-coverage',
+  'aug13-blog-replacement-order-exception-review','aug13-blog-replacement-support-case-context','aug13-blog-replacement-admin-request-intake','aug13-blog-replacement-vendor-record-check','aug13-blog-replacement-support-macro-review','aug13-blog-replacement-shared-drive-index','aug13-blog-replacement-returns-case-prep','aug13-blog-replacement-calendar-request-rules','aug13-blog-replacement-research-source-log','aug13-blog-replacement-customer-record-merge','aug13-blog-replacement-invoice-exception-queue','aug13-blog-replacement-operations-status-board','aug13-blog-replacement-support-policy-boundary','aug13-blog-replacement-file-request-tracker','aug13-blog-replacement-order-note-standard','aug13-blog-replacement-weekly-queue-sample','aug13-blog-replacement-access-review-cycle','aug13-blog-replacement-customer-followup-calendar','aug13-blog-replacement-backlog-age-review','aug13-blog-replacement-training-case-notes','aug13-blog-replacement-service-recovery-intake','aug13-blog-replacement-report-source-map',
 ]);
 
 export const blogPosts = [...allBlogPosts].filter((post) => !retiredAug13BlogSlugs.has(post.slug)).sort((a, b) => {
@@ -548,7 +550,7 @@ const aug13ReplacementDetails = {
   'aug13-blog-replacement-report-source-map': { updated: '2026-08-13', ...replacementDetail('report source mapping', 'report source mapping', replacementSource) },
 };
 
-export const blogDetails = { ...baseBlogDetails, ...batchDetails, ...nextBatchDetails, ...aug11Details, ...aug13Details, ...aug13ReplacementDetails } as const;
+export const blogDetails = { ...baseBlogDetails, ...batchDetails, ...nextBatchDetails, ...aug11Details, ...aug13Details, ...aug13ReplacementDetails, ...august13BlogDetails } as const;
 
 export const stats = [{label:'First work lane',value:'One queue',note:'a visible input and finish line make review easier'},{label:'Pilot review',value:'Daily',note:'reduce checks only after the work is steady'},{label:'Decision line',value:'Written',note:'money, policy, access, and customer promises stay controlled'}] as const;
 
