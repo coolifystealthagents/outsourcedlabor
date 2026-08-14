@@ -8,15 +8,15 @@
   "branch": "main",
   "requiredCount": 10,
   "entries": [
-    {"slug":"research-aug13-demand-shape","route":"/research/research-aug13-demand-shape"},
-    {"slug":"research-aug13-decision-rights","route":"/research/research-aug13-decision-rights"},
-    {"slug":"research-aug13-learning-transfer","route":"/research/research-aug13-learning-transfer"},
-    {"slug":"research-aug13-handoff-context","route":"/research/research-aug13-handoff-context"},
-    {"slug":"research-aug13-knowledge-dependencies","route":"/research/research-aug13-knowledge-dependencies"},
-    {"slug":"research-aug13-error-consequences","route":"/research/research-aug13-error-consequences"},
-    {"slug":"research-aug13-work-acceptance","route":"/research/research-aug13-work-acceptance"},
-    {"slug":"research-aug13-manager-review","route":"/research/research-aug13-manager-review"},
-    {"slug":"research-aug13-recovery-assumptions","route":"/research/research-aug13-recovery-assumptions"},
-    {"slug":"research-aug13-scope-evidence","route":"/research/research-aug13-scope-evidence"}
+    {"slug":"research-aug13-queue-variability","route":"/research/research-aug13-queue-variability"},
+    {"slug":"research-aug13-approval-boundaries","route":"/research/research-aug13-approval-boundaries"},
+    {"slug":"research-aug13-supervised-transfer","route":"/research/research-aug13-supervised-transfer"},
+    {"slug":"research-aug13-handoff-completeness","route":"/research/research-aug13-handoff-completeness"},
+    {"slug":"research-aug13-source-dependency","route":"/research/research-aug13-source-dependency"},
+    {"slug":"research-aug13-error-impact","route":"/research/research-aug13-error-impact"},
+    {"slug":"research-aug13-completion-evidence","route":"/research/research-aug13-completion-evidence"},
+    {"slug":"research-aug13-review-allocation","route":"/research/research-aug13-review-allocation"},
+    {"slug":"research-aug13-recovery-readiness","route":"/research/research-aug13-recovery-readiness"},
+    {"slug":"research-aug13-scope-thresholds","route":"/research/research-aug13-scope-thresholds"}
   ]
 }
