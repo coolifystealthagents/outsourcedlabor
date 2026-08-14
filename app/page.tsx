@@ -54,7 +54,7 @@ export default function Home() {
         </div>
         <div className="labor-shell control-strip" aria-label="Planning controls">
           {checkpoints.map((item) => <article key={item.label}>
-            <img className="control-icon" src={item.icon} alt="" aria-hidden="true" />
+            <img className="control-icon" src={item.icon} alt={`${item.label} control icon`} />
             <div><span>{item.label}</span><b>{item.value}</b><p>{item.note}</p></div>
           </article>)}
         </div>
@@ -66,7 +66,7 @@ export default function Home() {
           <p>Filipino talent can take on plenty of recurring work. The safest first role has clear inputs, a visible result, and a manager who knows when to step in.</p>
         </div>
         <div className="work-grid">
-          {roles.map((role, index) => <a className="work-card" href={`/services/${role.slug}`} key={role.slug}>
+          {roles.map((role, index) => <a className="work-card" href="/services" key={role.slug}>
             <span className="work-number">0{index + 1}</span>
             <div><h3>{role.title}</h3><p>{role.desc}</p></div>
             <b>Open the handoff guide <span aria-hidden="true">↗</span></b>
