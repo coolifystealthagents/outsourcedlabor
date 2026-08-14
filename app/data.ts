@@ -187,6 +187,28 @@ const allBlogPosts = [
   { slug: 'filipino-customer-complaint-triage', title: 'Triage customer complaints with Filipino support staff', excerpt: 'Classify urgency, verify facts, and route sensitive complaints without making unauthorized promises.', minutes: 10 },
   { slug: 'outsourced-labor-role-expansion-test', title: 'Test whether an outsourced role is ready to expand', excerpt: 'Use evidence from quality, exceptions, access, and manager review before adding a new work lane.', minutes: 9 },
   { slug: 'philippines-remote-staff-holiday-coverage', title: 'Plan holiday coverage for Philippines remote staff', excerpt: 'Protect recurring work with coverage owners, queue notes, escalation rules, and a clean return handoff.', minutes: 9 },
+  { slug: 'aug13-blog-replacement-order-exception-review', title: 'Review order exceptions in a Philippines support queue', excerpt: 'Give outsourced order support a clear way to separate routine updates from cases that need an owner decision.', minutes: 10 },
+  { slug: 'aug13-blog-replacement-support-case-context', title: 'Preserve customer context across Philippines support handoffs', excerpt: 'Keep the facts, promise, next action, and owner together when a customer case changes hands.', minutes: 9 },
+  { slug: 'aug13-blog-replacement-admin-request-intake', title: 'Design an intake queue for Philippines admin support', excerpt: 'Turn scattered requests into a visible queue with required context, due dates, and approval boundaries.', minutes: 9 },
+  { slug: 'aug13-blog-replacement-vendor-record-check', title: 'Check vendor records before outsourced follow-up', excerpt: 'Use a source-backed vendor record so Philippines-based support can follow up without guessing at status.', minutes: 9 },
+  { slug: 'aug13-blog-replacement-support-macro-review', title: 'Review support macros before Filipino staff use them', excerpt: 'Keep saved replies accurate by checking sources, limits, tone, and escalation triggers.', minutes: 10 },
+  { slug: 'aug13-blog-replacement-shared-drive-index', title: 'Build a shared-drive index for Philippines admin work', excerpt: 'Make recurring records findable without granting broad access or creating duplicate folders.', minutes: 8 },
+  { slug: 'aug13-blog-replacement-returns-case-prep', title: 'Prepare ecommerce returns cases for manager review', excerpt: 'Collect order facts and policy evidence while keeping return exceptions with the accountable owner.', minutes: 10 },
+  { slug: 'aug13-blog-replacement-calendar-request-rules', title: 'Set calendar request rules for Filipino admin support', excerpt: 'Define what can be scheduled, what needs confirmation, and how time zones are recorded.', minutes: 9 },
+  { slug: 'aug13-blog-replacement-research-source-log', title: 'Keep a source log for Philippines-based research support', excerpt: 'Connect each finding to a dated source, the question it answers, and a caveat worth reviewing.', minutes: 10 },
+  { slug: 'aug13-blog-replacement-customer-record-merge', title: 'Review customer record merges with Philippines CRM support', excerpt: 'Use evidence and approval boundaries before combining duplicate customer records.', minutes: 10 },
+  { slug: 'aug13-blog-replacement-invoice-exception-queue', title: 'Create an invoice exception queue for admin support', excerpt: 'Separate complete invoice preparation from missing evidence, unusual charges, and approval decisions.', minutes: 9 },
+  { slug: 'aug13-blog-replacement-operations-status-board', title: 'Build an operations status board for remote staff', excerpt: 'Show current work, blockers, evidence, and owner decisions without confusing activity with completion.', minutes: 9 },
+  { slug: 'aug13-blog-replacement-support-policy-boundary', title: 'Define policy boundaries for Filipino customer support', excerpt: 'Give support staff useful response room while routing exceptions and sensitive commitments to an owner.', minutes: 10 },
+  { slug: 'aug13-blog-replacement-file-request-tracker', title: 'Track missing files in a Philippines admin queue', excerpt: 'Make document requests visible with a source, request date, follow-up owner, and stop condition.', minutes: 8 },
+  { slug: 'aug13-blog-replacement-order-note-standard', title: 'Standardize order notes for outsourced support', excerpt: 'Capture verified facts and next steps so order cases remain understandable after a handoff.', minutes: 9 },
+  { slug: 'aug13-blog-replacement-weekly-queue-sample', title: 'Sample a weekly queue for outsourced labor quality', excerpt: 'Use a small, defined sample to see accuracy, completeness, and unresolved exceptions together.', minutes: 10 },
+  { slug: 'aug13-blog-replacement-access-review-cycle', title: 'Run an access review cycle for Philippines staff', excerpt: 'Compare current duties with permissions and document removals when a role changes.', minutes: 9 },
+  { slug: 'aug13-blog-replacement-customer-followup-calendar', title: 'Schedule customer follow-ups with clear ownership', excerpt: 'Prevent missed promises by recording the verified status, next date, and person responsible for the update.', minutes: 9 },
+  { slug: 'aug13-blog-replacement-backlog-age-review', title: 'Review backlog age in a remote operations queue', excerpt: 'Use age, impact, missing inputs, and owner decisions to move stuck work safely.', minutes: 9 },
+  { slug: 'aug13-blog-replacement-training-case-notes', title: 'Write training case notes for Filipino staff', excerpt: 'Turn real examples into practical learning records with the rule, exception, result, and review date.', minutes: 10 },
+  { slug: 'aug13-blog-replacement-service-recovery-intake', title: 'Prepare service recovery cases for owner decisions', excerpt: 'Give support staff a factual intake for recovery review without authorizing promises they cannot make.', minutes: 10 },
+  { slug: 'aug13-blog-replacement-report-source-map', title: 'Map report fields to their source records', excerpt: 'Make outsourced reporting easier to trust by showing where each number came from and who reviews it.', minutes: 9 },
 ] as const;
 
 const aug10BlogSlugs = new Set([
@@ -218,10 +240,14 @@ const aug11BlogSlugs = new Set([
   'philippines-admin-inbox-triage','filipino-support-call-notes','outsourced-labor-workload-forecast','philippines-crm-cleanup-plan','filipino-vendor-follow-up-tracker','outsourced-labor-reporting-calendar','philippines-customer-feedback-coding','filipino-admin-travel-coordination','outsourced-labor-document-review','philippines-ecommerce-catalog-updates','filipino-staff-meeting-follow-up','outsourced-labor-quality-calibration','philippines-admin-invoice-preparation','filipino-research-source-freshness','outsourced-labor-work-sample-review','philippines-support-weekend-coverage','filipino-operations-exception-register','outsourced-labor-training-example-library','philippines-admin-permission-review','filipino-customer-status-updates','outsourced-labor-monthly-operations-review','philippines-remote-staff-goal-setting',
 ]);
 const aug13BlogSlugs = new Set([
+  'aug13-blog-replacement-order-exception-review','aug13-blog-replacement-support-case-context','aug13-blog-replacement-admin-request-intake','aug13-blog-replacement-vendor-record-check','aug13-blog-replacement-support-macro-review','aug13-blog-replacement-shared-drive-index','aug13-blog-replacement-returns-case-prep','aug13-blog-replacement-calendar-request-rules','aug13-blog-replacement-research-source-log','aug13-blog-replacement-customer-record-merge','aug13-blog-replacement-invoice-exception-queue','aug13-blog-replacement-operations-status-board','aug13-blog-replacement-support-policy-boundary','aug13-blog-replacement-file-request-tracker','aug13-blog-replacement-order-note-standard','aug13-blog-replacement-weekly-queue-sample','aug13-blog-replacement-access-review-cycle','aug13-blog-replacement-customer-followup-calendar','aug13-blog-replacement-backlog-age-review','aug13-blog-replacement-training-case-notes','aug13-blog-replacement-service-recovery-intake','aug13-blog-replacement-report-source-map',
+]);
+
+const retiredAug13BlogSlugs = new Set([
   'philippines-outsourced-order-reconciliation','filipino-support-sla-expectations','outsourced-labor-knowledge-base-audit','philippines-admin-file-naming','filipino-ecommerce-shipping-status','outsourced-labor-manager-review-notes','philippines-remote-staff-timezone-planning','filipino-bookkeeping-receipt-index','outsourced-labor-work-handoff-template','philippines-crm-contact-deduplication','filipino-admin-approval-tracker','outsourced-labor-customer-commitment-log','philippines-vendor-onboarding-support','filipino-calendar-conflict-review','outsourced-labor-blocked-task-review','philippines-support-refund-evidence','filipino-operations-incident-notes','outsourced-labor-permission-change-log','philippines-admin-payment-support-boundaries','filipino-customer-complaint-triage','outsourced-labor-role-expansion-test','philippines-remote-staff-holiday-coverage',
 ]);
 
-export const blogPosts = [...allBlogPosts].sort((a, b) => {
+export const blogPosts = [...allBlogPosts].filter((post) => !retiredAug13BlogSlugs.has(post.slug)).sort((a, b) => {
   const batchRank = (slug: string) => aug13BlogSlugs.has(slug) ? 3 : aug11BlogSlugs.has(slug) ? 2 : aug10BlogSlugs.has(slug) ? 1 : 0;
   return batchRank(b.slug) - batchRank(a.slug);
 });
@@ -483,7 +509,46 @@ const aug13Details = {
   'philippines-remote-staff-holiday-coverage': { updated: '2026-08-13', ...aug13DetailTemplate('holiday coverage', 'remote staff holiday coverage', 'SBA hiring and managing employees', 21) },
 };
 
-export const blogDetails = { ...baseBlogDetails, ...batchDetails, ...nextBatchDetails, ...aug11Details, ...aug13Details } as const;
+const replacementDetail = (topic: string, phrase: string, source: { name: string; url: string; note: string }) => ({
+  takeaways: [`Define the evidence needed for ${topic} before work starts.`, 'Keep approvals for money, policy exceptions, access changes, and customer promises with a named owner.', 'Review a small set of completed cases before widening the lane.'],
+  fitRows: [{ signal: 'Good first scope', example: 'Repeatable records, checks, updates, or drafts', reason: 'The result is visible and can be sampled' }, { signal: 'Needs approval', example: 'Money, policy exceptions, access changes, or promises', reason: 'A manager retains the decision' }, { signal: 'Not ready', example: 'A broad function without examples or a clear queue', reason: 'The work cannot be trained or reviewed reliably' }],
+  sections: [
+    { heading: `Make ${topic} a bounded work lane`, paragraphs: [`${phrase} should begin with a named input, a finished record, and a clear stop condition. A Philippines-based specialist can prepare and organize the work when those boundaries are visible.`, `Use recent examples to show the ordinary path and the exceptions. Record which source proves each important field and what the next owner needs to decide. This makes ${topic} teachable without relying on informal context.`, 'Start with a small sample and review the actual records. If the same question appears repeatedly, improve the instruction or source before increasing the queue.'] },
+    { heading: 'Keep decisions with the right owner', paragraphs: ['Preparation and approval are different jobs. Staff may gather facts, draft a response, or flag a mismatch, while a manager retains decisions about refunds, payments, policy, access, deletion, and unusual customer commitments.', `Give each ${topic} case a status that explains what is happening: ready, waiting for source evidence, waiting for approval, or escalated. A status without an owner only hides delay.`, 'Use individual access and a written escalation path. Include the question, evidence, deadline, and decision owner so blocked work can move safely.'] },
+    { heading: 'Review quality through real examples', paragraphs: [`For ${topic}, review accuracy, completeness, timeliness, and the usefulness of the handoff. Choose the measures that fit the lane instead of rewarding volume alone.`, 'Keep one accepted example and one corrected example in the working guidance. Explain why the result passed or needed revision so the standard remains practical.', 'After the review, keep the scope, revise the instructions, or stop the lane. Expansion should follow evidence from the work itself.'] },
+  ],
+  brief: [`Role goal: Complete the ${phrase} lane by the agreed cutoff.`, 'Work source: The named system, queue, or folder supplied by the manager.', 'Done means: Required fields are complete, evidence is linked, and the next action is dated.', 'Manager approves: Exceptions involving money, policy, access, deletion, or customer promises.'],
+  faqs: [{ q: 'When should the worker pause?', a: 'Pause when the source is missing, the request crosses an approval boundary, or the instructions do not cover the case.' }, { q: 'What should the manager review first?', a: 'Review the source trail, completeness, exception handling, and whether the handoff makes the next decision clear.' }],
+  sources: [source], related: ['outsourced-labor-planning', 'philippines-operations-support-sop'],
+});
+
+const replacementSource = { name: 'U.S. Small Business Administration — Hiring and managing employees', url: 'https://www.sba.gov/business-guide/manage-your-business/hire-and-manage-employees', note: 'A practical reference for defining responsibilities, access, and management of a work relationship.' };
+const aug13ReplacementDetails = {
+  'aug13-blog-replacement-order-exception-review': { updated: '2026-08-13', ...replacementDetail('order exception review', 'order exception review', replacementSource) },
+  'aug13-blog-replacement-support-case-context': { updated: '2026-08-13', ...replacementDetail('support case context', 'support case context preservation', replacementSource) },
+  'aug13-blog-replacement-admin-request-intake': { updated: '2026-08-13', ...replacementDetail('admin request intake', 'admin request intake', replacementSource) },
+  'aug13-blog-replacement-vendor-record-check': { updated: '2026-08-13', ...replacementDetail('vendor record checking', 'vendor record checking', replacementSource) },
+  'aug13-blog-replacement-support-macro-review': { updated: '2026-08-13', ...replacementDetail('support macro review', 'support macro review', replacementSource) },
+  'aug13-blog-replacement-shared-drive-index': { updated: '2026-08-13', ...replacementDetail('shared-drive indexing', 'shared-drive indexing', replacementSource) },
+  'aug13-blog-replacement-returns-case-prep': { updated: '2026-08-13', ...replacementDetail('returns case preparation', 'returns case preparation', replacementSource) },
+  'aug13-blog-replacement-calendar-request-rules': { updated: '2026-08-13', ...replacementDetail('calendar request rules', 'calendar request handling', replacementSource) },
+  'aug13-blog-replacement-research-source-log': { updated: '2026-08-13', ...replacementDetail('research source logging', 'research source logging', replacementSource) },
+  'aug13-blog-replacement-customer-record-merge': { updated: '2026-08-13', ...replacementDetail('customer record merges', 'customer record merge review', replacementSource) },
+  'aug13-blog-replacement-invoice-exception-queue': { updated: '2026-08-13', ...replacementDetail('invoice exception handling', 'invoice exception handling', replacementSource) },
+  'aug13-blog-replacement-operations-status-board': { updated: '2026-08-13', ...replacementDetail('operations status boards', 'operations status board upkeep', replacementSource) },
+  'aug13-blog-replacement-support-policy-boundary': { updated: '2026-08-13', ...replacementDetail('support policy boundaries', 'support policy boundary review', replacementSource) },
+  'aug13-blog-replacement-file-request-tracker': { updated: '2026-08-13', ...replacementDetail('file request tracking', 'file request tracking', replacementSource) },
+  'aug13-blog-replacement-order-note-standard': { updated: '2026-08-13', ...replacementDetail('order note standards', 'order note standardization', replacementSource) },
+  'aug13-blog-replacement-weekly-queue-sample': { updated: '2026-08-13', ...replacementDetail('weekly queue sampling', 'weekly queue sampling', replacementSource) },
+  'aug13-blog-replacement-access-review-cycle': { updated: '2026-08-13', ...replacementDetail('access review cycles', 'access review cycles', replacementSource) },
+  'aug13-blog-replacement-customer-followup-calendar': { updated: '2026-08-13', ...replacementDetail('customer follow-up calendars', 'customer follow-up scheduling', replacementSource) },
+  'aug13-blog-replacement-backlog-age-review': { updated: '2026-08-13', ...replacementDetail('backlog age review', 'backlog age review', replacementSource) },
+  'aug13-blog-replacement-training-case-notes': { updated: '2026-08-13', ...replacementDetail('training case notes', 'training case documentation', replacementSource) },
+  'aug13-blog-replacement-service-recovery-intake': { updated: '2026-08-13', ...replacementDetail('service recovery intake', 'service recovery intake', replacementSource) },
+  'aug13-blog-replacement-report-source-map': { updated: '2026-08-13', ...replacementDetail('report source mapping', 'report source mapping', replacementSource) },
+};
+
+export const blogDetails = { ...baseBlogDetails, ...batchDetails, ...nextBatchDetails, ...aug11Details, ...aug13Details, ...aug13ReplacementDetails } as const;
 
 export const stats = [{label:'First work lane',value:'One queue',note:'a visible input and finish line make review easier'},{label:'Pilot review',value:'Daily',note:'reduce checks only after the work is steady'},{label:'Decision line',value:'Written',note:'money, policy, access, and customer promises stay controlled'}] as const;
 
