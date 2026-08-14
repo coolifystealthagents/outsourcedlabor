@@ -441,11 +441,10 @@ const aug11Details = Object.fromEntries(aug11Topics.map(([slug, topic, phrase, s
 const aug13Topics = [
   ['philippines-outsourced-order-reconciliation','order reconciliation','outsourced order reconciliation','SBA hiring and managing employees'], ['filipino-support-sla-expectations','support expectations','support service expectations','SBA hiring and managing employees'], ['outsourced-labor-knowledge-base-audit','knowledge base audit','a knowledge base audit','NIST Cybersecurity Framework 2.0'], ['philippines-admin-file-naming','file naming','admin file naming rules','NIST Cybersecurity Framework 2.0'], ['filipino-ecommerce-shipping-status','shipping status','ecommerce shipping status updates','SBA hiring and managing employees'], ['outsourced-labor-manager-review-notes','manager review notes','manager review notes','SBA hiring and managing employees'], ['philippines-remote-staff-timezone-planning','time-zone planning','remote staff time-zone planning','SBA hiring and managing employees'], ['filipino-bookkeeping-receipt-index','receipt indexing','bookkeeping receipt indexing','IRS Independent Contractor Defined'], ['outsourced-labor-work-handoff-template','handoff templates','a work handoff template','SBA hiring and managing employees'], ['philippines-crm-contact-deduplication','contact deduplication','CRM contact deduplication','NIST Cybersecurity Framework 2.0'], ['filipino-admin-approval-tracker','approval tracking','an admin approval tracker','SBA hiring and managing employees'], ['outsourced-labor-customer-commitment-log','commitment logs','a customer commitment log','SBA hiring and managing employees'], ['philippines-vendor-onboarding-support','vendor onboarding','vendor onboarding support','SBA hiring and managing employees'], ['filipino-calendar-conflict-review','calendar conflicts','calendar conflict review','SBA hiring and managing employees'], ['outsourced-labor-blocked-task-review','blocked task review','blocked task review','SBA hiring and managing employees'], ['philippines-support-refund-evidence','refund evidence','support refund evidence','SBA hiring and managing employees'], ['filipino-operations-incident-notes','incident notes','operations incident notes','NIST Cybersecurity Framework 2.0'], ['outsourced-labor-permission-change-log','permission changes','a permission change log','CISA Require Multifactor Authentication'], ['philippines-admin-payment-support-boundaries','payment support','admin payment support boundaries','SBA hiring and managing employees'], ['filipino-customer-complaint-triage','complaint triage','customer complaint triage','SBA hiring and managing employees'], ['outsourced-labor-role-expansion-test','role expansion','a role expansion test','SBA hiring and managing employees'], ['philippines-remote-staff-holiday-coverage','holiday coverage','remote staff holiday coverage','SBA hiring and managing employees'],
 ] as const;
-const aug13Details = Object.fromEntries(aug13Topics.map(([slug, topic, phrase, sourceKey], index) => {
+const aug13DetailTemplate = (topic: string, phrase: string, sourceKey: keyof typeof batchSources, index: number) => {
   const source = batchSources[sourceKey];
-  const related = blogPosts.filter((post) => post.slug !== slug).slice(index % 14, (index % 14) + 3).map((post) => post.slug);
-  return [slug, {
-    updated: '2026-08-13',
+  const related = blogPosts.slice(index % 14, (index % 14) + 3).map((post) => post.slug);
+  return {
     takeaways: [`Keep ${phrase} tied to a visible business result.`, 'Separate preparation from decisions involving money, policy, access, or customer promises.', 'Use a named owner when a case needs review.'],
     fitRows: [{ signal: 'Good first scope', example: 'Repeatable records, updates, checks, or drafts', reason: 'The finished output is visible and easy to sample' }, { signal: 'Needs approval', example: 'Money, policy exceptions, sensitive data, or promises', reason: 'A manager must retain the decision' }, { signal: 'Not ready', example: 'A broad function without examples or a clear queue', reason: 'The scope cannot be trained or measured' }],
     sections: [
@@ -456,8 +455,33 @@ const aug13Details = Object.fromEntries(aug13Topics.map(([slug, topic, phrase, s
     brief: [`Role goal: Complete the ${phrase} lane by the agreed cutoff.`, 'Work source: The named inbox, board, report, or system supplied by the manager.', 'Done means: Required fields are complete, supporting evidence is linked, and the next action is dated.', 'Worker may decide: Standard formatting, tags, and steps listed in the approved instructions.', 'Manager approves: Exceptions involving money, policy, access, deletion, or customer promises.', 'Handoff note: Completed items, blocked items, questions, and patterns worth reviewing.'],
     faqs: [{ q: 'What should the first review cover?', a: 'Check whether examples were followed, evidence is traceable, the record is complete, and exceptions reached the right owner.' }, { q: 'When should a worker pause?', a: 'Pause when the source is missing, the request crosses an approval boundary, or the instruction does not cover the case.' }, { q: 'When can the scope expand?', a: 'Expand after the first lane is accurate, access is appropriate, and review catches exceptions early.' }],
     sources: [source], related,
-  }];
-}));
+  };
+};
+
+const aug13Details = {
+  'philippines-outsourced-order-reconciliation': { updated: '2026-08-13', ...aug13DetailTemplate('order reconciliation', 'outsourced order reconciliation', 'SBA hiring and managing employees', 0) },
+  'filipino-support-sla-expectations': { updated: '2026-08-13', ...aug13DetailTemplate('support expectations', 'support service expectations', 'SBA hiring and managing employees', 1) },
+  'outsourced-labor-knowledge-base-audit': { updated: '2026-08-13', ...aug13DetailTemplate('knowledge base audit', 'a knowledge base audit', 'NIST Cybersecurity Framework 2.0', 2) },
+  'philippines-admin-file-naming': { updated: '2026-08-13', ...aug13DetailTemplate('file naming', 'admin file naming rules', 'NIST Cybersecurity Framework 2.0', 3) },
+  'filipino-ecommerce-shipping-status': { updated: '2026-08-13', ...aug13DetailTemplate('shipping status', 'ecommerce shipping status updates', 'SBA hiring and managing employees', 4) },
+  'outsourced-labor-manager-review-notes': { updated: '2026-08-13', ...aug13DetailTemplate('manager review notes', 'manager review notes', 'SBA hiring and managing employees', 5) },
+  'philippines-remote-staff-timezone-planning': { updated: '2026-08-13', ...aug13DetailTemplate('time-zone planning', 'remote staff time-zone planning', 'SBA hiring and managing employees', 6) },
+  'filipino-bookkeeping-receipt-index': { updated: '2026-08-13', ...aug13DetailTemplate('receipt indexing', 'bookkeeping receipt indexing', 'IRS Independent Contractor Defined', 7) },
+  'outsourced-labor-work-handoff-template': { updated: '2026-08-13', ...aug13DetailTemplate('handoff templates', 'a work handoff template', 'SBA hiring and managing employees', 8) },
+  'philippines-crm-contact-deduplication': { updated: '2026-08-13', ...aug13DetailTemplate('contact deduplication', 'CRM contact deduplication', 'NIST Cybersecurity Framework 2.0', 9) },
+  'filipino-admin-approval-tracker': { updated: '2026-08-13', ...aug13DetailTemplate('approval tracking', 'an admin approval tracker', 'SBA hiring and managing employees', 10) },
+  'outsourced-labor-customer-commitment-log': { updated: '2026-08-13', ...aug13DetailTemplate('commitment logs', 'a customer commitment log', 'SBA hiring and managing employees', 11) },
+  'philippines-vendor-onboarding-support': { updated: '2026-08-13', ...aug13DetailTemplate('vendor onboarding', 'vendor onboarding support', 'SBA hiring and managing employees', 12) },
+  'filipino-calendar-conflict-review': { updated: '2026-08-13', ...aug13DetailTemplate('calendar conflicts', 'calendar conflict review', 'SBA hiring and managing employees', 13) },
+  'outsourced-labor-blocked-task-review': { updated: '2026-08-13', ...aug13DetailTemplate('blocked task review', 'blocked task review', 'SBA hiring and managing employees', 14) },
+  'philippines-support-refund-evidence': { updated: '2026-08-13', ...aug13DetailTemplate('refund evidence', 'support refund evidence', 'SBA hiring and managing employees', 15) },
+  'filipino-operations-incident-notes': { updated: '2026-08-13', ...aug13DetailTemplate('incident notes', 'operations incident notes', 'NIST Cybersecurity Framework 2.0', 16) },
+  'outsourced-labor-permission-change-log': { updated: '2026-08-13', ...aug13DetailTemplate('permission changes', 'a permission change log', 'CISA Require Multifactor Authentication', 17) },
+  'philippines-admin-payment-support-boundaries': { updated: '2026-08-13', ...aug13DetailTemplate('payment support', 'admin payment support boundaries', 'SBA hiring and managing employees', 18) },
+  'filipino-customer-complaint-triage': { updated: '2026-08-13', ...aug13DetailTemplate('complaint triage', 'customer complaint triage', 'SBA hiring and managing employees', 19) },
+  'outsourced-labor-role-expansion-test': { updated: '2026-08-13', ...aug13DetailTemplate('role expansion', 'a role expansion test', 'SBA hiring and managing employees', 20) },
+  'philippines-remote-staff-holiday-coverage': { updated: '2026-08-13', ...aug13DetailTemplate('holiday coverage', 'remote staff holiday coverage', 'SBA hiring and managing employees', 21) },
+};
 
 export const blogDetails = { ...baseBlogDetails, ...batchDetails, ...nextBatchDetails, ...aug11Details, ...aug13Details } as const;
 
