@@ -8,15 +8,15 @@
   "branch": "main",
   "requiredCount": 10,
   "entries": [
-    {"slug":"research-aug13-queue-volatility","route":"/research/research-aug13-queue-volatility"},
-    {"slug":"research-aug13-clarification-burden","route":"/research/research-aug13-clarification-burden"},
-    {"slug":"research-aug13-correction-cause","route":"/research/research-aug13-correction-cause"},
-    {"slug":"research-aug13-approval-aging","route":"/research/research-aug13-approval-aging"},
-    {"slug":"research-aug13-source-lineage","route":"/research/research-aug13-source-lineage"},
-    {"slug":"research-aug13-risk-consequence","route":"/research/research-aug13-risk-consequence"},
-    {"slug":"research-aug13-review-minutes","route":"/research/research-aug13-review-minutes"},
-    {"slug":"research-aug13-permission-alignment","route":"/research/research-aug13-permission-alignment"},
-    {"slug":"research-aug13-handoff-recovery","route":"/research/research-aug13-handoff-recovery"},
-    {"slug":"research-aug13-scope-rollback","route":"/research/research-aug13-scope-rollback"}
+    {"slug":"research-aug13-queue-arrival-patterns","route":"/research/research-aug13-queue-arrival-patterns"},
+    {"slug":"research-aug13-intake-field-reliability","route":"/research/research-aug13-intake-field-reliability"},
+    {"slug":"research-aug13-rework-source-analysis","route":"/research/research-aug13-rework-source-analysis"},
+    {"slug":"research-aug13-decision-waiting-time","route":"/research/research-aug13-decision-waiting-time"},
+    {"slug":"research-aug13-record-lineage-check","route":"/research/research-aug13-record-lineage-check"},
+    {"slug":"research-aug13-exception-impact-mapping","route":"/research/research-aug13-exception-impact-mapping"},
+    {"slug":"research-aug13-review-capacity-ratio","route":"/research/research-aug13-review-capacity-ratio"},
+    {"slug":"research-aug13-access-permission-fit","route":"/research/research-aug13-access-permission-fit"},
+    {"slug":"research-aug13-handoff-retrieval-test","route":"/research/research-aug13-handoff-retrieval-test"},
+    {"slug":"research-aug13-scope-reversal-readiness","route":"/research/research-aug13-scope-reversal-readiness"}
   ]
 }
