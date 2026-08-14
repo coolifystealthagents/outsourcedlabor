@@ -8,15 +8,15 @@
   "branch": "main",
   "requiredCount": 10,
   "entries": [
-    {"slug":"research-aug13-case-mix-stability","route":"/research/research-aug13-case-mix-stability"},
-    {"slug":"research-aug13-input-completeness","route":"/research/research-aug13-input-completeness"},
-    {"slug":"research-aug13-rework-signals","route":"/research/research-aug13-rework-signals"},
-    {"slug":"research-aug13-owner-decision-latency","route":"/research/research-aug13-owner-decision-latency"},
-    {"slug":"research-aug13-record-provenance","route":"/research/research-aug13-record-provenance"},
-    {"slug":"research-aug13-exception-severity","route":"/research/research-aug13-exception-severity"},
-    {"slug":"research-aug13-supervision-load","route":"/research/research-aug13-supervision-load"},
-    {"slug":"research-aug13-access-scope-fit","route":"/research/research-aug13-access-scope-fit"},
-    {"slug":"research-aug13-handoff-retrievability","route":"/research/research-aug13-handoff-retrievability"},
-    {"slug":"research-aug13-reversible-scope-change","route":"/research/research-aug13-reversible-scope-change"}
+    {"slug":"research-aug13-queue-volatility","route":"/research/research-aug13-queue-volatility"},
+    {"slug":"research-aug13-clarification-burden","route":"/research/research-aug13-clarification-burden"},
+    {"slug":"research-aug13-correction-cause","route":"/research/research-aug13-correction-cause"},
+    {"slug":"research-aug13-approval-aging","route":"/research/research-aug13-approval-aging"},
+    {"slug":"research-aug13-source-lineage","route":"/research/research-aug13-source-lineage"},
+    {"slug":"research-aug13-risk-consequence","route":"/research/research-aug13-risk-consequence"},
+    {"slug":"research-aug13-review-minutes","route":"/research/research-aug13-review-minutes"},
+    {"slug":"research-aug13-permission-alignment","route":"/research/research-aug13-permission-alignment"},
+    {"slug":"research-aug13-handoff-recovery","route":"/research/research-aug13-handoff-recovery"},
+    {"slug":"research-aug13-scope-rollback","route":"/research/research-aug13-scope-rollback"}
   ]
 }

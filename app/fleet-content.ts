@@ -210,7 +210,7 @@ export const fleetServices = [
     ]
   }
 ] as const;
-import { august13ResearchReplacements } from './research/aug13-research-replacements';
+import { august13ResearchReplacements } from './research/aug13-research-replacements-records';
 type ResearchPost = {slug:string;title:string;excerpt:string;published:string;body:readonly string[];image?:string;sources?:readonly {name:string;url:string}[];related?:readonly string[];cta?:string;headlineStat?:string;keyStats?:readonly string[];takeaways?:readonly string[];faqs?:readonly {q:string;a:string}[]};
 const baseResearchPosts: ReadonlyArray<ResearchPost> = [
   {
