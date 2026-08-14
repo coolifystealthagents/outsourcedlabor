@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "contract": "sites3-aug14-creation-v1",
+  "targetDate": "2026-08-14",
+  "family": "research",
+  "domain": "outsourcedlabor.com",
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "branch": "main",
+  "requiredCount": 10,
+  "entries": [
+    {"slug":"research-aug14-demand-seasonality","route":"/research/research-aug14-demand-seasonality"},
+    {"slug":"research-aug14-source-authority-mapping","route":"/research/research-aug14-source-authority-mapping"},
+    {"slug":"research-aug14-case-mix-drift","route":"/research/research-aug14-case-mix-drift"},
+    {"slug":"research-aug14-accuracy-denominator","route":"/research/research-aug14-accuracy-denominator"},
+    {"slug":"research-aug14-escalation-thresholds","route":"/research/research-aug14-escalation-thresholds"},
+    {"slug":"research-aug14-customer-record-freshness","route":"/research/research-aug14-customer-record-freshness"},
+    {"slug":"research-aug14-review-sample-design","route":"/research/research-aug14-review-sample-design"},
+    {"slug":"research-aug14-reversible-scope-pilot","route":"/research/research-aug14-reversible-scope-pilot"},
+    {"slug":"research-aug14-continuity-dependency-map","route":"/research/research-aug14-continuity-dependency-map"},
+    {"slug":"research-aug14-work-instruction-ambiguity","route":"/research/research-aug14-work-instruction-ambiguity"}
+  ]
+}
