@@ -8,15 +8,15 @@
   "branch": "main",
   "requiredCount": 10,
   "entries": [
-    {"slug":"research-aug13-queue-variability","route":"/research/research-aug13-queue-variability"},
-    {"slug":"research-aug13-approval-boundaries","route":"/research/research-aug13-approval-boundaries"},
-    {"slug":"research-aug13-supervised-transfer","route":"/research/research-aug13-supervised-transfer"},
-    {"slug":"research-aug13-handoff-completeness","route":"/research/research-aug13-handoff-completeness"},
-    {"slug":"research-aug13-source-dependency","route":"/research/research-aug13-source-dependency"},
-    {"slug":"research-aug13-error-impact","route":"/research/research-aug13-error-impact"},
-    {"slug":"research-aug13-completion-evidence","route":"/research/research-aug13-completion-evidence"},
-    {"slug":"research-aug13-review-allocation","route":"/research/research-aug13-review-allocation"},
-    {"slug":"research-aug13-recovery-readiness","route":"/research/research-aug13-recovery-readiness"},
-    {"slug":"research-aug13-scope-thresholds","route":"/research/research-aug13-scope-thresholds"}
+    {"slug":"research-aug13-case-mix-stability","route":"/research/research-aug13-case-mix-stability"},
+    {"slug":"research-aug13-input-completeness","route":"/research/research-aug13-input-completeness"},
+    {"slug":"research-aug13-rework-signals","route":"/research/research-aug13-rework-signals"},
+    {"slug":"research-aug13-owner-decision-latency","route":"/research/research-aug13-owner-decision-latency"},
+    {"slug":"research-aug13-record-provenance","route":"/research/research-aug13-record-provenance"},
+    {"slug":"research-aug13-exception-severity","route":"/research/research-aug13-exception-severity"},
+    {"slug":"research-aug13-supervision-load","route":"/research/research-aug13-supervision-load"},
+    {"slug":"research-aug13-access-scope-fit","route":"/research/research-aug13-access-scope-fit"},
+    {"slug":"research-aug13-handoff-retrievability","route":"/research/research-aug13-handoff-retrievability"},
+    {"slug":"research-aug13-reversible-scope-change","route":"/research/research-aug13-reversible-scope-change"}
   ]
 }
