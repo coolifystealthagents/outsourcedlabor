@@ -4,7 +4,7 @@ import path from 'node:path';
 const root = process.cwd();
 const manifest = JSON.parse(fs.readFileSync(path.join(root, '.paperclip/aug13-2026/blog.json'), 'utf8'));
 const source = fs.readFileSync(path.join(root, 'app/data.ts'), 'utf8');
-const recordSource = fs.readFileSync(path.join(root, 'app/blog/aug13-verified.tsx'), 'utf8');
+const recordSource = fs.readFileSync(path.join(root, 'app/blog/aug13-blog-records.ts'), 'utf8');
 const listing = fs.readFileSync(path.join(root, 'app/blog/blog-listing.tsx'), 'utf8');
 const route = fs.readFileSync(path.join(root, 'app/blog/[slug]/page.tsx'), 'utf8');
 const sitemap = fs.readFileSync(path.join(root, 'app/sitemap.xml/route.ts'), 'utf8');
