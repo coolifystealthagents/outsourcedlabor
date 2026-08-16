@@ -212,7 +212,7 @@ export const fleetServices = [
 ] as const;
 import { august13ResearchReplacements } from './research/aug13-research-replacements-records';
 import { august14ResearchRecords } from './research/aug14-research-records';
-type ResearchPost = {slug:string;title:string;excerpt:string;published:string;body:readonly string[];image?:string;sources?:readonly {name:string;url:string}[];related?:readonly string[];cta?:string;headlineStat?:string;keyStats?:readonly string[];takeaways?:readonly string[];faqs?:readonly {q:string;a:string}[]};
+type ResearchPost = {slug:string;title:string;excerpt:string;published:string;body:readonly string[];image?:string;sources?:readonly {name:string;url:string}[];related?:readonly string[];cta?:string;service?:{href:string;heading:string;body:string;label:string};headlineStat?:string;keyStats?:readonly string[];takeaways?:readonly string[];faqs?:readonly {q:string;a:string}[]};
 const baseResearchPosts: ReadonlyArray<ResearchPost> = [
   {
     slug: 'daily-research-workflow-for-outsourced-operations',

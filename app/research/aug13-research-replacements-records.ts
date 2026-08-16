@@ -8,6 +8,7 @@ type ResearchReplacement = {
   sources: readonly { name: string; url: string }[];
   related: readonly string[];
   cta: string;
+  service?: { href: string; heading: string; body: string; label: string };
   headlineStat?: string;
   keyStats?: readonly string[];
   takeaways?: readonly string[];
