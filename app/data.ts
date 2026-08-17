@@ -1,5 +1,6 @@
 import { august13BlogDetails, august13BlogPosts } from './blog/aug13-blog-records';
 import { august14BlogDetails, august14BlogPosts } from './blog/aug14-blog-records';
+import { august17BlogDetails, august17BlogPosts } from './blog/aug17-blog-records';
 
 export const site = {
   "domain": "OutsourcedLabor.com",
@@ -192,6 +193,7 @@ const allBlogPosts = [
   { slug: 'philippines-remote-staff-holiday-coverage', title: 'Plan holiday coverage for Philippines remote staff', excerpt: 'Protect recurring work with coverage owners, queue notes, escalation rules, and a clean return handoff.', minutes: 9 },
   ...august13BlogPosts,
   ...august14BlogPosts,
+  ...august17BlogPosts,
 ] as const;
 
 const aug10BlogSlugs = new Set([
@@ -224,13 +226,14 @@ const aug11BlogSlugs = new Set([
 ]);
 const aug13BlogSlugs: Set<string> = new Set(august13BlogPosts.map((post) => post.slug));
 const aug14BlogSlugs: Set<string> = new Set(august14BlogPosts.map((post) => post.slug));
+const aug17BlogSlugs: Set<string> = new Set(august17BlogPosts.map((post) => post.slug));
 
 const retiredAug13BlogSlugs = new Set([
   'philippines-outsourced-order-reconciliation','filipino-support-sla-expectations','outsourced-labor-knowledge-base-audit','philippines-admin-file-naming','filipino-ecommerce-shipping-status','outsourced-labor-manager-review-notes','philippines-remote-staff-timezone-planning','filipino-bookkeeping-receipt-index','outsourced-labor-work-handoff-template','philippines-crm-contact-deduplication','filipino-admin-approval-tracker','outsourced-labor-customer-commitment-log','philippines-vendor-onboarding-support','filipino-calendar-conflict-review','outsourced-labor-blocked-task-review','philippines-support-refund-evidence','filipino-operations-incident-notes','outsourced-labor-permission-change-log','philippines-admin-payment-support-boundaries','filipino-customer-complaint-triage','outsourced-labor-role-expansion-test','philippines-remote-staff-holiday-coverage',
 ]);
 
 export const blogPosts = [...allBlogPosts].filter((post) => !retiredAug13BlogSlugs.has(post.slug)).sort((a, b) => {
-  const batchRank = (slug: string) => aug14BlogSlugs.has(slug) ? 4 : aug13BlogSlugs.has(slug) ? 3 : aug11BlogSlugs.has(slug) ? 2 : aug10BlogSlugs.has(slug) ? 1 : 0;
+  const batchRank = (slug: string) => aug17BlogSlugs.has(slug) ? 5 : aug14BlogSlugs.has(slug) ? 4 : aug13BlogSlugs.has(slug) ? 3 : aug11BlogSlugs.has(slug) ? 2 : aug10BlogSlugs.has(slug) ? 1 : 0;
   return batchRank(b.slug) - batchRank(a.slug) || a.slug.localeCompare(b.slug);
 });
 
@@ -504,7 +507,7 @@ const replacementDetail = (topic: string, phrase: string, source: { name: string
   sources: [source], related: ['outsourced-labor-planning', 'philippines-operations-support-sop'],
 });
 
-export const blogDetails = { ...baseBlogDetails, ...batchDetails, ...nextBatchDetails, ...aug11Details, ...aug13Details, ...august13BlogDetails, ...august14BlogDetails } as const;
+export const blogDetails = { ...baseBlogDetails, ...batchDetails, ...nextBatchDetails, ...aug11Details, ...aug13Details, ...august13BlogDetails, ...august14BlogDetails, ...august17BlogDetails } as const;
 
 export const stats = [{label:'First work lane',value:'One queue',note:'a visible input and finish line make review easier'},{label:'Pilot review',value:'Daily',note:'reduce checks only after the work is steady'},{label:'Decision line',value:'Written',note:'money, policy, access, and customer promises stay controlled'}] as const;
 
