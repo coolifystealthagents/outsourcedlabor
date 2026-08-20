@@ -1,12 +1,25 @@
-[
-  {"route":"/research/research-aug19-article-brief-evidence-fit","sourcePaths":["app/research/aug19-research-records.ts"]},
-  {"route":"/research/research-aug19-source-authority-for-outsourced-articles","sourcePaths":["app/research/aug19-research-records.ts"]},
-  {"route":"/research/research-aug19-remote-research-handoff-integrity","sourcePaths":["app/research/aug19-research-records.ts"]},
-  {"route":"/research/research-aug19-claim-revision-traceability","sourcePaths":["app/research/aug19-research-records.ts"]},
-  {"route":"/research/research-aug19-research-queue-age-and-freshness","sourcePaths":["app/research/aug19-research-records.ts"]},
-  {"route":"/research/research-aug19-article-review-capacity","sourcePaths":["app/research/aug19-research-records.ts"]},
-  {"route":"/research/research-aug19-article-exception-routing","sourcePaths":["app/research/aug19-research-records.ts"]},
-  {"route":"/research/research-aug19-research-access-minimization","sourcePaths":["app/research/aug19-research-records.ts"]},
-  {"route":"/research/research-aug19-evidence-scope-for-staffing-claims","sourcePaths":["app/research/aug19-research-records.ts"]},
-  {"route":"/research/research-aug19-research-recovery-after-source-change","sourcePaths":["app/research/aug19-research-records.ts"]}
-]
+{
+  "date": "2026-08-19",
+  "articles": [
+    {
+      "route": "/research/workforce-operations-source-quality-evidence-research",
+      "source": "content/research/workforce-operations-source-quality-evidence-research.md"
+    },
+    {
+      "route": "/research/workforce-operations-exception-aging-patterns-research",
+      "source": "content/research/workforce-operations-exception-aging-patterns-research.md"
+    },
+    {
+      "route": "/research/workforce-operations-review-consistency-research",
+      "source": "content/research/workforce-operations-review-consistency-research.md"
+    },
+    {
+      "route": "/research/workforce-operations-access-governance-research",
+      "source": "content/research/workforce-operations-access-governance-research.md"
+    },
+    {
+      "route": "/research/workforce-operations-handoff-reliability-research",
+      "source": "content/research/workforce-operations-handoff-reliability-research.md"
+    }
+  ]
+}

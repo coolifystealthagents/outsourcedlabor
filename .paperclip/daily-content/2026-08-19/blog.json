@@ -1,29 +1,53 @@
 {
-  "campaignDate": "2026-08-19",
-  "family": "blog",
-  "requiredCount": 22,
-  "entries": [
-    {"slug":"filipino-article-metadata-checklist","route":"/blog/filipino-article-metadata-checklist","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"filipino-article-status-notes","route":"/blog/filipino-article-status-notes","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"filipino-content-fact-check-handoff","route":"/blog/filipino-content-fact-check-handoff","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"filipino-content-performance-notes","route":"/blog/filipino-content-performance-notes","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"filipino-content-refresh-triggers","route":"/blog/filipino-content-refresh-triggers","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"filipino-daily-editorial-queue","route":"/blog/filipino-daily-editorial-queue","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"filipino-editorial-exception-register","route":"/blog/filipino-editorial-exception-register","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"outsourced-article-acceptance-standard","route":"/blog/outsourced-article-acceptance-standard","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"outsourced-article-revision-log","route":"/blog/outsourced-article-revision-log","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"outsourced-blog-claim-boundaries","route":"/blog/outsourced-blog-claim-boundaries","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"outsourced-blog-publishing-readiness","route":"/blog/outsourced-blog-publishing-readiness","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"outsourced-content-duplicate-review","route":"/blog/outsourced-content-duplicate-review","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"outsourced-content-internal-link-map","route":"/blog/outsourced-content-internal-link-map","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"outsourced-content-source-register","route":"/blog/outsourced-content-source-register","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"philippines-article-brief-qa","route":"/blog/philippines-article-brief-qa","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"philippines-article-example-library","route":"/blog/philippines-article-example-library","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"philippines-article-outline-review","route":"/blog/philippines-article-outline-review","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"philippines-content-backlog-triage","route":"/blog/philippines-content-backlog-triage","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"philippines-content-calendar-dependencies","route":"/blog/philippines-content-calendar-dependencies","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"philippines-content-review-calendar","route":"/blog/philippines-content-review-calendar","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"philippines-editorial-approval-lane","route":"/blog/philippines-editorial-approval-lane","sourcePaths":["app/blog/aug19-blog-records.ts"]},
-    {"slug":"philippines-research-question-bank","route":"/blog/philippines-research-question-bank","sourcePaths":["app/blog/aug19-blog-records.ts"]}
+  "date": "2026-08-19",
+  "articles": [
+    {
+      "route": "/blog/workforce-operations-intake-source-register",
+      "source": "content/blog/workforce-operations-intake-source-register.md"
+    },
+    {
+      "route": "/blog/workforce-operations-approval-evidence-matrix",
+      "source": "content/blog/workforce-operations-approval-evidence-matrix.md"
+    },
+    {
+      "route": "/blog/workforce-operations-exception-queue-triage",
+      "source": "content/blog/workforce-operations-exception-queue-triage.md"
+    },
+    {
+      "route": "/blog/workforce-operations-quality-review-cadence",
+      "source": "content/blog/workforce-operations-quality-review-cadence.md"
+    },
+    {
+      "route": "/blog/workforce-operations-handoff-acceptance-log",
+      "source": "content/blog/workforce-operations-handoff-acceptance-log.md"
+    },
+    {
+      "route": "/blog/workforce-operations-access-recertification-review",
+      "source": "content/blog/workforce-operations-access-recertification-review.md"
+    },
+    {
+      "route": "/blog/workforce-operations-weekly-decision-brief",
+      "source": "content/blog/workforce-operations-weekly-decision-brief.md"
+    },
+    {
+      "route": "/blog/workforce-operations-source-of-truth-map",
+      "source": "content/blog/workforce-operations-source-of-truth-map.md"
+    },
+    {
+      "route": "/blog/workforce-operations-change-control-record",
+      "source": "content/blog/workforce-operations-change-control-record.md"
+    },
+    {
+      "route": "/blog/workforce-operations-work-queue-ownership",
+      "source": "content/blog/workforce-operations-work-queue-ownership.md"
+    },
+    {
+      "route": "/blog/workforce-operations-escalation-path-design",
+      "source": "content/blog/workforce-operations-escalation-path-design.md"
+    },
+    {
+      "route": "/blog/workforce-operations-launch-readiness-review",
+      "source": "content/blog/workforce-operations-launch-readiness-review.md"
+    }
   ]
 }
