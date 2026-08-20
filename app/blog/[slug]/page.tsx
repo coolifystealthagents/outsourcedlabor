@@ -39,6 +39,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 type BlogDetail = (typeof blogDetails)[keyof typeof blogDetails];
 
+const serviceHandoffs: Record<string, { href: string; label: string; copy: string }> = {
+  'philippines-operations-support-sop': {
+    href: '/services/sop-documentation',
+    label: 'SOP documentation support',
+    copy: 'If your team has chosen the first queue but still needs the instructions written down,',
+  },
+};
+
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   if (slug === continuitySlug) return <PhilippinesContinuityArticle />;
@@ -49,6 +57,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const postUrl = `${baseUrl}/blog/${post.slug}`;
   const relatedSlugs = ((detail as (BlogDetail & { related?: string[] }) | undefined)?.related || blogPosts.filter((item) => item.slug !== post.slug).slice(0, 3).map((item) => item.slug)).slice(0, 3);
   const bodyLinks = relatedSlugs.slice(0, 2).map((relatedSlug) => blogPosts.find((item) => item.slug === relatedSlug)).filter(Boolean);
+  const serviceHandoff = serviceHandoffs[post.slug];
 
   if (!detail) {
     return (
@@ -167,6 +176,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                 {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </section>
             ))}
+            {serviceHandoff ? <p>{serviceHandoff.copy} <a href={serviceHandoff.href}>{serviceHandoff.label}</a> can turn approved examples, decision lines, and review rules into a draft your manager can check. The manager still owns exceptions and final approval.</p> : null}
             <p>For the next step, compare this workflow with <a href={`/blog/${bodyLinks[0]?.slug}`}>{bodyLinks[0]?.title || 'the role planning guide'}</a> and <a href={`/blog/${bodyLinks[1]?.slug}`}>{bodyLinks[1]?.title || 'the operations guide'}</a>. For access and oversight, use the <a href={detail.sources[0].url} target="_blank" rel="noreferrer">authoritative planning reference</a> alongside your own policy.</p>
           </div>
 
