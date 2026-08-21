@@ -178,4 +178,4 @@ Evidence-led conclusion for the route dated 2026-08-21: expand an outsourced art
 ]}
 ];
 
-export const august21ResearchRecords: readonly Record[] = august21ResearchRecordsBase.map((record) => record.slug === 'research-philippines-article-queue-capacity-vs-demand' ? {...record, body:[queueCapacityRouteRepair]} : record);
+export const august21ResearchRecords: readonly Record[] = august21ResearchRecordsBase;
