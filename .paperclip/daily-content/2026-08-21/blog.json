@@ -1,0 +1,18 @@
+{
+  "campaignDate": "2026-08-21",
+  "family": "blog",
+  "entries": [
+    {"slug":"filipino-vendor-follow-up-evidence","route":"/blog/filipino-vendor-follow-up-evidence","sourcePaths":["app/aug21-content.tsx"],"hero":"/aug21-heroes/filipino-vendor-follow-up-evidence.png"},
+    {"slug":"outsourced-labor-intake-ready-criteria","route":"/blog/outsourced-labor-intake-ready-criteria","sourcePaths":["app/aug21-content.tsx"],"hero":"/aug21-heroes/outsourced-labor-intake-criteria.png"},
+    {"slug":"philippines-remote-sop-observation-loop","route":"/blog/philippines-remote-sop-observation-loop","sourcePaths":["app/aug21-content.tsx"],"hero":"/aug21-heroes/philippines-remote-sop-observation-loop.png"},
+    {"slug":"filipino-queue-aging-review","route":"/blog/filipino-queue-aging-review","sourcePaths":["app/aug21-content.tsx"],"hero":"/aug21-heroes/filipino-queue-aging-review.png"},
+    {"slug":"philippines-admin-source-verification","route":"/blog/philippines-admin-source-verification","sourcePaths":["app/aug21-content.tsx"],"hero":"/aug21-heroes/philippines-admin-source-check.png"},
+    {"slug":"outsourced-labor-access-review-routine","route":"/blog/outsourced-labor-access-review-routine","sourcePaths":["app/aug21-content.tsx"],"hero":"/aug21-heroes/outsourced-labor-access-review.png"},
+    {"slug":"filipino-customer-escalation-evidence","route":"/blog/filipino-customer-escalation-evidence","sourcePaths":["app/aug21-content.tsx"],"hero":"/aug21-heroes/filipino-customer-escalation.png"},
+    {"slug":"philippines-content-handoff-acceptance","route":"/blog/philippines-content-handoff-acceptance","sourcePaths":["app/aug21-content.tsx"],"hero":"/aug21-heroes/philippines-content-handoff.png"},
+    {"slug":"outsourced-labor-quality-sample-design","route":"/blog/outsourced-labor-quality-sample-design","sourcePaths":["app/aug21-content.tsx"],"hero":"/aug21-heroes/outsourced-labor-quality-sample.png"},
+    {"slug":"filipino-workload-capacity-plan","route":"/blog/filipino-workload-capacity-plan","sourcePaths":["app/aug21-content.tsx"],"hero":"/aug21-heroes/filipino-workload-capacity.png"},
+    {"slug":"philippines-absence-coverage-handoff","route":"/blog/philippines-absence-coverage-handoff","sourcePaths":["app/aug21-content.tsx"],"hero":"/aug21-heroes/philippines-absence-coverage.png"},
+    {"slug":"outsourced-labor-role-expansion-pilot","route":"/blog/outsourced-labor-role-expansion-pilot","sourcePaths":["app/aug21-content.tsx"],"hero":"/aug21-heroes/outsourced-labor-role-expansion.png"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "generator": "built-in image_gen",
+  "style": "wide editorial productivity illustration; charcoal, muted orange, cream, slate blue; no logos, readable text, watermark, stock-photo appearance, flags, or stereotypes",
+  "receipts": [
+    {"route":"/blog/filipino-vendor-follow-up-evidence","image":"/aug21-heroes/filipino-vendor-follow-up-evidence.png","prompt":"Filipino operations coordinator reviewing an approval-boundary task board in a calm operations workspace."},
+    {"route":"/blog/outsourced-labor-intake-ready-criteria","image":"/aug21-heroes/outsourced-labor-intake-criteria.png","prompt":"Filipino operations coordinator sorting an intake tray into ready, missing-input, and owner-decision lanes."},
+    {"route":"/blog/philippines-remote-sop-observation-loop","image":"/aug21-heroes/philippines-remote-sop-observation-loop.png","prompt":"Remote Filipino staff member comparing a live workflow with a step-by-step SOP on a desk board."},
+    {"route":"/blog/filipino-queue-aging-review","image":"/aug21-heroes/filipino-queue-aging-review.png","prompt":"Filipino team lead examining a queue timeline with aging work highlighted and a next-action marker."},
+    {"route":"/blog/philippines-admin-source-verification","image":"/aug21-heroes/philippines-admin-source-check.png","prompt":"Filipino admin specialist cross-checking two records with a source card and verification marker."},
+    {"route":"/blog/outsourced-labor-access-review-routine","image":"/aug21-heroes/outsourced-labor-access-review.png","prompt":"Filipino operations professional reviewing permission keys beside a locked archive and role checklist."},
+    {"route":"/blog/filipino-customer-escalation-evidence","image":"/aug21-heroes/filipino-customer-escalation.png","prompt":"Filipino customer support specialist routing a complex case from response lane to manager decision lane."},
+    {"route":"/blog/philippines-content-handoff-acceptance","image":"/aug21-heroes/philippines-content-handoff.png","prompt":"Filipino article contributor handing structured notes to an editor across an abstract time-zone window."},
+    {"route":"/blog/outsourced-labor-quality-sample-design","image":"/aug21-heroes/outsourced-labor-quality-sample.png","prompt":"Filipino QA reviewer sampling completed work cards from a larger queue with a magnifying-glass motif."},
+    {"route":"/blog/filipino-workload-capacity-plan","image":"/aug21-heroes/filipino-workload-capacity.png","prompt":"Filipino operations manager balancing incoming task cards, available hours, and review capacity."},
+    {"route":"/blog/philippines-absence-coverage-handoff","image":"/aug21-heroes/philippines-absence-coverage.png","prompt":"Filipino team member preparing a backup coverage board with active lane, substitute owner, and return handoff."},
+    {"route":"/blog/outsourced-labor-role-expansion-pilot","image":"/aug21-heroes/outsourced-labor-role-expansion.png","prompt":"Filipino manager testing a new work lane with a small pilot board, evidence notes, and a stop boundary."}
+  ]
+}

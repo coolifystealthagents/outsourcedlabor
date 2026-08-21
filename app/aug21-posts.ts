@@ -1,0 +1,14 @@
+export const aug21Posts = [
+  {slug:'filipino-vendor-follow-up-evidence',title:'Build vendor follow-up evidence for Filipino staff',excerpt:'Keep vendor questions moving with verified context, promised replies, and a clear owner for exceptions.',minutes:14},
+  {slug:'outsourced-labor-intake-ready-criteria',title:'Set intake-ready criteria for outsourced labor work',excerpt:'Decide whether a recurring outsourced labor request is ready for a Filipino specialist to begin.',minutes:14},
+  {slug:'philippines-remote-sop-observation-loop',title:'Build an observation loop for Philippines remote SOPs',excerpt:'Use observed work to improve a Philippines-based SOP without turning every exception into a confusing rewrite.',minutes:14},
+  {slug:'filipino-queue-aging-review',title:'Review queue age with Filipino operations staff',excerpt:'Use queue age to find blocked or mis-scoped work without rewarding rushed completion.',minutes:14},
+  {slug:'philippines-admin-source-verification',title:'Add source verification to Philippines admin support',excerpt:'Make administrative updates traceable when a remote specialist works from more than one record.',minutes:14},
+  {slug:'outsourced-labor-access-review-routine',title:'Run an access review for outsourced labor roles',excerpt:'Keep tool access aligned with the current work lane as outsourced responsibilities change.',minutes:14},
+  {slug:'filipino-customer-escalation-evidence',title:'Prepare customer escalation evidence with Filipino support staff',excerpt:'Give Filipino support staff a safe way to assemble facts before a sensitive customer decision.',minutes:14},
+  {slug:'philippines-content-handoff-acceptance',title:'Design a Philippines content handoff acceptance check',excerpt:'Move an article from a Philippines-based contributor to an editor with source context and role boundaries intact.',minutes:14},
+  {slug:'outsourced-labor-quality-sample-design',title:'Design quality samples for outsourced labor work',excerpt:'Choose a useful sample of completed work so Filipino staff and managers can see quality patterns early.',minutes:14},
+  {slug:'filipino-workload-capacity-plan',title:'Plan workload capacity for Filipino operations staff',excerpt:'Match incoming work, available hours, review time, and exceptions before expanding a remote work lane.',minutes:14},
+  {slug:'philippines-absence-coverage-handoff',title:'Create an absence coverage handoff for Philippines staff',excerpt:'Protect recurring work when a Philippines-based specialist is unavailable without sharing uncontrolled access.',minutes:14},
+  {slug:'outsourced-labor-role-expansion-pilot',title:'Test a role expansion pilot for outsourced labor',excerpt:'Use a bounded pilot to decide whether a Filipino specialist is ready to take on a new recurring work lane.',minutes:14}
+] as const;
