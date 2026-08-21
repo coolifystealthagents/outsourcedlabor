@@ -196,6 +196,18 @@ const allBlogPosts = [
   ...august14BlogPosts,
   ...august17BlogPosts,
   ...august19BlogPosts,
+  { slug: 'outsourced-labor-daily-article-briefing', title: 'Run a daily article briefing for outsourced content teams', excerpt: 'A practical daily briefing routine for keeping Philippines-based article work focused, sourced, and reviewable.', minutes: 12 },
+  { slug: 'philippines-content-source-freshness', title: 'Keep source freshness visible in Philippines content research', excerpt: 'How content teams can track source age, change risk, and review triggers without making unsupported freshness claims.', minutes: 12 },
+  { slug: 'filipino-writer-feedback-loop', title: 'Build a useful feedback loop with Filipino article writers', excerpt: 'A practical way to make article feedback specific, teachable, and connected to the reader’s decision.', minutes: 12 },
+  { slug: 'outsourced-blog-research-queue', title: 'Design a research queue for outsourced blog production', excerpt: 'How to route blog research from question to usable evidence while keeping the site’s Philippines staffing niche central.', minutes: 12 },
+  { slug: 'philippines-article-refresh-review', title: 'Run a refresh review for Philippines staffing articles', excerpt: 'A bounded review method for updating guidance when sources, workflows, or reader questions change.', minutes: 12 },
+  { slug: 'filipino-content-escalation-map', title: 'Map escalation paths for Filipino content support', excerpt: 'How to show writers and researchers when routine article work must move to an accountable owner.', minutes: 12 },
+  { slug: 'outsourced-labor-content-brief-archive', title: 'Create an archive that makes outsourced content briefs reusable', excerpt: 'How to preserve useful editorial decisions without copying old articles or flattening distinct reader questions.', minutes: 12 },
+  { slug: 'philippines-blog-reader-intent', title: 'Translate reader intent into Philippines staffing guidance', excerpt: 'A practical method for turning a search question into an article that helps a staffing decision.', minutes: 12 },
+  { slug: 'filipino-article-proof-boundaries', title: 'Set proof boundaries for Filipino article production', excerpt: 'How to keep useful guidance separate from unsupported claims when remote content staff prepare public articles.', minutes: 12 },
+  { slug: 'outsourced-content-handoff-window', title: 'Design a clean handoff window for outsourced content', excerpt: 'How to move article work between time zones without losing source context, decision ownership, or publication readiness.', minutes: 12 },
+  { slug: 'philippines-content-calendar-recovery', title: 'Recover a Philippines content calendar after a delay', excerpt: 'How to restore an article routine after missed dates without hiding risk or rewriting publication history.', minutes: 12 },
+  { slug: 'outsourced-labor-editorial-retrospective', title: 'Run an editorial retrospective for outsourced labor content', excerpt: 'A practical retrospective for improving recurring article work while keeping decisions, evidence, and role boundaries visible.', minutes: 12 },
 ] as const;
 
 const aug10BlogSlugs = new Set([
@@ -230,13 +242,14 @@ const aug13BlogSlugs: Set<string> = new Set(august13BlogPosts.map((post) => post
 const aug14BlogSlugs: Set<string> = new Set(august14BlogPosts.map((post) => post.slug));
 const aug17BlogSlugs: Set<string> = new Set(august17BlogPosts.map((post) => post.slug));
 const aug19BlogSlugs: Set<string> = new Set(august19BlogPosts.map((post) => post.slug));
+const aug20BlogSlugs: Set<string> = new Set(['outsourced-labor-daily-article-briefing','philippines-content-source-freshness','filipino-writer-feedback-loop','outsourced-blog-research-queue','philippines-article-refresh-review','filipino-content-escalation-map','outsourced-labor-content-brief-archive','philippines-blog-reader-intent','filipino-article-proof-boundaries','outsourced-content-handoff-window','philippines-content-calendar-recovery','outsourced-labor-editorial-retrospective']);
 
 const retiredAug13BlogSlugs = new Set([
   'philippines-outsourced-order-reconciliation','filipino-support-sla-expectations','outsourced-labor-knowledge-base-audit','philippines-admin-file-naming','filipino-ecommerce-shipping-status','outsourced-labor-manager-review-notes','philippines-remote-staff-timezone-planning','filipino-bookkeeping-receipt-index','outsourced-labor-work-handoff-template','philippines-crm-contact-deduplication','filipino-admin-approval-tracker','outsourced-labor-customer-commitment-log','philippines-vendor-onboarding-support','filipino-calendar-conflict-review','outsourced-labor-blocked-task-review','philippines-support-refund-evidence','filipino-operations-incident-notes','outsourced-labor-permission-change-log','philippines-admin-payment-support-boundaries','filipino-customer-complaint-triage','outsourced-labor-role-expansion-test','philippines-remote-staff-holiday-coverage',
 ]);
 
 export const blogPosts = [...allBlogPosts].filter((post) => !retiredAug13BlogSlugs.has(post.slug)).sort((a, b) => {
-  const batchRank = (slug: string) => aug19BlogSlugs.has(slug) ? 6 : aug17BlogSlugs.has(slug) ? 5 : aug14BlogSlugs.has(slug) ? 4 : aug13BlogSlugs.has(slug) ? 3 : aug11BlogSlugs.has(slug) ? 2 : aug10BlogSlugs.has(slug) ? 1 : 0;
+  const batchRank = (slug: string) => aug20BlogSlugs.has(slug) ? 7 : aug19BlogSlugs.has(slug) ? 6 : aug17BlogSlugs.has(slug) ? 5 : aug14BlogSlugs.has(slug) ? 4 : aug13BlogSlugs.has(slug) ? 3 : aug11BlogSlugs.has(slug) ? 2 : aug10BlogSlugs.has(slug) ? 1 : 0;
   return batchRank(b.slug) - batchRank(a.slug) || a.slug.localeCompare(b.slug);
 });
 

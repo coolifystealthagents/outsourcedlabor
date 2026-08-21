@@ -1,0 +1,18 @@
+{
+  "campaignDate": "2026-08-20",
+  "family": "blog",
+  "entries": [
+    {"slug":"outsourced-labor-daily-article-briefing","route":"/blog/outsourced-labor-daily-article-briefing","sourcePaths":["app/blog/outsourced-labor-daily-article-briefing/page.tsx","app/aug20-content.tsx"],"image":"/aug20-heroes/outsourced-labor-daily-article-briefing.png"},
+    {"slug":"philippines-content-source-freshness","route":"/blog/philippines-content-source-freshness","sourcePaths":["app/blog/philippines-content-source-freshness/page.tsx","app/aug20-content.tsx"],"image":"/aug20-heroes/philippines-content-source-freshness.png"},
+    {"slug":"filipino-writer-feedback-loop","route":"/blog/filipino-writer-feedback-loop","sourcePaths":["app/blog/filipino-writer-feedback-loop/page.tsx","app/aug20-content.tsx"],"image":"/aug20-heroes/filipino-writer-feedback-loop.png"},
+    {"slug":"outsourced-blog-research-queue","route":"/blog/outsourced-blog-research-queue","sourcePaths":["app/blog/outsourced-blog-research-queue/page.tsx","app/aug20-content.tsx"],"image":"/aug20-heroes/outsourced-blog-research-queue.png"},
+    {"slug":"philippines-article-refresh-review","route":"/blog/philippines-article-refresh-review","sourcePaths":["app/blog/philippines-article-refresh-review/page.tsx","app/aug20-content.tsx"],"image":"/aug20-heroes/philippines-article-refresh-review.png"},
+    {"slug":"filipino-content-escalation-map","route":"/blog/filipino-content-escalation-map","sourcePaths":["app/blog/filipino-content-escalation-map/page.tsx","app/aug20-content.tsx"],"image":"/aug20-heroes/filipino-content-escalation-map.png"},
+    {"slug":"outsourced-labor-content-brief-archive","route":"/blog/outsourced-labor-content-brief-archive","sourcePaths":["app/blog/outsourced-labor-content-brief-archive/page.tsx","app/aug20-content.tsx"],"image":"/aug20-heroes/outsourced-labor-content-brief-archive.png"},
+    {"slug":"philippines-blog-reader-intent","route":"/blog/philippines-blog-reader-intent","sourcePaths":["app/blog/philippines-blog-reader-intent/page.tsx","app/aug20-content.tsx"],"image":"/aug20-heroes/philippines-blog-reader-intent.png"},
+    {"slug":"filipino-article-proof-boundaries","route":"/blog/filipino-article-proof-boundaries","sourcePaths":["app/blog/filipino-article-proof-boundaries/page.tsx","app/aug20-content.tsx"],"image":"/aug20-heroes/filipino-article-proof-boundaries.png"},
+    {"slug":"outsourced-content-handoff-window","route":"/blog/outsourced-content-handoff-window","sourcePaths":["app/blog/outsourced-content-handoff-window/page.tsx","app/aug20-content.tsx"],"image":"/aug20-heroes/outsourced-content-handoff-window.png"},
+    {"slug":"philippines-content-calendar-recovery","route":"/blog/philippines-content-calendar-recovery","sourcePaths":["app/blog/philippines-content-calendar-recovery/page.tsx","app/aug20-content.tsx"],"image":"/aug20-heroes/philippines-content-calendar-recovery.png"},
+    {"slug":"outsourced-labor-editorial-retrospective","route":"/blog/outsourced-labor-editorial-retrospective","sourcePaths":["app/blog/outsourced-labor-editorial-retrospective/page.tsx","app/aug20-content.tsx"],"image":"/aug20-heroes/outsourced-labor-editorial-retrospective.png"}
+  ]
+}

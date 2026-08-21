@@ -1,0 +1,1 @@
+import { getAug20Metadata, renderAug20Article } from '../../aug20-content'; export const generateMetadata=async()=>getAug20Metadata('philippines-content-source-freshness'); export default function Page(){return renderAug20Article('philippines-content-source-freshness')}
