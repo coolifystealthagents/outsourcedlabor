@@ -1,0 +1,7 @@
+[
+  {"slug":"research-philippines-article-source-outage-recovery","route":"/research/research-philippines-article-source-outage-recovery","sourcePaths":["app/research/aug21-research-records.ts"]},
+  {"slug":"research-outsourced-article-review-capacity-allocation","route":"/research/research-outsourced-article-review-capacity-allocation","sourcePaths":["app/research/aug21-research-records.ts"]},
+  {"slug":"research-philippines-outsourced-article-pause-decisions","route":"/research/research-philippines-outsourced-article-pause-decisions","sourcePaths":["app/research/aug21-research-records.ts"]},
+  {"slug":"research-outsourced-content-review-consistency-without-rigid-scoring","route":"/research/research-outsourced-content-review-consistency-without-rigid-scoring","sourcePaths":["app/research/aug21-research-records.ts"]},
+  {"slug":"research-philippines-article-queue-capacity-vs-demand","route":"/research/research-philippines-article-queue-capacity-vs-demand","sourcePaths":["app/research/aug21-research-records.ts"]}
+]
