@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { CTA, Footer, Header, JsonLd } from '../../components';
 import { blogDetails, blogPosts, site } from '../../data';
+import { articles as aug20Articles, getAug20Metadata, renderAug20Article } from '../../aug20-content';
 import PhilippinesContinuityArticle, {
   continuityDescription,
   continuitySlug,
@@ -13,6 +14,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  if (aug20Articles[slug]) return getAug20Metadata(slug);
   if (slug === continuitySlug) {
     const canonical = `https://${site.domain.toLowerCase()}/blog/${continuitySlug}`;
     return {
@@ -49,6 +51,7 @@ const serviceHandoffs: Record<string, { href: string; label: string; copy: strin
 
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  if (aug20Articles[slug]) return renderAug20Article(slug);
   if (slug === continuitySlug) return <PhilippinesContinuityArticle />;
   const post = blogPosts.find((item) => item.slug === slug);
   if (!post) notFound();

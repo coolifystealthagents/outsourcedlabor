@@ -1,1 +1,1 @@
-import { getAug20Metadata, renderAug20Article } from '../../aug20-content'; export const generateMetadata=async()=>getAug20Metadata('filipino-content-escalation-map'); export default function Page(){return renderAug20Article('filipino-content-escalation-map')}
+import { getAug20Metadata, renderAug20Article } from '../../aug20-content'; const publicationDate = '2026-08-20'; export const generateMetadata=async()=>getAug20Metadata('filipino-content-escalation-map'); export default function Page(){return renderAug20Article('filipino-content-escalation-map')}
