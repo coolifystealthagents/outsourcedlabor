@@ -1,0 +1,11 @@
+{
+  "campaignDate": "2026-08-20",
+  "family": "research",
+  "entries": [
+    {"slug":"research-article-queue-sampling-bias","route":"/research/research-article-queue-sampling-bias","sourcePaths":["app/research/aug20-research-records.ts"],"image":"/research/aug20-article-queue-sampling-bias.png"},
+    {"slug":"research-article-source-conflict-resolution","route":"/research/research-article-source-conflict-resolution","sourcePaths":["app/research/aug20-research-records.ts"],"image":"/research/aug20-article-source-conflict-resolution.png"},
+    {"slug":"research-outsourced-article-brief-decision-latency","route":"/research/research-outsourced-article-brief-decision-latency","sourcePaths":["app/research/aug20-research-records.ts"],"image":"/research/aug20-outsourced-article-brief-decision-latency.png"},
+    {"slug":"research-article-originality-across-blog-research","route":"/research/research-article-originality-across-blog-research","sourcePaths":["app/research/aug20-research-records.ts"],"image":"/research/aug20-article-originality-across-blog-research.png"},
+    {"slug":"research-article-source-freshness-by-question","route":"/research/research-article-source-freshness-by-question","sourcePaths":["app/research/aug20-research-records.ts"],"image":"/research/aug20-article-source-freshness-by-question.png"}
+  ]
+}

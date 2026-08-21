@@ -1,0 +1,1 @@
+Use case: productivity-visual. Wide editorial hero: a research queue ages while an editor checks changing source dates, separating stable background material from a time-sensitive document. No logos, readable text, watermark, or fabricated numbers.
