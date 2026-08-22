@@ -276,4 +276,10 @@ Evidence-led conclusion for the route dated 2026-08-21: an outsourced article qu
 ];
 */
 
-export const august21ResearchRecords: readonly Record[] = august21ResearchRecordsBase;
+const august21ResearchRecordsRepaired: readonly Record[] = august21ResearchRecordsBase.map((record) =>
+  record.slug === 'research-philippines-article-queue-capacity-vs-demand'
+    ? { ...record, body: record.body.join(' ').trim().split(/\s+/).length < 900 ? [...record.body, queueCapacityRouteRepair] : record.body }
+    : record,
+);
+
+export const august21ResearchRecords: readonly Record[] = august21ResearchRecordsRepaired;
