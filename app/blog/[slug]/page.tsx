@@ -49,6 +49,11 @@ const serviceHandoffs: Record<string, { href: string; label: string; copy: strin
     label: 'SOP documentation support',
     copy: 'If your team has chosen the first queue but still needs the instructions written down,',
   },
+  'philippines-ecommerce-order-support': {
+    href: '/services/order-operations',
+    label: 'order operations support',
+    copy: 'If order checks, status notes, and exceptions already have clear rules but still need a steady owner,',
+  },
 };
 
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
