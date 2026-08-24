@@ -1,0 +1,20 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "blog",
+  "imageStatus": "blocked-gemini-unavailable",
+  "imageBlocker": "No Gemini image-generation capability is available in this repository worker environment. No stock or substitute imagery was used.",
+  "entries": [
+    {"route":"/blog/outsourced-labor-article-intake-triage","sourcePaths":["app/aug23-content.tsx"]},
+    {"route":"/blog/philippines-outsourced-labor-role-scorecard","sourcePaths":["app/aug23-content.tsx"]},
+    {"route":"/blog/outsourced-labor-source-register-for-articles","sourcePaths":["app/aug23-content.tsx"]},
+    {"route":"/blog/filipino-content-review-queue-design","sourcePaths":["app/aug23-content.tsx"]},
+    {"route":"/blog/philippines-outsourced-labor-briefing-rhythm","sourcePaths":["app/aug23-content.tsx"]},
+    {"route":"/blog/outsourced-labor-article-originality-check","sourcePaths":["app/aug23-content.tsx"]},
+    {"route":"/blog/filipino-outsourced-work-handoff-acceptance","sourcePaths":["app/aug23-content.tsx"]},
+    {"route":"/blog/philippines-outsourced-labor-exception-aging","sourcePaths":["app/aug23-content.tsx"]},
+    {"route":"/blog/outsourced-labor-content-approval-boundaries","sourcePaths":["app/aug23-content.tsx"]},
+    {"route":"/blog/filipino-outsourced-labor-absence-recovery","sourcePaths":["app/aug23-content.tsx"]},
+    {"route":"/blog/philippines-outsourced-labor-work-queue-capacity","sourcePaths":["app/aug23-content.tsx"]},
+    {"route":"/blog/outsourced-labor-editorial-claim-review","sourcePaths":["app/aug23-content.tsx"]}
+  ]
+}

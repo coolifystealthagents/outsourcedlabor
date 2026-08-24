@@ -1,0 +1,20 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "blog",
+  "status": "blocked",
+  "reason": "Gemini is unavailable in the repository worker environment; no substitute or stock imagery was used.",
+  "routes": [
+    "/blog/outsourced-labor-article-intake-triage",
+    "/blog/philippines-outsourced-labor-role-scorecard",
+    "/blog/outsourced-labor-source-register-for-articles",
+    "/blog/filipino-content-review-queue-design",
+    "/blog/philippines-outsourced-labor-briefing-rhythm",
+    "/blog/outsourced-labor-article-originality-check",
+    "/blog/filipino-outsourced-work-handoff-acceptance",
+    "/blog/philippines-outsourced-labor-exception-aging",
+    "/blog/outsourced-labor-content-approval-boundaries",
+    "/blog/filipino-outsourced-labor-absence-recovery",
+    "/blog/philippines-outsourced-labor-work-queue-capacity",
+    "/blog/outsourced-labor-editorial-claim-review"
+  ]
+}
