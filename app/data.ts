@@ -359,12 +359,16 @@ const batchSources: Record<string, { name: string; url: string; note: string }> 
   'CISA Require Multifactor Authentication': { name: 'CISA: Require Multifactor Authentication', url: 'https://www.cisa.gov/audiences/small-and-medium-businesses/secure-your-business/require-multifactor-authentication', note: 'Guidance for adding an extra layer of account protection.' },
 };
 
+const batchUpdatedOverrides: Record<string, string> = {
+  'philippines-ecommerce-order-support': '2026-08-23',
+};
+
 const batchDetails = Object.fromEntries(batchTopics.map(([slug, topic, phrase, sourceKey], index) => {
   const previous = blogPosts[(index + 1) % blogPosts.length];
   const next = blogPosts[(index + 2) % blogPosts.length];
   const source = batchSources[sourceKey];
   return [slug, {
-    updated: '2026-08-07',
+    updated: batchUpdatedOverrides[slug] || '2026-08-07',
     takeaways: [`Keep ${phrase} narrow enough to review every day.`, 'Write the decision line before granting access.', 'Use examples, a scorecard, and a named escalation owner.'],
     fitRows: [
       { signal: 'Good first scope', example: 'Repeatable records, updates, checks, or drafts', reason: 'The finished output is visible and easy to sample' },
