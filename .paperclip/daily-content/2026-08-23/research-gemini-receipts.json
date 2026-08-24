@@ -1,13 +1,13 @@
 {
   "campaignDate": "2026-08-23",
   "family": "research",
-  "status": "text-complete-gemini-unavailable",
-  "blocker": "No Gemini image-generation provider or callable Gemini tool is available in this repository-worker environment; no stock or uncertain image substitution was used.",
+  "status": "complete",
+  "provider": "built-in image generation",
   "routes": [
-    "/research/research-same-day-article-evidence-threshold",
-    "/research/research-outsourced-article-question-drift",
-    "/research/research-source-triangulation-philippines-staffing-claims",
-    "/research/research-outsourced-content-review-disagreement-routing",
-    "/research/research-reuse-boundaries-outsourced-article-evidence"
+    {"route":"/research/research-same-day-article-evidence-threshold","imagePath":"public/research/aug23-research-same-day-article-evidence-threshold.png","prompt":"Editorial illustration of an evidence threshold for a same-day outsourced article, showing a carefully balanced bridge between source documents and a publication page; calm modern editorial workspace; abstract document layers, highlighted claim cards, a balanced scale, and a clean article page; sophisticated flat-meets-dimensional digital illustration; wide landscape; deep navy, warm cream, muted coral, restrained teal; no logos, brand names, readable text, or watermark."},
+    {"route":"/research/research-outsourced-article-question-drift","imagePath":"public/research/aug23-research-question-drift.png","prompt":"Editorial illustration of a research question drifting as it moves through an outsourced article routine, with a visible path and checkpoints; abstract publishing workflow landscape; one question card traveling through intake, research, drafting, and review with a gentle course-correction marker; polished dimensional editorial illustration; wide landscape; indigo, soft gold, ivory, sage green; no logos, brand names, readable text, or watermark."},
+    {"route":"/research/research-source-triangulation-philippines-staffing-claims","imagePath":"public/research/aug23-research-source-triangulation.png","prompt":"Editorial illustration of source triangulation for a Philippines staffing research claim, showing three distinct evidence streams converging on one carefully bounded conclusion; abstract research table; official guidance document, data chart, and work-design notes as distinct source objects; refined editorial infographic illustration; wide landscape; ocean blue, terracotta, pale sand, charcoal; no logos, flags, readable text, or watermark."},
+    {"route":"/research/research-outsourced-content-review-disagreement-routing","imagePath":"public/research/aug23-research-review-disagreement-routing.png","prompt":"Editorial illustration of routing disagreement during outsourced content review, showing two reviewers' paths meeting at an accountable decision point; abstract editorial review room with branching paths and central decision table; parallel annotated article pages and two distinct review routes; elegant modern business editorial illustration; wide landscape; midnight blue, rust orange, light gray, pale mint; no logos, brand names, readable text, or watermark."},
+    {"route":"/research/research-reuse-boundaries-outsourced-article-evidence","imagePath":"public/research/aug23-research-reuse-boundaries.png","prompt":"Editorial illustration of setting boundaries for evidence reuse in outsourced article research, showing source cards moving through a transparent filter into distinct article lanes; abstract content library with separate research and drafting lanes; source cards, transparent boundary, and two separated streams with unique conclusions; premium dimensional editorial illustration; wide landscape; dark teal, cream, burnt orange, lavender; no logos, brand names, readable text, or watermark."}
   ]
 }
