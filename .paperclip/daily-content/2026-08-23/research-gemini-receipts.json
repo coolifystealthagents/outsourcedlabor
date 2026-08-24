@@ -1,0 +1,13 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "research",
+  "status": "text-complete-gemini-unavailable",
+  "blocker": "No Gemini image-generation provider or callable Gemini tool is available in this repository-worker environment; no stock or uncertain image substitution was used.",
+  "routes": [
+    "/research/research-same-day-article-evidence-threshold",
+    "/research/research-outsourced-article-question-drift",
+    "/research/research-source-triangulation-philippines-staffing-claims",
+    "/research/research-outsourced-content-review-disagreement-routing",
+    "/research/research-reuse-boundaries-outsourced-article-evidence"
+  ]
+}

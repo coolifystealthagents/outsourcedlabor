@@ -1,0 +1,11 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "research",
+  "entries": [
+    {"route": "/research/research-same-day-article-evidence-threshold", "sourcePaths": ["app/research/aug23-research-records.ts"]},
+    {"route": "/research/research-outsourced-article-question-drift", "sourcePaths": ["app/research/aug23-research-records.ts"]},
+    {"route": "/research/research-source-triangulation-philippines-staffing-claims", "sourcePaths": ["app/research/aug23-research-records.ts"]},
+    {"route": "/research/research-outsourced-content-review-disagreement-routing", "sourcePaths": ["app/research/aug23-research-records.ts"]},
+    {"route": "/research/research-reuse-boundaries-outsourced-article-evidence", "sourcePaths": ["app/research/aug23-research-records.ts"]}
+  ]
+}
