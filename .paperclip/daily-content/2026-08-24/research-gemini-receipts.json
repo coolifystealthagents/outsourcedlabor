@@ -1,5 +1,5 @@
 {
-  "campaignDate": "2026-08-23",
+  "campaignDate": "2026-08-24",
   "family": "research",
   "status": "text-complete-gemini-unavailable",
   "blocker": "No Gemini image-generation provider or callable Gemini tool is available in this repository-worker environment; no stock or uncertain image substitution was used.",
