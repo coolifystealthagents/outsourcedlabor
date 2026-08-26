@@ -1,6 +1,6 @@
 # Service-led topical map and link ledger
 
-Reviewed: 2026-08-17
+Reviewed: 2026-08-26
 
 This ledger records only routes generated from the current site data. It is a planning record, not a claim that every proposed body link is already live. Each future edit must confirm the source sentence in generated HTML, preserve the article's narrow question, and add only one reader-useful service handoff.
 
@@ -19,9 +19,15 @@ This ledger records only routes generated from the current site data. It is a pl
 | Workforce Reporting | `/services/workforce-reporting` | `/blog/philippines-operations-daily-dashboard` | Which queue signals should a manager see before deciding on staffing changes? | Let readers inspect the reporting support scope after the dashboard guide. |
 | Operations Dispatch | `/services/operations-dispatch` | `/blog/outsourced-labor-shift-handoff` | How can a team keep urgent work moving across changing shifts? | Connect handoff planning to the dispatch support scope without promising coverage outcomes. |
 
+## Delivery record and next execution candidate
+
+- Delivered: `/blog/philippines-operations-support-sop` now renders a route-local link to `/services/sop-documentation` after the article body. Its narrow question remains how to write an operations SOP before the work is handed off.
+- Delivered: `/blog/philippines-ecommerce-order-support` now renders a route-local link to `/services/order-operations` after the article body. The route keeps refund, pricing, and unusual customer commitments with the manager.
+- Next candidate: inspect `/blog/philippines-backup-coverage-schedule` for a route-local link to `/services/workforce-scheduling`. The reader question is whether a coverage plan has enough detail to turn into a schedule. Add it only if the generated article does not already include that service route.
+
 ## Publishing order
 
-1. Inspect the generated `/blog/philippines-operations-support-sop` page first. Add the SOP Documentation link only if the existing body does not already send the reader to that service.
+1. Inspect the generated `/blog/philippines-backup-coverage-schedule` page first. Add the Workforce Scheduling link only if the existing body does not already send the reader to that service.
 2. Verify the page title, H1, contextual phrase, target href, and the absence of a displaced generic or unrelated service link in the rebuilt output.
 3. Keep organization authorship. The blog renderer has an Organization author and publisher, while the research renderer currently has no author field. There is no on-site individual author record to support an invented byline.
 4. The sitemap derives service, blog, and research paths from the same route data. Any future public page change needs route-specific artifact and sitemap checks before deployment.
