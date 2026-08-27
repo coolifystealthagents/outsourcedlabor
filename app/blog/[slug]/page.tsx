@@ -56,6 +56,11 @@ const serviceHandoffs: Record<string, { href: string; label: string; copy: strin
     label: 'order operations support',
     copy: 'If order checks, status notes, and exceptions already have clear rules but still need a steady owner,',
   },
+  'philippines-backup-coverage-schedule': {
+    href: '/services/workforce-scheduling',
+    label: 'workforce scheduling support',
+    copy: 'If the backup list, handoff notes, and on-call windows are clear but still need to become a workable schedule,',
+  },
 };
 
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {

@@ -361,6 +361,7 @@ const batchSources: Record<string, { name: string; url: string; note: string }> 
 
 const batchUpdatedOverrides: Record<string, string> = {
   'philippines-ecommerce-order-support': '2026-08-23',
+  'philippines-backup-coverage-schedule': '2026-08-27',
 };
 
 const batchDetails = Object.fromEntries(batchTopics.map(([slug, topic, phrase, sourceKey], index) => {
