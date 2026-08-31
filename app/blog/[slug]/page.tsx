@@ -4,6 +4,7 @@ import { blogDetails, blogPosts, site } from '../../data';
 import { articles as aug20Articles, getAug20Metadata, renderAug20Article } from '../../aug20-content';
 import { aug21Articles, getAug21Metadata, renderAug21Article } from '../../aug21-content';
 import { aug23Slugs, getAug23Metadata, renderAug23Article } from '../../aug23-content';
+import { aug31BlogArticles, getAug31BlogMetadata, renderAug31BlogArticle } from '../../aug31-content';
 import PhilippinesContinuityArticle, {
   continuityDescription,
   continuitySlug,
@@ -16,6 +17,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  if (aug31BlogArticles[slug]) return getAug31BlogMetadata(slug);
   if (aug20Articles[slug]) return getAug20Metadata(slug);
   if (aug21Articles[slug]) return getAug21Metadata(slug);
   if (aug23Slugs.has(slug)) return getAug23Metadata(slug);
@@ -65,6 +67,7 @@ const serviceHandoffs: Record<string, { href: string; label: string; copy: strin
 
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  if (aug31BlogArticles[slug]) return renderAug31BlogArticle(slug);
   if (aug20Articles[slug]) return renderAug20Article(slug);
   if (aug21Articles[slug]) return renderAug21Article(slug);
   if (aug23Slugs.has(slug)) return renderAug23Article(slug);

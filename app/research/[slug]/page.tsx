@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import { Footer, Header } from '../../components';
 import { site } from '../../data';
 import { researchPosts } from '../../fleet-content';
+import { aug31ResearchPosts } from '../../aug31-content';
+const allResearchPosts=[...aug31ResearchPosts,...researchPosts];
 
 const formatPublicDate = (date: string) => new Intl.DateTimeFormat('en-US', {
   month: 'long',
@@ -11,12 +13,12 @@ const formatPublicDate = (date: string) => new Intl.DateTimeFormat('en-US', {
 }).format(new Date(`${date}T00:00:00Z`));
 
 export function generateStaticParams() {
-  return researchPosts.map((post) => ({ slug: post.slug }));
+  return allResearchPosts.map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = researchPosts.find((item) => item.slug === slug);
+  const post = allResearchPosts.find((item) => item.slug === slug);
 
   return post ? {
     title: post.title,
@@ -34,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ResearchArticle({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = researchPosts.find((item) => item.slug === slug);
+  const post = allResearchPosts.find((item) => item.slug === slug);
   if (!post) notFound();
 
   const baseUrl = `https://${site.domain.toLowerCase()}`;
