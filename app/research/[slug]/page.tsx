@@ -2,8 +2,7 @@ import { notFound } from 'next/navigation';
 import { Footer, Header } from '../../components';
 import { site } from '../../data';
 import { researchPosts } from '../../fleet-content';
-import { aug31ResearchPosts } from '../../aug31-content';
-const allResearchPosts=[...aug31ResearchPosts,...researchPosts];
+const allResearchPosts=researchPosts;
 
 const formatPublicDate = (date: string) => new Intl.DateTimeFormat('en-US', {
   month: 'long',
