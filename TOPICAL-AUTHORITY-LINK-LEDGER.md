@@ -1,6 +1,6 @@
 # Service-led topical map and link ledger
 
-Reviewed: 2026-08-26
+Reviewed: 2026-09-03
 
 This ledger records only routes generated from the current site data. It is a planning record, not a claim that every proposed body link is already live. Each future edit must confirm the source sentence in generated HTML, preserve the article's narrow question, and add only one reader-useful service handoff.
 
@@ -21,13 +21,14 @@ This ledger records only routes generated from the current site data. It is a pl
 
 ## Delivery record and next execution candidate
 
-- Delivered: `/blog/philippines-operations-support-sop` now renders a route-local link to `/services/sop-documentation` after the article body. Its narrow question remains how to write an operations SOP before the work is handed off.
-- Delivered: `/blog/philippines-ecommerce-order-support` now renders a route-local link to `/services/order-operations` after the article body. The route keeps refund, pricing, and unusual customer commitments with the manager.
-- Next candidate: inspect `/blog/philippines-backup-coverage-schedule` for a route-local link to `/services/workforce-scheduling`. The reader question is whether a coverage plan has enough detail to turn into a schedule. Add it only if the generated article does not already include that service route.
+- Delivered: `/blog/philippines-operations-support-sop` renders one route-local link to `/services/sop-documentation` after the article body. Its narrow question remains how to write an operations SOP before the work is handed off.
+- Delivered: `/blog/philippines-ecommerce-order-support` renders one route-local link to `/services/order-operations` after the article body. The route keeps refund, pricing, and unusual customer commitments with the manager.
+- Delivered: `/blog/philippines-backup-coverage-schedule` renders one route-local link to `/services/workforce-scheduling` after the article body. Its narrow question remains whether a coverage plan has enough detail to turn into a schedule.
+- Next candidate: inspect `/blog/outsourced-labor-planning` for one route-local link to `/services/vendor-coordination`. The reader question is which recurring vendor follow-ups are ready for a clearly bounded role. Add it only if the generated article still does not include that service route.
 
 ## Publishing order
 
-1. Inspect the generated `/blog/philippines-backup-coverage-schedule` page first. Add the Workforce Scheduling link only if the existing body does not already send the reader to that service.
+1. Inspect the generated `/blog/outsourced-labor-planning` page first. Add the Vendor Coordination link only if the existing body does not already send the reader to that service.
 2. Verify the page title, H1, contextual phrase, target href, and the absence of a displaced generic or unrelated service link in the rebuilt output.
 3. Keep organization authorship. The blog renderer has an Organization author and publisher, while the research renderer currently has no author field. There is no on-site individual author record to support an invented byline.
 4. The sitemap derives service, blog, and research paths from the same route data. Any future public page change needs route-specific artifact and sitemap checks before deployment.
