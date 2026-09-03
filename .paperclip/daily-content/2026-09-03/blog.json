@@ -1,0 +1,20 @@
+{
+  "campaignDate":"2026-09-03",
+  "family":"blog",
+  "imageStatus":"blocked-gemini-unavailable",
+  "imageBlocker":"Gemini image generation is unavailable in this repository worker; no stock or substitute imagery was used.",
+  "entries":[
+    {"route":"/blog/philippines-operations-request-clarity-review","sourcePaths":["app/sep3-records.ts","app/sep3-content.tsx"]},
+    {"route":"/blog/outsourced-labor-evidence-retention-map","sourcePaths":["app/sep3-records.ts","app/sep3-content.tsx"]},
+    {"route":"/blog/filipino-specialist-correction-reason-codes","sourcePaths":["app/sep3-records.ts","app/sep3-content.tsx"]},
+    {"route":"/blog/philippines-team-backlog-recovery-sequence","sourcePaths":["app/sep3-records.ts","app/sep3-content.tsx"]},
+    {"route":"/blog/outsourced-labor-access-request-handoff","sourcePaths":["app/sep3-records.ts","app/sep3-content.tsx"]},
+    {"route":"/blog/filipino-specialist-review-ready-definition","sourcePaths":["app/sep3-records.ts","app/sep3-content.tsx"]},
+    {"route":"/blog/philippines-operations-record-conflict-triage","sourcePaths":["app/sep3-records.ts","app/sep3-content.tsx"]},
+    {"route":"/blog/outsourced-labor-recurring-task-sunset-review","sourcePaths":["app/sep3-records.ts","app/sep3-content.tsx"]},
+    {"route":"/blog/filipino-team-manager-question-batch","sourcePaths":["app/sep3-records.ts","app/sep3-content.tsx"]},
+    {"route":"/blog/philippines-support-work-acceptance-sample","sourcePaths":["app/sep3-records.ts","app/sep3-content.tsx"]},
+    {"route":"/blog/outsourced-labor-process-owner-directory","sourcePaths":["app/sep3-records.ts","app/sep3-content.tsx"]},
+    {"route":"/blog/filipino-specialist-change-acknowledgement-log","sourcePaths":["app/sep3-records.ts","app/sep3-content.tsx"]}
+  ]
+}
