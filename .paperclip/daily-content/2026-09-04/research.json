@@ -1,0 +1,6 @@
+{"campaignDate":"2026-09-04","family":"research","imageStatus":"existing-approved-inventory","entries":[
+{"route":"/research/research-philippines-queue-reopen-patterns","sourcePaths":["app/research/sep4-research-records.ts"]},
+{"route":"/research/research-outsourced-approval-scope-leakage","sourcePaths":["app/research/sep4-research-records.ts"]},
+{"route":"/research/research-filipino-specialist-search-cost","sourcePaths":["app/research/sep4-research-records.ts"]},
+{"route":"/research/research-philippines-handoff-compression-loss","sourcePaths":["app/research/sep4-research-records.ts"]},
+{"route":"/research/research-outsourced-review-sample-representativeness","sourcePaths":["app/research/sep4-research-records.ts"]}]}

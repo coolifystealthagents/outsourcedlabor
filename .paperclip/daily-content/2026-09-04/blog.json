@@ -1,0 +1,13 @@
+{"campaignDate":"2026-09-04","family":"blog","imageStatus":"existing-approved-inventory","entries":[
+{"route":"/blog/philippines-operations-shift-start-check","sourcePaths":["app/sep4-records.ts","app/sep4-content.tsx"]},
+{"route":"/blog/outsourced-labor-approval-expiry-register","sourcePaths":["app/sep4-records.ts","app/sep4-content.tsx"]},
+{"route":"/blog/filipino-specialist-work-recovery-note","sourcePaths":["app/sep4-records.ts","app/sep4-content.tsx"]},
+{"route":"/blog/philippines-support-queue-aging-review","sourcePaths":["app/sep4-records.ts","app/sep4-content.tsx"]},
+{"route":"/blog/outsourced-labor-source-access-fallback","sourcePaths":["app/sep4-records.ts","app/sep4-content.tsx"]},
+{"route":"/blog/filipino-team-duplicate-work-prevention","sourcePaths":["app/sep4-records.ts","app/sep4-content.tsx"]},
+{"route":"/blog/philippines-operations-decision-receipt","sourcePaths":["app/sep4-records.ts","app/sep4-content.tsx"]},
+{"route":"/blog/outsourced-labor-sensitive-data-minimization","sourcePaths":["app/sep4-records.ts","app/sep4-content.tsx"]},
+{"route":"/blog/filipino-specialist-example-library-review","sourcePaths":["app/sep4-records.ts","app/sep4-content.tsx"]},
+{"route":"/blog/philippines-team-service-recovery-handoff","sourcePaths":["app/sep4-records.ts","app/sep4-content.tsx"]},
+{"route":"/blog/outsourced-labor-metric-definition-card","sourcePaths":["app/sep4-records.ts","app/sep4-content.tsx"]},
+{"route":"/blog/filipino-operations-weekly-risk-scan","sourcePaths":["app/sep4-records.ts","app/sep4-content.tsx"]}]}
