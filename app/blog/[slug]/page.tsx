@@ -53,6 +53,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+type ServiceHandoff = { href: string; label: string; copy: string };
 type BlogDetail = (typeof blogDetails)[keyof typeof blogDetails];
 
 const serviceHandoffs: Record<string, { href: string; label: string; copy: string }> = {
@@ -91,7 +92,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const postUrl = `${baseUrl}/blog/${post.slug}`;
   const relatedSlugs = ((detail as (BlogDetail & { related?: string[] }) | undefined)?.related || blogPosts.filter((item) => item.slug !== post.slug).slice(0, 3).map((item) => item.slug)).slice(0, 3);
   const bodyLinks = relatedSlugs.slice(0, 2).map((relatedSlug) => blogPosts.find((item) => item.slug === relatedSlug)).filter(Boolean);
-  const serviceHandoff = serviceHandoffs[post.slug];
+  const serviceHandoff = (detail as (BlogDetail & { serviceHandoff?: ServiceHandoff }) | undefined)?.serviceHandoff || serviceHandoffs[post.slug];
 
   if (!detail) {
     return (

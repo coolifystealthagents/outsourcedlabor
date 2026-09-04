@@ -276,7 +276,12 @@ export const blogPosts = [...allBlogPosts].filter((post) => !retiredAug13BlogSlu
 
 const baseBlogDetails = {
   "outsourced-labor-planning": {
-    updated: "2026-07-21",
+    updated: "2026-09-04",
+    serviceHandoff: {
+      href: "/services/vendor-coordination",
+      label: "vendor coordination support",
+      copy: "If your vendor follow-ups have clear records, due dates, and escalation rules but still need a steady work lane,",
+    },
     takeaways: [
       "Choose one repeatable work lane, not a loose list of everything you want gone.",
       "Write down who approves money, policy changes, customer promises, and access requests.",
