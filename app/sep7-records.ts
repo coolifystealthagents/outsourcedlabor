@@ -1,0 +1,15 @@
+export const sep7BlogTopics = [
+  ['philippines-operations-dependency-board','Build a Dependency Board for Philippines Operations','dependency tracking','a dependency board','work item, dependency, promised response, fallback, owner, and next check'],
+  ['outsourced-labor-first-hour-triage','Run a First-Hour Triage for Outsourced Labor','first-hour triage','a short opening triage','new arrivals, carried work, blocked items, deadlines, decision owners, and the first safe action'],
+  ['filipino-specialist-source-change-alert','Create a Source-Change Alert for Filipino Specialists','source-change monitoring','a source-change alert','source owner, previous rule, observed change, affected work, pause decision, and reviewer'],
+  ['philippines-support-promise-register','Keep a Promise Register for Philippines Support','customer promise control','a promise register','customer, verified commitment, due time, dependency, current owner, and closure evidence'],
+  ['outsourced-labor-review-ready-packet','Prepare a Review-Ready Packet for Outsourced Work','review preparation','a review-ready packet','requested outcome, work completed, evidence, exceptions, decision needed, and next owner'],
+  ['filipino-team-unclear-instruction-log','Log Unclear Instructions Before They Become Rework','instruction clarification','an instruction-question log','task, unclear phrase, example consulted, risk of guessing, owner question, and answer date'],
+  ['philippines-operations-queue-entry-rule','Set a Queue-Entry Rule for Philippines Operations','queue readiness','a queue-entry card','request source, required fields, authority, deadline, acceptance check, and rejection path'],
+  ['outsourced-labor-approval-wait-note','Write a Useful Approval-Wait Note for Outsourced Labor','approval waits','an approval-wait note','decision requested, evidence supplied, work paused, deadline effect, approver, and follow-up time'],
+  ['filipino-specialist-correction-handoff','Design a Correction Handoff for Filipino Specialists','correction handoffs','a correction handoff','original requirement, observed defect, affected records, safe correction, reviewer, and acceptance evidence'],
+  ['philippines-team-shared-record-closeout','Close Shared Records Cleanly With a Philippines Team','record closeout','a closeout checklist','final state, supporting link, unresolved exception, retention location, owner acceptance, and reopen rule'],
+  ['outsourced-labor-recurring-task-calendar','Build a Recurring-Task Calendar for Outsourced Labor','recurring work planning','a recurring-task calendar','task trigger, source availability, preparation window, approver, due time, and absence backup'],
+  ['filipino-operations-small-batch-review','Use Small-Batch Review in Filipino Operations Work','small-batch review','a small-batch review card','batch boundary, sample rule, accuracy check, exceptions, reviewer decision, and release status'],
+] as const;
+export const sep7BlogPosts = sep7BlogTopics.map(([slug,title,focus]) => ({slug,title,excerpt:`A practical ${focus} routine for recurring work handled with a Philippines-based team.`,minutes:12}));
