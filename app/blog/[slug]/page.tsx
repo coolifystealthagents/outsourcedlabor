@@ -10,6 +10,7 @@ import { sep2BlogArticles, getSep2BlogMetadata, renderSep2BlogArticle } from '..
 import { sep3BlogArticles, getSep3BlogMetadata, renderSep3BlogArticle } from '../../sep3-content';
 import { sep4BlogArticles, getSep4BlogMetadata, renderSep4BlogArticle } from '../../sep4-content';
 import { sep7BlogArticles, getSep7BlogMetadata, renderSep7BlogArticle } from '../../sep7-content';
+import { sep8BlogArticles, getSep8BlogMetadata, renderSep8BlogArticle } from '../../sep8-content';
 import PhilippinesContinuityArticle, {
   continuityDescription,
   continuitySlug,
@@ -22,6 +23,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  if (sep8BlogArticles[slug]) return getSep8BlogMetadata(slug);
   if (sep7BlogArticles[slug]) return getSep7BlogMetadata(slug);
   if (sep4BlogArticles[slug]) return getSep4BlogMetadata(slug);
   if (sep3BlogArticles[slug]) return getSep3BlogMetadata(slug);
@@ -78,6 +80,7 @@ const serviceHandoffs: Record<string, { href: string; label: string; copy: strin
 
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  if (sep8BlogArticles[slug]) return renderSep8BlogArticle(slug);
   if (sep7BlogArticles[slug]) return renderSep7BlogArticle(slug);
   if (sep4BlogArticles[slug]) return renderSep4BlogArticle(slug);
   if (sep3BlogArticles[slug]) return renderSep3BlogArticle(slug);
