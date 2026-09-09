@@ -1,0 +1,15 @@
+export const sep9BlogTopics = [
+['philippines-operations-first-hour-triage','What Should a Philippines Operations Specialist Check in the First Hour?','first-hour triage','opening dashboard','overnight changes, deadlines, blocked work, customer impact, source status, and first owner check'],
+['outsourced-labor-approval-bottleneck-audit','Find the Approval Bottleneck Before Adding Outsourced Capacity','approval bottlenecks','approval-wait ledger','request time, decision, deadline, approver, follow-up, and disposition'],
+['filipino-ecommerce-return-evidence-pack','Build a Return-Evidence Pack for a Filipino Ecommerce Team','return evidence','return-evidence pack','order record, request, item condition, policy version, next step, and exception owner'],
+['philippines-executive-assistant-meeting-decision-log','Turn Meeting Notes Into a Decision Log With a Philippines EA','meeting follow-through','meeting decision log','decision, owner, due date, dependency, unresolved question, and source recording'],
+['outsourced-labor-vendor-chase-sequence','Design a Vendor Follow-Up Sequence That Knows When to Stop','vendor follow-up','vendor chase sequence','request, promised date, evidence, interval, escalation trigger, and close reason'],
+['filipino-crm-duplicate-review-boundaries','Set Safe Boundaries for Filipino CRM Duplicate Review','CRM duplicate review','duplicate-review worksheet','candidate records, matching fields, conflicts, relationship risk, proposed action, and approver'],
+['philippines-support-refund-preparation-handoff','Prepare Refund Cases Without Handing Over Refund Authority','refund preparation','refund-preparation handoff','customer request, transaction, policy clause, evidence, classification, and decision owner'],
+['outsourced-labor-backlog-age-bands','Use Age Bands to Make an Outsourced Backlog Actionable','backlog aging','age-band queue view','arrival date, last safe action, waiting reason, dependency, consequence, and owner'],
+['filipino-research-assistant-contradiction-note','Ask a Filipino Research Assistant to Preserve Contradictions','source contradictions','contradiction note','question, source positions, dates, definition differences, unresolved gap, and reviewer'],
+['philippines-operations-access-expiry-calendar','Keep Temporary Operations Access From Becoming Permanent','temporary access review','access-expiry calendar','system, permission, business purpose, sponsor, expiry date, and removal evidence'],
+['outsourced-labor-correction-loop','Close the Loop When Outsourced Work Needs a Correction','correction handling','correction-loop record','original output, criterion, variance, corrected example, reviewer decision, and learning owner'],
+['filipino-admin-queue-end-of-day-reset','Leave Tomorrow a Clean Queue: An End-of-Day Reset for Filipino Admin Teams','end-of-day queue reset','closing queue note','completed work, open items, preserved state, deadlines, owner questions, and restart order'],
+] as const;
+export const sep9BlogPosts=sep9BlogTopics.map(([slug,title,focus])=>({slug,title,excerpt:`A practical guide to ${focus} in a clearly bounded Philippines-based work lane.`,minutes:11}));
