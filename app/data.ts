@@ -12,6 +12,7 @@ import { sep4BlogPosts } from './sep4-records';
 import { sep7BlogPosts } from './sep7-records';
 import { sep8BlogPosts } from './sep8-records';
 import { sep9BlogPosts } from './sep9-records';
+import { sep10BlogPosts } from './sep10-records';
 
 export const site = {
   "domain": "OutsourcedLabor.com",
@@ -216,6 +217,7 @@ const allBlogPosts = [
   ...sep7BlogPosts,
   ...sep8BlogPosts,
   ...sep9BlogPosts,
+  ...sep10BlogPosts,
   { slug: 'outsourced-labor-daily-article-briefing', title: 'Run a daily article briefing for outsourced content teams', excerpt: 'A practical daily briefing routine for keeping Philippines-based article work focused, sourced, and reviewable.', minutes: 12 },
   { slug: 'philippines-content-source-freshness', title: 'Keep source freshness visible in Philippines content research', excerpt: 'How content teams can track source age, change risk, and review triggers without making unsupported freshness claims.', minutes: 12 },
   { slug: 'filipino-writer-feedback-loop', title: 'Build a useful feedback loop with Filipino article writers', excerpt: 'A practical way to make article feedback specific, teachable, and connected to the reader’s decision.', minutes: 12 },
@@ -273,13 +275,14 @@ const sep4BlogSlugs: Set<string> = new Set(sep4BlogPosts.map((post) => post.slug
 const sep7BlogSlugs: Set<string> = new Set(sep7BlogPosts.map((post) => post.slug));
 const sep8BlogSlugs: Set<string> = new Set(sep8BlogPosts.map((post) => post.slug));
 const sep9BlogSlugs: Set<string> = new Set(sep9BlogPosts.map((post) => post.slug));
+const sep10BlogSlugs: Set<string> = new Set(sep10BlogPosts.map((post) => post.slug));
 
 const retiredAug13BlogSlugs = new Set([
   'philippines-outsourced-order-reconciliation','filipino-support-sla-expectations','outsourced-labor-knowledge-base-audit','philippines-admin-file-naming','filipino-ecommerce-shipping-status','outsourced-labor-manager-review-notes','philippines-remote-staff-timezone-planning','filipino-bookkeeping-receipt-index','outsourced-labor-work-handoff-template','philippines-crm-contact-deduplication','filipino-admin-approval-tracker','outsourced-labor-customer-commitment-log','philippines-vendor-onboarding-support','filipino-calendar-conflict-review','outsourced-labor-blocked-task-review','philippines-support-refund-evidence','filipino-operations-incident-notes','outsourced-labor-permission-change-log','philippines-admin-payment-support-boundaries','filipino-customer-complaint-triage','outsourced-labor-role-expansion-test','philippines-remote-staff-holiday-coverage',
 ]);
 
 export const blogPosts = [...allBlogPosts].filter((post) => !retiredAug13BlogSlugs.has(post.slug)).sort((a, b) => {
-  const batchRank = (slug: string) => sep9BlogSlugs.has(slug) ? 17 : sep8BlogSlugs.has(slug) ? 16 : sep7BlogSlugs.has(slug) ? 15 : sep4BlogSlugs.has(slug) ? 14 : sep3BlogSlugs.has(slug) ? 13 : sep2BlogSlugs.has(slug) ? 12 : sep1BlogSlugs.has(slug) ? 11 : aug31BlogSlugs.has(slug) ? 10 : aug23BlogSlugs.has(slug) ? 9 : aug21BlogSlugs.has(slug) ? 8 : aug20BlogSlugs.has(slug) ? 7 : aug19BlogSlugs.has(slug) ? 6 : aug17BlogSlugs.has(slug) ? 5 : aug14BlogSlugs.has(slug) ? 4 : aug13BlogSlugs.has(slug) ? 3 : aug11BlogSlugs.has(slug) ? 2 : aug10BlogSlugs.has(slug) ? 1 : 0;
+  const batchRank = (slug: string) => sep10BlogSlugs.has(slug) ? 18 : sep9BlogSlugs.has(slug) ? 17 : sep8BlogSlugs.has(slug) ? 16 : sep7BlogSlugs.has(slug) ? 15 : sep4BlogSlugs.has(slug) ? 14 : sep3BlogSlugs.has(slug) ? 13 : sep2BlogSlugs.has(slug) ? 12 : sep1BlogSlugs.has(slug) ? 11 : aug31BlogSlugs.has(slug) ? 10 : aug23BlogSlugs.has(slug) ? 9 : aug21BlogSlugs.has(slug) ? 8 : aug20BlogSlugs.has(slug) ? 7 : aug19BlogSlugs.has(slug) ? 6 : aug17BlogSlugs.has(slug) ? 5 : aug14BlogSlugs.has(slug) ? 4 : aug13BlogSlugs.has(slug) ? 3 : aug11BlogSlugs.has(slug) ? 2 : aug10BlogSlugs.has(slug) ? 1 : 0;
   return batchRank(b.slug) - batchRank(a.slug) || a.slug.localeCompare(b.slug);
 });
 
