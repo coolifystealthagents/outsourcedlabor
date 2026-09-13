@@ -394,6 +394,15 @@ const batchSources: Record<string, { name: string; url: string; note: string }> 
 const batchUpdatedOverrides: Record<string, string> = {
   'philippines-ecommerce-order-support': '2026-08-23',
   'philippines-backup-coverage-schedule': '2026-08-27',
+  'filipino-data-entry-quality-checks': '2026-09-13',
+};
+
+const batchServiceHandoffs: Record<string, { href: string; label: string; copy: string }> = {
+  'filipino-data-entry-quality-checks': {
+    href: '/services/inventory-administration',
+    label: 'inventory administration support',
+    copy: 'If your record checks, source notes, and exception list are ready,',
+  },
 };
 
 const batchDetails = Object.fromEntries(batchTopics.map(([slug, topic, phrase, sourceKey], index) => {
@@ -421,6 +430,7 @@ const batchDetails = Object.fromEntries(batchTopics.map(([slug, topic, phrase, s
     ],
     sources: [source],
     related: [previous.slug, next.slug, 'outsourced-labor-planning'],
+    serviceHandoff: batchServiceHandoffs[slug],
   }];
 }));
 
