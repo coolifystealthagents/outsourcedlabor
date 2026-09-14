@@ -25,11 +25,12 @@ This ledger records only routes generated from the current site data. It is a pl
 - Delivered: `/blog/philippines-ecommerce-order-support` renders one route-local link to `/services/order-operations` after the article body. The route keeps refund, pricing, and unusual customer commitments with the manager.
 - Delivered: `/blog/philippines-backup-coverage-schedule` renders one route-local link to `/services/workforce-scheduling` after the article body. Its narrow question remains whether a coverage plan has enough detail to turn into a schedule.
 - Delivered: `/blog/outsourced-labor-planning` renders one route-local link to `/services/vendor-coordination` after the article body. Its narrow question remains which recurring vendor follow-ups are ready for a clearly bounded role; the manager retains exceptions and final approval.
-- Next candidate: inspect `/blog/filipino-data-entry-quality-checks` for one route-local link to `/services/inventory-administration`. The reader question is how a team can check records before inventory updates are accepted. Add it only if the generated article still does not include that service route.
+- Delivered: `/blog/filipino-data-entry-quality-checks` renders one route-local link to `/services/inventory-administration` after the article body. Its narrow question remains how a team can check records before inventory updates are accepted. Rendered-source commit: `ecc7c17ec4a315cc8d65dcbf6f21d1d638b2e57a`.
+- Next candidate: inspect `/blog/philippines-admin-assistant-onboarding` for one route-local link to `/services/crm-data-stewardship`. The reader question is what access, examples, and review should be ready before CRM support begins. Add it only if the generated article still does not include that service route.
 
 ## Publishing order
 
-1. Treat the Vendor Coordination handoff as delivered. Before selecting a new candidate, confirm the generated `/blog/outsourced-labor-planning` article still contains exactly one route-local `/services/vendor-coordination` link.
-2. Inspect `/blog/filipino-data-entry-quality-checks` next. Add an Inventory Administration link only if its generated article does not already include `/services/inventory-administration`.
+1. Treat the Vendor Coordination and Inventory Administration handoffs as delivered. Before selecting a new candidate, confirm the generated `/blog/outsourced-labor-planning` and `/blog/filipino-data-entry-quality-checks` articles still contain exactly one route-local link to their recorded service routes.
+2. Inspect `/blog/philippines-admin-assistant-onboarding` next. Add a CRM Data Stewardship link only if its generated article does not already include `/services/crm-data-stewardship`.
 3. Keep organization authorship. The blog renderer has an Organization author and publisher, while the research renderer currently has no author field. There is no on-site individual author record to support an invented byline.
 4. The sitemap derives service, blog, and research paths from the same route data. Any future public page change needs route-specific artifact and sitemap checks before deployment.
