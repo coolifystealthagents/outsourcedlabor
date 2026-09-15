@@ -13,6 +13,7 @@ import { sep7BlogPosts } from './sep7-records';
 import { sep8BlogPosts } from './sep8-records';
 import { sep9BlogPosts } from './sep9-records';
 import { sep10BlogPosts } from './sep10-records';
+import { sep14BlogPosts } from './sep14-records';
 
 export const site = {
   "domain": "OutsourcedLabor.com",
@@ -218,6 +219,7 @@ const allBlogPosts = [
   ...sep8BlogPosts,
   ...sep9BlogPosts,
   ...sep10BlogPosts,
+  ...sep14BlogPosts,
   { slug: 'outsourced-labor-daily-article-briefing', title: 'Run a daily article briefing for outsourced content teams', excerpt: 'A practical daily briefing routine for keeping Philippines-based article work focused, sourced, and reviewable.', minutes: 12 },
   { slug: 'philippines-content-source-freshness', title: 'Keep source freshness visible in Philippines content research', excerpt: 'How content teams can track source age, change risk, and review triggers without making unsupported freshness claims.', minutes: 12 },
   { slug: 'filipino-writer-feedback-loop', title: 'Build a useful feedback loop with Filipino article writers', excerpt: 'A practical way to make article feedback specific, teachable, and connected to the reader’s decision.', minutes: 12 },
