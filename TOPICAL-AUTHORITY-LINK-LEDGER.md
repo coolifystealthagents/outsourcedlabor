@@ -26,11 +26,16 @@ This ledger records only routes generated from the current site data. It is a pl
 - Delivered: `/blog/philippines-backup-coverage-schedule` renders one route-local link to `/services/workforce-scheduling` after the article body. Its narrow question remains whether a coverage plan has enough detail to turn into a schedule.
 - Delivered: `/blog/outsourced-labor-planning` renders one route-local link to `/services/vendor-coordination` after the article body. Its narrow question remains which recurring vendor follow-ups are ready for a clearly bounded role; the manager retains exceptions and final approval.
 - Delivered: `/blog/filipino-data-entry-quality-checks` renders one route-local link to `/services/inventory-administration` after the article body. Its narrow question remains how a team can check records before inventory updates are accepted. Rendered-source commit: `ecc7c17ec4a315cc8d65dcbf6f21d1d638b2e57a`.
-- Next candidate: inspect `/blog/philippines-admin-assistant-onboarding` for one route-local link to `/services/crm-data-stewardship`. The reader question is what access, examples, and review should be ready before CRM support begins. Add it only if the generated article still does not include that service route.
+- Delivered locally: `/blog/philippines-admin-assistant-onboarding` now renders one route-local link to `/services/crm-data-stewardship`. The reader question remains what access, examples, and review should be ready before CRM support begins. Rendered source: `f5d8a154c632a18be3adbc0b100ffb2d5bc2524a`.
+
+## Public verification status — 2026-09-15
+
+- Preserve rendered-source commit `f5d8a154c632a18be3adbc0b100ffb2d5bc2524a`; do not add a duplicate CRM handoff. Local build proof found the expected H1, canonical, one route-local CRM link, visible updated date, Open Graph and Article modified date, Organization author/publisher, destination artifact, and sitemap locations. This sitemap intentionally has no `<lastmod>` values.
+- Cache-busted apex and `www` route responses were HTTP 200 HTML with the expected H1 and apex canonical, but both omitted the CRM marker, CRM href, and `article:modified_time`. Both sitemaps were HTTP 200 XML, included the canonical route, and had no `<lastmod>`. No approved deployment target or workflow was found, so this is `deployment_pending_public_verification / deployment_configuration_unavailable / public_stale` rather than a live release.
 
 ## Publishing order
 
 1. Treat the Vendor Coordination and Inventory Administration handoffs as delivered. Before selecting a new candidate, confirm the generated `/blog/outsourced-labor-planning` and `/blog/filipino-data-entry-quality-checks` articles still contain exactly one route-local link to their recorded service routes.
-2. Inspect `/blog/philippines-admin-assistant-onboarding` next. Add a CRM Data Stewardship link only if its generated article does not already include `/services/crm-data-stewardship`.
+2. Treat the CRM Data Stewardship handoff as delivered locally and pending public verification. Do not recreate it; inspect the Procurement Follow-Up candidate next.
 3. Keep organization authorship. The blog renderer has an Organization author and publisher, while the research renderer currently has no author field. There is no on-site individual author record to support an invented byline.
 4. The sitemap derives service, blog, and research paths from the same route data. Any future public page change needs route-specific artifact and sitemap checks before deployment.
