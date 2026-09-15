@@ -49,6 +49,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
   }
   const post = blogPosts.find((item) => item.slug === slug);
+  const detail = (blogDetails as Record<string, BlogDetail | undefined>)[slug];
   const canonical = `https://${site.domain.toLowerCase()}/blog/${slug}`;
   return {
     title: post?.title || 'Guide',
@@ -59,6 +60,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: post?.excerpt,
       url: canonical,
       type: 'article',
+      modifiedTime: detail?.updated,
     },
   };
 }

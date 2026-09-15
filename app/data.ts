@@ -397,6 +397,7 @@ const batchUpdatedOverrides: Record<string, string> = {
   'philippines-ecommerce-order-support': '2026-08-23',
   'philippines-backup-coverage-schedule': '2026-08-27',
   'filipino-data-entry-quality-checks': '2026-09-13',
+  'philippines-admin-assistant-onboarding': '2026-09-15',
 };
 
 const batchServiceHandoffs: Record<string, { href: string; label: string; copy: string }> = {
@@ -404,6 +405,11 @@ const batchServiceHandoffs: Record<string, { href: string; label: string; copy: 
     href: '/services/inventory-administration',
     label: 'inventory administration support',
     copy: 'If your record checks, source notes, and exception list are ready,',
+  },
+  'philippines-admin-assistant-onboarding': {
+    href: '/services/crm-data-stewardship',
+    label: 'CRM data stewardship support',
+    copy: 'If the access list, approved examples, and review rule are ready,',
   },
 };
 
