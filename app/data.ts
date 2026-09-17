@@ -398,6 +398,7 @@ const batchUpdatedOverrides: Record<string, string> = {
   'philippines-backup-coverage-schedule': '2026-08-27',
   'filipino-data-entry-quality-checks': '2026-09-13',
   'philippines-admin-assistant-onboarding': '2026-09-15',
+  'outsourced-labor-task-queue-design': '2026-09-17',
 };
 
 const batchServiceHandoffs: Record<string, { href: string; label: string; copy: string }> = {
@@ -410,6 +411,11 @@ const batchServiceHandoffs: Record<string, { href: string; label: string; copy: 
     href: '/services/crm-data-stewardship',
     label: 'CRM data stewardship support',
     copy: 'If the access list, approved examples, and review rule are ready,',
+  },
+  'outsourced-labor-task-queue-design': {
+    href: '/services/procurement-follow-up',
+    label: 'procurement follow-up support',
+    copy: 'If the queue shows the supplier, source record, due date, and decision owner for each follow-up,',
   },
 };
 
