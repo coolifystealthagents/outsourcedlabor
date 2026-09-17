@@ -33,9 +33,14 @@ This ledger records only routes generated from the current site data. It is a pl
 - Preserve rendered-source commit `f5d8a154c632a18be3adbc0b100ffb2d5bc2524a`; do not add a duplicate CRM handoff. Local build proof found the expected H1, canonical, one route-local CRM link, visible updated date, Open Graph and Article modified date, Organization author/publisher, destination artifact, and sitemap locations. This sitemap intentionally has no `<lastmod>` values.
 - Cache-busted apex and `www` route responses were HTTP 200 HTML with the expected H1 and apex canonical, but both omitted the CRM marker, CRM href, and `article:modified_time`. Both sitemaps were HTTP 200 XML, included the canonical route, and had no `<lastmod>`. No approved deployment target or workflow was found, so this is `deployment_pending_public_verification / deployment_configuration_unavailable / public_stale` rather than a live release.
 
+## Public verification status — 2026-09-17
+
+- Rendered source: `0e120b2b1d691196dd64d9c3f4ee13e0ae116688` added one route-local Procurement Follow-Up handoff to `/blog/outsourced-labor-task-queue-design`. Local production artifacts contained the expected H1 and canonical, exactly one `/services/procurement-follow-up` href inside `<main>`, Open Graph and Article modified date `2026-09-17`, the Organization author/publisher, destination H1, and the canonical sitemap entry. This sitemap intentionally has no `<lastmod>` values.
+- Preserve rendered-source commit `0e120b2b1d691196dd64d9c3f4ee13e0ae116688`; do not add a duplicate procurement handoff. Cache-busted apex and `www` responses were HTTP 200 HTML with the expected H1 and apex canonical, but both omitted the new route-local marker, service href, and modified date. No approved deployment target or workflow was found, so the release is `deployment_pending_public_verification / deployment_configuration_unavailable / public_stale`, not live.
+
 ## Publishing order
 
 1. Treat the Vendor Coordination and Inventory Administration handoffs as delivered. Before selecting a new candidate, confirm the generated `/blog/outsourced-labor-planning` and `/blog/filipino-data-entry-quality-checks` articles still contain exactly one route-local link to their recorded service routes.
-2. Treat the CRM Data Stewardship handoff as delivered locally and pending public verification. Do not recreate it; inspect the Procurement Follow-Up candidate next.
+2. Treat the CRM Data Stewardship and Procurement Follow-Up handoffs as delivered locally and pending public verification. Do not recreate either; inspect the Quality Audit Support candidate next.
 3. Keep organization authorship. The blog renderer has an Organization author and publisher, while the research renderer currently has no author field. There is no on-site individual author record to support an invented byline.
 4. The sitemap derives service, blog, and research paths from the same route data. Any future public page change needs route-specific artifact and sitemap checks before deployment.
