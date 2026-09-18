@@ -27,6 +27,7 @@ This ledger records only routes generated from the current site data. It is a pl
 - Delivered: `/blog/outsourced-labor-planning` renders one route-local link to `/services/vendor-coordination` after the article body. Its narrow question remains which recurring vendor follow-ups are ready for a clearly bounded role; the manager retains exceptions and final approval.
 - Delivered: `/blog/filipino-data-entry-quality-checks` renders one route-local link to `/services/inventory-administration` after the article body. Its narrow question remains how a team can check records before inventory updates are accepted. Rendered-source commit: `ecc7c17ec4a315cc8d65dcbf6f21d1d638b2e57a`.
 - Delivered locally: `/blog/philippines-admin-assistant-onboarding` now renders one route-local link to `/services/crm-data-stewardship`. The reader question remains what access, examples, and review should be ready before CRM support begins. Rendered source: `f5d8a154c632a18be3adbc0b100ffb2d5bc2524a`.
+- Delivered locally: `/blog/outsourced-labor-quality-scorecard` now renders one route-local link to `/services/quality-audit-support`. The scorecard still asks how a manager can review samples before accepting work. Rendered source: `d1a133e7bb86b5d285ef1049e4c51e7bcc9070d2`.
 
 ## Public verification status — 2026-09-15
 
@@ -41,6 +42,11 @@ This ledger records only routes generated from the current site data. It is a pl
 ## Publishing order
 
 1. Treat the Vendor Coordination and Inventory Administration handoffs as delivered. Before selecting a new candidate, confirm the generated `/blog/outsourced-labor-planning` and `/blog/filipino-data-entry-quality-checks` articles still contain exactly one route-local link to their recorded service routes.
-2. Treat the CRM Data Stewardship and Procurement Follow-Up handoffs as delivered locally and pending public verification. Do not recreate either; inspect the Quality Audit Support candidate next.
+2. Treat the CRM Data Stewardship, Procurement Follow-Up, and Quality Audit Support handoffs as delivered locally and pending public verification. Do not recreate any of them; inspect the Operations Dispatch candidate next.
 3. Keep organization authorship. The blog renderer has an Organization author and publisher, while the research renderer currently has no author field. There is no on-site individual author record to support an invented byline.
 4. The sitemap derives service, blog, and research paths from the same route data. Any future public page change needs route-specific artifact and sitemap checks before deployment.
+
+## Public verification status — 2026-09-18
+
+- Rendered source: `d1a133e7bb86b5d285ef1049e4c51e7bcc9070d2` added one route-local Quality Audit Support handoff to `/blog/outsourced-labor-quality-scorecard`. Local production artifacts contain the expected H1 and canonical, one `/services/quality-audit-support` href inside `<main>`, the visible handoff marker, Open Graph `article:modified_time` and Article `dateModified` `2026-09-18`, Article `datePublished` `2026-08-07`, Organization author/publisher, destination H1/canonical, and both sitemap locations. This sitemap intentionally has no `<lastmod>` values.
+- Preserve rendered-source commit `d1a133e7bb86b5d285ef1049e4c51e7bcc9070d2`; do not add a duplicate quality-audit handoff. Cache-busted apex and `www` route and sitemap probes each returned `403 text/plain` without a body, so no served H1, canonical, marker, href, date, or sitemap facts were inferred. No repository-approved deployment target or workflow was found. This is `deployment_pending_public_verification / deployment_configuration_unavailable / public_unavailable`, not a live release. Recheck the same endpoints through an authorized deployment path before any new quality-audit CTA work.
