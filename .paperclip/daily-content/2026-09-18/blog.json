@@ -1,0 +1,21 @@
+{
+  "publicationDate": "2026-09-18",
+  "family": "blog",
+  "requiredCount": 12,
+  "contentCommit": "50148f3af1145c6d2fbadfc695db982eb093059f",
+  "sources": ["https://www.nist.gov/cyberframework", "https://www.gao.gov/products/gao-14-704g", "https://privacy.gov.ph/data-privacy-act/"],
+  "entries": [
+    {"topic":"vendor invoice follow-up","slug":"outsourced-labor-vendor-invoice-follow-up","contentHash":"97224c030d8ddbcf00d594e5937140cd337c6e7038e8b34a5695526f0a0c3a79","liveUrl":"https://outsourcedlabor.com/blog/outsourced-labor-vendor-invoice-follow-up"},
+    {"topic":"ecommerce order exceptions","slug":"philippines-ecommerce-order-exception-queue","contentHash":"ca7bfa6947cdcdb2dba35bb3dd7a07d122a741879b0d389736cec9bfe148009d","liveUrl":"https://outsourcedlabor.com/blog/philippines-ecommerce-order-exception-queue"},
+    {"topic":"CRM data cleanup","slug":"filipino-crm-data-cleanup-acceptance-test","contentHash":"b34d774ddceccda0eb34265aa4180d206a00348955e66e05dc455912a05202b2","liveUrl":"https://outsourcedlabor.com/blog/filipino-crm-data-cleanup-acceptance-test"},
+    {"topic":"SOP handoff readiness","slug":"outsourced-labor-sop-handoff-test","contentHash":"e642a33fbefee7987a489fbb7c29e00a589085617fa7a6e17289fce02d059d90","liveUrl":"https://outsourcedlabor.com/blog/outsourced-labor-sop-handoff-test"},
+    {"topic":"schedule demand planning","slug":"philippines-workforce-schedule-demand-check","contentHash":"30fd2b56a20430e7a6e3c83ec955e14e9e6ac452546ffef0086b66c4f28f8b2a","liveUrl":"https://outsourcedlabor.com/blog/philippines-workforce-schedule-demand-check"},
+    {"topic":"vendor master data verification","slug":"filipino-vendor-master-data-verification","contentHash":"92bfca33ba34fea48681f4634b59d3b2e43357f856d9a9a4bfc43a6a2ba9eea0","liveUrl":"https://outsourcedlabor.com/blog/filipino-vendor-master-data-verification"},
+    {"topic":"inventory discrepancy research","slug":"outsourced-labor-inventory-discrepancy-research","contentHash":"eded152450781dbe078cb9447233679a6ac5014abdd2bc9c09b575f2963e417b","liveUrl":"https://outsourcedlabor.com/blog/outsourced-labor-inventory-discrepancy-research"},
+    {"topic":"weekly KPI reconciliation","slug":"philippines-weekly-kpi-source-reconciliation","contentHash":"2e063083c675be1bf2f85d862ad2cb45067aac06a3ee5eb1879bbc46955e845a","liveUrl":"https://outsourcedlabor.com/blog/philippines-weekly-kpi-source-reconciliation"},
+    {"topic":"quality audit sampling","slug":"filipino-quality-audit-sample-design","contentHash":"55230b153b5c1fde247fce47b01d1f2f048ea0cdeb460bf019821a12c80bdc8f","liveUrl":"https://outsourcedlabor.com/blog/filipino-quality-audit-sample-design"},
+    {"topic":"operations dispatch priorities","slug":"outsourced-labor-operations-dispatch-priority-rules","contentHash":"e2de17f8154f6103c8bb1a3ad64005935d75733247f945b561955ee3f8af5cf1","liveUrl":"https://outsourcedlabor.com/blog/outsourced-labor-operations-dispatch-priority-rules"},
+    {"topic":"shared inbox coverage","slug":"philippines-shared-inbox-coverage-plan","contentHash":"6c97392170c11ee46fdcea41c02586d17193745988d555a931a191451ea6b2ef","liveUrl":"https://outsourcedlabor.com/blog/philippines-shared-inbox-coverage-plan"},
+    {"topic":"first-lane selection","slug":"outsourced-labor-first-lane-readiness-review","contentHash":"43be1440865e02ea5b8f0a298a242fb1294d851b45b849a9a605e90d40c63c58","liveUrl":"https://outsourcedlabor.com/blog/outsourced-labor-first-lane-readiness-review"}
+  ]
+}
