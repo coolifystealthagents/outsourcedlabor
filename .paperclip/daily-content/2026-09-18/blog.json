@@ -3,6 +3,23 @@
   "family": "blog",
   "requiredCount": 12,
   "contentCommit": "50148f3af1145c6d2fbadfc695db982eb093059f",
+  "deployedCommit": "807441debacc9bc9111c4b9ca2906297a4e02884",
+  "deploymentEvidence": "Coolify application rnfrqkl6u7ywjtsxwwcg8sav; authenticated application state pinned to deployedCommit; 12/12 public routes verified HTTP 200",
+  "verificationCompletedAt": "2026-09-18T14:57:45.819Z",
+  "verificationTimeBySlug": {
+    "outsourced-labor-vendor-invoice-follow-up": "2026-09-18T14:57:45.819Z",
+    "philippines-ecommerce-order-exception-queue": "2026-09-18T14:57:45.819Z",
+    "filipino-crm-data-cleanup-acceptance-test": "2026-09-18T14:57:45.819Z",
+    "outsourced-labor-sop-handoff-test": "2026-09-18T14:57:45.819Z",
+    "philippines-workforce-schedule-demand-check": "2026-09-18T14:57:45.819Z",
+    "filipino-vendor-master-data-verification": "2026-09-18T14:57:45.819Z",
+    "outsourced-labor-inventory-discrepancy-research": "2026-09-18T14:57:45.819Z",
+    "philippines-weekly-kpi-source-reconciliation": "2026-09-18T14:57:45.819Z",
+    "filipino-quality-audit-sample-design": "2026-09-18T14:57:45.819Z",
+    "outsourced-labor-operations-dispatch-priority-rules": "2026-09-18T14:57:45.819Z",
+    "philippines-shared-inbox-coverage-plan": "2026-09-18T14:57:45.819Z",
+    "outsourced-labor-first-lane-readiness-review": "2026-09-18T14:57:45.819Z"
+  },
   "sources": ["https://www.nist.gov/cyberframework", "https://www.gao.gov/products/gao-14-704g", "https://privacy.gov.ph/data-privacy-act/"],
   "entries": [
     {"topic":"vendor invoice follow-up","slug":"outsourced-labor-vendor-invoice-follow-up","contentHash":"97224c030d8ddbcf00d594e5937140cd337c6e7038e8b34a5695526f0a0c3a79","liveUrl":"https://outsourcedlabor.com/blog/outsourced-labor-vendor-invoice-follow-up"},

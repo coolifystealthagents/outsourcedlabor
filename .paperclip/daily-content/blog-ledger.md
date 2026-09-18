@@ -5,6 +5,9 @@
 - Family: Blog
 - Count: 12
 - Content commit: `50148f3af1145c6d2fbadfc695db982eb093059f`
+- Public deployment commit: `807441debacc9bc9111c4b9ca2906297a4e02884`
+- Live verification completed: `2026-09-18T14:57:45.819Z` (12/12 routes; UTC, matching the site's configured publication date of 2026-09-18)
+- Deployment evidence: Coolify application `rnfrqkl6u7ywjtsxwwcg8sav`; authenticated application state pinned to the public deployment commit; every article, hero asset, canonical, Article schema date, service CTA, and sitemap entry returned successfully.
 - Source set: NIST Cybersecurity Framework 2.0; GAO Standards for Internal Control; Philippines National Privacy Commission Data Privacy Act page
 - Manifest: `.paperclip/daily-content/2026-09-18/blog.json`
 - Validation: 1,524–1,534 rendered article words; unique slugs; canonical, Article schema, publication date, hero, service CTA, and sitemap checks passed for every route; TypeScript and production build passed.
