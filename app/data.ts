@@ -401,6 +401,11 @@ const batchUpdatedOverrides: Record<string, string> = {
   'filipino-data-entry-quality-checks': '2026-09-13',
   'philippines-admin-assistant-onboarding': '2026-09-15',
   'outsourced-labor-task-queue-design': '2026-09-17',
+  'outsourced-labor-quality-scorecard': '2026-09-18',
+};
+
+const batchPublishedOverrides: Record<string, string> = {
+  'outsourced-labor-quality-scorecard': '2026-08-07',
 };
 
 const batchServiceHandoffs: Record<string, { href: string; label: string; copy: string }> = {
@@ -419,6 +424,11 @@ const batchServiceHandoffs: Record<string, { href: string; label: string; copy: 
     label: 'procurement follow-up support',
     copy: 'If the queue shows the supplier, source record, due date, and decision owner for each follow-up,',
   },
+  'outsourced-labor-quality-scorecard': {
+    href: '/services/quality-audit-support',
+    label: 'quality audit support',
+    copy: 'If the scorecard names the sample, source fields, correction owner, and review rule,',
+  },
 };
 
 const batchDetails = Object.fromEntries(batchTopics.map(([slug, topic, phrase, sourceKey], index) => {
@@ -427,6 +437,7 @@ const batchDetails = Object.fromEntries(batchTopics.map(([slug, topic, phrase, s
   const source = batchSources[sourceKey];
   return [slug, {
     updated: batchUpdatedOverrides[slug] || '2026-08-07',
+    published: batchPublishedOverrides[slug],
     takeaways: [`Keep ${phrase} narrow enough to review every day.`, 'Write the decision line before granting access.', 'Use examples, a scorecard, and a named escalation owner.'],
     fitRows: [
       { signal: 'Good first scope', example: 'Repeatable records, updates, checks, or drafts', reason: 'The finished output is visible and easy to sample' },

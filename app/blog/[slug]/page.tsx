@@ -69,6 +69,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 type ServiceHandoff = { href: string; label: string; copy: string };
 type BlogDetail = (typeof blogDetails)[keyof typeof blogDetails];
+type PublishedBlogDetail = BlogDetail & { published?: string };
 
 const serviceHandoffs: Record<string, { href: string; label: string; copy: string }> = {
   'philippines-operations-support-sop': {
@@ -108,6 +109,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const post = blogPosts.find((item) => item.slug === slug);
   if (!post) notFound();
   const detail = (blogDetails as Record<string, BlogDetail | undefined>)[post.slug];
+  const datedDetail = detail as PublishedBlogDetail | undefined;
   const baseUrl = `https://${site.domain.toLowerCase()}`;
   const postUrl = `${baseUrl}/blog/${post.slug}`;
   const relatedSlugs = ((detail as (BlogDetail & { related?: string[] }) | undefined)?.related || blogPosts.filter((item) => item.slug !== post.slug).slice(0, 3).map((item) => item.slug)).slice(0, 3);
@@ -151,7 +153,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
         headline: post.title,
         description: post.excerpt,
         dateModified: detail.updated,
-        datePublished: detail.updated,
+        datePublished: datedDetail?.published || detail.updated,
         mainEntityOfPage: { '@id': `${postUrl}#webpage` },
         author: { '@type': 'Organization', name: site.brand, url: baseUrl },
         publisher: { '@type': 'Organization', name: site.brand, url: baseUrl },
