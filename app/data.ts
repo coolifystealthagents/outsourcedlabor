@@ -14,6 +14,7 @@ import { sep8BlogPosts } from './sep8-records';
 import { sep9BlogPosts } from './sep9-records';
 import { sep10BlogPosts } from './sep10-records';
 import { sep14BlogPosts } from './sep14-records';
+import { sep18BlogPosts } from './sep18-records';
 
 export const site = {
   "domain": "OutsourcedLabor.com",
@@ -220,6 +221,7 @@ const allBlogPosts = [
   ...sep9BlogPosts,
   ...sep10BlogPosts,
   ...sep14BlogPosts,
+  ...sep18BlogPosts,
   { slug: 'outsourced-labor-daily-article-briefing', title: 'Run a daily article briefing for outsourced content teams', excerpt: 'A practical daily briefing routine for keeping Philippines-based article work focused, sourced, and reviewable.', minutes: 12 },
   { slug: 'philippines-content-source-freshness', title: 'Keep source freshness visible in Philippines content research', excerpt: 'How content teams can track source age, change risk, and review triggers without making unsupported freshness claims.', minutes: 12 },
   { slug: 'filipino-writer-feedback-loop', title: 'Build a useful feedback loop with Filipino article writers', excerpt: 'A practical way to make article feedback specific, teachable, and connected to the reader’s decision.', minutes: 12 },
@@ -284,7 +286,7 @@ const retiredAug13BlogSlugs = new Set([
 ]);
 
 export const blogPosts = [...allBlogPosts].filter((post) => !retiredAug13BlogSlugs.has(post.slug)).sort((a, b) => {
-  const batchRank = (slug: string) => sep10BlogSlugs.has(slug) ? 18 : sep9BlogSlugs.has(slug) ? 17 : sep8BlogSlugs.has(slug) ? 16 : sep7BlogSlugs.has(slug) ? 15 : sep4BlogSlugs.has(slug) ? 14 : sep3BlogSlugs.has(slug) ? 13 : sep2BlogSlugs.has(slug) ? 12 : sep1BlogSlugs.has(slug) ? 11 : aug31BlogSlugs.has(slug) ? 10 : aug23BlogSlugs.has(slug) ? 9 : aug21BlogSlugs.has(slug) ? 8 : aug20BlogSlugs.has(slug) ? 7 : aug19BlogSlugs.has(slug) ? 6 : aug17BlogSlugs.has(slug) ? 5 : aug14BlogSlugs.has(slug) ? 4 : aug13BlogSlugs.has(slug) ? 3 : aug11BlogSlugs.has(slug) ? 2 : aug10BlogSlugs.has(slug) ? 1 : 0;
+  const batchRank = (slug: string) => sep18BlogPosts.some((post) => post.slug === slug) ? 20 : sep14BlogPosts.some((post) => post.slug === slug) ? 19 : sep10BlogSlugs.has(slug) ? 18 : sep9BlogSlugs.has(slug) ? 17 : sep8BlogSlugs.has(slug) ? 16 : sep7BlogSlugs.has(slug) ? 15 : sep4BlogSlugs.has(slug) ? 14 : sep3BlogSlugs.has(slug) ? 13 : sep2BlogSlugs.has(slug) ? 12 : sep1BlogSlugs.has(slug) ? 11 : aug31BlogSlugs.has(slug) ? 10 : aug23BlogSlugs.has(slug) ? 9 : aug21BlogSlugs.has(slug) ? 8 : aug20BlogSlugs.has(slug) ? 7 : aug19BlogSlugs.has(slug) ? 6 : aug17BlogSlugs.has(slug) ? 5 : aug14BlogSlugs.has(slug) ? 4 : aug13BlogSlugs.has(slug) ? 3 : aug11BlogSlugs.has(slug) ? 2 : aug10BlogSlugs.has(slug) ? 1 : 0;
   return batchRank(b.slug) - batchRank(a.slug) || a.slug.localeCompare(b.slug);
 });
 
