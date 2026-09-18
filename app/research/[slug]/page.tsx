@@ -11,6 +11,9 @@ const formatPublicDate = (date: string) => new Intl.DateTimeFormat('en-US', {
   timeZone: 'UTC',
 }).format(new Date(`${date}T00:00:00Z`));
 
+const hasSourceDetails = (source: { name: string; url: string }): source is typeof source & { publisher: string; checked: string } =>
+  'publisher' in source && 'checked' in source;
+
 export function generateStaticParams() {
   return allResearchPosts.map((post) => ({ slug: post.slug }));
 }
@@ -72,7 +75,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
         {post.service && <aside className="card"><h2>{post.service.heading}</h2><p>{post.service.body}</p><a className="btn primary" href={post.service.href}>{post.service.label}</a></aside>}
         {post.faqs && <><h2>FAQs</h2>{post.faqs.map((faq) => <section key={faq.q}><h3>{faq.q}</h3><p>{faq.a}</p></section>)}</>}
         <h2>Sources</h2>
-        <ol>{(post.sources || []).map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.name}</a></li>)}</ol>
+        <ol>{(post.sources || []).map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.name}</a>{hasSourceDetails(source) ? ` — ${source.publisher}; checked ${source.checked}` : ''}</li>)}</ol>
         <h2>Related research</h2>
         <ul>{(post.related || []).slice(0, 3).map((related) => <li key={related}><a href={`/research/${related}`}>{related}</a></li>)}</ul>
         <p>Continue with <a href={`/research/${post.related?.[0] || researchPosts[0].slug}`}>a related research note</a> or <a href="/contact">talk with our team</a>.</p>
