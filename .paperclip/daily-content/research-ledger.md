@@ -2,7 +2,7 @@
 
 ## 2026-09-23
 
-Five new decision-grade Research articles prepared for first publication on 2026-09-23 UTC. Canonical routes and SHA-256 content hashes are recorded in `.paperclip/2026-09-23/research.json`. Topics: customer account-change identity boundaries, CRM duplicate-merge evidence, vendor delivery exceptions, workforce schedule-change records, and quality-audit corrective-action follow-up. Sources were checked on 2026-09-23 from the National Institute of Standards and Technology, U.S. Government Accountability Office, and U.S. Department of Labor. Deployment and live-verification evidence will be recorded only after all five public routes pass.
+Five new decision-grade Research articles prepared for first publication on 2026-09-23 UTC. Canonical routes and SHA-256 content hashes are recorded in `.paperclip/2026-09-23/research.json`; content commit `8bfa1ffc39027864315c6cede6d73f806a054ef9`. Topics: customer account-change identity boundaries, CRM duplicate-merge evidence, vendor delivery exceptions, workforce schedule-change records, and quality-audit corrective-action follow-up. Sources were checked on 2026-09-23 from the National Institute of Standards and Technology, U.S. Government Accountability Office, and U.S. Department of Labor. Deployment and live-verification evidence will be recorded only after all five public routes pass.
 
 ## 2026-09-18
 
