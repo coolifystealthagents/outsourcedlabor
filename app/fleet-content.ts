@@ -229,7 +229,8 @@ import { september10ResearchRecords } from './research/sep10-research-records';
 import { september14ResearchRecords } from './research/sep14-research-records';
 import { september18ResearchRecords as priorSeptember18ResearchRecords } from './research/sep18-research-records';
 import { september22ResearchRecords } from './research/sep22-research-records';
-const september18ResearchRecords=[...september22ResearchRecords,...priorSeptember18ResearchRecords] as const;
+import { september23ResearchRecords } from './research/sep23-research-records';
+const september18ResearchRecords=[...september23ResearchRecords,...september22ResearchRecords,...priorSeptember18ResearchRecords] as const;
 type ResearchPost = {slug:string;title:string;excerpt:string;published:string;body:readonly string[];image?:string;sources?:readonly {name:string;url:string}[];related?:readonly string[];cta?:string;service?:{href:string;heading:string;body:string;label:string};headlineStat?:string;keyStats?:readonly string[];takeaways?:readonly string[];faqs?:readonly {q:string;a:string}[]};
 const baseResearchPosts: ReadonlyArray<ResearchPost> = [
   {
