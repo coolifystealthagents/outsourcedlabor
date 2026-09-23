@@ -364,6 +364,68 @@ const baseBlogDetails = {
       { name: "CISA: Require Multifactor Authentication", url: "https://www.cisa.gov/audiences/small-and-medium-businesses/secure-your-business/require-multifactor-authentication", note: "Plain guidance for adding another layer of account protection." },
       { name: "SBA: Hire and Manage Employees", url: "https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees", note: "Small-business guidance on hiring duties and employee management." }
     ]
+  },
+  "outsourced-labor-shift-handoff": {
+    updated: "2026-09-23",
+    serviceHandoff: {
+      href: "/services/operations-dispatch",
+      label: "operations dispatch support",
+      copy: "If your handoff board already names the next action, deadline, and exception owner,",
+    },
+    takeaways: [
+      "A useful handoff shows the next person what happened, what is still open, and where to check the record.",
+      "Put urgent work, waiting work, and work that needs a manager in separate lanes.",
+      "The manager keeps decisions about customer promises, spending, access, and policy exceptions."
+    ],
+    fitRows: [
+      { signal: "Ready to hand off", example: "Ticket ID, current status, source link, next action, and due time", reason: "A backup can continue the work without chasing a private chat" },
+      { signal: "Needs a manager", example: "A changed customer commitment, spend request, or access problem", reason: "The shift change does not transfer approval authority" },
+      { signal: "Too vague", example: "Please follow up with this customer", reason: "The next person has no source, deadline, or permitted action" }
+    ],
+    sections: [
+      {
+        heading: "Give every open item a next owner",
+        paragraphs: [
+          "A shift handoff starts with the work that is not done. For each item, record the request, current status, source link, next action, due time, and the person who will take it next. A short board works better than a long summary because the next worker can see what needs attention first.",
+          "Keep urgent work separate from work that is waiting on an answer. Mark why it is waiting and who can unblock it. That keeps a quiet dependency from looking like a missed task.",
+          "Use the same fields on ordinary and difficult cases. When a customer request, missing source, or system problem changes the plan, add the question and the decision owner before the shift ends."
+        ]
+      },
+      {
+        heading: "Do not pass approval authority between shifts",
+        paragraphs: [
+          "A Philippines-based specialist can sort the queue, confirm the source record, draft a routine update, and flag a blocked item inside the approved process. A new shift does not give that person authority to promise a refund, change a policy, approve spending, alter access, or make an unusual commitment to a customer.",
+          "Write the pause rule beside the task. For example, a worker can send an approved delivery-status update but must stop when the customer asks for a fee waiver or a new delivery promise. The handoff should name the manager who can decide and the evidence they need.",
+          "Use individual accounts and the smallest permission that lets the worker complete the routine step. Do not use a handoff note as a reason to share a password or add access that the next person does not need."
+        ]
+      },
+      {
+        heading: "Review the handoff against the real queue",
+        paragraphs: [
+          "During the first week, a manager should compare a few handoff notes with the live records. Check whether the status is current, the source works, the next action is clear, and exceptions reached the right person. A note that sounds complete but cannot be verified is not ready for a backup.",
+          "Keep one accepted example and one corrected example in the operating guide. The examples show new workers how much context to include without copying sensitive material into the handoff.",
+          "After the review, keep the format, fix the unclear fields, or narrow the queue. Add another work lane only when the receiving person can reliably continue the existing one."
+        ]
+      }
+    ],
+    brief: [
+      "Work item: Order status request #2048.",
+      "Source: Linked order record and approved delivery-status template.",
+      "Current status: Carrier scan is missing; no customer promise has changed.",
+      "Next action: Check the carrier record at the next review window and update the queue.",
+      "Pause and escalate: Customer asks for a fee waiver, refund, or new delivery commitment.",
+      "Decision owner: Operations manager named in the escalation list."
+    ],
+    faqs: [
+      { q: "What belongs in a shift handoff?", a: "Include the current status, source record, next action, due time, open question, and next owner. Add the decision owner when an item is waiting for approval." },
+      { q: "Can a new shift make the same decisions as the prior shift?", a: "Only when the action is already allowed by the SOP. Shift coverage does not transfer approval authority for money, policy, access, deletion, or unusual customer commitments." },
+      { q: "How should a manager review handoffs?", a: "Compare a small sample with the live queue. Check that the status, source, next action, and escalation path let another person continue the work safely." }
+    ],
+    sources: [
+      { name: "NIST Cybersecurity Framework 2.0", url: "https://www.nist.gov/cyberframework", note: "A risk-management reference for assigning responsibility and controlling access." },
+      { name: "CISA: Require Multifactor Authentication", url: "https://www.cisa.gov/audiences/small-and-medium-businesses/secure-your-business/require-multifactor-authentication", note: "Guidance for protecting individual accounts used in the workflow." }
+    ],
+    related: ["outsourced-labor-task-queue-design", "philippines-backup-coverage-schedule", "outsourced-labor-planning"]
   }
 } as const;
 
