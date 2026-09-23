@@ -1,6 +1,6 @@
 # Daily Blog Publication Ledger
 
-## 2026-09-23 — Philippines staffing operations guides (publication in progress)
+## 2026-09-23 — Philippines staffing operations guides
 
 - Family: Blog
 - Required count: 12
@@ -10,7 +10,9 @@
 - Source set: NIST Cybersecurity Framework 2.0; CISA Identity and Access Management; Philippines National Privacy Commission Data Privacy Act page
 - Manifest: `.paperclip/daily-content/2026-09-23/blog.json`
 - Pre-deployment validation: 12/12 routes built; 1,650–1,667 rendered words; unique slugs and content hashes; canonical, Article publication date, accessible hero, service/contact CTAs, sitemap eligibility, newest-first ordering, TypeScript, and production build passed.
-- Live verification: pending deployment.
+- Public deployment commit: `92d588cf2e86a33f0062625da4a1b66ed7189edc`
+- Live verification completed: `2026-09-23T19:06:31.510Z` (12/12 routes; UTC, matching the site's configured publication date of 2026-09-23)
+- Deployment evidence: Coolify application `rnfrqkl6u7ywjtsxwwcg8sav`; deployment `ecjygkwwustuof0eqbixczis` finished at `2026-09-23T17:54:55Z` on the public deployment commit; every article returned HTTP 200 with expected title, unique content, canonical, Article schema date, visible date, hero asset, service/contact CTA, Blog index entry, and sitemap entry.
 
 | Topic | Slug | Content hash |
 | --- | --- | --- |
