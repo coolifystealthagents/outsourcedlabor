@@ -2,7 +2,7 @@
 
 ## 2026-09-23
 
-Five new decision-grade Research articles prepared for first publication on 2026-09-23 UTC. Canonical routes and SHA-256 content hashes are recorded in `.paperclip/2026-09-23/research.json`; content commit `8bfa1ffc39027864315c6cede6d73f806a054ef9`. Topics: customer account-change identity boundaries, CRM duplicate-merge evidence, vendor delivery exceptions, workforce schedule-change records, and quality-audit corrective-action follow-up. Sources were checked on 2026-09-23 from the National Institute of Standards and Technology, U.S. Government Accountability Office, and U.S. Department of Labor. Deployment and live-verification evidence will be recorded only after all five public routes pass.
+Five new decision-grade Research articles first published and live-verified on 2026-09-23 UTC. Canonical routes, source records, and SHA-256 content hashes are recorded in `.paperclip/2026-09-23/research.json`; content commit `8bfa1ffc39027864315c6cede6d73f806a054ef9`, remote main at verification `536d68de020e816aa87ea7ae4bed6af053654f62`. Topics: customer account-change identity boundaries, CRM duplicate-merge evidence, vendor delivery exceptions, workforce schedule-change records, and quality-audit corrective-action follow-up. Sources were checked on 2026-09-23 from the National Institute of Standards and Technology, U.S. Government Accountability Office, and U.S. Department of Labor. Authenticated Coolify status was unavailable; bounded public verification established deployment after the earlier 404 state. All five public URLs passed HTTP 200, unique title/body, canonical, visible date, datePublished/dateModified, image, source checked-date, Research index, and sitemap checks at 2026-09-23T19:32:03Z.
 
 ## 2026-09-18
 

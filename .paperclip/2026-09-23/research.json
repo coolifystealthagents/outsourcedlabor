@@ -10,16 +10,25 @@
   "publicationDate": "2026-09-23",
   "sourceCheckedDate": "2026-09-23",
   "contentCommit": "8bfa1ffc39027864315c6cede6d73f806a054ef9",
-  "deploymentCommit": null,
+  "deploymentCommit": "536d68de020e816aa87ea7ae4bed6af053654f62",
+  "remoteShaAtVerification": "536d68de020e816aa87ea7ae4bed6af053654f62",
+  "deploymentEvidence": "Authenticated Coolify status unavailable; bounded public transition evidence: all five routes changed from HTTP 404 to HTTP 200 and passed title, unique body, canonical, image, visible date, datePublished/dateModified, source checked-date, Research index, and sitemap checks. Content commit 8bfa1ffc39027864315c6cede6d73f806a054ef9 is an ancestor of remote main SHA 536d68de020e816aa87ea7ae4bed6af053654f62.",
   "deploymentUuid": null,
   "deploymentFinishedAt": null,
-  "verifiedCount": 0,
+  "verifiedCount": 5,
+  "sources": [
+    {"title":"NIST Cybersecurity Framework 2.0","publisher":"National Institute of Standards and Technology","url":"https://www.nist.gov/cyberframework","checked":"2026-09-23"},
+    {"title":"NIST Digital Identity Guidelines","publisher":"National Institute of Standards and Technology","url":"https://pages.nist.gov/800-63-4/","checked":"2026-09-23"},
+    {"title":"NIST Privacy Framework","publisher":"National Institute of Standards and Technology","url":"https://www.nist.gov/privacy-framework","checked":"2026-09-23"},
+    {"title":"Standards for Internal Control in the Federal Government","publisher":"U.S. Government Accountability Office","url":"https://www.gao.gov/products/gao-14-704g","checked":"2026-09-23"},
+    {"title":"Recordkeeping and Reporting","publisher":"U.S. Department of Labor","url":"https://www.dol.gov/general/topic/wages/wagesrecordkeeping","checked":"2026-09-23"}
+  ],
   "entries": [
-    {"topic":"customer account-change identity boundary","slug":"research-philippines-customer-account-change-identity-boundary","route":"/research/research-philippines-customer-account-change-identity-boundary","contentHash":"422ec95870bb8b979ff7432a95ea7dbe58400cca5b3e22cd9ab97f53de7d7269","liveUrl":"https://outsourcedlabor.com/research/research-philippines-customer-account-change-identity-boundary","verifiedAt":null},
-    {"topic":"CRM duplicate-merge decision evidence","slug":"research-outsourced-crm-duplicate-merge-decision-evidence","route":"/research/research-outsourced-crm-duplicate-merge-decision-evidence","contentHash":"ede84785f48e97a0d91b4cc9f8db58ba59930d546d6029535253572f9a6aadcc","liveUrl":"https://outsourcedlabor.com/research/research-outsourced-crm-duplicate-merge-decision-evidence","verifiedAt":null},
-    {"topic":"vendor delivery-exception follow-up","slug":"research-philippines-vendor-delivery-exception-follow-up","route":"/research/research-philippines-vendor-delivery-exception-follow-up","contentHash":"b20709001a1002ef6a0be2840bd80e2fc3569be86add12fcea0afd26eac808db","liveUrl":"https://outsourcedlabor.com/research/research-philippines-vendor-delivery-exception-follow-up","verifiedAt":null},
-    {"topic":"workforce schedule-change record","slug":"research-outsourced-workforce-schedule-change-record","route":"/research/research-outsourced-workforce-schedule-change-record","contentHash":"7ab68e89e5843f1c0a232b8d5f32d0b5d08f2eb0d4943842d886f2a16d52192b","liveUrl":"https://outsourcedlabor.com/research/research-outsourced-workforce-schedule-change-record","verifiedAt":null},
-    {"topic":"quality-audit corrective-action follow-up","slug":"research-philippines-quality-audit-corrective-action-follow-up","route":"/research/research-philippines-quality-audit-corrective-action-follow-up","contentHash":"7abc3d44d538d44236ba1327a35f66cfa30a0c2d9adc6c33f1aadae570464ee2","liveUrl":"https://outsourcedlabor.com/research/research-philippines-quality-audit-corrective-action-follow-up","verifiedAt":null}
+    {"topic":"customer account-change identity boundary","slug":"research-philippines-customer-account-change-identity-boundary","route":"/research/research-philippines-customer-account-change-identity-boundary","contentHash":"422ec95870bb8b979ff7432a95ea7dbe58400cca5b3e22cd9ab97f53de7d7269","liveUrl":"https://outsourcedlabor.com/research/research-philippines-customer-account-change-identity-boundary","verifiedAt":"2026-09-23T19:32:03Z"},
+    {"topic":"CRM duplicate-merge decision evidence","slug":"research-outsourced-crm-duplicate-merge-decision-evidence","route":"/research/research-outsourced-crm-duplicate-merge-decision-evidence","contentHash":"ede84785f48e97a0d91b4cc9f8db58ba59930d546d6029535253572f9a6aadcc","liveUrl":"https://outsourcedlabor.com/research/research-outsourced-crm-duplicate-merge-decision-evidence","verifiedAt":"2026-09-23T19:32:03Z"},
+    {"topic":"vendor delivery-exception follow-up","slug":"research-philippines-vendor-delivery-exception-follow-up","route":"/research/research-philippines-vendor-delivery-exception-follow-up","contentHash":"b20709001a1002ef6a0be2840bd80e2fc3569be86add12fcea0afd26eac808db","liveUrl":"https://outsourcedlabor.com/research/research-philippines-vendor-delivery-exception-follow-up","verifiedAt":"2026-09-23T19:32:03Z"},
+    {"topic":"workforce schedule-change record","slug":"research-outsourced-workforce-schedule-change-record","route":"/research/research-outsourced-workforce-schedule-change-record","contentHash":"7ab68e89e5843f1c0a232b8d5f32d0b5d08f2eb0d4943842d886f2a16d52192b","liveUrl":"https://outsourcedlabor.com/research/research-outsourced-workforce-schedule-change-record","verifiedAt":"2026-09-23T19:32:03Z"},
+    {"topic":"quality-audit corrective-action follow-up","slug":"research-philippines-quality-audit-corrective-action-follow-up","route":"/research/research-philippines-quality-audit-corrective-action-follow-up","contentHash":"7abc3d44d538d44236ba1327a35f66cfa30a0c2d9adc6c33f1aadae570464ee2","liveUrl":"https://outsourcedlabor.com/research/research-philippines-quality-audit-corrective-action-follow-up","verifiedAt":"2026-09-23T19:32:03Z"}
   ],
   "validationCommands": ["node scripts/validate-sep23-research.mjs", "npm run lint", "npm run build", "git diff --check"]
 }
