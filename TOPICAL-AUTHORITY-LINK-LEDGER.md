@@ -1,6 +1,6 @@
 # Service-led topical map and link ledger
 
-Reviewed: 2026-09-07
+Reviewed: 2026-09-24
 
 This ledger records only routes generated from the current site data. It is a planning record, not a claim that every proposed body link is already live. Each future edit must confirm the source sentence in generated HTML, preserve the article's narrow question, and add only one reader-useful service handoff.
 
@@ -16,7 +16,7 @@ This ledger records only routes generated from the current site data. It is a pl
 | CRM Data Stewardship | `/services/crm-data-stewardship` | `/blog/philippines-admin-assistant-onboarding` | What access, examples, and review should be ready before CRM support begins? | Move from onboarding preparation to the CRM service scope. |
 | Procurement Follow-Up | `/services/procurement-follow-up` | `/blog/outsourced-labor-task-queue-design` | How should a buyer make follow-up work visible and route blocked items? | Offer the procurement service only where the queue and owner decision are already defined. |
 | Quality Audit Support | `/services/quality-audit-support` | `/blog/outsourced-labor-quality-scorecard` | Which quality checks belong in a review before a manager accepts the work? | Connect the scorecard decision to the QA support scope. |
-| Workforce Reporting | `/services/workforce-reporting` | `/blog/philippines-operations-daily-dashboard` | Which queue signals should a manager see before deciding on staffing changes? | Let readers inspect the reporting support scope after the dashboard guide. |
+| Workforce Reporting | `/services/workforce-reporting` | `/blog/philippines-weekly-kpi-source-reconciliation` | How can a manager reconcile a weekly KPI before deciding what it means? | Let a reader move from a source-checked KPI worksheet to the reporting support scope without handing over metric definitions or business decisions. |
 | Operations Dispatch | `/services/operations-dispatch` | `/blog/outsourced-labor-shift-handoff` | How can a team keep urgent work moving across changing shifts? | Connect handoff planning to the dispatch support scope without promising coverage outcomes. |
 
 ## Delivery record and next execution candidate
@@ -28,6 +28,7 @@ This ledger records only routes generated from the current site data. It is a pl
 - Delivered: `/blog/filipino-data-entry-quality-checks` renders one route-local link to `/services/inventory-administration` after the article body. Its narrow question remains how a team can check records before inventory updates are accepted. Rendered-source commit: `ecc7c17ec4a315cc8d65dcbf6f21d1d638b2e57a`.
 - Delivered locally: `/blog/philippines-admin-assistant-onboarding` now renders one route-local link to `/services/crm-data-stewardship`. The reader question remains what access, examples, and review should be ready before CRM support begins. Rendered source: `f5d8a154c632a18be3adbc0b100ffb2d5bc2524a`.
 - Delivered locally: `/blog/outsourced-labor-quality-scorecard` now renders one route-local link to `/services/quality-audit-support`. The scorecard still asks how a manager can review samples before accepting work. Rendered source: `d1a133e7bb86b5d285ef1049e4c51e7bcc9070d2`.
+- Delivered: `/blog/philippines-weekly-kpi-source-reconciliation` renders one route-local link to `/services/workforce-reporting`. Its narrow question is how to reconcile a weekly KPI worksheet before a manager interprets the result; the specialist prepares evidence while the client owner keeps metric definitions and business decisions. Rendered source: `50148f3af1145c6d2fbadfc695db982eb093059f`.
 
 ## Public verification status — 2026-09-15
 
@@ -41,8 +42,8 @@ This ledger records only routes generated from the current site data. It is a pl
 
 ## Publishing order
 
-1. Treat the Vendor Coordination and Inventory Administration handoffs as delivered. Before selecting a new candidate, confirm the generated `/blog/outsourced-labor-planning` and `/blog/filipino-data-entry-quality-checks` articles still contain exactly one route-local link to their recorded service routes.
-2. Treat the CRM Data Stewardship, Procurement Follow-Up, Quality Audit Support, and Operations Dispatch handoffs as delivered locally and pending public verification. Do not recreate any of them; inspect the Workforce Reporting candidate next.
+1. Treat the Vendor Coordination, Inventory Administration, and Workforce Reporting handoffs as delivered. The Workforce Reporting source is `/blog/philippines-weekly-kpi-source-reconciliation`, not the older generic dashboard fallback. Before selecting another reporting candidate, confirm the generated source still contains exactly one route-local link to `/services/workforce-reporting`.
+2. Treat the CRM Data Stewardship, Procurement Follow-Up, Quality Audit Support, and Operations Dispatch handoffs as delivered locally and pending public verification. Do not recreate any of them; audit a verified-absent mapped pair only after a fresh build.
 3. Keep organization authorship. The blog renderer has an Organization author and publisher, while the research renderer currently has no author field. There is no on-site individual author record to support an invented byline.
 4. The sitemap derives service, blog, and research paths from the same route data. Any future public page change needs route-specific artifact and sitemap checks before deployment.
 
