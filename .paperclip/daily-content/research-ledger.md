@@ -2,7 +2,7 @@
 
 ## 2026-09-24
 
-Five new decision-grade Research articles prepared for first publication on 2026-09-24 UTC. Canonical routes, source records, and SHA-256 content hashes are recorded in `.paperclip/2026-09-24/research.json`. Topics: vendor bank-detail change verification, SOP change-control release evidence, dispatch reroute exception boundaries, workforce timesheet-correction packets, and inventory quarantine-release readiness. Sources were checked on 2026-09-24 from the National Institute of Standards and Technology, U.S. Government Accountability Office, U.S. Department of Labor, and Federal Trade Commission. Live verification evidence will be added after production deployment.
+Five new decision-grade Research articles prepared for first publication on 2026-09-24 UTC. Canonical routes, source records, and SHA-256 content hashes are recorded in `.paperclip/2026-09-24/research.json`; content commit `b9b908c8a430ecb6ece4ef8c7e14435fc220cf0f`. Topics: vendor bank-detail change verification, SOP change-control release evidence, dispatch reroute exception boundaries, workforce timesheet-correction packets, and inventory quarantine-release readiness. Sources were checked on 2026-09-24 from the National Institute of Standards and Technology, U.S. Government Accountability Office, U.S. Department of Labor, and Federal Trade Commission. Live verification evidence will be added after production deployment.
 
 ## 2026-09-23
 
