@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "contract": "canonical-daily-research-publishing",
+  "family": "research",
+  "domain": "outsourcedlabor.com",
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "branch": "main",
+  "publicationTimezone": "UTC",
+  "requiredCount": 5,
+  "publicationDate": "2026-09-24",
+  "sourceCheckedDate": "2026-09-24",
+  "contentCommit": null,
+  "deploymentCommit": null,
+  "remoteShaAtVerification": null,
+  "deploymentEvidence": null,
+  "deploymentUuid": null,
+  "deploymentFinishedAt": null,
+  "verifiedCount": 0,
+  "sources": [
+    {"title":"NIST Cybersecurity Framework 2.0","publisher":"National Institute of Standards and Technology","url":"https://www.nist.gov/cyberframework","checked":"2026-09-24"},
+    {"title":"NIST Digital Identity Guidelines","publisher":"National Institute of Standards and Technology","url":"https://pages.nist.gov/800-63-4/","checked":"2026-09-24"},
+    {"title":"NIST Privacy Framework","publisher":"National Institute of Standards and Technology","url":"https://www.nist.gov/privacy-framework","checked":"2026-09-24"},
+    {"title":"The Green Book: Standards for Internal Control in the Federal Government","publisher":"U.S. Government Accountability Office","url":"https://www.gao.gov/greenbook","checked":"2026-09-24"},
+    {"title":"Recordkeeping and Reporting","publisher":"U.S. Department of Labor","url":"https://www.dol.gov/general/topic/wages/wagesrecordkeeping","checked":"2026-09-24"},
+    {"title":"Cybersecurity for Small Business","publisher":"Federal Trade Commission","url":"https://www.ftc.gov/business-guidance/small-businesses/cybersecurity","checked":"2026-09-24"}
+  ],
+  "entries": [
+    {"topic":"vendor bank-detail change verification","slug":"research-philippines-vendor-bank-detail-change-verification","route":"/research/research-philippines-vendor-bank-detail-change-verification","contentHash":"afeee638d28e58b7b851fb086ff231130a649840e85d8982b800be9d16f9d057","liveUrl":"https://outsourcedlabor.com/research/research-philippines-vendor-bank-detail-change-verification","verifiedAt":null},
+    {"topic":"SOP change-control release evidence","slug":"research-outsourced-sop-change-control-release-evidence","route":"/research/research-outsourced-sop-change-control-release-evidence","contentHash":"9abcadea559e02403c2f8654d6c63d5db0a476854a7a4c5c3f934f1a9c188b31","liveUrl":"https://outsourcedlabor.com/research/research-outsourced-sop-change-control-release-evidence","verifiedAt":null},
+    {"topic":"dispatch reroute exception boundary","slug":"research-philippines-dispatch-reroute-exception-boundary","route":"/research/research-philippines-dispatch-reroute-exception-boundary","contentHash":"f72d80e6299d97e0a16d1de4a3248d1f1277ef0053e70b089ab762e6b61beae7","liveUrl":"https://outsourcedlabor.com/research/research-philippines-dispatch-reroute-exception-boundary","verifiedAt":null},
+    {"topic":"workforce timesheet-correction packet","slug":"research-outsourced-workforce-timesheet-correction-packet","route":"/research/research-outsourced-workforce-timesheet-correction-packet","contentHash":"a483a15405766a409b4a7ab4cec8567fa8395424050709f2b1ce924410e65d2d","liveUrl":"https://outsourcedlabor.com/research/research-outsourced-workforce-timesheet-correction-packet","verifiedAt":null},
+    {"topic":"inventory quarantine-release readiness","slug":"research-philippines-inventory-quarantine-release-readiness","route":"/research/research-philippines-inventory-quarantine-release-readiness","contentHash":"c54e9d827fe1b591c40278df1f27e59bd8d8177f444584c8f3476b8bf5bc7426","liveUrl":"https://outsourcedlabor.com/research/research-philippines-inventory-quarantine-release-readiness","verifiedAt":null}
+  ],
+  "validationCommands": ["node scripts/validate-sep24-research.mjs", "npm run lint", "npm run build", "git diff --check"]
+}
