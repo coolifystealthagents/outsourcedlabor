@@ -1,5 +1,17 @@
 # Daily Blog Publication Ledger
 
+## 2026-09-24 — Philippines staffing operations guides
+
+- Family: Blog
+- Required count: 12
+- Content commit: `b80c6d960ff99457716789a70cf01000e5e415f8`
+- Repository and production branch: `coolifystealthagents/outsourcedlabor`, `main`
+- Run branch: `routine/outaaaaaaaa-65-20260924`
+- Source set: NIST Cybersecurity Framework 2.0; GAO Standards for Internal Control; Philippines National Privacy Commission Data Privacy Act page
+- Manifest: `.paperclip/daily-content/2026-09-24/blog.json`
+- Pre-deployment validation: 12/12 routes built; 1,655–1,666 rendered words; unique slugs and content hashes; canonical, Article publication date, accessible hero, service/contact CTAs, sitemap eligibility, newest-first ordering, TypeScript, and production build passed.
+- Publication status: awaiting production deployment and public verification; no article is counted until its final URL passes the live checks.
+
 ## 2026-09-23 — Philippines staffing operations guides
 
 - Family: Blog

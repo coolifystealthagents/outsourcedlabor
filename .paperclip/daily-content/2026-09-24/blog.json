@@ -1,0 +1,117 @@
+{
+  "publicationDate": "2026-09-24",
+  "timezone": "UTC",
+  "family": "blog",
+  "requiredCount": 12,
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "productionBranch": "main",
+  "routineBranch": "routine/outaaaaaaaa-65-20260924",
+  "baseProductionSha": "a8a0c57b3dee3754f876f696d80b4a63862b0c79",
+  "contentCommit": "b80c6d960ff99457716789a70cf01000e5e415f8",
+  "deployedCommit": null,
+  "deploymentEvidence": null,
+  "verificationCompletedAt": null,
+  "sources": [
+    "https://www.nist.gov/cyberframework",
+    "https://www.gao.gov/products/gao-14-704g",
+    "https://privacy.gov.ph/data-privacy-act/"
+  ],
+  "entries": [
+    {
+      "topic": "refund evidence preparation",
+      "slug": "philippines-customer-refund-evidence-packet",
+      "service": "customer-support",
+      "contentHash": "637a7c8e02ce0f0d8750b1521e33e0e3195c54a716f959ebe4e3d4caec94993c",
+      "liveUrl": "https://outsourcedlabor.com/blog/philippines-customer-refund-evidence-packet",
+      "verificationTime": null
+    },
+    {
+      "topic": "accounts receivable dispute tracking",
+      "slug": "filipino-accounts-receivable-dispute-log",
+      "service": "finance-operations-support",
+      "contentHash": "795e4423a6a373b826466662ffd1a30804bf58f262c9be1c55c17c12a00bc17a",
+      "liveUrl": "https://outsourcedlabor.com/blog/filipino-accounts-receivable-dispute-log",
+      "verificationTime": null
+    },
+    {
+      "topic": "purchase order acknowledgment tracking",
+      "slug": "outsourced-purchase-order-acknowledgment-tracker",
+      "service": "procurement-follow-up",
+      "contentHash": "87949ea4e096c23bf4e6eb57d2a668e2d80affc83c4da7efd02be54069b6208a",
+      "liveUrl": "https://outsourcedlabor.com/blog/outsourced-purchase-order-acknowledgment-tracker",
+      "verificationTime": null
+    },
+    {
+      "topic": "ecommerce return intake",
+      "slug": "philippines-ecommerce-return-intake-checklist",
+      "service": "order-operations",
+      "contentHash": "f8aed2255bbf66f228f432508f7d19586fd6c9cbf28a1a71c30ced7e9189bdd1",
+      "liveUrl": "https://outsourcedlabor.com/blog/philippines-ecommerce-return-intake-checklist",
+      "verificationTime": null
+    },
+    {
+      "topic": "CRM consent-status review",
+      "slug": "filipino-crm-consent-status-review",
+      "service": "crm-data-stewardship",
+      "contentHash": "7712d428012f4e2e71a4ac007e0d7f1595d4c56e91fddffc2b237a1d04e740a7",
+      "liveUrl": "https://outsourcedlabor.com/blog/filipino-crm-consent-status-review",
+      "verificationTime": null
+    },
+    {
+      "topic": "vendor onboarding document checks",
+      "slug": "outsourced-vendor-onboarding-document-check",
+      "service": "vendor-coordination",
+      "contentHash": "6fde71d0484ac9f2b04c9bd42e581fafd2db93912d3ee672b8ba1a20942e17a8",
+      "liveUrl": "https://outsourcedlabor.com/blog/outsourced-vendor-onboarding-document-check",
+      "verificationTime": null
+    },
+    {
+      "topic": "reopened support ticket analysis",
+      "slug": "philippines-support-ticket-reopen-analysis",
+      "service": "customer-support",
+      "contentHash": "5b0cc19a323a4722865cdd96b291396d4b743cd568573d55a67bc74b013f8eee",
+      "liveUrl": "https://outsourcedlabor.com/blog/philippines-support-ticket-reopen-analysis",
+      "verificationTime": null
+    },
+    {
+      "topic": "cycle count exception logging",
+      "slug": "filipino-inventory-cycle-count-exception-log",
+      "service": "inventory-administration",
+      "contentHash": "57a4d50a4ff3152f70a294d2d17a3f6eb83dcd067f6a698838792c0d68218e25",
+      "liveUrl": "https://outsourcedlabor.com/blog/filipino-inventory-cycle-count-exception-log",
+      "verificationTime": null
+    },
+    {
+      "topic": "SLA breach warning queues",
+      "slug": "outsourced-sla-breach-warning-queue",
+      "service": "operations-support",
+      "contentHash": "569e68e19ec163ac5744152f9a18847832ba3163d5625d4e76a563d10504c009",
+      "liveUrl": "https://outsourcedlabor.com/blog/outsourced-sla-breach-warning-queue",
+      "verificationTime": null
+    },
+    {
+      "topic": "catalog change proofing",
+      "slug": "philippines-catalog-change-proof-sheet",
+      "service": "order-operations",
+      "contentHash": "e09c3860f91b20bca21655d0110cb7e7f7ffb36eb28252224314955c278ba97d",
+      "liveUrl": "https://outsourcedlabor.com/blog/philippines-catalog-change-proof-sheet",
+      "verificationTime": null
+    },
+    {
+      "topic": "knowledge base expiry review",
+      "slug": "filipino-knowledge-base-expiry-review",
+      "service": "sop-documentation",
+      "contentHash": "5d2cb5f2cf920bb6aadaee5f7d51f05aef2d9d4f4e71194b588e5f8d0682dd04",
+      "liveUrl": "https://outsourcedlabor.com/blog/filipino-knowledge-base-expiry-review",
+      "verificationTime": null
+    },
+    {
+      "topic": "shift capacity variance reporting",
+      "slug": "outsourced-shift-capacity-variance-report",
+      "service": "workforce-reporting",
+      "contentHash": "3db8666fbd5dcf82d89545e632d363184a7a8a3d04bb95e9ddda866106504551",
+      "liveUrl": "https://outsourcedlabor.com/blog/outsourced-shift-capacity-variance-report",
+      "verificationTime": null
+    }
+  ]
+}
