@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "contract": "canonical-daily-research-publishing",
+  "family": "research",
+  "domain": "outsourcedlabor.com",
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "branch": "routine/outaaaaaaaa-69-20260925",
+  "publicationTimezone": "UTC",
+  "requiredCount": 5,
+  "publicationDate": "2026-09-25",
+  "sourceCheckedDate": "2026-09-25",
+  "contentCommit": null,
+  "deploymentCommit": null,
+  "remoteShaAtVerification": null,
+  "deploymentEvidence": "Pending same-cycle Blog integration; Research must not push or deploy",
+  "deploymentUuid": null,
+  "deploymentFinishedAt": null,
+  "verifiedCount": 0,
+  "sources": [
+    {"title":"NIST Cybersecurity Framework 2.0","publisher":"National Institute of Standards and Technology","url":"https://www.nist.gov/cyberframework","checked":"2026-09-25"},
+    {"title":"NIST Privacy Framework","publisher":"National Institute of Standards and Technology","url":"https://www.nist.gov/privacy-framework","checked":"2026-09-25"},
+    {"title":"NIST Digital Identity Guidelines","publisher":"National Institute of Standards and Technology","url":"https://pages.nist.gov/800-63-4/","checked":"2026-09-25"},
+    {"title":"The Green Book: Standards for Internal Control in the Federal Government","publisher":"U.S. Government Accountability Office","url":"https://www.gao.gov/greenbook","checked":"2026-09-25"},
+    {"title":"Cybersecurity for Small Business","publisher":"Federal Trade Commission","url":"https://www.ftc.gov/business-guidance/small-businesses/cybersecurity","checked":"2026-09-25"}
+  ],
+  "entries": [
+    {"topic":"workforce schedule coverage-gap triage","slug":"research-philippines-workforce-schedule-coverage-gap-triage","route":"/research/research-philippines-workforce-schedule-coverage-gap-triage","contentHash":"54f145b9180274cc3d7fa81fe390bd2440de29ea9b89a778df22c3d1dbe44458","liveUrl":"https://outsourcedlabor.com/research/research-philippines-workforce-schedule-coverage-gap-triage","verifiedAt":null},
+    {"topic":"CRM record export approval boundary","slug":"research-outsourced-crm-record-export-approval-boundary","route":"/research/research-outsourced-crm-record-export-approval-boundary","contentHash":"374bc07ffface68e34b90a7dc687658ba714f63fb7bc05bbbd69b313d95a43e2","liveUrl":"https://outsourcedlabor.com/research/research-outsourced-crm-record-export-approval-boundary","verifiedAt":null},
+    {"topic":"purchase-order change evidence","slug":"research-philippines-purchase-order-change-evidence","route":"/research/research-philippines-purchase-order-change-evidence","contentHash":"5aa5cb5c342f871b1ddf118fc000fac0a967c78e11a9b3c59fec4ef8bff392c5","liveUrl":"https://outsourcedlabor.com/research/research-philippines-purchase-order-change-evidence","verifiedAt":null},
+    {"topic":"quality inspection-sample release","slug":"research-outsourced-quality-inspection-sample-release","route":"/research/research-outsourced-quality-inspection-sample-release","contentHash":"13181baf83eff50d98855ab3035d21e2cddcdf68d1f8348f1e8fc34a88f8c2b8","liveUrl":"https://outsourcedlabor.com/research/research-outsourced-quality-inspection-sample-release","verifiedAt":null},
+    {"topic":"order refund-exception packet","slug":"research-philippines-order-refund-exception-packet","route":"/research/research-philippines-order-refund-exception-packet","contentHash":"7a5e6f1fb952d8f73da7a04685c3d658a43a0291e3985ff06103cc6e90c7ad41","liveUrl":"https://outsourcedlabor.com/research/research-philippines-order-refund-exception-packet","verifiedAt":null}
+  ]
+}
