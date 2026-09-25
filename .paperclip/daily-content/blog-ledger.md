@@ -1,5 +1,17 @@
 # Daily Blog Publication Ledger
 
+## 2026-09-25 recovery cycle — Philippines staffing operations guides
+
+- Family: Blog
+- Required count: 12
+- Repository and production branch: `coolifystealthagents/outsourcedlabor`, `main`
+- Run branch: `routine/outaaaaaaaa-70-20260925`
+- Base production SHA: `5751390216ff7aac45dc51c76f306b617ecf68e2`
+- Source set: NIST Cybersecurity Framework 2.0; CISA Identity and Access Management; Philippines National Privacy Commission Data Privacy Act page
+- Manifest: `.paperclip/daily-content/2026-09-25/blog.json`
+- Pre-release validation: 12/12 routes built; 1,650+ rendered words each; unique slugs and content hashes; canonical, Article publication date, visible date, accessible hero, service/contact CTAs, sitemap eligibility, newest-first ordering, TypeScript, and production build passed.
+- Release status: Blog staging complete; awaiting the five-article Research commit from OUTAAAAAAAA-69 for the required single combined push. The browser operator owns deployment and public-route verification.
+
 ## 2026-09-24 — Philippines staffing operations guides
 
 - Family: Blog

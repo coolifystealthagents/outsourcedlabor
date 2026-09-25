@@ -1,0 +1,117 @@
+{
+  "publicationDate": "2026-09-25",
+  "timezone": "UTC",
+  "family": "blog",
+  "requiredCount": 12,
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "productionBranch": "main",
+  "routineBranch": "routine/outaaaaaaaa-70-20260925",
+  "baseProductionSha": "5751390216ff7aac45dc51c76f306b617ecf68e2",
+  "contentCommit": null,
+  "deployedCommit": null,
+  "deploymentEvidence": null,
+  "verificationCompletedAt": null,
+  "sources": [
+    "https://www.nist.gov/cyberframework",
+    "https://www.cisa.gov/topics/cyber-threats-and-advisories/identity-and-access-management",
+    "https://privacy.gov.ph/data-privacy-act/"
+  ],
+  "entries": [
+    {
+      "topic": "support escalation response timing",
+      "slug": "philippines-support-escalation-response-clock",
+      "service": "customer-support",
+      "contentHash": "6066e0003955eaeb97ffcf9539eb9ca0d6d0e76190b66ba54512dcfb871e7dce",
+      "liveUrl": "https://outsourcedlabor.com/blog/philippines-support-escalation-response-clock",
+      "verificationTime": null
+    },
+    {
+      "topic": "contract renewal calendar administration",
+      "slug": "filipino-admin-contract-renewal-calendar",
+      "service": "admin-support",
+      "contentHash": "e213e53eece4bb01465310adcdb379e54cbc728f8cb5321c3c678d93584996e5",
+      "liveUrl": "https://outsourcedlabor.com/blog/filipino-admin-contract-renewal-calendar",
+      "verificationTime": null
+    },
+    {
+      "topic": "customer support macro change control",
+      "slug": "outsourced-customer-support-macro-change-review",
+      "service": "customer-support",
+      "contentHash": "5c8aeee96724cca6acbcd405c3f432cf518e05db75d074524c438be9f2c4baa8",
+      "liveUrl": "https://outsourcedlabor.com/blog/outsourced-customer-support-macro-change-review",
+      "verificationTime": null
+    },
+    {
+      "topic": "order address change triage",
+      "slug": "philippines-order-address-change-triage",
+      "service": "order-operations",
+      "contentHash": "e7e7cac94ac203777b420aed938a2eb6da96a54ab4e16c000457cdb9d06fd86d",
+      "liveUrl": "https://outsourcedlabor.com/blog/philippines-order-address-change-triage",
+      "verificationTime": null
+    },
+    {
+      "topic": "supplier delivery date follow-up",
+      "slug": "filipino-procurement-delivery-date-follow-up",
+      "service": "procurement-follow-up",
+      "contentHash": "b8eacf21713b33b89ec551d8bef5b6c2e2fefc0f00637616fdc3c54d4b5a4361",
+      "liveUrl": "https://outsourcedlabor.com/blog/filipino-procurement-delivery-date-follow-up",
+      "verificationTime": null
+    },
+    {
+      "topic": "CRM field completeness auditing",
+      "slug": "outsourced-crm-field-completeness-audit",
+      "service": "crm-data-stewardship",
+      "contentHash": "418ba0ad643e39997e8f763547b51a2c434ecb8fdbb8ee3f9ddbf11a5ab4ed24",
+      "liveUrl": "https://outsourcedlabor.com/blog/outsourced-crm-field-completeness-audit",
+      "verificationTime": null
+    },
+    {
+      "topic": "workforce schedule coverage analysis",
+      "slug": "philippines-workforce-schedule-coverage-gap",
+      "service": "workforce-scheduling",
+      "contentHash": "4eaa39751c539b0bd58d9b98d319db46d8585bfa92cda0ea08ee2ab883743153",
+      "liveUrl": "https://outsourcedlabor.com/blog/philippines-workforce-schedule-coverage-gap",
+      "verificationTime": null
+    },
+    {
+      "topic": "invoice and receipt matching",
+      "slug": "filipino-invoice-receipt-matching-queue",
+      "service": "finance-operations-support",
+      "contentHash": "1a90520d1ddda342b12d90646421e60fdac03096ff17145006634ba9d7216ca9",
+      "liveUrl": "https://outsourcedlabor.com/blog/filipino-invoice-receipt-matching-queue",
+      "verificationTime": null
+    },
+    {
+      "topic": "knowledge base search-gap review",
+      "slug": "outsourced-knowledge-base-search-gap-review",
+      "service": "sop-documentation",
+      "contentHash": "7581863239f14068e8fc37b792240c7adac1605544e213c788879fa9fa2d0a67",
+      "liveUrl": "https://outsourcedlabor.com/blog/outsourced-knowledge-base-search-gap-review",
+      "verificationTime": null
+    },
+    {
+      "topic": "quality review disagreement tracking",
+      "slug": "philippines-quality-review-disagreement-log",
+      "service": "reporting-and-qa",
+      "contentHash": "730cc8dd471498c9725a759341131e1ea5e4bd76d3a7a847c6697137b8035166",
+      "liveUrl": "https://outsourcedlabor.com/blog/philippines-quality-review-disagreement-log",
+      "verificationTime": null
+    },
+    {
+      "topic": "vendor contact verification",
+      "slug": "filipino-vendor-contact-verification-review",
+      "service": "vendor-coordination",
+      "contentHash": "d406b16ff59e8e4add508caff25d4a5e247be7c55f9f9949635422626d70bbc6",
+      "liveUrl": "https://outsourcedlabor.com/blog/filipino-vendor-contact-verification-review",
+      "verificationTime": null
+    },
+    {
+      "topic": "operations backlog aging analysis",
+      "slug": "outsourced-operations-backlog-aging-brief",
+      "service": "operations-support",
+      "contentHash": "e949235c025043b1a2f1099160a9824cc737ab09883f73df1ee1483e1da9e71e",
+      "liveUrl": "https://outsourcedlabor.com/blog/outsourced-operations-backlog-aging-brief",
+      "verificationTime": null
+    }
+  ]
+}
