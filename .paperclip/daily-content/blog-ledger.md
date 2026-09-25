@@ -7,6 +7,8 @@
 - Repository and production branch: `coolifystealthagents/outsourcedlabor`, `main`
 - Run branch: `routine/outaaaaaaaa-70-20260925`
 - Base production SHA: `5751390216ff7aac45dc51c76f306b617ecf68e2`
+- Blog content commit: `117a94fec2ef82641160c2d5126f534f9fdaa46f`
+- Integrated Research content commit: `10761ab96f89e95e9d8adad57edc346b035cad23` (five articles from OUTAAAAAAAA-69)
 - Source set: NIST Cybersecurity Framework 2.0; CISA Identity and Access Management; Philippines National Privacy Commission Data Privacy Act page
 - Manifest: `.paperclip/daily-content/2026-09-25/blog.json`
 - Pre-release validation: 12/12 routes built; 1,650+ rendered words each; unique slugs and content hashes; canonical, Article publication date, visible date, accessible hero, service/contact CTAs, sitemap eligibility, newest-first ordering, TypeScript, and production build passed.
