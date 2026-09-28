@@ -20,7 +20,7 @@
   },
   "deploymentOwner": "browser_operator",
   "deploymentApplication": "rnfrqkl6u7ywjtsxwwcg8sav",
-  "contentStatus": "topic_inventory_locked",
+  "contentStatus": "records_scaffolded_bodies_pending",
   "integrationStatus": "not_started",
   "productionPushStatus": "not_started",
   "topics": [
