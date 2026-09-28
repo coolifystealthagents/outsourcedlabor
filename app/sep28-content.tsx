@@ -1,4 +1,6 @@
-// Draft-only content. Do not wire this module into public routes until all 12 articles pass the batch gate.
+import type {Metadata} from 'next';
+import {CTA, Footer, Header, JsonLd} from './components';
+
 export const sep28DraftArticles = [{
   slug: 'philippines-support-callback-identity-check',
   title: 'Verify Identity Before a Customer Support Callback',
@@ -491,3 +493,38 @@ Use aging states for awaiting evidence, owner review, draft change, pilot, and c
 Periodically sample closed “no change” reviews. Confirm that the reason was documented and that a recurring high-consequence exception did not disappear from view. The ledger exists to support governance and learning; it should not become a way to normalize unauthorized workarounds.`},
   ],sources:['https://www.gao.gov/greenbook','https://www.nist.gov/privacy-framework','https://privacy.gov.ph/data-privacy-act/'],
 }] as const;
+
+const site = 'https://outsourcedlabor.com';
+export const sep28PublicationDate = '2026-09-28';
+const visibleDate = 'Published: September 28, 2026';
+type DraftArticle = (typeof sep28DraftArticles)[number];
+type ArticleSection = {heading: string; body: string};
+const completeSections = (article: DraftArticle): ArticleSection[] => [
+  ...article.sections,
+  ...('depthNote' in article ? [article.depthNote as ArticleSection] : []),
+  ...('closingNote' in article ? [article.closingNote as ArticleSection] : []),
+  ...('finalNote' in article ? [article.finalNote as ArticleSection] : []),
+];
+
+export const sep28BlogArticles = Object.fromEntries(sep28DraftArticles.map((article) => [article.slug, article])) as Record<string, DraftArticle>;
+
+export function getSep28BlogMetadata(slug: string): Metadata {
+  const article = sep28BlogArticles[slug];
+  const canonical = `${site}/blog/${slug}`;
+  const description = `A practical guide to ${article.title.toLowerCase()}, with source evidence, authority boundaries, and review checks.`;
+  return {
+    title: article.title,
+    description,
+    alternates: {canonical},
+    openGraph: {title: article.title, description, url: canonical, type: 'article', publishedTime: sep28PublicationDate, images: [{url: '/filipino-operations-specialist.svg', alt: 'Filipino operations specialist reviewing a controlled work queue'}]},
+  };
+}
+
+export function renderSep28BlogArticle(slug: string) {
+  const article = sep28BlogArticles[slug];
+  const canonical = `${site}/blog/${slug}`;
+  const sections = completeSections(article);
+  const description = `A practical guide to ${article.title.toLowerCase()}, with source evidence, authority boundaries, and review checks.`;
+  const schema = {'@context':'https://schema.org','@type':'Article',headline:article.title,description,datePublished:sep28PublicationDate,mainEntityOfPage:canonical,image:`${site}/filipino-operations-specialist.svg`,author:{'@type':'Organization',name:'Outsourced Labor',url:site},publisher:{'@type':'Organization',name:'Outsourced Labor',url:site},citation:article.sources};
+  return <><Header/><main className="article-page"><JsonLd data={schema}/><article className="container article-shell"><header className="article-header"><p className="eyebrow">Philippines staffing operations guide</p><h1>{article.title}</h1><p className="lead">{description}</p><div className="article-meta"><span>10 min read</span><time dateTime={sep28PublicationDate}>{visibleDate}</time></div><img src="/filipino-operations-specialist.svg" alt="Filipino operations specialist reviewing a controlled work queue" width="1200" height="630"/></header><div className="article-body">{sections.map((section)=><section key={section.heading}><h2>{section.heading}</h2>{section.body.split('\n\n').map((paragraph)=><p key={paragraph}>{paragraph}</p>)}</section>)}<p>For a scoped next step, review <a href={`/services/${article.service}`}>{article.service.replaceAll('-',' ')}</a> or <a href="/contact">request a labor plan</a>. Keep consequential approvals with the accountable client owner.</p></div><section className="source-list"><h2>Authoritative references</h2><ol>{article.sources.map((url)=><li key={url}><a href={url} target="_blank" rel="noreferrer">{url}</a></li>)}</ol></section></article><CTA/></main><Footer/></>;
+}

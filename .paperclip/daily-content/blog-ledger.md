@@ -1,5 +1,16 @@
 # Daily Blog Publication Ledger
 
+## 2026-09-28 combined cycle — controlled Philippines staffing workflows
+
+- Family/count: Blog, exactly 12
+- Repository/branch: `coolifystealthagents/outsourcedlabor`, `routine/outaaaaaaaa-72-20260928`
+- Baseline: `82d9cf2cd28bd156a792c58e65e08d0d966076b1`
+- Integrated Research source commit: `cd22ab0b7bc27ae3489bc8088c7c76dab2a65eb8` (exactly five)
+- Manifest: `.paperclip/daily-content/2026-09-28/blog.json`
+- Publication date: `2026-09-28` UTC, reconciled before the combined push; public verification remains user-owned.
+- Draft validation: Blog body-only counts 900–1,536; maximum pairwise five-word-shingle Jaccard 0.28%. Research counts 2,768–2,898; maximum overlap 42.38%.
+- Deployment boundary: browser operator owns Coolify application `rnfrqkl6u7ywjtsxwwcg8sav`; this routine does not submit deployment or claim queued routes live.
+
 ## 2026-09-25 recovery cycle — Philippines staffing operations guides
 
 - Family: Blog

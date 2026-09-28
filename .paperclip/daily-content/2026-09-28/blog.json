@@ -1,0 +1,28 @@
+{
+  "publicationDate": "2026-09-28",
+  "timezone": "UTC",
+  "family": "blog",
+  "requiredCount": 12,
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "productionBranch": "main",
+  "routineBranch": "routine/outaaaaaaaa-72-20260928",
+  "baseProductionSha": "82d9cf2cd28bd156a792c58e65e08d0d966076b1",
+  "contentCommit": null,
+  "deployedCommit": null,
+  "deploymentEvidence": null,
+  "verificationCompletedAt": null,
+  "entries": [
+    {"slug":"philippines-support-callback-identity-check","topic":"customer callback identity verification","contentHash":"e5608d44c57de46f204cde80c3624d158f740433dcee864081b4b5241cb02a6c","liveUrl":"https://outsourcedlabor.com/blog/philippines-support-callback-identity-check","verificationTime":null},
+    {"slug":"filipino-admin-meeting-preread-packet","topic":"meeting pre-read packet preparation","contentHash":"243cc8bac9d12c54f1e74690ecdfe9cf29cdb9201539c43a523bd81cfd71d471","liveUrl":"https://outsourcedlabor.com/blog/filipino-admin-meeting-preread-packet","verificationTime":null},
+    {"slug":"outsourced-order-partial-shipment-reconciliation","topic":"partial shipment reconciliation","contentHash":"5fffdb2d2f317aea30e48cd07b2583549aa0a8c62e1607047c3c69b478264385","liveUrl":"https://outsourcedlabor.com/blog/outsourced-order-partial-shipment-reconciliation","verificationTime":null},
+    {"slug":"philippines-vendor-promised-date-variance","topic":"vendor promised-date variance tracking","contentHash":"7bba5b7ae23faee9948cba6ea84f5e94abf2752ee6486a9b751d121974b84fd3","liveUrl":"https://outsourcedlabor.com/blog/philippines-vendor-promised-date-variance","verificationTime":null},
+    {"slug":"filipino-inventory-unit-of-measure-mismatch","topic":"inventory unit-of-measure mismatch triage","contentHash":"de1d080d994d926efc31a41bf9c8c8ec2f7a6a60f6f4e6833fa1aee28108257a","liveUrl":"https://outsourcedlabor.com/blog/filipino-inventory-unit-of-measure-mismatch","verificationTime":null},
+    {"slug":"outsourced-crm-duplicate-ownership-review","topic":"CRM duplicate ownership review","contentHash":"5cc1045d60c558f3ccc3d50535ab3bd6887220a7578281204375dcd88f25672b","liveUrl":"https://outsourcedlabor.com/blog/outsourced-crm-duplicate-ownership-review","verificationTime":null},
+    {"slug":"philippines-procurement-po-acknowledgment","topic":"purchase order acknowledgment follow-up","contentHash":"2813e56315cb0108d3c3617010cd18980a08003630ff5fb7e62d6344fff65932","liveUrl":"https://outsourcedlabor.com/blog/philippines-procurement-po-acknowledgment","verificationTime":null},
+    {"slug":"filipino-qa-root-cause-evidence-packet","topic":"quality root-cause evidence preparation","contentHash":"109b0ca148c1744f10b64abb66c41923ead51c13736b32fa46b80e8a7c482c87","liveUrl":"https://outsourcedlabor.com/blog/filipino-qa-root-cause-evidence-packet","verificationTime":null},
+    {"slug":"outsourced-workforce-skill-coverage-matrix","topic":"workforce skill coverage analysis","contentHash":"7e7091b7f9cc7fc0e53ae427f6dad73c6a1bad116998e166ded2f28c3e54ab56","liveUrl":"https://outsourcedlabor.com/blog/outsourced-workforce-skill-coverage-matrix","verificationTime":null},
+    {"slug":"philippines-reporting-metric-definition-register","topic":"metric definition register maintenance","contentHash":"403535e1496eab7b4e0b2142d64bcbc2c4b339778dcdd34f569c037cca9507a3","liveUrl":"https://outsourcedlabor.com/blog/philippines-reporting-metric-definition-register","verificationTime":null},
+    {"slug":"filipino-dispatch-stalled-work-recovery","topic":"stalled work recovery in operations dispatch","contentHash":"4d4ec8a32379ff2c1642b764d10460bcafd5acbddd0ac558a0fa8b37a6426ffe","liveUrl":"https://outsourcedlabor.com/blog/filipino-dispatch-stalled-work-recovery","verificationTime":null},
+    {"slug":"outsourced-sop-exception-to-procedure-review","topic":"exception-to-procedure review","contentHash":"e3aeec0e7174259c51bb5df62ffc5fb9c305474e8f24911e45fc8b02c0e96e3e","liveUrl":"https://outsourcedlabor.com/blog/outsourced-sop-exception-to-procedure-review","verificationTime":null}
+  ]
+}
