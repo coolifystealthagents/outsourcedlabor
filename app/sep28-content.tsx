@@ -66,4 +66,71 @@ At the end of the pilot, choose keep, repair, expand, or stop. Keep the lane whe
     'https://pages.nist.gov/800-63-4/sp800-63b.html',
     'https://www.cisa.gov/topics/cyber-threats-and-advisories/identity-and-access-management',
   ],
+}, {
+  slug: 'filipino-admin-meeting-preread-packet',
+  title: 'Build a Decision-Ready Meeting Pre-Read With Filipino Admin Support',
+  service: 'admin-support',
+  sections: [
+    {
+      heading: 'Begin with the decision, not the collection of documents',
+      body: `A useful pre-read prepares participants to make a named decision. It is not a folder of attachments and it is not a polished substitute for missing analysis. Before a Filipino administrative specialist assembles anything, the meeting owner should state the decision in one sentence, identify who has authority to make it, and explain what outcome is expected from the meeting. “Discuss the vendor” is not specific enough. “Choose whether to renew the current vendor for one year under the approved budget, request revised terms, or begin an alternative review” gives the packet a finish line.
+
+The brief should list the questions the evidence must answer. For a renewal, those may include the notice deadline, current scope, approved budget, usage period, unresolved service issues, available alternatives, and contractual decision owner. The specialist can locate and organize approved facts for each question. They should not decide whether a complaint is material, interpret a contract, predict savings, or recommend a vendor unless the client has explicitly assigned and reviewed that work.
+
+Test the decision statement with someone who is not organizing the meeting. Ask what choice they believe will be made and which evidence they would expect. If their answer differs from the owner’s intent, repair the meeting brief before gathering material. This small test prevents hours of administrative work from producing a packet that is complete in appearance but irrelevant to the actual choice.`,
+    },
+    {
+      heading: 'Create a source map and a firm evidence cutoff',
+      body: `For every requested fact, name the authoritative source, its owner, the period covered, and the freshness requirement. Budget numbers may come from an approved finance report; deadlines from the executed agreement; service history from the ticket system; and usage from a defined product report. A forwarded slide or old meeting note may help locate a source, but it should not silently replace that source.
+
+Set a cutoff time for the packet. Without one, late messages cause the specialist to keep changing totals, page references, and summaries while attendees review different versions. The cover page should say when evidence was observed and which expected items were unavailable at that time. A late material change belongs in a clearly labeled addendum or requires the owner to reissue the packet. It should not be inserted invisibly minutes before the meeting.
+
+Record discrepancies rather than smoothing them away. If a dashboard total differs from a finance export, show both values, their source dates, and the owner asked to reconcile them. Do not average the values or select the one that supports a preferred result. A decision maker can work with a visible conflict; they cannot assess a conflict hidden by formatting.`,
+    },
+    {
+      heading: 'Use a predictable packet architecture',
+      body: `Put the decision statement, meeting owner, decision owner, meeting time, evidence cutoff, and requested outcome on the first page. Follow with a short factual summary organized around the decision questions. Then provide an options table, open questions, risks or dependencies supplied by accountable owners, and links to supporting records. Place detailed exhibits after the main brief so participants can inspect them without losing the decision thread.
+
+An options table should distinguish recorded facts from owner-provided assumptions. Columns might include option, required action, documented cost or resource input, deadline, dependency, reversible next step, and named owner. Administrative support can populate fields from approved sources and flag blanks. It should not invent an option, calculate an unapproved forecast, or turn a stakeholder opinion into a verified fact.
+
+Keep page references stable. Label exhibits, use the same names in the summary, and link to records in approved systems instead of creating uncontrolled copies. If access differs among participants, identify that before circulation. A packet that depends on attachments half the room cannot open creates delay and encourages people to resend sensitive records through less controlled channels.`,
+    },
+    {
+      heading: 'Make uncertainty and dissent visible',
+      body: `Decision-ready does not mean falsely certain. Give unresolved items a consistent treatment: state the question, facts available, missing evidence, person asked, response deadline, and effect on the decision. This lets the meeting owner decide whether to proceed, narrow the choice, assign follow-up, or reschedule. Avoid vague labels such as “TBD” when the packet could name what is missing and who controls it.
+
+Preserve material disagreement. If operations and finance use different definitions, attribute each definition to its approved source and ask the accountable owners to reconcile it. Do not rewrite the two positions into a compromise that neither owner approved. Likewise, a specialist should not remove a dissenting note merely because it makes the packet less tidy. The meeting owner determines whether the disagreement belongs in the decision materials.
+
+Separate absence of evidence from evidence of absence. No complaint found in one queue may mean the search scope was limited, not that no complaint exists. A blank contract field may mean the record is missing, not that no obligation applies. Precise wording protects participants from making a confident choice based on an administrative gap.`,
+    },
+    {
+      heading: 'Control sensitive content and circulation',
+      body: `The meeting owner should define the audience before the specialist collects material. Personnel information, customer records, commercial terms, security details, legal advice, and personal data may require separate access or a narrower exhibit. Do not include sensitive content simply because every attendee received the calendar invitation. Minimize what the decision requires and keep the authoritative record in its approved system.
+
+Use named access, approved storage, and a distribution list that the owner reviews. The specialist should not download documents to a personal device, create a public link, or paste restricted information into the calendar description. If a participant needs access, route that request to the record owner. Meeting urgency does not grant new permission.
+
+The Philippines National Privacy Commission’s Data Privacy Act page provides an official starting point for handling personal data. The client remains responsible for applying its legal, contractual, and sector requirements. Administrative support can follow retention, redaction, and circulation rules, but it should not decide whether disclosure is legally permitted.`,
+    },
+    {
+      heading: 'Run an acceptance check before circulation',
+      body: `A second authorized reviewer should compare the packet with the original brief. Check that the decision statement is unchanged, required questions are addressed, numbers retain source and period, links open for the intended audience, missing evidence is visible, options are not presented as recommendations, and the version and cutoff are clear. Verify names, dates, units, currency, and time zones separately; small transcription errors can change the decision.
+
+Use a returned example in training. A packet may fail because it mixes monthly and annual cost, cites a draft instead of the executed agreement, omits the notice deadline, or describes an owner’s assumption as a confirmed result. Show the correction expected for each defect. “Make it executive-ready” is not an acceptance standard.
+
+Send the packet early enough for real review and define how questions are captured. When answers arrive, record whether they correct the packet, add an exhibit, or belong on the meeting agenda. Do not maintain several competing versions by email. The named owner should decide when a change is material enough to reissue the document.`,
+    },
+    {
+      heading: 'Close the loop after the meeting',
+      body: `The pre-read becomes valuable operational evidence when the result can be traced back to it. After the meeting, record the decision, decision maker, time, approved option, stated conditions, follow-up owners, and due dates in the designated system. Link the final packet version rather than rewriting its evidence into the minutes. If no decision was made, state what remains unresolved and what evidence is required next.
+
+Do not let administrative support convert informal discussion into approval. The chair or decision owner must confirm the recorded outcome. Changes involving spend, contract terms, policy, personnel, or external commitments stay with the authorized owner. The specialist can prepare an accurate action register and chase agreed updates, but silence from attendees is not approval for a consequential choice.
+
+Review recurring defects monthly. Missing sources may indicate unclear ownership; late changes may show a weak cutoff; repeated definition disputes may require a metric register; and inaccessible exhibits may expose a permission problem. Improve the brief and source map rather than adding decorative pages. If your team has a repeatable meeting process and needs help scoping the preparation work for Philippines-based talent, review the admin support service or request a labor plan.`,
+    },
+  ],
+  sources: [
+    'https://privacy.gov.ph/data-privacy-act/',
+    'https://www.gao.gov/greenbook',
+    'https://www.nist.gov/privacy-framework',
+  ],
 }] as const;
