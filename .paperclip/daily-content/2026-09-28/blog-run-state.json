@@ -25,7 +25,12 @@
   },
   "deploymentOwner": "browser_operator",
   "deploymentApplication": "rnfrqkl6u7ywjtsxwwcg8sav",
-  "contentStatus": "records_scaffolded_bodies_pending",
+  "contentStatus": "drafting_1_of_12_unrouted",
+  "draftEvidence": {
+    "slug": "philippines-support-callback-identity-check",
+    "bodyWords": 1659,
+    "commit": "9567d201bdd1d5cbdae3f9a17811da86242e207f"
+  },
   "integrationStatus": "research_integrated_blog_bodies_pending",
   "productionPushStatus": "not_started",
   "topics": [
