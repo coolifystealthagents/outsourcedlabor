@@ -163,7 +163,7 @@ Close only when each ordered quantity has an approved terminal or open state and
 Track recurring causes such as duplicate events, warehouse short picks, alias mismatches, and delayed carrier scans. Compare those categories over a defined period and preserve the denominator, because ten exceptions mean something different across one hundred orders and ten thousand orders. Operations support can surface the pattern, but system changes and policy decisions remain with accountable owners. If the lane is stable and needs a dedicated Philippines-based operator, review the order operations scope or request a labor plan.`},
   ], sources:['https://www.gs1.org/standards/id-keys','https://www.cisa.gov/topics/cyber-threats-and-advisories/identity-and-access-management','https://privacy.gov.ph/data-privacy-act/'],
 }, {
-  slug: 'philippines-vendor-promised-date-variance', title: 'Track Supplier Promised-Date Variances With Philippines Vendor Support', service: 'vendor-coordination',
+  slug: 'philippines-vendor-promised-date-variance', title: 'Track Supplier Promised-Date Variances Accurately and Consistently With Philippines Vendor Support', service: 'vendor-coordination',
   sections: [
     {heading:'Establish the approved baseline date',body:`A promised-date variance is meaningful only when the baseline is clear. Purchase-order request dates, supplier acknowledgments, production dates, ship dates, arrival estimates, and internal need-by dates are different commitments. The buyer should define which date the specialist tracks and which supplier evidence can establish or revise it. A casual email estimate should not silently overwrite an accepted acknowledgment.
 
@@ -191,4 +191,135 @@ Summaries should separate count of changed lines, weighted quantities, days of v
 
 Close an entry when the tracked commitment is fulfilled, cancelled by an authorized owner, or transferred to a documented exception process. Retain the history rather than replacing the old date. At the monthly review, inspect whether suppliers use consistent date language, whether internal need-by dates arrived before the order was placed, and whether buyers responded to escalations within the planned window. These observations help owners distinguish supplier delay from an internal planning or approval constraint. Record corrective actions with a named owner and review date instead of turning the variance log into an informal scorecard. If your buyer has defined these rules and needs steady Philippines-based follow-up, review the vendor coordination service or request a labor plan.`},
   ], sources:['https://www.gao.gov/greenbook','https://www.iso.org/standard/75652.html','https://privacy.gov.ph/data-privacy-act/'],
+}, {
+  slug: 'filipino-inventory-unit-of-measure-mismatch', title:'Triage Inventory Unit-of-Measure Mismatches With Filipino Support', service:'inventory-administration',
+  sections:[
+    {heading:'Describe the mismatch without changing stock',body:`Unit-of-measure problems occur when the same item is counted, purchased, stored, sold, or shipped in different units. A carton may contain twelve inner packs, and each inner pack may contain six individual pieces. If one system expects cases while another sends eaches, a correct-looking quantity can be wrong by a factor of seventy-two. The support role begins by documenting the mismatch, not by editing the on-hand balance.
+
+Create an exception record with SKU, location, transaction, source unit, target unit, quantity, conversion shown by each system, timestamps, and evidence. Preserve the original values. Never “fix” a quantity by multiplying until the approved item master and transaction context establish which conversion applies. Suppliers may use a pack description that differs from the client’s stocking unit, and historical records may carry obsolete packaging.
+
+Use a concrete test: a receipt says five cases, the purchase order says sixty packs, the item master says twelve packs per case, and the warehouse scan reports 360 eaches. Those values may reconcile, but the specialist must cite the conversion record and confirm that every document refers to the same revision and SKU. Arithmetic alone does not prove the units are authoritative.`},
+    {heading:'Build a conversion evidence chain',body:`Identify the owners of the item master, purchase unit, stocking unit, sales unit, and warehouse configuration. Record effective dates because packaging can change. A conversion approved for current receipts may not apply to an older return or transfer. Product descriptions and photos can help identify the question, but they should not override controlled master data.
+
+Lay out the chain explicitly: cases multiplied by packs per case, then by eaches per pack. Show numerator and denominator for every rate. Avoid a bare factor such as “x12,” which leaves reviewers guessing whether it means twelve packs in one case or twelve cases per pallet. Retain decimal precision where weight or length units are involved and use the client’s approved rounding rule.
+
+When two approved-looking sources disagree, stop and ask the master-data owner to select the valid conversion. Do not choose the newest timestamp without checking its effective scope. Capture the affected transactions so the owner can understand the consequence before changing a shared record.`},
+    {heading:'Classify the operational effect',body:`Separate a display mismatch from a transaction mismatch. A screen label may be wrong while the stored base quantity remains correct; a purchase order may use the wrong unit but the receipt may have been converted correctly; or the physical count may reveal a real inventory discrepancy. The specialist should state which fields conflict and which downstream records appear affected without declaring the financial result.
+
+Check open receipts, transfers, picks, shipments, returns, and adjustments tied to the item. Do not alter them. List their units, quantities, and status so authorized owners can decide whether transactions require reversal, correction, or no action. A mismatch found in one warehouse should not be generalized to every location without evidence.
+
+Set impact flags for an active customer order, replenishment calculation, count, or financial close. The flag routes attention; it does not grant authority to prioritize one customer, change a reorder point, or post an adjustment.`},
+    {heading:'Define hard stop conditions',body:`The specialist stops when the approved conversion is missing, effective dates overlap, the physical quantity is disputed, lot or serial controls are involved, a posted transaction would need reversal, valuation changes, or a master-data update is proposed. They also stop when a conversion would create a fractional quantity that the target system cannot store.
+
+An escalation packet should show the original documents, item-master records, conversion equation, affected transactions, locations, deadlines, and one decision request. Use neutral language such as “PO unit differs from receipt unit.” Avoid attributing fault to a buyer, supplier, or warehouse before investigation.
+
+If an owner authorizes a correction, record the approval reference and let the designated role perform it. Inventory support may verify the resulting fields against the decision but should not reuse that approval for other SKUs or periods.`},
+    {heading:'Test and monitor the triage lane',body:`Acceptance review checks identifier accuracy, effective dates, conversion direction, arithmetic, transaction scope, preserved evidence, and correct escalation. Include packaging changes, returns created under an older conversion, fractional weights, and a false alarm caused only by a label. Ask a second reviewer to reproduce every calculation.
+
+Track mismatch categories, affected systems, detection point, age, owner, and closure reason. Report rates against relevant transaction volume instead of raw counts alone. Operations leaders decide whether repeated issues justify changes to supplier setup, integrations, labels, training, or master-data controls.
+
+Close an exception only when an owner confirms no discrepancy, the authorized correction is verified, or the case transfers to a named investigation. Keep the before-and-after evidence. If your controls are defined and you need Philippines-based support to maintain the exception queue, review inventory administration or request a labor plan.`},
+    {heading:'Keep physical verification bounded',body:`When a physical recount is required, the warehouse owner defines who counts, which location is frozen, how sealed packs are treated, and how results are recorded. The remote specialist can prepare identifiers and compare returned evidence, but cannot certify an unseen count or direct an unauthorized stock movement.`},
+  ],sources:['https://www.gs1.org/standards/id-keys','https://www.gao.gov/greenbook','https://privacy.gov.ph/data-privacy-act/'],
+}, {
+  slug: 'outsourced-crm-duplicate-ownership-review', title:'Review CRM Duplicate Ownership With Outsourced Data Support', service:'crm-data-stewardship',
+  sections:[
+    {heading:'Separate duplicate evidence from ownership authority',body:`Two CRM records may describe the same person or company without having the same owner, permissions, history, or legal basis. A data specialist can prepare likely duplicate groups, but should not merge records or choose the surviving owner. Those actions can reassign opportunities, erase attribution, change consent handling, and disrupt active workflows.
+
+Define the review unit first. Person, account, location, household, and legal entity duplicates require different keys. Matching a corporate domain may help with accounts but can incorrectly group subsidiaries. Matching a name and email may help with contacts but fails when aliases, shared inboxes, or recycled addresses exist. The client should approve candidate rules and exclusions.
+
+For each candidate pair or cluster, capture record IDs, object type, current owners, creation sources, verified identifiers, active work, consent or suppression fields, recent activity, and the rule that produced the match. Present uncertainty. A score is a prioritization aid, not permission to merge.`},
+    {heading:'Use layered matching evidence',body:`Begin with stable approved identifiers, then add normalized fields carefully. Normalization may standardize case, spacing, phone formats, or corporate suffixes, but preserve raw values. Do not transform two different originals into one apparent fact without showing the transformation. Document how blanks and invalid placeholders are handled.
+
+Use corroborating evidence rather than one convenient field. The same phone number can serve a household; the same address can contain multiple businesses; and names can collide. Conversely, a typo does not prove two records differ. Show agreements, conflicts, and missing fields in separate columns so reviewers see why a pair was proposed.
+
+Exclude records under legal hold, active deletion review, restricted teams, or other client-defined conditions. The specialist should not open fields beyond their role merely to improve confidence. If required evidence is inaccessible, mark the candidate for an authorized reviewer.`},
+    {heading:'Map the ownership consequence before a decision',body:`Ownership can control notifications, pipeline credit, territory, access, and accountability. For each candidate, show open opportunities, cases, campaigns, tasks, and integrations that reference either record. Identify automation likely to run after a merge or owner change. Do not infer that the older record or most senior employee should win.
+
+Create an ownership question that the designated manager can answer: whether the records represent one entity; which record should survive; which owner is accountable; what history, relationships, and permissions must be preserved; and whether downstream work needs reassignment. If several teams claim the record, preserve the dispute and route it rather than applying a tie-breaker that was never approved.
+
+Time-sensitive work stays visible while review proceeds. A duplicate flag should not pause a customer response or allow two teams to contact the same person without coordination. The client defines the safe interim owner and communication rule.`},
+    {heading:'Prepare, approve, and verify changes separately',body:`Use a three-step control: specialist prepares the evidence, authorized owner approves the exact action, and a permitted operator executes it. The approval should name the record IDs and intended survivor. Broad approval such as “clean up duplicates” is insufficient for consequential merges.
+
+Before execution, export or preserve the client-approved recovery evidence, confirm integration behavior, and note fields that cannot be combined automatically. After execution, verify owner, relationships, activities, consent fields, open work, redirects, and automation results. Record unexpected changes immediately and stop further merges until the owner reviews them.
+
+Do not copy personal data into an uncontrolled review workbook. Use CRM views or approved restricted storage, minimize displayed fields, and follow retention rules. The Philippines National Privacy Commission is an official privacy reference; the client decides its lawful basis and operational obligations.`},
+    {heading:'Measure decision quality rather than merge volume',body:`Sample rejected, approved, and deferred candidates. Review matching evidence, exclusions, ownership mapping, approval specificity, execution, and verification. A high merge count is not a quality metric. False merges can be costly, while a correctly deferred ambiguous pair shows the control working.
+
+Track candidate source, confidence band, decision, false-positive reason, time to owner response, execution defect, and recurrence. Use findings to refine one rule at a time against a labeled sample. Do not tune rules merely to reduce the visible backlog.
+
+Close a candidate with a recorded no-match reason, a verified authorized change, or a named deferred owner and review date. Preserve the audit link. If your business has approved matching and ownership rules and needs steady Philippines-based queue preparation, review CRM data stewardship or request a labor plan.`},
+    {heading:'Test candidate rules before production use',body:`Build a labeled set containing confirmed duplicates, confirmed nonmatches, and unresolved pairs from the client’s own CRM. Run each proposed rule against that set and report precision by candidate source. A rule that finds many pairs but repeatedly joins shared household phones or franchise domains may create more review risk than value. Keep the test period separate from live changes.
+
+Review edge cases with sales, support, marketing, and privacy owners because each team sees different consequences. Record approved exclusions and the date they were accepted. When a rule changes, rerun the labeled sample and compare which candidates entered or left the queue. The specialist documents this movement; the data owner decides whether the revised rule is suitable for production. Never lower the threshold simply to make backlog charts improve.`},
+  ],sources:['https://privacy.gov.ph/data-privacy-act/','https://www.nist.gov/privacy-framework','https://www.gao.gov/greenbook'],
+}, {
+  slug: 'philippines-procurement-po-acknowledgment', title:'Follow Up Complete Purchase Order Acknowledgments With Philippines Procurement Support', service:'procurement-follow-up',
+  sections:[
+    {heading:'Define what counts as an acknowledgment',body:`A sent purchase order is not necessarily accepted. Procurement should define the supplier evidence that counts as acknowledgment: a portal status, signed document, structured message, or authorized email confirming specified fields. An automated receipt that says a message arrived may not confirm price, quantity, specification, delivery date, ship-to location, or terms.
+
+Build a line-level acknowledgment register with PO and revision, supplier, contact channel, item, quantity, unit, price and currency if permitted, requested date, ship-to, acknowledgment status, evidence link, buyer, and response deadline. Keep commercial data in approved systems. The support role can compare fields but cannot accept changed terms.
+
+Test the lane with a reply that says “order received” while quoting a different delivery date, and another that confirms most lines but omits one discontinued item. The correct status is not simply acknowledged. Record confirmed, changed, missing, and conflicting fields separately.`},
+    {heading:'Compare the supplier response to the controlled revision',body:`Always identify the PO version the supplier saw. A response to revision one cannot acknowledge revision two. Record issue time, revision identifier, delivery channel, and later amendments. Do not attach an old acknowledgment to a revised order merely because the supplier and total look similar.
+
+Compare exact identifiers, quantities, units, dates, destinations, and other buyer-approved fields. Normalize display formats only when the rule is documented, and preserve raw values. A price shown without currency or a quantity without unit is incomplete, not a match.
+
+For multi-line orders, show each line outcome. One changed line may require buyer review while routine confirmed lines remain visible. Never revise the PO from the supplier response. The authoritative order changes only through the client’s approval process.`},
+    {heading:'Run a clear follow-up cadence',body:`Set deadlines based on order type and operational need. The register should calculate when follow-up begins, the approved channel, reminder interval, and escalation point. A specialist sends a concise request naming the PO revision and missing confirmation. Repeated generic chasers make it harder to see what remains unanswered.
+
+Capture every substantive response once and link it to the relevant lines. If the supplier answers through several channels, identify conflicts rather than selecting the easiest reply. Avoid parallel follow-up by the buyer and specialist; assign the next contact and time.
+
+Account for time zones and supplier working days. An urgent internal deadline does not authorize harassment or acceptance of unapproved conditions. When response timing jeopardizes a dependency, escalate the facts to the buyer.`},
+    {heading:'Stop when the response changes the deal',body:`Immediate stop conditions include changed price, currency, quantity, unit, specification, delivery terms, fees, tax treatment, payment instructions, ship-to details, substitute items, minimums, or cancellation conditions. A changed bank account or unusual payment request follows the client’s fraud-control path and is never handled as routine acknowledgment.
+
+The escalation packet shows the controlled PO, supplier response, exact variance, affected lines, response deadline, dependency, and requested buyer decision. Do not characterize a proposed change as accepted or promise that the buyer will agree.
+
+Only the authorized buyer can approve commercial changes. After approval, the specialist may distribute or follow up on the new controlled revision according to the workflow, but must obtain a new acknowledgment tied to that revision.`},
+    {heading:'Verify closure and improve the queue',body:`Acceptance review checks the correct revision, supplier identity, required fields, line-level comparison, evidence, cadence, and escalation. Include unchanged acknowledgments, partial responses, revised POs, and suspicious payment changes in the sample.
+
+Close only when all required lines have valid acknowledgment, the buyer cancels them, or a documented exception owner takes responsibility. Record the closure evidence and outstanding dependencies. Do not use supplier silence as acceptance unless the client has a qualified, explicit rule permitting it.
+
+Report acknowledgment age, missing-field categories, revision churn, supplier response time, and buyer-decision wait separately. These measures reveal whether the bottleneck lies with sending, supplier response, internal changes, or approvals. If your process is controlled and needs Philippines-based follow-up, review procurement follow-up or request a labor plan.`},
+    {heading:'Plan for attachments, portals, and structured messages',body:`Supplier acknowledgments arrive in formats that expose different evidence. A PDF may contain signed terms but be detached from the portal record. A portal may show current status while hiding the earlier response. A structured EDI message may carry codes that need an approved translation table. Define how each channel is saved, linked, and interpreted before it enters the queue.
+
+The specialist should verify that attachments open safely through approved controls, belong to the named supplier, and reference the expected PO revision. They should not enable macros, follow unexpected sign-in links, or move the conversation to an unapproved account. Suspicious files and credential prompts follow the client’s security process.
+
+When a code is unfamiliar, preserve the raw message and ask the integration or procurement owner. Do not translate a rejection into acceptance based on a web search. If the portal changes after review, retain the permitted evidence of what was observed and when. This history is essential when a later status appears to contradict the original acknowledgment.`},
+  ],sources:['https://www.gao.gov/greenbook','https://www.cisa.gov/secure-our-world','https://privacy.gov.ph/data-privacy-act/'],
+}, {
+  slug: 'filipino-qa-root-cause-evidence-packet', title:'Prepare a Root-Cause Evidence Packet With Filipino QA Support', service:'quality-audit-support',
+  sections:[
+    {heading:'Frame the failure before naming a cause',body:`Root-cause work begins with a precise problem statement: what failed, where, when, under which standard, and with what observed effect. “Agents need training” is already a conclusion. A better statement says that seven sampled refund tickets from a defined week lacked the required approval reference even though the current rubric required it.
+
+The QA specialist can assemble evidence and test hypotheses, but should not declare a root cause without the accountable owner’s method and review. Define the population, detection source, standard version, time window, systems, and known changes. Separate the defect from its consequence; an omitted field and an incorrect refund are related but not identical failures.
+
+Include counterexamples. If many cases followed the same process without failure, they may reveal a condition that distinguishes the defect. Looking only at failures encourages an easy story rather than a supported explanation.`},
+    {heading:'Build a time-ordered evidence set',body:`Create a timeline using source events: request arrival, assignments, system changes, actions, handoffs, approvals, and detection. Cite record IDs and timestamps, including time zones. Do not reconstruct sequence from memory when system evidence exists. Mark gaps and clock differences explicitly.
+
+Collect the applicable SOP, rubric, training example, interface state, permissions, workload context, and dependencies. Preserve the versions active when the work occurred. A current corrected instruction cannot prove what the worker saw earlier. Keep personal and customer details minimized in the packet.
+
+Distinguish direct evidence, calculated evidence, and stakeholder statements. Interview notes can generate a hypothesis but do not automatically establish it. Attribute statements and seek corroborating records where appropriate.`},
+    {heading:'Test competing explanations',body:`List plausible contributors across instructions, examples, inputs, system behavior, access, handoffs, capacity, and review. For each, state evidence expected if it were true, evidence found, contradictory evidence, and what remains unknown. This prevents the first plausible explanation from becoming the official cause.
+
+Use comparisons carefully. Examine similar successful cases, other shifts, prior periods, and changes around the failure. Control obvious differences such as case type and policy version. A pattern after a software release may justify investigation but does not prove the release caused the defect.
+
+Avoid personnel conclusions from thin samples. QA can document observable deviations and conditions. Managers retain performance, disciplinary, policy, and remediation decisions, following applicable obligations.`},
+    {heading:'Package findings for an owner decision',body:`The packet should contain the problem statement, scope, method, timeline, evidence index, tested hypotheses, supported findings, unresolved questions, and immediate containment already authorized. Label confidence and limits. Do not bury contradictory evidence in an appendix.
+
+For every proposed action, identify which observed mechanism it addresses and how effectiveness could be checked. More training is not a complete action without the specific behavior, audience, example, owner, and follow-up measure. System or policy changes require the appropriate owner.
+
+State the decision requested: accept the finding, request more evidence, approve a contained test, or transfer the investigation. A QA specialist should not implement broad remediation because a meeting was delayed.`},
+    {heading:'Review rigor and follow through',body:`A second reviewer checks sampling, standard version, timeline, source traceability, alternative hypotheses, privacy handling, and whether conclusions exceed evidence. Have them attempt to reproduce one calculation and locate each key record without verbal guidance.
+
+After an owner approves action, define a test period, population, expected signal, and rollback or escalation condition. Compare results with a meaningful baseline and report exclusions. Improvement after an action does not by itself prove the original root cause, but it can support an operational decision.
+
+Close the packet when the owner records a disposition and follow-up date, not when the document is delivered. Preserve open questions. If your quality method is defined and needs Philippines-based evidence preparation, review quality audit support or request a labor plan.`},
+    {heading:'Design samples that can support the question',body:`Choose cases before inspecting outcomes whenever possible. Define the eligible population, sampling unit, selection method, exclusions, and replacement rule. A convenience sample of the easiest records may demonstrate that a defect exists, but it cannot support a rate for the entire queue. If the investigation starts from reported failures, describe it as a case series rather than a representative sample.
+
+Stratify only when the decision needs it. Channel, case type, policy version, tenure band, or shift may reveal a condition, but small slices create unstable percentages. Report counts with denominators and avoid ranking groups from tiny samples. When records are excluded because evidence is missing, list that missingness; it may itself point to a control weakness.
+
+Preserve the sample list and selection logic so another reviewer can reproduce it. Do not swap an awkward case for a cleaner one after review begins. If a selected record is inaccessible, retain its place, state why it could not be assessed, and follow the predefined replacement rule. The QA owner decides whether the evidence is sufficient for the intended conclusion.`},
+    {heading:'Keep containment distinct from correction',body:`An immediate containment step limits further exposure while analysis continues. It may add review, pause one transaction type, or restore a prior instruction. Record who authorized it, its scope, start time, operational cost, and removal condition. Do not present containment as proof of cause or leave a temporary control operating indefinitely without owner review.`},
+  ],sources:['https://www.gao.gov/greenbook','https://www.nist.gov/privacy-framework','https://privacy.gov.ph/data-privacy-act/'],
 }] as const;
