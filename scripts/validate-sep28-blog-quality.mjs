@@ -19,7 +19,7 @@ assert.equal(state.family, 'blog');
 assert.equal(state.requiredCount, 12);
 assert.equal(state.topics.length, 12);
 assert.equal(new Set(state.topics.map(({slug}) => slug)).size, 12);
-assert.equal(state.publicationDate, null, 'Publication date must remain unset until the first public verification date is known');
+assert.equal(state.publicationDate, '2026-09-28', 'Release date must match the actual UTC push/deployment date');
 
 if (!fs.existsSync(contentPath)) {
   console.log('INCOMPLETE: inventory is valid; app/sep28-content.tsx has not been drafted yet');
