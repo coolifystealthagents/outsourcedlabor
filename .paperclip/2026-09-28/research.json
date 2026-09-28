@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "contract": "canonical-daily-research-publishing",
+  "cycleLabel": "September 28, 2026 combined release",
+  "family": "research",
+  "domain": "outsourcedlabor.com",
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "branch": "routine/outaaaaaaaa-71-20260928",
+  "baselineSha": "82d9cf2cd28bd156a792c58e65e08d0d966076b1",
+  "publicationTimezone": "UTC",
+  "requiredCount": 5,
+  "plannedPublicationDate": "2026-09-28",
+  "publicationDate": null,
+  "sourceCheckedDate": "2026-09-28",
+  "contentCommit": null,
+  "deploymentCommit": null,
+  "remoteShaAtHandoff": "82d9cf2cd28bd156a792c58e65e08d0d966076b1",
+  "deploymentEvidence": "Pending same-cycle Blog integration and browser-operator deployment; Research must not push or deploy",
+  "verifiedCount": 0,
+  "validation": {"minimumBodyWords":1200,"maximumFiveWordShingleJaccard":0.4238},
+  "sources": [
+    {"title":"NIST Cybersecurity Framework 2.0","publisher":"National Institute of Standards and Technology","url":"https://www.nist.gov/cyberframework","checked":"2026-09-28"},
+    {"title":"NIST Privacy Framework","publisher":"National Institute of Standards and Technology","url":"https://www.nist.gov/privacy-framework","checked":"2026-09-28"},
+    {"title":"NIST Digital Identity Guidelines","publisher":"National Institute of Standards and Technology","url":"https://pages.nist.gov/800-63-4/","checked":"2026-09-28"},
+    {"title":"The Green Book: Standards for Internal Control in the Federal Government","publisher":"U.S. Government Accountability Office","url":"https://www.gao.gov/greenbook","checked":"2026-09-28"},
+    {"title":"Cybersecurity for Small Business","publisher":"Federal Trade Commission","url":"https://www.ftc.gov/business-guidance/small-businesses/cybersecurity","checked":"2026-09-28"}
+  ],
+  "entries": [
+    {"topic":"customer service-credit evidence","slug":"research-philippines-customer-service-credit-evidence","route":"/research/research-philippines-customer-service-credit-evidence","contentHash":"e2fb95ec35deebe36838874b771135407156814324d0885a8a75760f911bc417","bodyWords":2813,"liveUrl":"https://outsourcedlabor.com/research/research-philippines-customer-service-credit-evidence","verifiedAt":null},
+    {"topic":"vendor tax-record change boundary","slug":"research-outsourced-vendor-tax-record-change-boundary","route":"/research/research-outsourced-vendor-tax-record-change-boundary","contentHash":"f1744f25dad9ae452fd3592cfe1f3abfa9f933fe1455840409eebef4a033eb93","bodyWords":2845,"liveUrl":"https://outsourcedlabor.com/research/research-outsourced-vendor-tax-record-change-boundary","verifiedAt":null},
+    {"topic":"CRM suppression reconciliation","slug":"research-philippines-crm-suppression-reconciliation","route":"/research/research-philippines-crm-suppression-reconciliation","contentHash":"00ccf2774ef94519e6ead9230d3d3ea874568fcbfb90044f5021c1bfa3992d5f","bodyWords":2768,"liveUrl":"https://outsourcedlabor.com/research/research-philippines-crm-suppression-reconciliation","verifiedAt":null},
+    {"topic":"inventory-transfer discrepancy packet","slug":"research-outsourced-inventory-transfer-discrepancy-packet","route":"/research/research-outsourced-inventory-transfer-discrepancy-packet","contentHash":"0f25d0d70b51d6526e74344de443fb5935ba51fc226ada95dae79fc0fea76c84","bodyWords":2898,"liveUrl":"https://outsourcedlabor.com/research/research-outsourced-inventory-transfer-discrepancy-packet","verifiedAt":null},
+    {"topic":"proof-of-delivery correction controls","slug":"research-philippines-proof-of-delivery-correction-controls","route":"/research/research-philippines-proof-of-delivery-correction-controls","contentHash":"66104e72925d2bd546bd8cc1039bc112da14af56688297a34a46a789bc84325b","bodyWords":2896,"liveUrl":"https://outsourcedlabor.com/research/research-philippines-proof-of-delivery-correction-controls","verifiedAt":null}
+  ]
+}

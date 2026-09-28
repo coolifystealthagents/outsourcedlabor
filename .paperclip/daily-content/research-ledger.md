@@ -1,5 +1,9 @@
 # Research publication ledger
 
+## 2026-09-28 combined-release handoff
+
+Five genuinely new decision-grade Research articles are prepared on local branch `routine/outaaaaaaaa-71-20260928` from baseline `82d9cf2cd28bd156a792c58e65e08d0d966076b1`. Topics: customer service-credit evidence, vendor tax-record changes, CRM suppression reconciliation, inventory-transfer discrepancies, and proof-of-delivery corrections. The articles use authoritative NIST, GAO, and FTC sources checked 2026-09-28, reuse the repository's existing Filipino operations specialist image, and contain 2,768–2,898 body words. Maximum pairwise five-word-shingle Jaccard overlap is 42.38%. This is a Research-only local handoff for same-cycle Blog integration: it is not pushed, deployed, dated as published, or live-verified. Actual publication dates must be set by the Blog integrator to the UTC date on which the browser operator's combined release first becomes publicly reachable.
+
 ## 2026-09-24
 
 Five new decision-grade Research articles prepared for first publication on 2026-09-24 UTC. Canonical routes, source records, and SHA-256 content hashes are recorded in `.paperclip/2026-09-24/research.json`; content commit `b9b908c8a430ecb6ece4ef8c7e14435fc220cf0f`. Topics: vendor bank-detail change verification, SOP change-control release evidence, dispatch reroute exception boundaries, workforce timesheet-correction packets, and inventory quarantine-release readiness. Sources were checked on 2026-09-24 from the National Institute of Standards and Technology, U.S. Government Accountability Office, U.S. Department of Labor, and Federal Trade Commission. Live verification evidence will be added after production deployment.
