@@ -135,6 +135,7 @@ Review recurring defects monthly. Missing sources may indicate unclear ownership
   ],
 }, {
   slug: 'outsourced-order-partial-shipment-reconciliation', title: 'Reconcile Partial Shipments With Outsourced Order Support', service: 'order-operations',
+  closingNote:{heading:'Returns and cancellations',body:`A return can arrive before every original carton is delivered, and a cancellation can apply only to the unfulfilled remainder. Link each reverse or cancellation event to its original line and quantity. Do not subtract a return twice by treating carrier movement and warehouse receipt as separate units. Show replacement orders independently. When policy determines whether cancellation remains available, prepare the timeline, event evidence, and open balance for the authorized owner instead of deciding from shipment status alone.`},
   sections: [
     {heading:'Define the unit of reconciliation',body:`A partial shipment is not one status. One sales order may contain several lines, quantities, warehouse releases, cartons, tracking numbers, and invoices. Start by choosing the smallest unit that can be matched reliably: usually the order line and released quantity. The specialist should build a line-level view showing ordered, allocated, picked, shipped, delivered, cancelled, backordered, and returned quantities without collapsing them into a single “partially shipped” label.
 
@@ -164,6 +165,8 @@ Track recurring causes such as duplicate events, warehouse short picks, alias mi
   ], sources:['https://www.gs1.org/standards/id-keys','https://www.cisa.gov/topics/cyber-threats-and-advisories/identity-and-access-management','https://privacy.gov.ph/data-privacy-act/'],
 }, {
   slug: 'philippines-vendor-promised-date-variance', title: 'Track Supplier Promised-Date Variances Accurately and Consistently With Philippines Vendor Support', service: 'vendor-coordination',
+  depthNote:{heading:'Estimate owner',body:`Preserve who supplied each estimate, when it was observed, and the date on which the buyer expects another check.`},
+  closingNote:{heading:'Forecast language',body:`A supplier may offer an estimated completion window rather than a commitment. Record that language exactly and classify it under the buyer’s approved certainty scale. Do not convert “expected next week” into a dated promise. Ask for a specific date and quantity when the workflow permits, while preserving the estimate as historical evidence. Internal planners decide how much reliance to place on it. This distinction keeps the register useful when tentative production information changes.`},
   sections: [
     {heading:'Establish the approved baseline date',body:`A promised-date variance is meaningful only when the baseline is clear. Purchase-order request dates, supplier acknowledgments, production dates, ship dates, arrival estimates, and internal need-by dates are different commitments. The buyer should define which date the specialist tracks and which supplier evidence can establish or revise it. A casual email estimate should not silently overwrite an accepted acknowledgment.
 
@@ -193,6 +196,7 @@ Close an entry when the tracked commitment is fulfilled, cancelled by an authori
   ], sources:['https://www.gao.gov/greenbook','https://www.iso.org/standard/75652.html','https://privacy.gov.ph/data-privacy-act/'],
 }, {
   slug: 'filipino-inventory-unit-of-measure-mismatch', title:'Triage Inventory Unit-of-Measure Mismatches With Filipino Support', service:'inventory-administration',
+  closingNote:{heading:'Dimensional compatibility',body:`Conversions must remain within compatible dimensions. Pieces cannot become kilograms without an approved item-specific relationship, and volume cannot substitute for weight because the numbers look similar. Record the dimension beside every unit. If a supplier changes package weight or count, treat the relationship as a master-data question with an effective date. A specialist should never derive a commercial or inventory conversion from an unrelated product specification or an internet listing.`},
   sections:[
     {heading:'Describe the mismatch without changing stock',body:`Unit-of-measure problems occur when the same item is counted, purchased, stored, sold, or shipped in different units. A carton may contain twelve inner packs, and each inner pack may contain six individual pieces. If one system expects cases while another sends eaches, a correct-looking quantity can be wrong by a factor of seventy-two. The support role begins by documenting the mismatch, not by editing the on-hand balance.
 
@@ -223,6 +227,7 @@ Close an exception only when an owner confirms no discrepancy, the authorized co
   ],sources:['https://www.gs1.org/standards/id-keys','https://www.gao.gov/greenbook','https://privacy.gov.ph/data-privacy-act/'],
 }, {
   slug: 'outsourced-crm-duplicate-ownership-review', title:'Review CRM Duplicate Ownership With Outsourced Data Support', service:'crm-data-stewardship',
+  closingNote:{heading:'Consent history',body:`Before an approved merge, show whether records have different subscription states, suppression reasons, lawful-basis records, or campaign memberships. Never resolve them by selecting the more permissive value. The privacy or marketing owner defines the surviving treatment. After execution, verify that a suppressed person was not reactivated and required evidence remains linked. If the CRM cannot preserve these fields safely, keep the candidates separate until an owner establishes another controlled method.`},
   sections:[
     {heading:'Separate duplicate evidence from ownership authority',body:`Two CRM records may describe the same person or company without having the same owner, permissions, history, or legal basis. A data specialist can prepare likely duplicate groups, but should not merge records or choose the surviving owner. Those actions can reassign opportunities, erase attribution, change consent handling, and disrupt active workflows.
 
@@ -255,6 +260,8 @@ Review edge cases with sales, support, marketing, and privacy owners because eac
   ],sources:['https://privacy.gov.ph/data-privacy-act/','https://www.nist.gov/privacy-framework','https://www.gao.gov/greenbook'],
 }, {
   slug: 'philippines-procurement-po-acknowledgment', title:'Follow Up Complete Purchase Order Acknowledgments With Philippines Procurement Support', service:'procurement-follow-up',
+  depthNote:{heading:'Verified alternate',body:`The buyer decides whether a verified alternate contact can confirm the response, which channel records that confirmation, and whether the original reply remains usable evidence.`},
+  closingNote:{heading:'Supplier identity',body:`Define which supplier contacts and portal identities may acknowledge an order. A message from a new domain, personal address, or changed contact must follow the client’s verification path before commercial details are trusted. Do not use contact data contained only in the questionable message. Record the verification result without copying credentials into the queue. Identity uncertainty is a stop condition, especially when the response also changes payment instructions, destination details, or pricing.`},
   sections:[
     {heading:'Define what counts as an acknowledgment',body:`A sent purchase order is not necessarily accepted. Procurement should define the supplier evidence that counts as acknowledgment: a portal status, signed document, structured message, or authorized email confirming specified fields. An automated receipt that says a message arrived may not confirm price, quantity, specification, delivery date, ship-to location, or terms.
 
@@ -289,6 +296,8 @@ When a code is unfamiliar, preserve the raw message and ask the integration or p
   ],sources:['https://www.gao.gov/greenbook','https://www.cisa.gov/secure-our-world','https://privacy.gov.ph/data-privacy-act/'],
 }, {
   slug: 'filipino-qa-root-cause-evidence-packet', title:'Prepare a Root-Cause Evidence Packet With Filipino QA Support', service:'quality-audit-support',
+  depthNote:{heading:'Disproof test',body:`For each claimed cause, contributor, or detection gap, document what contrary evidence would weaken or disprove the classification.`},
+  closingNote:{heading:'Cause and detection',body:`One condition may create the defect, another may increase its likelihood, and a third may let it escape review. Label those roles separately. An ambiguous instruction might cause inconsistent handling, workload might amplify it, and a missing sample check might delay detection. Correcting only detection can reduce escaped defects without addressing creation. Owners need this distinction to choose action and avoid claiming that every associated condition is the root cause.`},
   sections:[
     {heading:'Frame the failure before naming a cause',body:`Root-cause work begins with a precise problem statement: what failed, where, when, under which standard, and with what observed effect. “Agents need training” is already a conclusion. A better statement says that seven sampled refund tickets from a defined week lacked the required approval reference even though the current rubric required it.
 
@@ -321,5 +330,164 @@ Stratify only when the decision needs it. Channel, case type, policy version, te
 
 Preserve the sample list and selection logic so another reviewer can reproduce it. Do not swap an awkward case for a cleaner one after review begins. If a selected record is inaccessible, retain its place, state why it could not be assessed, and follow the predefined replacement rule. The QA owner decides whether the evidence is sufficient for the intended conclusion.`},
     {heading:'Keep containment distinct from correction',body:`An immediate containment step limits further exposure while analysis continues. It may add review, pause one transaction type, or restore a prior instruction. Record who authorized it, its scope, start time, operational cost, and removal condition. Do not present containment as proof of cause or leave a temporary control operating indefinitely without owner review.`},
+  ],sources:['https://www.gao.gov/greenbook','https://www.nist.gov/privacy-framework','https://privacy.gov.ph/data-privacy-act/'],
+}, {
+  slug: 'outsourced-workforce-skill-coverage-matrix', title:'Build a Skill Coverage Matrix With Outsourced Workforce Support', service:'workforce-scheduling',
+  depthNote:{heading:'Concurrent demand',body:`Include planned breaks and simultaneous review demand when calculating supervisory coverage; nominal presence alone does not establish usable capacity.`},
+  closingNote:{heading:'Supervision capacity',body:`A supervised worker is not independent coverage when the reviewer is unavailable or already beyond capacity. Record which skill states require review, the reviewer ratio or queue rule, and intervals with suitable supervision. Avoid counting one supervisor as unlimited support across simultaneous lanes. When review capacity is the constraint, show it separately from trained headcount so managers address the correct gap rather than scheduling more work that cannot be safely accepted.`},
+  sections:[
+    {heading:'Define coverage as time plus verified capability',body:`A schedule can show enough people and still leave work uncovered. Coverage depends on interval, queue, role, proficiency, system access, language or product requirement, and supervision. Start with the work demand and list which capabilities are truly required in each interval. Do not label someone “skilled” because they attended training or handled a different queue.
+
+The matrix should connect worker ID, approved skill, proficiency state, verification source, effective date, expiry or review date, permitted queue, location or time-zone constraint, and scheduled interval. Keep performance and sensitive workforce data in approved systems. Scheduling support uses the status supplied by accountable owners; it does not award proficiency.
+
+Test a shift with six scheduled people where only one can handle a critical escalation and that person is assigned to another queue. Headcount coverage is green, but skill coverage is fragile. The matrix must expose that dependency before publication.`},
+    {heading:'Create controlled skill definitions',body:`Give every skill a definition and an evidence owner. Separate trained, supervised, independently approved, temporarily restricted, and expired. A binary yes/no field hides whether the worker can perform live work without review. Record prerequisites and combinations, such as product knowledge plus refund authority, without implying that one grants the other.
+
+Version the definitions. If a product or policy changes, the old approval may need review. Do not remove historical status when a worker becomes current again; scheduling owners may need to understand why earlier coverage changed. The specialist flags stale or missing evidence to the training or operations owner.
+
+Avoid inferred skills from job title, tenure, or availability. A worker may be experienced but not approved for this client, tool, or decision boundary. Only the designated owner changes the proficiency state.`},
+    {heading:'Calculate interval-level gaps',body:`For each interval, compare required seats by skill with scheduled and available qualified people. Show primary and backup coverage separately. Deduct approved leave and known unavailability, but do not predict attendance. When one person covers several required skills simultaneously, avoid counting that person as independent capacity in every lane.
+
+Highlight single points of failure, uncovered handoffs, and intervals relying on supervision that is not present. State the demand source and schedule version. A forecast is not a promise; preserve assumptions and the cutoff at which the matrix was calculated.
+
+Use scenario checks for absence, volume shift, extended work, and delayed handoff. Scheduling support may show the resulting gap. Managers decide overtime, cross-training, reassignment, hiring, service tradeoffs, and leave changes.`},
+    {heading:'Prepare a safe scheduling handoff',body:`The handoff lists interval, required skill, planned qualified coverage, shortfall, affected queue, available approved alternatives, and decision deadline. It should not recommend moving a worker if permissions, labor rules, customer commitments, or manager approval are unclear.
+
+Keep local time and site time visible, including daylight-saving effects where relevant. Confirm that a worker’s scheduled hours and the queue interval use the same convention. A one-hour conversion error can create a gap that headcount totals never reveal.
+
+If no owner responds, preserve the last approved schedule and mark the risk. Do not publish an improvised change. Urgency does not expand scheduling authority.`},
+    {heading:'Review the matrix as an operating control',body:`Acceptance checks verify demand version, skill definitions, proficiency evidence, effective dates, schedule version, time conversion, non-duplicated capacity, and escalation. Sample ordinary intervals and the thinnest coverage points. Ask another reviewer to reproduce one gap calculation.
+
+Track uncovered skill intervals, single-person dependencies, expired approvals, manager decision time, and gaps found after publication. Interpret trends with demand and staffing context; do not use the matrix as an individual performance score.
+
+Close a gap only when an approved schedule or capacity decision resolves it, the requirement changes through an authorized owner, or responsibility transfers with a date. If your team has controlled skill records and needs Philippines-based preparation support, review workforce scheduling or request a labor plan.`},
+    {heading:'Protect workforce data and fair review',body:`The matrix should contain only data needed for scheduling. Do not expose medical details, disciplinary notes, compensation, or unapproved performance commentary to explain an availability or proficiency state. Use approved codes and let the responsible owner retain sensitive evidence. Limit exports, sharing, and retention.
+
+Give workers and managers a defined correction route for inaccurate skill or availability records. The specialist logs the challenge and preserves the current approved state until the owner resolves it. They should not argue the merits or silently edit the matrix. Record the correction’s effective time so previously published schedules remain understandable.
+
+Review whether skill definitions create unnecessary barriers or inconsistent treatment. Similar work should use the same evidence standard unless an accountable owner documents a real difference. Staffing decisions and applicable employment obligations remain with the client and qualified advisers; the matrix is an operational planning aid, not an automated decision maker.`},
+    {heading:'Set a review cadence',body:`Refresh schedule assignments at the operational cadence, but review skill evidence on its own timetable. Daily scheduling should not silently renew an expired approval. Publish the matrix cutoff and next refresh so managers know whether a late training completion is included. Urgent updates still require the designated evidence owner and a traceable effective time.`},
+  ],sources:['https://www.gao.gov/greenbook','https://www.cisa.gov/topics/cyber-threats-and-advisories/identity-and-access-management','https://privacy.gov.ph/data-privacy-act/'],
+}, {
+  slug: 'philippines-reporting-metric-definition-register', title:'Maintain a Metric Definition Register With Philippines Reporting Support', service:'workforce-reporting',
+  depthNote:{heading:'Correction distribution',body:`Link a correction notice to every affected delivery surface and confirm that the accountable owner accepted the revised value, period, and explanation.`},
+  closingNote:{heading:'Correction thresholds',body:`Owners should state when a discovered error triggers immediate correction, formal restatement, or a note in the next cycle. Base the decision on materiality and audience needs. The specialist calculates affected periods using the approved method, but does not decide that a difference is immaterial. Preserve originally published and corrected values with timestamps so later trend reviews do not silently mix versions or erase what earlier decisions used.`},
+  sections:[
+    {heading:'Give each metric one accountable definition',body:`A recurring KPI is dependable only when readers know what is counted, excluded, divided, timed, and frozen. Begin with the business question and assign a definition owner. The reporting specialist records and applies the approved definition; they do not decide what “productivity,” “quality,” or “response time” should mean.
+
+For every metric, capture name, purpose, owner, numerator, denominator, population, filters, source fields, time zone, period, cutoff, late-arrival rule, units, rounding, refresh cadence, exclusions, and effective version. Add a worked example using non-sensitive data. A formula alone is insufficient when two analysts can select different populations.
+
+Test a response-time metric spanning reopened tickets, bot replies, and after-hours arrivals. Decide which event starts and stops the clock and how exclusions work. Until the owner answers, the field is unresolved; it is not an invitation for the specialist to choose the most convenient query.`},
+    {heading:'Trace fields from source to report',body:`Map each displayed value to an authoritative system, object, field, and transformation. Record joins and deduplication rules. A dashboard label may not match the database field, and a warehouse table may lag the operational system. State the observed refresh time.
+
+Preserve raw values and transformation logic. If currencies, durations, or percentages are converted, show units at each step. Define treatment of nulls, deleted records, test accounts, and corrected events. Never turn missing data into zero unless the owner explicitly approves that meaning.
+
+Use access appropriate to the reporting role. Link to controlled queries or records rather than copying personal data into a definition workbook. The register documents logic, not unnecessary row-level data.`},
+    {heading:'Control definition changes',body:`Every change needs an owner, reason, effective date, impacted reports, comparison plan, and approval. Do not overwrite the old definition. Readers may need to know why this month cannot be compared directly with last month. If practical, calculate the old and new methods for an overlap period and label each clearly.
+
+Separate a definition change from a data correction. Fixing a broken source feed may restate earlier results without changing the metric’s meaning. Changing which tickets belong in the denominator changes meaning. The specialist flags the category; the owner approves treatment and communication.
+
+When a request arrives through chat, capture it as a proposal rather than implementing it silently. Publication deadlines do not replace change control.`},
+    {heading:'Run the recurring production check',body:`Before release, verify source freshness, population counts, formula version, period, units, rounding, exclusions, and prior-period comparability. Reconcile a sample to source records and investigate unexpected step changes. Do not suppress an outlier merely because it complicates the narrative.
+
+The report note should state the definition version, data cutoff, known limitations, and whether results were restated. Reporting support can prepare variance facts and source evidence; managers interpret causes and make decisions.
+
+If two reports use the same label differently, do not force agreement by editing one value. Surface the collision and ask the owners to rename or align definitions.`},
+    {heading:'Audit usefulness and retire stale metrics',body:`Quarterly, ask whether the metric still serves its stated decision, whether the owner is active, and whether sources and filters remain valid. Mark unused or duplicative metrics for owner review. The specialist should not delete history or retire a KPI unilaterally.
+
+Track definition changes, failed freshness checks, reconciliations, restatements, unresolved owner questions, and reports affected. Measure reporting reliability separately from business performance. A timely wrong number is not success.
+
+Archive approved versions with effective ranges and links to dependent reports. If your definitions are governed and you need Philippines-based support to maintain them, review workforce reporting or request a labor plan.`},
+    {heading:'Document calendar and cohort behavior',body:`State whether results use calendar periods, rolling windows, or fixed cohorts. Define how records entering late, reopening, transferring queues, or crossing boundaries are treated. A count based on creation date answers a different question from one based on closure date.
+
+For cohort measures, record the entry rule and observation horizon. Do not compare a mature cohort with a recent cohort that has had less time to produce outcomes. Label partial periods and prevent accidental comparison with complete periods. The metric owner approves these choices; support makes them visible and applies them consistently.`},
+    {heading:'Reconcile the metric across delivery surfaces',body:`A metric may appear in a dashboard, emailed workbook, board pack, and API. Inventory those surfaces and confirm they use the same version, cutoff, and units. If one surface refreshes later, label that difference instead of forcing values to match by manual editing.
+
+Choose a control total or small benchmark set that every implementation can reproduce. After a query or model change, compare the benchmark before release. Record tolerances only where rounding or timing legitimately creates a difference, and name who approved them. An unexplained one-percent gap is not harmless merely because it looks small.
+
+Retire cached exports through the client’s approved process. A corrected dashboard does not update a spreadsheet already sent to leaders. The report owner decides whether to issue a correction, restate a prior period, or annotate the next release; support prepares the affected-surface list and evidence.`},
+  ],sources:['https://www.gao.gov/greenbook','https://www.nist.gov/privacy-framework','https://privacy.gov.ph/data-privacy-act/'],
+}, {
+  slug: 'filipino-dispatch-stalled-work-recovery', title:'Recover Stalled Operational Work Safely With Filipino Operations Dispatch Support', service:'operations-dispatch', description:'A controlled evidence-based recovery workflow for blocked queues',
+  finalNote:{heading:'Preserve accountability',body:`The receiving owner must explicitly accept the recovered item and its next deadline.`},
+  depthNote:{heading:'Thread consolidation',body:`Close duplicate message threads only after their evidence, decisions, and participants are redirected to the designated operational record.`},
+  closingNote:{heading:'One update channel',body:`Set one visible update channel and cadence for every stalled item or shared incident. Stakeholders should see the verified state, next owner, and next update time without asking several workers to investigate independently. Record new evidence once and link related conversations. Do not send speculative explanations merely to fill an update window. If the update is delayed, state that the owner response remains pending and preserve the prior safe status.`},
+  sections:[
+    {heading:'Define stalled using observable events',body:`Work is stalled when the next required event has not occurred within a defined window, not merely when an item feels old. Set thresholds by queue and state: waiting for customer evidence, manager approval, system recovery, supplier response, or assigned action. A single age limit can wrongly escalate work that is safely waiting.
+
+The dispatch record needs item ID, queue, current state, last verified event, expected next event, due time, dependency, current owner, evidence, customer or operational consequence, and escalation rule. Preserve the original priority. Detecting a stall does not authorize reprioritization.
+
+Test a case whose owner completed their step but an integration failed to advance status. The recovery path differs from a case no one accepted. Event evidence should determine the branch, not assumptions about the person assigned.`},
+    {heading:'Diagnose the blocked state',body:`Check whether the item lacks an owner, input, permission, decision, system capability, or external response. Confirm the dependency still exists and that no newer record supersedes the item. Avoid sending reminders until the specialist knows who can act and what is needed.
+
+Create a short recovery brief containing verified facts, last safe action, missing event, accountable owner, deadline, and permitted next step. If records conflict, include both sources. Do not rewrite history to make the workflow look continuous.
+
+Separate duplicate work from stalled work. Two records for the same request may require ownership review rather than dispatching both. Link them and pause according to the client rule.`},
+    {heading:'Use bounded recovery actions',body:`Approved actions might include reassigning an unaccepted item within the same queue, requesting a missing field, retrying a documented reversible step, or notifying an owner. List them by state. The specialist must stop before changing customer promises, financial decisions, policy exceptions, credentials, technical configurations, or cross-team priority.
+
+Retries need limits. Record attempt count, result, and next check. Repeated automation retries can duplicate orders, messages, or updates. When the limit is reached, route to the system owner with evidence rather than trying a different button.
+
+If a manager response is late, keep the item in a safe visible state. Silence does not approve the pending action.`},
+    {heading:'Coordinate cross-shift ownership',body:`A recovery handoff states what is blocked, evidence checked, action taken, result, open question, next owner, due time, and escalation clock in both relevant time zones. The receiving person should continue from the record without reconstructing private chat.
+
+Use named backups with suitable permissions. Do not broaden access during an urgent incident merely to move the queue. Temporary ownership changes should have an expiry or explicit return step.
+
+When the primary owner returns, reconcile actions and restore ownership deliberately. This avoids two people attempting the same recovery.`},
+    {heading:'Measure flow without rewarding unsafe closure',body:`Review age by blocked state, recovery success, repeat stalls, owner response time, retries, and reopened items. Pair totals with queue arrivals and exclusions. A lower backlog created by closing unresolved work is not improvement.
+
+Sample recovered and still-blocked cases. Verify state diagnosis, authority, evidence, retry limits, handoff, and final disposition. Repeated stalls should trigger inspection of workflow design, integrations, owner capacity, or inputs rather than blame.
+
+Close only when the required event occurs, an authorized owner cancels the work, or the item transfers to a documented exception path. If your rules are stable and need Philippines-based queue oversight, review operations dispatch or request a labor plan.`},
+    {heading:'Handle system incidents separately',body:`When many items stop at the same event, check for an incident before dispatching each case independently. Record the first observed failure, affected workflow, sample IDs, last known successful event, and system-owner ticket. Do not flood the system with retries or create duplicate incident reports.
+
+The queue still needs item-level visibility. Mark which records are affected and preserve their deadlines, but link them to the shared incident. When service returns, use an approved recovery order and verify outcomes from a small sample before releasing the entire backlog. A technical recovery does not automatically complete the business action.
+
+If only some items recover, compare their event path and inputs. Dispatch support prepares the difference; technical owners diagnose the platform. Keep customer communications within approved incident language and escalation rules.`},
+    {heading:'Design priority protection into recovery',body:`Before work stalls, define which attributes establish priority and who may change them. Recovery should return an item to its approved place, not move it ahead because it is visible or because a stakeholder sends repeated messages. Preserve the original priority, due rule, and any authorized override with its owner and expiry.
+
+When several stalled items depend on the same scarce owner, group them into one decision brief without hiding individual deadlines. Show consequence and reversibility using verified facts. The owner can then sequence action consistently. Dispatch support should not turn emotional language or seniority into a priority rule.
+
+After recovery, compare the actual handling sequence with the approved queue rule. If urgent work repeatedly bypasses the queue, ask the operations owner whether the rule, capacity, or intake design needs revision. Do not formalize the workaround through habit.`},
+  ],sources:['https://www.gao.gov/greenbook','https://www.cisa.gov/secure-our-world','https://privacy.gov.ph/data-privacy-act/'],
+}, {
+  slug: 'outsourced-sop-exception-to-procedure-review', title:'Turn Recurring Exceptions Into an SOP Review', service:'sop-documentation',
+  depthNote:{heading:'Dependency verification',body:`Test every updated link and cross-reference before release, then assign an owner and deadline for connected materials that cannot change at the same effective time.`},
+  closingNote:{heading:'Connected procedures',body:`A local edit may contradict an upstream policy, system guide, form, or neighboring SOP. Inventory those dependencies and assign an owner for every required update. Do not publish a branch that collects a field another approved rule prohibits, or changes a handoff without notifying the receiving team. When connected documents have different owners, coordinate effective dates and document a temporary transition path so workers know which rule controls.`},
+  sections:[
+    {heading:'Collect exceptions without turning them into rules',body:`An exception log shows where ordinary instructions did not fit. It does not automatically prove the SOP should change. Record the case, procedure version, step affected, expected path, observed condition, temporary decision owner, outcome, and evidence. Avoid vague entries such as “special case.”
+
+Group exceptions by mechanism, not by similar wording. Missing input, conflicting policy, system limitation, new product type, and unauthorized request require different responses. Preserve outliers that do not fit a group rather than forcing a tidy category.
+
+Set a review threshold using frequency, consequence, repeatability, and owner concern. One serious event may justify review; ten trivial deviations may only require clearer examples. Documentation support prepares the pattern. Process and policy owners decide whether it warrants change.`},
+    {heading:'Check whether the current procedure was actually applicable',body:`Before proposing new text, verify that workers used the correct version, had access, received the required inputs, and understood the example. A failure caused by an unavailable system or missing permission may not be a documentation defect. Likewise, a policy exception should not be normalized merely because it recurred.
+
+Compare successful cases under the same conditions. Identify the exact decision point where paths diverged. Ask whether the SOP omitted a branch, used an ambiguous term, contradicted an authoritative source, or simply was not followed. Keep those possibilities distinct.
+
+Trace every instruction to an owner-approved source. If the source itself is uncertain, pause drafting and request a policy decision. Writers should not resolve business rules through phrasing.`},
+    {heading:'Draft a controlled change proposal',body:`The proposal includes current text, observed gap, evidence set, proposed wording, affected roles and systems, risks, examples, approvals required, training impact, effective date, and rollback plan. Highlight what does not change. This helps reviewers assess scope instead of rereading the whole procedure.
+
+Write observable steps, inputs, decisions, outputs, and stop conditions. Add one normal example and one boundary example. Do not bury authority changes inside an example. If the proposal would let a specialist approve money, policy, access, personnel, or customer commitments, name that transfer explicitly for the accountable owner.
+
+Assign a new version only after approval. Draft labels must remain visible so unapproved instructions are not mistaken for production guidance.`},
+    {heading:'Test before broad release',body:`Run the proposed branch against historical exceptions and fresh scenarios. Have workers follow it without verbal coaching while reviewers observe where they hesitate or choose different paths. Test the stop rule as carefully as the happy path.
+
+Record expected and actual outcomes. A wording change that solves one case but misroutes another needs revision. Do not expand the test population until source, permissions, and reviewer capacity are ready.
+
+The owner approves keep, revise, reject, or conduct a limited pilot. Rejection is useful evidence; retain why the existing procedure remained appropriate.`},
+    {heading:'Publish and monitor the approved version',body:`Release through the controlled repository, archive the prior version, state effective time, notify affected roles, and confirm links point to the current procedure. Avoid parallel copies in chat and local documents. Remove obsolete quick-reference text that could override the update.
+
+Monitor the specific exception category, returns, escalations, and unintended effects for a defined period. Compare with an appropriate baseline and keep changes in volume or mix visible. Documentation support reports observations; owners judge whether the procedure improved.
+
+Close the review with approval evidence, version, training confirmation, monitoring result, and next review date. If your owners have approved rules and need Philippines-based help maintaining the documentation cycle, review SOP documentation or request a labor plan.`},
+    {heading:'Coordinate training without hiding the change',body:`Decide who needs awareness, practice, or formal approval before the new version takes effect. A minor clarification may need a release note; a new decision branch may require scenarios and supervised use. Record the audience, material, trainer, completion evidence, and effective time.
+
+Do not mark people trained because a document was emailed. Use an acknowledgment or practical check appropriate to the risk. Keep workers on the prior approved path until the owner activates the new one. If different shifts receive the change at different times, document the transition rule so identical cases are not handled unpredictably.
+
+Collect questions during rollout and route them to the procedure owner. Documentation support may clarify where text appears, but should not improvise new policy in response to a difficult question.`},
+    {heading:'Keep the exception ledger honest',body:`Assign every exception a stable identifier and link it to the case evidence, temporary decision, and procedure version. Record repeated occurrences rather than increasing a counter with no trace. Deduplicate only when two reports describe the same event, and preserve who made that determination.
+
+Use aging states for awaiting evidence, owner review, draft change, pilot, and closed. A growing review backlog can signal that the organization lacks decision capacity, not that writers need to produce text faster. Report the queue by state and owner rather than marking old proposals obsolete without approval.
+
+Periodically sample closed “no change” reviews. Confirm that the reason was documented and that a recurring high-consequence exception did not disappear from view. The ledger exists to support governance and learning; it should not become a way to normalize unauthorized workarounds.`},
   ],sources:['https://www.gao.gov/greenbook','https://www.nist.gov/privacy-framework','https://privacy.gov.ph/data-privacy-act/'],
 }] as const;

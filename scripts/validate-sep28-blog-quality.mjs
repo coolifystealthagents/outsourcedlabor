@@ -31,10 +31,11 @@ if (!fs.existsSync(contentPath)) {
   const bodies = present.map(({slug}) => {
     const start = moduleText.indexOf(`slug: '${slug}'`);
     const next = moduleText.indexOf("slug: '", start + 8);
-    return moduleText.slice(start, next === -1 ? moduleText.length : next);
+    const articleSource = moduleText.slice(start, next === -1 ? moduleText.length : next);
+    return [...articleSource.matchAll(/body:\s*`([\s\S]*?)`/g)].map((match) => match[1]).join('\n');
   });
   const counts = bodies.map((body) => normalize(body).split(' ').filter(Boolean).length);
-  counts.forEach((count, index) => assert.ok(count >= 900, `${present[index].slug}: ${count} body words; requires 900`));
+  const shallow = counts.map((count, index) => ({slug: present[index].slug, count})).filter(({count}) => count < 900);
   let maximum = {score: 0, pair: []};
   const sets = bodies.map((body) => shingles(body));
   for (let left = 0; left < sets.length; left += 1) {
@@ -45,6 +46,7 @@ if (!fs.existsSync(contentPath)) {
   }
   assert.ok(maximum.score < 0.5, `Maximum five-word-shingle Jaccard is ${maximum.score.toFixed(4)} for ${maximum.pair.join(' / ')}`);
   console.log(JSON.stringify({family: 'blog', drafted: present.map(({slug}, index) => ({slug, bodyWords: counts[index]})), missing, maximumPairwiseFiveWordShingleJaccard: maximum}, null, 2));
+  assert.equal(shallow.length, 0, `Body-depth failures: ${shallow.map(({slug, count}) => `${slug}=${count}`).join(', ')}`);
   if (missing.length) {
     console.log(`INCOMPLETE: ${present.length}/12 substantive Blog drafts present`);
     process.exitCode = 2;
