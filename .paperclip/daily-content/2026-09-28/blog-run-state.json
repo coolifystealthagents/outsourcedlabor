@@ -25,12 +25,14 @@
   },
   "deploymentOwner": "browser_operator",
   "deploymentApplication": "rnfrqkl6u7ywjtsxwwcg8sav",
-  "contentStatus": "drafting_2_of_12_unrouted",
+  "contentStatus": "drafting_4_of_12_unrouted",
   "draftEvidence": [
     {"slug":"philippines-support-callback-identity-check","bodyWords":1657,"commit":"9567d201bdd1d5cbdae3f9a17811da86242e207f"},
-    {"slug":"filipino-admin-meeting-preread-packet","bodyWords":1442,"commit":"6f6b1a983f87c0b4569ba13a770de13c2bd2913a"}
+    {"slug":"filipino-admin-meeting-preread-packet","bodyWords":1440,"commit":"6f6b1a983f87c0b4569ba13a770de13c2bd2913a"},
+    {"slug":"outsourced-order-partial-shipment-reconciliation","bodyWords":924,"commit":"8498cb8974069f15470666e9fbbe31889831790b"},
+    {"slug":"philippines-vendor-promised-date-variance","bodyWords":900,"commit":"8498cb8974069f15470666e9fbbe31889831790b"}
   ],
-  "currentMaximumPairwiseFiveWordShingleJaccard": 0.004876462938881665,
+  "currentMaximumPairwiseFiveWordShingleJaccard": 0.006257332811888932,
   "integrationStatus": "research_integrated_blog_bodies_pending",
   "productionPushStatus": "not_started",
   "topics": [
