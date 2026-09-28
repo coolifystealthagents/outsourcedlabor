@@ -16,12 +16,17 @@
   "pairedResearchTask": {
     "identifier": "OUTAAAAAAAA-71",
     "id": "ffe80e6b-55eb-4f44-9282-db613df82cf8",
-    "handoffStatus": "awaiting_local_commit"
+    "handoffStatus": "integrated_and_revalidated",
+    "sourceCommit": "cd22ab0b7bc27ae3489bc8088c7c76dab2a65eb8",
+    "integratedCommit": "50642d1d9526fc3af317c3fa9c8871893704d5a4",
+    "entryCount": 5,
+    "bodyWordCounts": [2813, 2845, 2768, 2898, 2896],
+    "maximumPairwiseFiveWordShingleJaccard": 0.4238
   },
   "deploymentOwner": "browser_operator",
   "deploymentApplication": "rnfrqkl6u7ywjtsxwwcg8sav",
   "contentStatus": "records_scaffolded_bodies_pending",
-  "integrationStatus": "not_started",
+  "integrationStatus": "research_integrated_blog_bodies_pending",
   "productionPushStatus": "not_started",
   "topics": [
     {"slug":"philippines-support-callback-identity-check","topic":"customer callback identity verification","service":"customer-support","readerDecision":"Which facts must be checked before a support specialist discusses an existing case by phone?"},
