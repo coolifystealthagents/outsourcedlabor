@@ -1,0 +1,48 @@
+{
+  "cycleLabel": "September28",
+  "publicationDate": null,
+  "publicationDateRule": "Set to each article's actual first public verification date in the site timezone; never infer from the cycle label.",
+  "timezone": "UTC",
+  "family": "blog",
+  "requiredCount": 12,
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "productionBranch": "main",
+  "baseProductionSha": "82d9cf2cd28bd156a792c58e65e08d0d966076b1",
+  "routineBranch": "routine/outaaaaaaaa-72-20260928",
+  "blogTask": {
+    "identifier": "OUTAAAAAAAA-72",
+    "id": "3707acf8-e21f-4997-b275-2b57498c77d6"
+  },
+  "pairedResearchTask": {
+    "identifier": "OUTAAAAAAAA-71",
+    "id": "ffe80e6b-55eb-4f44-9282-db613df82cf8",
+    "handoffStatus": "awaiting_local_commit"
+  },
+  "deploymentOwner": "browser_operator",
+  "deploymentApplication": "rnfrqkl6u7ywjtsxwwcg8sav",
+  "contentStatus": "topic_inventory_locked",
+  "integrationStatus": "not_started",
+  "productionPushStatus": "not_started",
+  "topics": [
+    {"slug":"philippines-support-callback-identity-check","topic":"customer callback identity verification","service":"customer-support","readerDecision":"Which facts must be checked before a support specialist discusses an existing case by phone?"},
+    {"slug":"filipino-admin-meeting-preread-packet","topic":"meeting pre-read packet preparation","service":"admin-support","readerDecision":"How can administrative support assemble a decision-ready pre-read without inventing conclusions?"},
+    {"slug":"outsourced-order-partial-shipment-reconciliation","topic":"partial shipment reconciliation","service":"order-operations","readerDecision":"How should order support reconcile item, warehouse, and carrier records when only part of an order ships?"},
+    {"slug":"philippines-vendor-promised-date-variance","topic":"vendor promised-date variance tracking","service":"vendor-coordination","readerDecision":"When does a changed supplier date need buyer review rather than routine follow-up?"},
+    {"slug":"filipino-inventory-unit-of-measure-mismatch","topic":"inventory unit-of-measure mismatch triage","service":"inventory-administration","readerDecision":"How should inventory support compare pack, case, and each quantities without making an unauthorized stock adjustment?"},
+    {"slug":"outsourced-crm-duplicate-ownership-review","topic":"CRM duplicate ownership review","service":"crm-data-stewardship","readerDecision":"How can a data specialist prepare likely duplicates without merging records or reassigning ownership?"},
+    {"slug":"philippines-procurement-po-acknowledgment","topic":"purchase order acknowledgment follow-up","service":"procurement-follow-up","readerDecision":"Which missing or changed PO details should stop routine supplier follow-up and return to the buyer?"},
+    {"slug":"filipino-qa-root-cause-evidence-packet","topic":"quality root-cause evidence preparation","service":"quality-audit-support","readerDecision":"How can QA support assemble defensible evidence without declaring an unsupported root cause?"},
+    {"slug":"outsourced-workforce-skill-coverage-matrix","topic":"workforce skill coverage matrix","service":"workforce-scheduling","readerDecision":"How should a scheduler expose trained coverage gaps before publishing a draft schedule?"},
+    {"slug":"philippines-reporting-metric-definition-register","topic":"metric definition register maintenance","service":"workforce-reporting","readerDecision":"What must be recorded so recurring KPI updates use the approved population, formula, and cutoff?"},
+    {"slug":"filipino-dispatch-stalled-work-recovery","topic":"stalled work recovery in operations dispatch","service":"operations-dispatch","readerDecision":"How can dispatch support restart a blocked item without silently changing priority or authority?"},
+    {"slug":"outsourced-sop-exception-to-procedure-review","topic":"exception-to-procedure review","service":"sop-documentation","readerDecision":"When does a recurring exception justify an SOP proposal, and who approves the change?"}
+  ],
+  "requiredChecksBeforeIntegration": [
+    "exactly 12 new Blog slugs absent from baseline and durable ledgers",
+    "body-only rendered word count at least 900 for every Blog article",
+    "maximum pairwise five-word-shingle Jaccard below 0.50 within Blog family",
+    "sources, canonicals, dates, assets, internal links, index, sitemap, manifest hashes",
+    "paired Research handoff contains exactly five new Research articles with local full SHA",
+    "clean combined production build after final fetch and rebase"
+  ]
+}
