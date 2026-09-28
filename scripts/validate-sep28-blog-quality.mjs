@@ -26,22 +26,27 @@ if (!fs.existsSync(contentPath)) {
   process.exitCode = 2;
 } else {
   const moduleText = fs.readFileSync(contentPath, 'utf8');
-  const bodies = state.topics.map(({slug}) => {
+  const present = state.topics.filter(({slug}) => moduleText.includes(`slug: '${slug}'`));
+  const missing = state.topics.filter(({slug}) => !moduleText.includes(`slug: '${slug}'`)).map(({slug}) => slug);
+  const bodies = present.map(({slug}) => {
     const start = moduleText.indexOf(`slug: '${slug}'`);
-    assert.notEqual(start, -1, `Missing article body for ${slug}`);
     const next = moduleText.indexOf("slug: '", start + 8);
     return moduleText.slice(start, next === -1 ? moduleText.length : next);
   });
   const counts = bodies.map((body) => normalize(body).split(' ').filter(Boolean).length);
-  counts.forEach((count, index) => assert.ok(count >= 900, `${state.topics[index].slug}: ${count} body words; requires 900`));
+  counts.forEach((count, index) => assert.ok(count >= 900, `${present[index].slug}: ${count} body words; requires 900`));
   let maximum = {score: 0, pair: []};
   const sets = bodies.map((body) => shingles(body));
   for (let left = 0; left < sets.length; left += 1) {
     for (let right = left + 1; right < sets.length; right += 1) {
       const score = jaccard(sets[left], sets[right]);
-      if (score > maximum.score) maximum = {score, pair: [state.topics[left].slug, state.topics[right].slug]};
+      if (score > maximum.score) maximum = {score, pair: [present[left].slug, present[right].slug]};
     }
   }
   assert.ok(maximum.score < 0.5, `Maximum five-word-shingle Jaccard is ${maximum.score.toFixed(4)} for ${maximum.pair.join(' / ')}`);
-  console.log(JSON.stringify({family: 'blog', counts, maximumPairwiseFiveWordShingleJaccard: maximum}, null, 2));
+  console.log(JSON.stringify({family: 'blog', drafted: present.map(({slug}, index) => ({slug, bodyWords: counts[index]})), missing, maximumPairwiseFiveWordShingleJaccard: maximum}, null, 2));
+  if (missing.length) {
+    console.log(`INCOMPLETE: ${present.length}/12 substantive Blog drafts present`);
+    process.exitCode = 2;
+  }
 }
