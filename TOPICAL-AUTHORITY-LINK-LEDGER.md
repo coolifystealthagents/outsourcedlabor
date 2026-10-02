@@ -1,6 +1,6 @@
 # Service-led topical map and link ledger
 
-Reviewed: 2026-09-28
+Reviewed: 2026-10-02
 
 This ledger records only routes generated from the current site data. It is a planning record, not a claim that every proposed body link is already live. Each future edit must confirm the source sentence in generated HTML, preserve the article's narrow question, and add only one reader-useful service handoff.
 
@@ -30,6 +30,7 @@ This ledger records only routes generated from the current site data. It is a pl
 - Delivered locally: `/blog/outsourced-labor-quality-scorecard` now renders one route-local link to `/services/quality-audit-support`. The scorecard still asks how a manager can review samples before accepting work. Rendered source: `d1a133e7bb86b5d285ef1049e4c51e7bcc9070d2`.
 - Delivered: `/blog/philippines-weekly-kpi-source-reconciliation` renders one route-local link to `/services/workforce-reporting`. Its narrow question is how to reconcile a weekly KPI worksheet before a manager interprets the result; the specialist prepares evidence while the client owner keeps metric definitions and business decisions. Rendered source: `50148f3af1145c6d2fbadfc695db982eb093059f`.
 - Delivered locally: `/blog/outsourced-labor-shift-handoff` renders one route-local link to `/services/operations-dispatch`. Its narrow question remains how to hand off urgent work across shifts; the manager retains customer, policy, and approval decisions. Rendered source: `d5aeb3564716bedf73102bc039b8863781f6e0e6`.
+- Verified absent, pending data-record review: `/research/research-outsourced-qa-sample-size-decision` has no `/services/quality-audit-support` link inside generated `<main>`. Both routes are self-canonical and sitemap-listed. Its one question is how much review a defined outsourced lane needs; a future handoff may point to Quality Audit Support only after a route-data owner confirms that the service scope fits the reader's reviewed-work decision. Do not add a second link to the existing quality-scorecard source.
 
 ## Public verification status — 2026-09-15
 
