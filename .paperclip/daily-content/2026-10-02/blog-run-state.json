@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "family": "blog",
+  "cycleLabel": "2026-10-02",
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "productionBranch": "main",
+  "baseProductionSha": "c0444e8cbd611087cd48e368b0fae2f50a6db8d7",
+  "routineBranch": "routine/outaaaaaaaa-74-20261002",
+  "researchSourceCommit": "64d71492a16b54889e192b3a7dae465515028a08",
+  "researchIntegrationCommit": "7e40fab",
+  "requiredCount": 12,
+  "publicationDate": null,
+  "timezone": "UTC",
+  "status": "inventory_locked_bodies_pending",
+  "topics": [
+    {"slug":"outsourced-accounts-payable-three-way-match-exception","pillar":"finance-operations"},
+    {"slug":"philippines-customer-support-refund-evidence-packet","pillar":"customer-support"},
+    {"slug":"filipino-sales-operations-lead-routing-sla","pillar":"crm-data-stewardship"},
+    {"slug":"outsourced-recruiting-interview-scorecard-completeness","pillar":"recruitment-support"},
+    {"slug":"philippines-ecommerce-backorder-promise-update","pillar":"order-operations"},
+    {"slug":"filipino-admin-contract-renewal-notice-calendar","pillar":"admin-support"},
+    {"slug":"outsourced-crm-consent-suppression-audit","pillar":"crm-data-stewardship"},
+    {"slug":"philippines-qa-accessibility-defect-reproduction","pillar":"quality-audit-support"},
+    {"slug":"filipino-workforce-schedule-shrinkage-assumptions","pillar":"workforce-scheduling"},
+    {"slug":"outsourced-sop-version-retirement-control","pillar":"sop-documentation"},
+    {"slug":"philippines-inventory-cycle-count-variance-handoff","pillar":"inventory-administration"},
+    {"slug":"filipino-procurement-supplier-document-expiry","pillar":"procurement-follow-up"}
+  ]
+}
