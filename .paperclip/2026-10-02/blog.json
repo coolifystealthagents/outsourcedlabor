@@ -7,7 +7,7 @@
   "timezone": "UTC",
   "requiredCount": 12,
   "publicationDate": "2026-10-02",
-  "contentCommit": null,
+  "contentCommit": "c91a9e83ca2ae720042c330a925f4e3abee482c3",
   "deploymentCommit": null,
   "deploymentEvidence": null,
   "verifiedCount": 0,
@@ -25,7 +25,7 @@
       "contentHash": "0093cf2fba5d1b898c92a9bf8ac4efca115875397647c270ee7701246822f87b",
       "bodyWords": 1238,
       "publicationDate": "2026-10-02",
-      "commitSha": null,
+      "commitSha": "c91a9e83ca2ae720042c330a925f4e3abee482c3",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcedlabor.com/blog/outsourced-accounts-payable-three-way-match-exception",
       "verifiedAt": null
@@ -43,7 +43,7 @@
       "contentHash": "7e704cd3790447519ff92a01d12bd524afb1a852ca6c8023effb504005b02913",
       "bodyWords": 1125,
       "publicationDate": "2026-10-02",
-      "commitSha": null,
+      "commitSha": "c91a9e83ca2ae720042c330a925f4e3abee482c3",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcedlabor.com/blog/philippines-customer-support-refund-evidence-packet",
       "verifiedAt": null
@@ -61,7 +61,7 @@
       "contentHash": "88cc049fdd17305dfe22606da9e08295c1d0aa3ff7bb97027925785892aad5cb",
       "bodyWords": 1021,
       "publicationDate": "2026-10-02",
-      "commitSha": null,
+      "commitSha": "c91a9e83ca2ae720042c330a925f4e3abee482c3",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcedlabor.com/blog/filipino-sales-operations-lead-routing-sla",
       "verifiedAt": null
@@ -79,7 +79,7 @@
       "contentHash": "5268826fc81a5d4a5ff1ece800376c07ed06ab735fdc88f397062b8e3b7c391e",
       "bodyWords": 1060,
       "publicationDate": "2026-10-02",
-      "commitSha": null,
+      "commitSha": "c91a9e83ca2ae720042c330a925f4e3abee482c3",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcedlabor.com/blog/outsourced-recruiting-interview-scorecard-completeness",
       "verifiedAt": null
@@ -97,7 +97,7 @@
       "contentHash": "e85639ebc311206dbb9dae79659e40c97861c1e26636af631665493064aa5bfb",
       "bodyWords": 1008,
       "publicationDate": "2026-10-02",
-      "commitSha": null,
+      "commitSha": "c91a9e83ca2ae720042c330a925f4e3abee482c3",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcedlabor.com/blog/philippines-ecommerce-backorder-promise-update",
       "verifiedAt": null
@@ -115,7 +115,7 @@
       "contentHash": "b8004ef9963f9e1342580b36159b9ae13c2efa1f25d3c11e68a31b20e22b6454",
       "bodyWords": 1033,
       "publicationDate": "2026-10-02",
-      "commitSha": null,
+      "commitSha": "c91a9e83ca2ae720042c330a925f4e3abee482c3",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcedlabor.com/blog/filipino-admin-contract-renewal-notice-calendar",
       "verifiedAt": null
@@ -133,7 +133,7 @@
       "contentHash": "c8ff07f3ed57d91587f9e3dd0f8033bad6d0b5f375f76e710861f14b8c120c6f",
       "bodyWords": 1085,
       "publicationDate": "2026-10-02",
-      "commitSha": null,
+      "commitSha": "c91a9e83ca2ae720042c330a925f4e3abee482c3",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcedlabor.com/blog/outsourced-crm-consent-suppression-audit",
       "verifiedAt": null
@@ -151,7 +151,7 @@
       "contentHash": "af76f1d0c8017d61cede23e5955e90b7de123342c24a7125b91492bf50f82507",
       "bodyWords": 1087,
       "publicationDate": "2026-10-02",
-      "commitSha": null,
+      "commitSha": "c91a9e83ca2ae720042c330a925f4e3abee482c3",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcedlabor.com/blog/philippines-qa-accessibility-defect-reproduction",
       "verifiedAt": null
@@ -169,7 +169,7 @@
       "contentHash": "9ae8e7938c251dddb2e24ba036d7f19ce07c3c9dfc3b87d90d277d798f1ebda4",
       "bodyWords": 956,
       "publicationDate": "2026-10-02",
-      "commitSha": null,
+      "commitSha": "c91a9e83ca2ae720042c330a925f4e3abee482c3",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcedlabor.com/blog/filipino-workforce-schedule-shrinkage-assumptions",
       "verifiedAt": null
@@ -187,7 +187,7 @@
       "contentHash": "6807fdd317f77f04b8330004cd4935d32b8edad5aabb0410da65fda8d58e2f73",
       "bodyWords": 917,
       "publicationDate": "2026-10-02",
-      "commitSha": null,
+      "commitSha": "c91a9e83ca2ae720042c330a925f4e3abee482c3",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcedlabor.com/blog/outsourced-sop-version-retirement-control",
       "verifiedAt": null
@@ -205,7 +205,7 @@
       "contentHash": "77f9f82fc0d74b6d12cb114ad9310ccd4bfd672a4a53fa3b802c5f92203484f3",
       "bodyWords": 922,
       "publicationDate": "2026-10-02",
-      "commitSha": null,
+      "commitSha": "c91a9e83ca2ae720042c330a925f4e3abee482c3",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcedlabor.com/blog/philippines-inventory-cycle-count-variance-handoff",
       "verifiedAt": null
@@ -223,7 +223,7 @@
       "contentHash": "e0a45dad8b08cd1da60a36dbb127a2ac1774518c066e860e717a6dbef8fc6aee",
       "bodyWords": 946,
       "publicationDate": "2026-10-02",
-      "commitSha": null,
+      "commitSha": "c91a9e83ca2ae720042c330a925f4e3abee482c3",
       "deploymentEvidence": null,
       "liveUrl": "https://outsourcedlabor.com/blog/filipino-procurement-supplier-document-expiry",
       "verifiedAt": null
