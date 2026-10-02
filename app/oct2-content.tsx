@@ -233,4 +233,46 @@ During the pilot, have an authorized reviewer reproduce the date and permitted m
 Keep the lane when the evidence-to-action path is reliable. Expand only after additional channels have compatible terms and event definitions. Pause when inventory provenance is unavailable, allocation decisions are unresolved, or repeated delays require commercial judgment. A bounded backorder lane gives customers clearer information while preventing an internal estimate from becoming an unsupported promise.`},
   ],
   sources: ['https://www.ftc.gov/business-guidance', 'https://www.nist.gov/privacy-framework', 'https://privacy.gov.ph/data-privacy-act/'],
+}, {
+  slug: 'filipino-admin-contract-renewal-notice-calendar',
+  title: 'Maintain a Contract Renewal Notice Calendar With Filipino Admin Support',
+  service: 'admin-support',
+  sections: [
+    {heading: 'Treat the calendar as a decision control', body: `A renewal calendar should create enough time for an authorized owner to review options before a contractual notice deadline. It is not merely a list of expiration dates. For every agreement, distinguish term end, automatic-renewal date, cancellation notice deadline, pricing review date, service review, budget cutoff, and the internal date by which a decision packet must be ready. Each event needs its source and owner.
+
+Begin with executed agreements and approved amendments, not filenames or prior spreadsheets. A draft may contain different notice language, and an amendment may replace the original term. Filipino administrative support can inventory documents and extract stated dates for review, but legal interpretation stays with qualified client owners. Mark uncertain language and conflicting documents instead of choosing the date that appears most convenient.
+
+Test the design with a contract ending December 31 that renews automatically unless notice arrives sixty days earlier. The operational deadline needs delivery method, recipient, time zone, weekend treatment, and evidence requirement confirmed by the owner. A date alone cannot safely control the task.`},
+    {heading: 'Create a traceable agreement record', body: `Capture agreement identifier, counterparty, internal business owner, executed-document link, amendment links, service category, term start and end, renewal mechanism, notice period as written, governing time zone if specified, notice method, recipient, source page, reviewer, review date, and confidence state. Keep the authoritative document in its controlled repository rather than copying it into a local calendar folder.
+
+Separate extracted text from interpreted dates. Record the clause and page that produced the candidate deadline, then have the designated owner approve the operational event. If two amendments appear to govern, preserve both and open a narrow review question. Do not calculate a final deadline from ambiguous language and label it verified.
+
+Use stable identifiers when vendor names change or several agreements share a counterparty. One supplier may have a master agreement, work orders, data terms, and product subscriptions with different cycles. Combining them into one row can hide a deadline or send a notice under the wrong agreement.`},
+    {heading: 'Build backward from the external notice date', body: `Once an owner verifies the contractual date, create internal milestones for evidence collection, service-owner review, security or privacy review where applicable, finance input, alternatives, approval, notice preparation, signature, delivery, and confirmation. Assign each milestone to a person or role with a due time. Allow time for returned work rather than placing every task on the last permissible day.
+
+Milestones should reflect consequence and complexity. A low-risk month-to-month service may need a short review; a critical platform with migration dependencies needs a longer runway. Administrative support applies the approved schedule class. It should not decide that a contract is low risk, commercially acceptable, or unnecessary.
+
+When an internal milestone slips, preserve the external deadline and escalate the exact missing decision. Do not move the verified notice date to make a dashboard green. The record should show delay, owner, consequence, and next safe action.`},
+    {heading: 'Prepare a neutral renewal review packet', body: `The packet should state the agreement, verified timeline, current scope, approved spend evidence, utilization or service records supplied by their owners, unresolved issues, dependencies, notice mechanics, and choices the accountable owner has defined. Link sources and label observation periods. Administrative support assembles facts; it does not recommend renewal, interpret liability, negotiate terms, or invent savings.
+
+Distinguish a missing fact from a favorable result. No complaints found in one queue does not prove service quality, and no usage report does not prove zero use. State search scope and unavailable evidence. If finance and operations figures conflict, present both with their periods and owners rather than averaging them.
+
+Include the decision needed, decision owner, approval path, and latest safe decision date on the first page. A polished archive of documents is not decision-ready if nobody knows which action must occur before notice becomes impossible.`},
+    {heading: 'Control notices as consequential outbound records', body: `Use owner-approved templates and the delivery method required by the verified agreement. The specialist may prepare addressee, agreement reference, effective date, and attachments for review. The authorized signatory or designated owner approves the final content and release. Do not send cancellation, non-renewal, acceptance, or price correspondence from an administrative queue without recorded authority.
+
+Before dispatch, check recipient, address, agreement, clause reference, dates, attachments, signature, channel, and approval. After dispatch, retain the sent version, timestamp, channel evidence, receipt or confirmation, and any response in the controlled record. A drafted letter or queued email does not prove notice was delivered.
+
+If the required channel fails, follow the owner-approved contingency. Do not switch from certified delivery to ordinary email because a deadline is close. Escalate immediately with failure evidence and the remaining options; legal and business owners decide the response.`},
+    {heading: 'Reconcile changes and calendar coverage', body: `New agreements, amendments, terminations, assignments, and owner changes should trigger a calendar review. Compare the repository’s active-agreement inventory with the calendar on a defined cadence. Investigate records present in one source but not the other. Do not delete a calendar item merely because a document was moved or renamed.
+
+Every verified date change needs source, reviewer, effective time, old value, new value, affected milestones, and notification to owners. Preserve history so a later reviewer can see which date governed an earlier action. Bulk imports require a preview and exception report; a successful file upload does not prove each agreement mapped correctly.
+
+Assign backup coverage for leave and cross-time-zone operations. The handoff should show upcoming deadlines, incomplete evidence, decisions waiting, notices in delivery, and escalation clocks. Shared mailboxes need named accountability rather than assuming another person will see the alert.`},
+    {heading: 'Audit for missed obligations, not calendar neatness', body: `Measure agreements inventoried, dates awaiting owner verification, milestones due, overdue decisions, notices prepared, notices delivered with evidence, amendments awaiting reconciliation, and ownerless records. Review samples against executed sources, including agreements that renewed, ended, or changed. A calendar with no overdue items may simply be missing contracts.
+
+Test alerts and permissions periodically. Confirm that recipients can open the source, backup owners receive notices, time zones render correctly, and completed events retain evidence. Treat a dismissed alert without documented action as unresolved. Repeated last-minute decisions may indicate governance or capacity problems rather than an administrative scheduling defect.
+
+Pilot on one contract family with known owners and documents. Provide extraction rules, accepted examples, escalation paths, approval boundaries, review cadence, and outage steps. Expand only after verified dates and evidence remain reproducible. This bounded role lets Filipino admin support improve renewal readiness while commercial and legal authority stays with the client.`},
+  ],
+  sources: ['https://www.gao.gov/greenbook', 'https://www.nist.gov/privacy-framework', 'https://privacy.gov.ph/data-privacy-act/'],
 }] as const;
