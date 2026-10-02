@@ -275,4 +275,46 @@ Test alerts and permissions periodically. Confirm that recipients can open the s
 Pilot on one contract family with known owners and documents. Provide extraction rules, accepted examples, escalation paths, approval boundaries, review cadence, and outage steps. Expand only after verified dates and evidence remain reproducible. This bounded role lets Filipino admin support improve renewal readiness while commercial and legal authority stays with the client.`},
   ],
   sources: ['https://www.gao.gov/greenbook', 'https://www.nist.gov/privacy-framework', 'https://privacy.gov.ph/data-privacy-act/'],
+}, {
+  slug: 'outsourced-crm-consent-suppression-audit',
+  title: 'Audit CRM Consent Suppression With Outsourced Data Support',
+  service: 'crm-data-stewardship',
+  sections: [
+    {heading: 'Define what the audit can prove', body: `A consent-suppression audit should answer whether a recorded restriction reached every approved communication surface and remained effective. It is not a legal determination that a person consented, nor permission to contact someone whose status is unclear. Begin with client-approved definitions for consent states, withdrawal events, channel scope, lawful operational messages, source priority, and the owner who resolves ambiguity.
+
+List the systems that create, transform, or consume the status: forms, customer accounts, CRM, marketing automation, support tools, data warehouse, advertising audiences, dialers, and manual exports. Name the identifier and event that should connect them. A visible “do not email” field in one CRM screen proves little if downstream lists use an older field or a nightly snapshot.
+
+Use synthetic test records before reviewing live personal data. Create distinct cases for global withdrawal, email-only suppression, bounced address, manual restriction, account deletion workflow, and a later approved preference change. The expected result must be written before the test runs so reviewers do not redefine success around the observed output.`},
+    {heading: 'Preserve source and event lineage', body: `For every sampled restriction, capture the subject reference, channel, source system, event type, event time, ingestion time, source value, transformation, destination value, campaign or queue eligibility, and observation time. Retain controlled links and identifiers rather than copying names, addresses, or message content into a local workbook. The client decides the minimum data and retention period.
+
+Distinguish a missing event from a late event. A withdrawal may be recorded correctly but fail to cross an integration boundary; another may arrive downstream after a documented processing interval. Those conditions have different owners and consequences. Record time zones and system clocks carefully, especially where batch jobs cross UTC midnight.
+
+If sources disagree, do not pick the newest timestamp automatically. One system may be authoritative for collection while another records delivery failures. Preserve both facts and ask the privacy, legal, or data owner which rule applies. Outsourced data support traces the conflict; it does not interpret consent law or invent a precedence rule.`},
+    {heading: 'Reconcile identifiers without unsafe merging', body: `Suppression failures often arise because one person appears under several emails, customer IDs, devices, or account records. Document the client’s approved matching keys and confidence rules. The specialist may identify candidate duplicates and show why they appear related, but should not merge identities or propagate a restriction across uncertain records without the authorized procedure.
+
+Test normalization deliberately. Case, whitespace, alias handling, international phone formats, and hashed identifiers can change whether a destination recognizes a record. Record both original and normalized values using protected views. Do not weaken matching merely to make the reconciliation percentage improve.
+
+Shared addresses and role accounts need special treatment. A restriction tied to one customer record may not safely describe every person using an address, while a channel-level suppression may still need enforcement at send time. Route these cases to the designated owner with the exact identity collision and affected systems. Avoid exposing one individual’s preferences to another account holder.`},
+    {heading: 'Inspect every propagation boundary', body: `Build a path for each event from collection through the authoritative register to each activation system. At every boundary, verify input count, accepted count, rejected count, processing time, error handling, retry behavior, and final state. A successful job status can conceal row-level rejects, and a destination count can match while containing the wrong records.
+
+Use control totals and selected record traces together. Counts detect missing batches; record traces detect incorrect mapping. Review incremental and full-refresh paths because they may implement different filters. If a system rebuilds audiences from the warehouse, confirm that old unrestricted records cannot reappear after the operational CRM correctly suppresses them.
+
+Retries must be bounded and idempotent. When outcome is uncertain, investigate before replaying a batch. Repeated writes can reverse a newer preference or flood audit logs. System owners approve repair actions; support prepares the failed boundary, evidence, affected population, and safest known recovery point.`},
+    {heading: 'Separate communication types and channels', body: `Email, text, telephone, advertising, postal mail, and necessary service notifications may use different fields and client rules. The audit should not collapse them into a single yes-or-no consent label. For each channel and message class, state the approved eligibility rule and source. If the rule is unavailable, mark the test unresolved rather than inferring it from current campaign behavior.
+
+Operational messages require careful scoping. A suppression from promotional email does not automatically answer whether a security alert or order update may be sent, while an operational exception must not become a route for marketing. The accountable owner defines message classification. The specialist checks that the configured classification and destination rule match that definition.
+
+Sampling should include people with mixed channel preferences and status changes close to campaign cutoffs. Confirm that audience snapshots retain their cutoff and that a later withdrawal follows the client’s stop rule. Do not assume removing a person from the next campaign corrects a message already queued elsewhere.`},
+    {heading: 'Document defects and contain exposure', body: `A defect record needs the expected rule, observed result, systems and boundary involved, first and last known times, sample evidence, potentially affected population, active campaigns or queues, owner, containment action, and next checkpoint. Avoid unsupported statements about legal breach or customer impact. Privacy and legal owners determine notification and regulatory response.
+
+Containment may include pausing an audience, blocking a channel, disabling an integration, or applying an approved destination suppression. Only named owners should authorize those actions. The data-support role can assemble affected identifiers in the controlled system and verify the result after execution. It should not download a broad customer list or make emergency configuration changes outside its permissions.
+
+After repair, test the failed case and neighboring cases. A mapping change that fixes global suppression could accidentally block valid operational messages or overwrite newer preferences. Preserve before-and-after evidence, deployment time, backfill scope, and reconciliation counts.`},
+    {heading: 'Run a recurring audit with independent acceptance', body: `Set cadence according to volume, system change, campaign risk, and client policy. Include synthetic controls, recent withdrawals, mixed preferences, rejected integration rows, manually imported audiences, and records crossing identity boundaries. Rotate samples so a stable test account does not become the only evidence that the process works.
+
+Report pass, fail, unresolved, and not-tested separately. Metrics should include propagation delay, row rejects, reappearing records, identity conflicts, unresolved source precedence, and remediation time. A high pass rate does not cancel one serious failure, and untested destinations must not be counted as successful.
+
+Begin the outsourced lane with read-only access and a narrow set of systems. Provide the approved status model, source hierarchy, test cases, privacy boundaries, escalation owners, and incident procedure. Expand only when reviewers can reproduce the trace and the specialist remains outside legal interpretation and production configuration authority. This makes the audit useful without turning administrative access into control over customer permissions.`},
+  ],
+  sources: ['https://www.nist.gov/privacy-framework', 'https://www.ftc.gov/business-guidance/privacy-security', 'https://privacy.gov.ph/data-privacy-act/'],
 }] as const;
