@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "family": "blog",
+  "cycleLabel": "2026-10-02",
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "productionBranch": "main",
+  "timezone": "UTC",
+  "requiredCount": 12,
+  "publicationDate": "2026-10-02",
+  "contentCommit": null,
+  "deploymentCommit": null,
+  "deploymentEvidence": null,
+  "verifiedCount": 0,
+  "entries": [
+    {
+      "family": "blog",
+      "topic": "finance-operations",
+      "slug": "outsourced-accounts-payable-three-way-match-exception",
+      "title": "Resolve Three-Way Match Exceptions With Outsourced Accounts Payable Support",
+      "sources": [
+        "https://www.gao.gov/greenbook",
+        "https://www.cisa.gov/topics/cyber-threats-and-advisories/identity-and-access-management",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ],
+      "contentHash": "0093cf2fba5d1b898c92a9bf8ac4efca115875397647c270ee7701246822f87b",
+      "bodyWords": 1238,
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcedlabor.com/blog/outsourced-accounts-payable-three-way-match-exception",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "customer-support",
+      "slug": "philippines-customer-support-refund-evidence-packet",
+      "title": "Prepare Refund Evidence Packets With Philippines Customer Support",
+      "sources": [
+        "https://www.ftc.gov/business-guidance",
+        "https://www.gao.gov/greenbook",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ],
+      "contentHash": "7e704cd3790447519ff92a01d12bd524afb1a852ca6c8023effb504005b02913",
+      "bodyWords": 1125,
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcedlabor.com/blog/philippines-customer-support-refund-evidence-packet",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "crm-data-stewardship",
+      "slug": "filipino-sales-operations-lead-routing-sla",
+      "title": "Recover Lead-Routing SLA Breaches With Filipino Sales Operations Support",
+      "sources": [
+        "https://www.nist.gov/privacy-framework",
+        "https://www.cisa.gov/topics/cyber-threats-and-advisories/identity-and-access-management",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ],
+      "contentHash": "88cc049fdd17305dfe22606da9e08295c1d0aa3ff7bb97027925785892aad5cb",
+      "bodyWords": 1021,
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcedlabor.com/blog/filipino-sales-operations-lead-routing-sla",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "recruitment-support",
+      "slug": "outsourced-recruiting-interview-scorecard-completeness",
+      "title": "Improve Interview Scorecard Completeness With Outsourced Recruiting Support",
+      "sources": [
+        "https://www.eeoc.gov/employers",
+        "https://www.dol.gov/general/topic/hiring",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ],
+      "contentHash": "5268826fc81a5d4a5ff1ece800376c07ed06ab735fdc88f397062b8e3b7c391e",
+      "bodyWords": 1060,
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcedlabor.com/blog/outsourced-recruiting-interview-scorecard-completeness",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "order-operations",
+      "slug": "philippines-ecommerce-backorder-promise-update",
+      "title": "Control Backorder Promise Updates With Philippines Ecommerce Support",
+      "sources": [
+        "https://www.ftc.gov/business-guidance",
+        "https://www.nist.gov/privacy-framework",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ],
+      "contentHash": "e85639ebc311206dbb9dae79659e40c97861c1e26636af631665493064aa5bfb",
+      "bodyWords": 1008,
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcedlabor.com/blog/philippines-ecommerce-backorder-promise-update",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "admin-support",
+      "slug": "filipino-admin-contract-renewal-notice-calendar",
+      "title": "Maintain a Contract Renewal Notice Calendar With Filipino Admin Support",
+      "sources": [
+        "https://www.gao.gov/greenbook",
+        "https://www.nist.gov/privacy-framework",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ],
+      "contentHash": "b8004ef9963f9e1342580b36159b9ae13c2efa1f25d3c11e68a31b20e22b6454",
+      "bodyWords": 1033,
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcedlabor.com/blog/filipino-admin-contract-renewal-notice-calendar",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "crm-data-stewardship",
+      "slug": "outsourced-crm-consent-suppression-audit",
+      "title": "Audit CRM Consent Suppression With Outsourced Data Support",
+      "sources": [
+        "https://www.nist.gov/privacy-framework",
+        "https://www.ftc.gov/business-guidance/privacy-security",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ],
+      "contentHash": "c8ff07f3ed57d91587f9e3dd0f8033bad6d0b5f375f76e710861f14b8c120c6f",
+      "bodyWords": 1085,
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcedlabor.com/blog/outsourced-crm-consent-suppression-audit",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "quality-audit-support",
+      "slug": "philippines-qa-accessibility-defect-reproduction",
+      "title": "Build Accessibility Defect Reproduction Packets With Philippines QA Support",
+      "sources": [
+        "https://www.w3.org/WAI/WCAG22/quickref/",
+        "https://www.w3.org/WAI/test-evaluate/",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ],
+      "contentHash": "af76f1d0c8017d61cede23e5955e90b7de123342c24a7125b91492bf50f82507",
+      "bodyWords": 1087,
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcedlabor.com/blog/philippines-qa-accessibility-defect-reproduction",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "workforce-scheduling",
+      "slug": "filipino-workforce-schedule-shrinkage-assumptions",
+      "title": "Document Schedule Shrinkage Assumptions With Filipino Workforce Support",
+      "sources": [
+        "https://www.gao.gov/greenbook",
+        "https://www.nist.gov/privacy-framework",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ],
+      "contentHash": "9ae8e7938c251dddb2e24ba036d7f19ce07c3c9dfc3b87d90d277d798f1ebda4",
+      "bodyWords": 956,
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcedlabor.com/blog/filipino-workforce-schedule-shrinkage-assumptions",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "sop-documentation",
+      "slug": "outsourced-sop-version-retirement-control",
+      "title": "Retire Obsolete SOP Versions With Outsourced Documentation Support",
+      "sources": [
+        "https://www.gao.gov/greenbook",
+        "https://www.archives.gov/records-mgmt",
+        "https://www.nist.gov/privacy-framework"
+      ],
+      "contentHash": "6807fdd317f77f04b8330004cd4935d32b8edad5aabb0410da65fda8d58e2f73",
+      "bodyWords": 917,
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcedlabor.com/blog/outsourced-sop-version-retirement-control",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "inventory-administration",
+      "slug": "philippines-inventory-cycle-count-variance-handoff",
+      "title": "Handoff Cycle-Count Variances With Philippines Inventory Support",
+      "sources": [
+        "https://www.gao.gov/greenbook",
+        "https://www.nist.gov/privacy-framework",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ],
+      "contentHash": "77f9f82fc0d74b6d12cb114ad9310ccd4bfd672a4a53fa3b802c5f92203484f3",
+      "bodyWords": 922,
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcedlabor.com/blog/philippines-inventory-cycle-count-variance-handoff",
+      "verifiedAt": null
+    },
+    {
+      "family": "blog",
+      "topic": "procurement-follow-up",
+      "slug": "filipino-procurement-supplier-document-expiry",
+      "title": "Track Supplier Document Expiry With Filipino Procurement Support",
+      "sources": [
+        "https://www.gao.gov/greenbook",
+        "https://www.cisa.gov/topics/cyber-threats-and-advisories/supply-chain",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ],
+      "contentHash": "e0a45dad8b08cd1da60a36dbb127a2ac1774518c066e860e717a6dbef8fc6aee",
+      "bodyWords": 946,
+      "publicationDate": "2026-10-02",
+      "commitSha": null,
+      "deploymentEvidence": null,
+      "liveUrl": "https://outsourcedlabor.com/blog/filipino-procurement-supplier-document-expiry",
+      "verifiedAt": null
+    }
+  ]
+}
