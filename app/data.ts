@@ -20,6 +20,7 @@ import { sep23BlogPosts } from './sep23-records';
 import { sep24BlogPosts } from './sep24-records';
 import { sep25BlogPosts } from './sep25-records';
 import { sep28BlogPosts } from './sep28-records';
+import { oct2BlogPosts } from './oct2-records';
 
 export const site = {
   "domain": "OutsourcedLabor.com",
@@ -88,6 +89,7 @@ export const services = [
   }
 ] as const;
 const allBlogPosts = [
+  ...oct2BlogPosts,
   ...sep28BlogPosts,
   ...sep25BlogPosts,
   ...sep24BlogPosts,

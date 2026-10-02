@@ -1,3 +1,6 @@
+import type {Metadata} from 'next';
+import {CTA, Footer, Header, JsonLd} from './components';
+
 export const oct2DraftArticles = [{
   slug: 'outsourced-accounts-payable-three-way-match-exception',
   title: 'Resolve Three-Way Match Exceptions With Outsourced Accounts Payable Support',
@@ -537,3 +540,11 @@ Run parallel review until two authorized reviewers reach the same administrative
 Expand only when coverage is measurable and consequences remain owner-controlled. Pause when requirements conflict, verification sources are unavailable, or documents contain data the role is not permitted to handle. This bounded lane improves renewal visibility without transferring compliance judgment.`},
   ], sources:['https://www.gao.gov/greenbook','https://www.cisa.gov/topics/cyber-threats-and-advisories/supply-chain','https://privacy.gov.ph/data-privacy-act/'],
 }] as const;
+
+const site = 'https://outsourcedlabor.com';
+export const oct2PublicationDate = '2026-10-02';
+const visibleDate = 'Published: October 2, 2026';
+type DraftArticle = (typeof oct2DraftArticles)[number];
+export const oct2BlogArticles = Object.fromEntries(oct2DraftArticles.map((article) => [article.slug, article])) as Record<string, DraftArticle>;
+export function getOct2BlogMetadata(slug:string):Metadata { const article=oct2BlogArticles[slug]; const canonical=`${site}/blog/${slug}`; const description=`A practical guide to ${article.title.toLowerCase()}, with source evidence, authority boundaries, and review checks.`; return {title:article.title,description,alternates:{canonical},openGraph:{title:article.title,description,url:canonical,type:'article',publishedTime:oct2PublicationDate,images:[{url:'/filipino-operations-specialist.svg',alt:'Filipino operations specialist reviewing a controlled work queue'}]}}; }
+export function renderOct2BlogArticle(slug:string) { const article=oct2BlogArticles[slug]; const canonical=`${site}/blog/${slug}`; const description=`A practical guide to ${article.title.toLowerCase()}, with source evidence, authority boundaries, and review checks.`; const schema={'@context':'https://schema.org','@type':'Article',headline:article.title,description,datePublished:oct2PublicationDate,mainEntityOfPage:canonical,image:`${site}/filipino-operations-specialist.svg`,author:{'@type':'Organization',name:'Outsourced Labor',url:site},publisher:{'@type':'Organization',name:'Outsourced Labor',url:site},citation:article.sources}; return <><Header/><main className="article-page"><JsonLd data={schema}/><article className="container article-shell"><header className="article-header"><p className="eyebrow">Philippines staffing operations guide</p><h1>{article.title}</h1><p className="lead">{description}</p><div className="article-meta"><span>10 min read</span><time dateTime={oct2PublicationDate}>{visibleDate}</time></div><img src="/filipino-operations-specialist.svg" alt="Filipino operations specialist reviewing a controlled work queue" width="1200" height="630"/></header><div className="article-body">{article.sections.map((section)=><section key={section.heading}><h2>{section.heading}</h2>{section.body.split('\n\n').map((paragraph)=><p key={paragraph}>{paragraph}</p>)}</section>)}<p>For a scoped next step, review <a href={`/services/${article.service}`}>{article.service.replaceAll('-',' ')}</a> or <a href="/contact">request a labor plan</a>. Keep consequential approvals with the accountable client owner.</p></div><section className="source-list"><h2>Authoritative references</h2><ol>{article.sources.map((url)=><li key={url}><a href={url} target="_blank" rel="noreferrer">{url}</a></li>)}</ol></section></article><CTA/></main><Footer/></>; }
