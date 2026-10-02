@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "contract": "canonical-daily-research-publishing",
+  "cycleLabel": "2026-10-02 combined release",
+  "family": "research",
+  "domain": "outsourcedlabor.com",
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "branch": "routine/outaaaaaaaa-73-20261002",
+  "baselineSha": "c0444e8cbd611087cd48e368b0fae2f50a6db8d7",
+  "publicationTimezone": "UTC",
+  "requiredCount": 5,
+  "plannedPublicationDate": "2026-10-02",
+  "publicationDate": null,
+  "sourceCheckedDate": "2026-10-02",
+  "contentCommit": null,
+  "deploymentCommit": null,
+  "remoteShaAtHandoff": "c0444e8cbd611087cd48e368b0fae2f50a6db8d7",
+  "deploymentEvidence": "Pending same-cycle Blog integration and browser-operator deployment; Research did not push or deploy",
+  "verifiedCount": 0,
+  "validation": {"minimumBodyWords":1200,"maximumFiveWordShingleJaccard":0.0008,"repeatedParagraphs":0,"sharedArgumentReview":"pass; distinct question, method, structure, evidence model, and decision outcome per article"},
+  "entries": [
+    {"topic":"follow-the-sun customer-support handoff study","slug":"research-philippines-follow-the-sun-handoff-study","route":"/research/research-philippines-follow-the-sun-handoff-study","contentHash":"9e7af378e3977b6833487b7415a302855344c6126ceee676fddf08e9ccb03d43","bodyWords":1294,"liveUrl":"https://outsourcedlabor.com/research/research-philippines-follow-the-sun-handoff-study","verifiedAt":null},
+    {"topic":"risk-based outsourced QA sample size","slug":"research-outsourced-qa-sample-size-decision","route":"/research/research-outsourced-qa-sample-size-decision","contentHash":"28f5d541952d318b4cac6a432e0682ad20617431922ad8e4bce793ba28c23505","bodyWords":1227,"liveUrl":"https://outsourcedlabor.com/research/research-outsourced-qa-sample-size-decision","verifiedAt":null},
+    {"topic":"Philippines disruption coverage triggers","slug":"research-philippines-disruption-coverage-trigger-design","route":"/research/research-philippines-disruption-coverage-trigger-design","contentHash":"db09cb96244321f56e5482fd017137de52a34aa9eef0c426be6f3dc850ddf8d6","bodyWords":1206,"liveUrl":"https://outsourcedlabor.com/research/research-philippines-disruption-coverage-trigger-design","verifiedAt":null},
+    {"topic":"delegated accessibility QA boundary","slug":"research-outsourced-accessibility-qa-boundary","route":"/research/research-outsourced-accessibility-qa-boundary","contentHash":"0b70394ffec95b69666b1170ec2a2ea0d2d0a48d732a4f2f45c7893db5f219af","bodyWords":1216,"liveUrl":"https://outsourcedlabor.com/research/research-outsourced-accessibility-qa-boundary","verifiedAt":null},
+    {"topic":"identity-sensitive shared-inbox controls","slug":"research-philippines-shared-inbox-identity-change-controls","route":"/research/research-philippines-shared-inbox-identity-change-controls","contentHash":"c337fdf674360c2148857e30ec4d651a0a12a07a789cc6938e92a7cf7bc89ba5","bodyWords":1239,"liveUrl":"https://outsourcedlabor.com/research/research-philippines-shared-inbox-identity-change-controls","verifiedAt":null}
+  ]
+}
