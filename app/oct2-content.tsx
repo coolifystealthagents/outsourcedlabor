@@ -359,4 +359,90 @@ Measure reproducibility, packet return reasons, environment coverage, time await
 Begin with one stable product area and a small device matrix. Expand when two testers can reach the same observed result from the packet and reviewers consistently understand the barrier. Pause when environments are unavailable, test data is unsafe, or interpretation repeatedly exceeds the role. This structure makes Philippines QA support a reliable evidence function while accountable specialists retain conformance and remediation decisions.`},
   ],
   sources: ['https://www.w3.org/WAI/WCAG22/quickref/', 'https://www.w3.org/WAI/test-evaluate/', 'https://privacy.gov.ph/data-privacy-act/'],
+}, {
+  slug: 'filipino-workforce-schedule-shrinkage-assumptions',
+  title: 'Document Schedule Shrinkage Assumptions With Filipino Workforce Support',
+  service: 'workforce-scheduling',
+  sections: [
+    {heading: 'Define shrinkage as scheduled time unavailable for workload', body: `Shrinkage converts paid or rostered time into the portion expected to remain available for customer or operational work. It may include breaks, meetings, training, coaching, leave, absence, system downtime, or other approved categories. The definition must state which categories are inside the staffing model, whether they are planned or unplanned, and which denominator is used. A percentage without those choices cannot be reproduced.
+
+Begin with the decision the forecast supports: daily coverage, interval staffing, hiring, or budget. A monthly average may be adequate for one decision and dangerous for a thirty-minute queue. Filipino workforce support can gather inputs and apply an approved model, while operations and finance owners decide category policy, service targets, and staffing risk.
+
+Test the definition with an eight-hour shift containing a paid break, team meeting, training, and expected absence. Ask reviewers to calculate available hours independently. If they disagree about overlapping categories or the denominator, repair the definition before publishing a staffing requirement.`},
+    {heading: 'Separate historical observation from future assumptions', body: `Historical shrinkage describes what occurred in a defined population and period. A planning assumption describes what owners expect or authorize in a future schedule. Keep both values, their sources, and the reasoning that connects them. Do not silently use last month’s result as next month’s plan or replace an approved assumption because a recent week looks unusual.
+
+For each input, record category, source system, population, time zone, interval, numerator, denominator, exclusions, observation window, owner, approval, effective range, and refresh date. Label estimated, provisional, and final data. Late attendance corrections or rescheduled training can change history after a schedule was produced.
+
+Show material differences between observed and planned values. A temporary training program may justify a higher planned rate even when historical absence is stable. A holiday period may not represent normal operations. Workforce support prepares the comparison and scenarios; accountable leaders choose the assumption.`},
+    {heading: 'Prevent overlap and denominator errors', body: `Categories can overlap when a worker is absent during scheduled training or a system outage spans a break. Define precedence so one minute is not counted twice. Keep raw category evidence where authorized, calculate a deduplicated total, and publish the precedence rule. Do not reduce a category merely to make totals look reasonable.
+
+Specify whether the denominator is paid time, scheduled productive time, staffed time, or another approved base. Use the same unit throughout the calculation. Mixing headcount, hours, and intervals can create a plausible percentage with no operational meaning. A worked example should trace source minutes through exclusions and overlap handling to the final rate.
+
+Reconcile totals to the roster and calendar. Missing shifts, transfers between teams, partial employment periods, and daylight-saving changes can distort results. Record control totals and unresolved differences before applying the assumption to coverage.`},
+    {heading: 'Model variation instead of hiding it in one average', body: `Shrinkage often differs by weekday, interval, team, tenure, season, and activity plan. Segment only where the data and staffing decision support it. Tiny groups can create unstable rates and expose employee information. Set minimum sample and aggregation rules with the workforce and privacy owners.
+
+Prepare base, lower, and higher scenarios using owner-approved ranges. Show the resulting productive hours and staffing gap for each scenario. Do not label the highest staffing outcome “safe” without a defined service target and risk decision. Scenarios are inputs to management judgment, not automatic recommendations.
+
+Keep planned activities visible. If coaching and training are movable, show their placement and effect rather than burying them in a fixed percentage. Scheduling owners may shift those activities to protect coverage, but support should not cancel development or breaks to satisfy a model.`},
+    {heading: 'Version assumptions and connect them to schedules', body: `Every assumption set needs a version, approver, effective dates, covered teams, source cutoff, category definitions, scenario choice, and dependent forecasts or schedules. Do not overwrite a prior version. A later reviewer must be able to determine which inputs governed a published roster.
+
+When an assumption changes, identify schedules and staffing plans that may need recalculation. Set a materiality or timing rule through the accountable owner. A small correction after schedules are locked may be documented for the next cycle; a large unexpected absence pattern may require immediate review. The specialist applies the approved trigger rather than deciding informally.
+
+Publish a concise note with the schedule: assumption version, productive-time result, known limitations, and next refresh. Avoid presenting an estimated percentage as observed fact. Link to the controlled calculation instead of distributing editable copies.`},
+    {heading: 'Review outcomes without using shrinkage as a blame metric', body: `After the period, compare planned and observed categories, productive hours, service outcomes, overtime, and uncovered intervals. Investigate mechanisms such as incorrect calendars, changed meeting plans, data lag, or unusual absence. Do not use the aggregate alone to judge individual performance or assume all unavailable time is avoidable.
+
+Track forecast error by category and horizon, overlapping records, late corrections, unapproved activities, and schedules using stale versions. Review both overstaffed and understaffed intervals. A good monthly match can hide serious intraday variation that matters to customers and workers.
+
+Workforce support prepares evidence and repeatable calculations. Managers decide policy, staffing levels, schedule changes, and employee actions. Personal absence detail should remain in authorized systems; planning outputs use the minimum aggregation needed.`},
+    {heading: 'Pilot the model with one stable team', body: `Choose a team with a reliable roster, attendance source, activity calendar, and named owners. Provide category definitions, precedence, denominator, worked examples, source access, version control, review thresholds, and outage procedures. Recalculate a historical period and have an independent reviewer reproduce the result.
+
+Run the future assumption beside the existing planning process before it controls a live schedule. Compare outputs and explain differences. Repair missing events and ambiguous categories rather than forcing agreement. Confirm that published schedules link to the approved version and that changes remain traceable.
+
+Expand only when calculations are reproducible and privacy boundaries hold. Pause if source time cannot reconcile, categories depend on case-by-case interpretation, or managers have not approved risk ranges. This bounded role lets Filipino workforce support maintain planning evidence without taking authority over staffing policy or employee treatment.`},
+  ],
+  sources: ['https://www.gao.gov/greenbook', 'https://www.nist.gov/privacy-framework', 'https://privacy.gov.ph/data-privacy-act/'],
+}, {
+  slug: 'outsourced-sop-version-retirement-control',
+  title: 'Retire Obsolete SOP Versions With Outsourced Documentation Support',
+  service: 'sop-documentation',
+  sections: [
+    {heading: 'Define retirement as a controlled state change', body: `An SOP is not retired when someone uploads a newer file. Retirement means the owner has approved a successor or withdrawal, the effective time is known, active references point to the controlling version, affected workers are informed, and the old copy can no longer masquerade as current instruction. Outsourced documentation support can execute this control without deciding policy.
+
+Inventory the document identifier, title, owner, current version, approved successor, effective date, repositories, embedded links, quick-reference cards, training materials, automations, forms, and teams that use it. Distinguish authoritative copies from convenience copies. Unknown locations are a search task, not evidence that no copy exists.
+
+Test with a procedure linked from onboarding, a service desk macro, and a shared drive. Replacing the controlled repository file leaves two operational paths stale. The retirement plan must follow dependencies, not just filenames.`},
+    {heading: 'Verify authority and successor readiness', body: `Require recorded approval from the procedure owner and any policy, security, legal, or operational owners named by governance. Confirm the successor identifier, version, effective time, scope, required access, tested links, training decision, and rollback path. If there is no successor, state what workers do after withdrawal.
+
+Do not infer approval from draft comments or a manager mentioning that a document is old. A newer edit timestamp does not prove the content was accepted. Preserve the approved retirement record beside the version history.
+
+Check that the successor covers the retired procedure’s inputs, decisions, outputs, stop conditions, records, and handoffs. Documentation support flags gaps; accountable owners resolve them. Publishing first and filling the missing branch later can leave workers without a safe instruction.`},
+    {heading: 'Map every dependency before the cutoff', body: `Search indexes, intranet pages, help centers, templates, forms, workflow descriptions, training modules, saved replies, bookmarks managed by the organization, and neighboring SOPs. Record location, link type, owner, update method, due time, and verification result. Use repository search and access logs where authorized, but do not claim an inventory is exhaustive beyond the searched scope.
+
+Classify each dependency as update, redirect, archive, remove, or owner review. A redirect may help readers temporarily, yet it should not hide a changed decision rule. Forms and automations need functional testing after references change.
+
+Dependencies owned by another team require acceptance, not a message sent into chat. If they cannot update by the effective time, the procedure owner decides whether to delay retirement or approve a documented transition control.`},
+    {heading: 'Archive without leaving an operational duplicate', body: `Move the obsolete version to a restricted, read-only history location with status, superseding reference, retirement time, and owner. Preserve it when audit, training, contractual, or incident review requires history. Remove it from ordinary navigation and search results where the platform permits, while retaining authorized discoverability for records work.
+
+Do not delete first and investigate retention later. Likewise, do not leave an unmarked PDF beside the current version. Watermarks or banners should clearly state obsolete status and link to the controlling instruction without obscuring historical text.
+
+Record content hash, repository path, version metadata, approval, and archive evidence. If local downloads cannot be centrally removed, communicate the cutoff and require workers to use the controlled source. The owner determines further technical restrictions.`},
+    {heading: 'Coordinate release, training, and acknowledgment', body: `Segment audiences by what they must know: awareness, changed steps, new authority, or hands-on practice. State the old and new versions, effective time, material change, required action, source link, help owner, and transition rule. An email-delivery receipt is not proof that a high-risk change was understood.
+
+Use the client’s approved acknowledgment or competency check where required. Track completion without copying sensitive personnel detail into documentation logs. Workers who have not completed mandatory preparation stay on the owner-defined safe path; support does not grant exceptions.
+
+Across time zones, specify which version controls work already in progress at cutoff. A case started under the old procedure may finish there or transition at a defined step. Without that rule, identical work receives inconsistent handling.`},
+    {heading: 'Verify retirement and monitor exceptions', body: `After cutoff, test authoritative links, common entry points, search results, forms, macros, permissions, and a sample of user journeys. Confirm the successor renders correctly and the archive cannot be mistaken for current guidance. Record failures with owner and correction deadline.
+
+Monitor requests for the old version, use of retired forms, training questions, workflow errors, and exception volume. These signals may reveal a missed dependency or an unclear replacement. Do not restore obsolete instructions informally; route the evidence to the procedure owner.
+
+Measure dependency closure, verification passes, late acknowledgments, stale-reference discoveries, and incidents tied to transition. A zero-defect report is credible only when search scope and samples are visible.
+
+Schedule a second verification after caches, search indexes, synchronized drives, and learning platforms have completed their normal refresh. The immediate post-release check may pass while an older copy reappears from a delayed integration. Record the refresh windows and retest each affected surface. If a stale version returns, preserve its source path and synchronization time so the platform owner can repair the mechanism instead of repeatedly removing the symptom.`},
+    {heading: 'Pilot retirement on a bounded document family', body: `Begin with a low-risk family whose owner, repositories, and audience are known. Provide the lifecycle states, authority matrix, dependency checklist, archive standard, communication templates, acceptance tests, and recovery process. Have an independent reviewer find the current instruction from ordinary entry points before and after cutoff.
+
+Keep the workflow when users reliably reach one controlling version and history remains available to authorized reviewers. Repair it when stale copies recur or dependency owners miss the transition. Expand only after integrations and training surfaces are included.
+
+Stop if ownership is disputed, retention is unresolved, or no safe successor exists. Outsourced documentation support can make retirement thorough and traceable, but the client retains authority over policy, effective dates, retention, training, and operational exceptions.`},
+  ],
+  sources: ['https://www.gao.gov/greenbook', 'https://www.archives.gov/records-mgmt', 'https://www.nist.gov/privacy-framework'],
 }] as const;
