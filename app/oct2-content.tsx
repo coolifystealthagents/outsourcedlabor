@@ -149,4 +149,88 @@ During the pilot, compare the specialist’s diagnosis with system and sales-own
 Keep the lane when decisions are reproducible and owners respond through the defined path. Expand only after new territories or products have complete rules and test cases. Pause when consent or identity is uncertain, ownership policy is changing, or recovery depends on broad administrative access. This approach makes outsourced sales operations useful as a control function rather than an unofficial allocator of prospects.`},
   ],
   sources: ['https://www.nist.gov/privacy-framework', 'https://www.cisa.gov/topics/cyber-threats-and-advisories/identity-and-access-management', 'https://privacy.gov.ph/data-privacy-act/'],
+}, {
+  slug: 'outsourced-recruiting-interview-scorecard-completeness',
+  title: 'Improve Interview Scorecard Completeness With Outsourced Recruiting Support',
+  service: 'recruitment-support',
+  sections: [
+    {heading: 'Define complete before chasing interviewers', body: `A complete scorecard is more than a submitted form. It should identify the candidate and interview, use the approved competency set, contain ratings in the permitted scale, include job-related evidence for required fields, disclose conflicts where the process requires it, and arrive before the hiring decision cutoff. Recruiting support can monitor those observable requirements without judging whether a candidate should advance.
+
+Write the acceptance rules for each interview stage. A structured technical interview may require evidence for four competencies; a recruiter screen may use a different form and narrower scope. Mark fields as required, conditional, or optional. Do not treat optional narrative length as a proxy for quality or ask coordinators to invent detail merely to satisfy a character count.
+
+Test the rules with a scorecard containing ratings but no examples, one with evidence placed under the wrong competency, and one submitted after the debrief. Decide which state each receives and who can return it. If reviewers disagree, repair the form or instructions before assigning a completeness queue.`},
+    {heading: 'Preserve the boundary between administration and selection', body: `The outsourced specialist may schedule reminders, confirm form status, check required fields, identify inconsistent scales, record late submissions, and route a returned scorecard to its author. Interviewers and hiring owners retain responsibility for observations, ratings, candidate comparison, accommodations, exceptions, and hiring decisions. The support role must never infer a score from interview notes or rewrite feedback to sound more favorable.
+
+Do not convert comments into a recommendation. “Candidate described a migration plan but did not discuss rollback” is interviewer evidence; whether that meets the competency remains the trained interviewer’s decision. If a rating and narrative appear inconsistent, flag the exact fields for author review without suggesting the desired answer.
+
+Keep decision access narrow. Coordinators may need completion status without access to every sensitive note. Use role-based views and named accounts rather than exporting candidate records to a tracker. The client should define retention, privacy, equal-opportunity, and legal review requirements for its locations and hiring model.`},
+    {heading: 'Build a stage-level completeness register', body: `For each active candidate, record requisition, stage, scheduled interview, interviewer, scorecard template and version, due time, submission time, validation state, returned reason, next owner, and resolution deadline. Store status and controlled links, not copied interview content. The applicant-tracking system should remain the authoritative record.
+
+Use precise states such as not yet due, awaiting submission, submitted pending validation, returned to author, accepted complete, approved exception, or withdrawn. “Done” hides whether the form passed review. Preserve the initial submission time and later revisions so the team can distinguish timely participation from corrected completeness.
+
+Time zones matter when interviewers and Philippines-based support work across regions. Display the deadline in the interviewer’s relevant zone and retain a normalized timestamp for reporting. A reminder sent after a misread deadline is a process defect, not interviewer delay. Publish holiday and off-hours treatment instead of calculating it differently for each case.`},
+    {heading: 'Use reminders that protect independent feedback', body: `Set reminder timing by stage: an upcoming due notice, a missed-deadline notice, and a bounded escalation. Messages should name the candidate reference, interview, scorecard link, due time, missing requirement, and help route. Avoid including another interviewer’s ratings or the emerging hiring decision. Independent evidence can be distorted when people see colleagues’ conclusions before recording their own.
+
+Do not use repeated personal messages as the operating system. Log the reminder and outcome in the recruiting record, then follow the approved escalation path. If an interviewer is unavailable, the hiring owner decides whether to reschedule, substitute an interviewer, waive a component, or proceed with an approved exception. The coordinator does not choose the option.
+
+Pause reminders if the candidate withdraws, the requisition closes, or the interview is cancelled. A stale automation that continues requesting feedback creates confusion and unnecessary access to candidate data. Event-driven stop rules belong in the procedure.`},
+    {heading: 'Return incomplete forms with answerable reasons', body: `A return message should identify the exact administrative defect: required competency unrated, scale outside the template, evidence field blank, interview identity mismatch, unsupported attachment, or submission in the wrong form. Link to the approved instructions and state the correction deadline. “Needs more detail” is subjective and invites the coordinator to influence content.
+
+If an interviewer believes a field is not applicable, route that claim through the form’s approved path. Do not tell them to select a neutral score merely to clear the requirement. An approved not-applicable option should require the evidence or owner specified by the hiring process. Preserve the original entry and correction history.
+
+Repeated returns from one template may indicate poor form design rather than careless interviewers. Group defects by field and stage, then give the process owner examples stripped of unnecessary candidate detail. Recruiting leadership decides whether to change training, template wording, or stage design.`},
+    {heading: 'Prepare the debrief readiness check', body: `Before a debrief, verify that required interviews occurred, accepted scorecards exist, approved exceptions are documented, conflicts are routed, and the decision owner can access the record. Report readiness without summarizing who appears to favor the candidate. A readiness check protects the process sequence; it does not become a shadow recommendation.
+
+If materials are missing at cutoff, show the exact gap, accountable owner, attempts, and available choices defined by policy. The hiring owner may delay, proceed under an exception, or change the process. Record that decision and its authority. Never backdate a scorecard or mark a verbal opinion as a timely submission.
+
+After the debrief, confirm that the authorized disposition and next operational action are recorded in the correct system. Support can schedule the next step or send an approved communication after authorization. It should not infer a rejection or offer from meeting attendance, calendar changes, or informal chat.`},
+    {heading: 'Audit process reliability without grading interview opinions', body: `Measure submission timeliness, first-pass completeness, returns by reason, correction time, unresolved forms, approved exceptions, and debriefs delayed for missing evidence. Segment by stage and template where useful. Do not rank interviewers by how often they recommend candidates or reward universally high ratings.
+
+Quality review should confirm that the right form and competencies were used, required evidence exists, timestamps are truthful, changes are attributable, access is appropriate, and the hiring owner handled exceptions. Review a mix of advanced, declined, withdrawn, and still-active candidates. Restrict reviewers to people authorized for candidate information.
+
+Pilot the lane on a small set of requisitions with stable structured interviews. Give the specialist accepted and returned examples, reminder rules, escalation owners, privacy boundaries, and outage steps. Expand only when completeness decisions are reproducible and the role remains separate from candidate evaluation. That separation lets outsourced recruiting support improve process discipline without acquiring hidden influence over selection.`},
+  ],
+  sources: ['https://www.eeoc.gov/employers', 'https://www.dol.gov/general/topic/hiring', 'https://privacy.gov.ph/data-privacy-act/'],
+}, {
+  slug: 'philippines-ecommerce-backorder-promise-update',
+  title: 'Control Backorder Promise Updates With Philippines Ecommerce Support',
+  service: 'order-operations',
+  sections: [
+    {heading: 'Separate a supply estimate from a customer promise', body: `A backorder record can contain several dates: supplier estimate, expected warehouse receipt, inventory available-to-promise date, planned ship date, carrier delivery estimate, and customer-facing commitment. They are not interchangeable. Philippines ecommerce support should update only the field and message authorized by the client’s promise rules, using the source hierarchy and confidence conditions defined for that product and channel.
+
+Start by naming which event creates a backorder and which source controls each date. Define how partial stock, bundles, substitutions, preorder items, split shipments, marketplace orders, and cancelled supplier lines behave. A supplier saying “next week” may justify an internal review date without supporting a delivery promise to the customer.
+
+Test a mixed order containing one available item and one delayed item. Ask whether the order ships partially, waits, invites a choice, or follows a channel-specific rule; who approves extra freight; and which date can be communicated. If two reviewers choose different paths, the fulfillment rule needs repair before the queue is delegated.`},
+    {heading: 'Create a trustworthy backorder event record', body: `Capture order and line identifiers, product, ordered quantity, allocated quantity, current fulfillment state, authoritative stock event, supplier or transfer reference, observed date, prior customer promise, communication history, channel constraints, current owner, and next review time. Preserve prior values rather than overwriting the history each time an estimate moves.
+
+Record dates with labels and confidence. “Supplier estimated dispatch October 8” is different from “warehouse receipt confirmed October 8.” If an integration displays a date without provenance, do not promote it to a customer promise. Route the missing source question to inventory or procurement.
+
+Avoid shadow spreadsheets containing customer names, addresses, and full order details. Use stable references and approved operational fields. If a temporary control file is necessary during an outage, minimize data, restrict access, define reconciliation, and delete it according to client policy after records return to the authoritative system.`},
+    {heading: 'Define permitted updates by evidence state', body: `Build a state table that connects evidence to action. Confirmed inbound inventory may allow an approved revised ship estimate; an unconfirmed supplier response may allow only a holding message and next-update time. A missed warehouse receipt may require the promise owner to reassess before any outbound date changes. State who can authorize cancellation, substitution, split shipment, upgraded freight, credit, or refund.
+
+The specialist should not move inventory between customers, choose which order loses allocation, substitute a similar product, or promise compensation unless a documented rule grants that precise action. High customer value, repeated messages, or senior escalation can change response priority but not allocation authority.
+
+When evidence deteriorates, update the operational state promptly and preserve the former promise. Do not leave an expired date visible merely to avoid another contact. The customer message should acknowledge the changed expectation using approved language and offer only choices the system and policy can actually fulfill.`},
+    {heading: 'Coordinate one accurate customer message', body: `Choose a communication owner and channel so the customer does not receive conflicting updates from support, warehouse, marketplace, and automated flows. Before sending, compare the proposed statement with the latest sourced event, prior promise, order configuration, customer choices, and approved remedy. Disable or adjust conflicting automation through the designated owner.
+
+Messages should distinguish known facts, current estimate, next review time, and available choices. Avoid blaming a supplier or carrier when the evidence only shows that an expected event has not occurred. Do not say an item shipped until the authoritative fulfillment event exists. If the customer must respond by a deadline, explain the consequence and preserve the response.
+
+Log message version, channel, send result, and any reply. A queued email is not necessarily delivered, and a delivered message does not prove the customer accepted a substitution or delay. Consent for a material order change needs the evidence specified by the client.`},
+    {heading: 'Handle repeated date movement as an exception', body: `Set thresholds for number of promise changes, age, value, event uncertainty, and approaching customer deadlines. Crossing a threshold should create an owner review, not another automatic date shift. The packet should show the original promise, every revision and source, communications, current evidence, available policy paths, and the exact decision needed.
+
+Group orders affected by the same inbound event without losing line-level facts. One procurement answer may resolve the shared estimate, while allocation, channel terms, and customer choices still differ. Bulk updates need a preview, sample, approval, and reconciliation count. Never assume that one message fits every affected order.
+
+When the inbound event finally occurs, reconcile expected and received quantities before releasing updates. A partial receipt may satisfy some allocations and leave others unresolved. Inventory owners control allocation rules; support applies the resulting order state and communications.`},
+    {heading: 'Measure promise quality, not just queue closure', body: `Track active backorders, age, estimate changes, expired promises, time to customer update, customer choices pending, cancellations, split shipments, and reopened contacts. Pair operational speed with accuracy: messages sent before the underlying event is verified can make the queue look fast while increasing repeat contacts.
+
+Review samples across ordinary, repeatedly delayed, partially fulfilled, cancelled, and marketplace orders. Confirm source provenance, state transition, authority, prior promise, communication accuracy, response handling, and final reconciliation. Include orders closed by automation as well as manually handled items.
+
+Use recurring causes to improve purchasing, catalog settings, inventory feeds, and storefront messaging. The support team can quantify which products or event paths generate repeated changes. Commercial, inventory, and customer-policy owners decide whether to change safety stock, availability language, allocation, or remedies.`},
+    {heading: 'Pilot with stable products and explicit stop rules', body: `Begin with a limited product family and one channel whose fulfillment states are understood. Provide the event map, date hierarchy, communication templates, authority table, accepted and returned examples, escalation owners, review sample, outage procedure, and system access. Exclude complex bundles or regulated products until their rules are separately documented.
+
+During the pilot, have an authorized reviewer reproduce the date and permitted message from the same evidence. Investigate differences immediately. Track whether customers receive one consistent update and whether system state matches the communication. Repair mapping and automation conflicts before increasing volume.
+
+Keep the lane when the evidence-to-action path is reliable. Expand only after additional channels have compatible terms and event definitions. Pause when inventory provenance is unavailable, allocation decisions are unresolved, or repeated delays require commercial judgment. A bounded backorder lane gives customers clearer information while preventing an internal estimate from becoming an unsupported promise.`},
+  ],
+  sources: ['https://www.ftc.gov/business-guidance', 'https://www.nist.gov/privacy-framework', 'https://privacy.gov.ph/data-privacy-act/'],
 }] as const;
