@@ -1,6 +1,6 @@
 # Service-led topical map and link ledger
 
-Reviewed: 2026-10-02
+Reviewed: 2026-10-04
 
 This ledger records only routes generated from the current site data. It is a planning record, not a claim that every proposed body link is already live. Each future edit must confirm the source sentence in generated HTML, preserve the article's narrow question, and add only one reader-useful service handoff.
 
@@ -46,7 +46,7 @@ This ledger records only routes generated from the current site data. It is a pl
 
 1. Treat the Vendor Coordination, Inventory Administration, and Workforce Reporting handoffs as delivered. The Workforce Reporting source is `/blog/philippines-weekly-kpi-source-reconciliation`, not the older generic dashboard fallback. Before selecting another reporting candidate, confirm the generated source still contains exactly one route-local link to `/services/workforce-reporting`.
 2. Treat the CRM Data Stewardship, Procurement Follow-Up, Quality Audit Support, and Operations Dispatch handoffs as delivered locally and pending public verification. Do not recreate any of them; audit a verified-absent mapped pair only after a fresh build.
-3. Keep organization authorship. The blog renderer has an Organization author and publisher, while the research renderer currently has no author field. There is no on-site individual author record to support an invented byline.
+3. Keep organization authorship. Both the blog and research renderers use the on-site Outsourced Labor Organization for Article author and publisher. There is no on-site individual author record, so no individual byline should be invented.
 4. The sitemap derives service, blog, and research paths from the same route data. Any future public page change needs route-specific artifact and sitemap checks before deployment.
 
 ## Public verification status — 2026-09-18
