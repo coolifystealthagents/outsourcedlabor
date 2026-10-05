@@ -1,0 +1,52 @@
+{
+  "cycle": "2026-10-05",
+  "task": "OUTAAAAAAAA-75",
+  "handoffTask": "OUTAAAAAAAA-76",
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "branch": "routine/outaaaaaaaa-75-20261005",
+  "baseline": "d805fae407f1a5a56c7d7b7ef2e64bacba79939d",
+  "siteTimezone": "UTC",
+  "publicationDate": "2026-10-05",
+  "publicationDateStatus": "provisional: sole Blog integrator must reconcile immediately before the combined production push",
+  "sourceFile": "app/research/oct5-research-records.ts",
+  "image": "/filipino-operations-specialist.svg",
+  "required": 5,
+  "staged": 5,
+  "pushed": 0,
+  "deployed": 0,
+  "liveVerified": 0,
+  "articles": [
+    {"family":"research","slug":"research-outsourced-cash-application-exception-study","bodyWords":1267,"paragraphs":18,"contentHash":"a0516a27f2401811e12050d838a618cf9c94b296bb40af1b3c58fdf80e30c51b","route":"/research/research-outsourced-cash-application-exception-study"},
+    {"family":"research","slug":"research-philippines-payment-dispute-evidence-boundary","bodyWords":1209,"paragraphs":19,"contentHash":"a47a59b04e1ea905a7aef2baf3aee39025fce9a9ff933f95ca82cca3b361ac4a","route":"/research/research-philippines-payment-dispute-evidence-boundary"},
+    {"family":"research","slug":"research-outsourced-supplier-insurance-evidence-monitoring","bodyWords":1201,"paragraphs":19,"contentHash":"a7c2bf82ec1e5fbb6734c7018fb28aee161d06438e408a865141daea2bec5f94","route":"/research/research-outsourced-supplier-insurance-evidence-monitoring"},
+    {"family":"research","slug":"research-philippines-workforce-offboarding-completeness","bodyWords":1274,"paragraphs":20,"contentHash":"eac0a8aad097d648732910ba32732e5b35e2135c2fbbebc1f2f613cfc90369fb","route":"/research/research-philippines-workforce-offboarding-completeness"},
+    {"family":"research","slug":"research-outsourced-catalog-price-change-control","bodyWords":1241,"paragraphs":20,"contentHash":"270f31151f8d1eec7d7a526fb21f9bd99cad676161269a2e5271718b238890f2","route":"/research/research-outsourced-catalog-price-change-control"}
+  ],
+  "originality": {
+    "metric": "intersection divided by smaller unique five-word-shingle set",
+    "maximumPairwiseOverlap": 0.004177,
+    "maximumPair": ["research-outsourced-cash-application-exception-study","research-outsourced-supplier-insurance-evidence-monitoring"],
+    "repeatedSubstantiveParagraphs": 0,
+    "repeatedSubstantiveSentences": 0,
+    "qualitativeAudit": "PASS: independent decision units, methods, evidence models, worked examples, argument sequences, and reader outcomes; no shared prose template detected",
+    "priorCorpusSlugCollisions": 0
+  },
+  "validation": {
+    "validator": "node scripts/validate-oct5-research.mjs",
+    "typecheck": "pass",
+    "productionBuild": "pass (705 static pages; existing CSS flex-start warning only)",
+    "sourceLinks": "9 reachable with HTTP 200; GAO and 3 FTC URLs return bot-policy 403 to curl; no 404 remains",
+    "localRoutes": "pass: all five returned HTTP 200 with correct h1 title, canonical, date, datePublished schema, substantive body, and image reference; Research index and sitemap include all five",
+    "asset": "pass: /filipino-operations-specialist.svg returned HTTP 200, image/svg+xml, 3384 bytes, valid SVG signature"
+  },
+  "handoff": {
+    "researchMustPush": false,
+    "researchMustDeploy": false,
+    "integratorActions": [
+      "Cherry-pick the Research handoff commit into OUTAAAAAAAA-76",
+      "Reconcile the provisional publication date with the actual first-live UTC date across all source and derived metadata",
+      "Run combined all-17 source/body/hash, originality, link, image, typecheck, test, and clean production-build gates",
+      "Perform the sole non-force production push and stop production mutations for browser-operator deployment"
+    ]
+  }
+}

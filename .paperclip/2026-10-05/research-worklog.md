@@ -21,3 +21,11 @@ Each article will use a different reader decision, observation unit, evidence mo
 ## Source check
 
 Authoritative source pages were checked on 2026-10-05. Current drafting uses source propositions only within their stated scope; no authority is represented as endorsing OutsourcedLabor.com or proving a staffing outcome.
+
+## Completed local handoff
+
+All five independently structured records are implemented in `app/research/oct5-research-records.ts` and wired ahead of prior Research inventory in `app/fleet-content.ts`. Body-only lengths are 1,267; 1,209; 1,201; 1,274; and 1,241 words. The validator reports zero repeated substantive paragraphs, zero repeated substantive sentences, zero prior-corpus slug collisions, and 0.004177 maximum pairwise five-word-shingle containment. Qualitative review found distinct decision units, evidence models, methods, worked examples, argument sequences, and reader outcomes.
+
+Locked dependencies installed with `npm ci --include=dev`; `npm run lint` passed. `npm run build` passed and emitted all five routes among 705 static pages, with only the repository's pre-existing CSS `flex-start` warning. Local production-server checks returned HTTP 200 for every route and confirmed each title, canonical, visible date, `datePublished`, substantive body, and image reference; the Research index and sitemap contain all five. The shared SVG returned HTTP 200 as `image/svg+xml`, 3,384 bytes, with a valid SVG signature. Direct source checks found nine HTTP 200 responses; GAO and three FTC pages return automated-client 403 responses, while no source is 404 after replacing the stale CISA citation with its current Zero Trust Maturity Model page.
+
+The site timezone is UTC. The record date remains provisional until OUTAAAAAAAA-76 reconciles it against the actual first-publication date immediately before the sole combined push. Research has not pushed, deployed, or accessed Coolify. The durable manifest is `.paperclip/2026-10-05/research.json`; the reproducible QA command is `node scripts/validate-oct5-research.mjs`.
