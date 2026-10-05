@@ -68,11 +68,10 @@ Review ordinary checks and difficult ones. Confirm the authorized request, quest
 
 Pilot one role family with a small trained group. Supply accepted and returned examples, question ownership, access limits, templates, escalation contacts, and an outage path. Expand only when another reviewer can reconstruct what was asked, what the reference said, and which hiring owner made the resulting decision.
 
-If your recruiting team has already defined the questions and authority boundaries but coordination is inconsistent, review OutsourcedLabor.com's [recruitment support](/services/recruitment-support) and scope a bounded pilot through the [contact page](/contact-us).
+If your recruiting team has already defined the questions and authority boundaries but coordination is inconsistent, review OutsourcedLabor.com's [workforce reporting support](/services/workforce-reporting) and scope a bounded pilot through the [contact page](/contact-us).
 
 Sources checked for this draft:
 
 - U.S. Equal Employment Opportunity Commission, background checks and employment decisions: https://www.eeoc.gov/laws/guidance/background-checks-what-employers-need-know
 - NIST Privacy Framework: https://www.nist.gov/privacy-framework
 - Republic of the Philippines, Data Privacy Act of 2012 (Lawphil): https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html
-

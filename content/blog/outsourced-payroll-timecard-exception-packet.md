@@ -58,7 +58,7 @@ Begin with a narrow group such as missed departure punches for one payroll calen
 
 Review early packets together. Ask whether another trained reviewer can reproduce the classification, locate the same sources, and understand the requested decision. Repair unclear labels and missing examples before adding more exception types. The useful outcome is not a larger outsourced queue. It is a dependable preparation lane that leaves pay decisions with the employer and gives those decision makers clean evidence before payroll closes.
 
-If timecard preparation is already defined but the daily queue still needs consistent ownership, review OutsourcedLabor.com's [finance operations support](/services/finance-operations) and discuss a bounded pilot through the [contact page](/contact-us).
+If timecard preparation is already defined but the daily queue still needs consistent ownership, review OutsourcedLabor.com's [workforce reporting support](/services/workforce-reporting) and discuss a bounded pilot through the [contact page](/contact-us).
 
 Sources checked for this draft:
 

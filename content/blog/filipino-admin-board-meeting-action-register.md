@@ -60,11 +60,10 @@ Sample new, changed, completed, and restricted actions. Confirm the authoritativ
 
 Begin with one board or committee and one reporting cycle. Provide accepted examples, source hierarchy, state definitions, confidentiality rules, reminder templates, escalation contacts, and contingency handling. Expand when the secretary or authorized reviewer can reproduce the register from the approved record and explain every material change.
 
-If the governance process is already defined but action follow-through is inconsistent, review OutsourcedLabor.com's [admin support](/services/admin-support) and discuss a bounded register-maintenance lane through the [contact page](/contact-us).
+If the governance process is already defined but action follow-through is inconsistent, review OutsourcedLabor.com's [operations dispatch support](/services/operations-dispatch) and discuss a bounded register-maintenance lane through the [contact page](/contact-us).
 
 Sources checked for this draft:
 
 - NIST Privacy Framework: https://www.nist.gov/privacy-framework
 - NIST Cybersecurity Framework 2.0: https://www.nist.gov/cyberframework
 - Republic of the Philippines, Data Privacy Act of 2012 (Lawphil): https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html
-

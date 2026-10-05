@@ -62,7 +62,7 @@ Recurring defects should change the workflow. If customers cannot identify subsc
 
 Start with one product and one cancellation type. Give the Philippines support team examples, system access limited to the task, policy versions, approval paths, confirmation templates, and an outage procedure. Expand only after the business can reproduce the handoff and verify every final state.
 
-For a defined cancellation queue that needs steady administration, review OutsourcedLabor.com's [customer support service](/services/customer-support) and use the [contact page](/contact-us) to scope the boundaries.
+For a defined cancellation queue that needs steady administration, review OutsourcedLabor.com's [operations dispatch support](/services/operations-dispatch) and use the [contact page](/contact-us) to scope the boundaries.
 
 Sources checked for this draft:
 

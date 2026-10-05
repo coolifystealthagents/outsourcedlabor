@@ -1,0 +1,46 @@
+{
+  "cycleLabel": "2026-10-05",
+  "timezone": "UTC",
+  "publicationDate": "2026-10-05",
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "productionBranch": "main",
+  "required": {"blog": 12, "research": 5, "combined": 17},
+  "localValidationTime": "2026-10-05T20:00:02.146Z",
+  "blog": [
+    ["outsourced-payroll-timecard-exception-packet",1279,"d74ee4303ef2783d4b553692a98c34547dd8c1409a4db750d18f4926bb6f9005"],
+    ["philippines-customer-support-subscription-cancellation-handoff",1269,"5ccbac70dd93e5102d444d7811d644cc22a2563a3b13df1effa77a90cff8bc83"],
+    ["filipino-sales-operations-quote-expiry-follow-up",1239,"d71b95d10142483c7db43281b0524947daf17d55b0dec89e1dac034656594b78"],
+    ["outsourced-recruiting-reference-check-coordination",1246,"d09dd8c11988e937c891a9cebe7b576d365b1980b788a408e8cf7f51f8fe2288"],
+    ["philippines-ecommerce-address-change-review",1115,"2708641c15f0f354344106f44365b1e103a7b2cf7367f0fe64c9d2fbbd03f0c2"],
+    ["filipino-admin-board-meeting-action-register",1066,"aa61354592166f44fd0b71b5859501bc37405f3d43045f33d0f82c31f5b8a7c1"],
+    ["outsourced-crm-territory-assignment-audit",1005,"7bb9380d4782e1256cabc892fcb2892fe2a6baa6582da011fee27f6522203249"],
+    ["philippines-qa-mobile-checkout-regression-packet",1049,"120df83cd4548b8aba6dba9bb8f5ff020a8d24e31b865c954ed8806716cd90fa"],
+    ["filipino-workforce-overtime-approval-reconciliation",952,"7c0b42a56979f8b74b8b44d490b9daa7f0a36d138f3d87d48f90e88d74afb140"],
+    ["outsourced-sop-control-owner-review-calendar",971,"2558ec208feb9fc68e93f631285979e26bb9b16fa9fda68e141f58c29bf38b1b"],
+    ["philippines-inventory-return-to-vendor-reconciliation",951,"3c16c13c7e2c55dffbfd7f6b4c8de82a3221526b443ec90f2bba052eacb1c848"],
+    ["filipino-procurement-minimum-order-quantity-review",977,"3cce2813f3715094ac4b3245c213ed65c40f04f0e19515e2bdad8fca13bbdba8"]
+  ],
+  "research": [
+    ["research-outsourced-cash-application-exception-study",1282,"e76baa2315dd673cb4bc6f1c75af1084071c7224b267ec05a09e19a2f75c3a4a"],
+    ["research-philippines-payment-dispute-evidence-boundary",1209,"655e0781b0da647dab966d4bfce7c18aae751c78008b3fa99bdfe6235b8af42c"],
+    ["research-outsourced-supplier-insurance-evidence-monitoring",1211,"3a6545226e6a1d090a42ccece48a200383006a6b369b1007a8a400f0aae3f998"],
+    ["research-philippines-workforce-offboarding-completeness",1274,"eac0a8aad097d648732910ba32732e5b35e2135c2fbbebc1f2f613cfc90369fb"],
+    ["research-outsourced-catalog-price-change-control",1246,"b995d79010d3420c922bab4e2c8809ae279b1f6ccf6dc85b9a935e29cff86507"]
+  ],
+  "validation": {
+    "orderedSourceRenderBodyHashes": "17/17 equal",
+    "titlesDatesCanonicalsSchema": "17/17 pass",
+    "blogResearchIndexesAndSitemap": "17/17 present",
+    "links": "24/24 HTTP 200 after redirects",
+    "image": {"path":"/filipino-operations-specialist.svg","status":200,"mime":"image/svg+xml","bytes":3384,"sha256":"242d97202b6d07d101ea96d867b8fad8e2461ddf562d4a519b755ccab5feb9aa","signatureDecode":"valid SVG"},
+    "dependencies": "npm ci --include=dev; 0 vulnerabilities",
+    "typecheck": "pass",
+    "researchValidator": "pass",
+    "productionBuild": "pass; 718 static pages; pre-existing CSS flex-start warning only",
+    "blogOriginality": {"maximumFiveWordShingleOverlap":0.007392,"repeatedSubstantiveParagraphs":0,"repeatedSubstantiveSentences":0,"qualitative":"pass"},
+    "researchOriginality": {"maximumFiveWordShingleOverlap":0.000805,"repeatedSubstantiveParagraphs":0,"repeatedSubstantiveSentences":0,"qualitative":"pass"}
+  },
+  "push": {"status":"pending","commitSha":null,"remoteSha":null},
+  "deployment": {"owner":"connected browser operator","status":"pending"},
+  "liveVerification": {"verified":0,"required":17,"status":"pending operator Success"}
+}
