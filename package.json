@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start -H 0.0.0.0 -p 3000",
     "lint": "tsc --noEmit",
-    "validate:sep25-blog": "node scripts/validate-sep25-blog.mjs"
+    "validate:sep25-blog": "node scripts/validate-sep25-blog.mjs",
+    "validate:qa-sample-handoff": "node scripts/verify-qa-sample-handoff.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^15.1.6",

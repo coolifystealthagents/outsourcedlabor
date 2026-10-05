@@ -21,6 +21,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = allResearchPosts.find((item) => item.slug === slug);
+  const updated = post && 'updated' in post && typeof post.updated === 'string' ? post.updated : post?.published;
 
   return post ? {
     title: post.title,
@@ -31,6 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: post.excerpt,
       type: 'article',
       publishedTime: post.published,
+      modifiedTime: updated,
       url: `/research/${post.slug}`,
       images: post.image ? [post.image] : undefined,
     },
@@ -45,13 +47,14 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
   const baseUrl = `https://${site.domain.toLowerCase()}`;
   const canonical = `${baseUrl}/research/${post.slug}`;
   const organization = { '@type': 'Organization', name: site.brand, url: baseUrl };
+  const updated = 'updated' in post && typeof post.updated === 'string' ? post.updated : post.published;
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: post.title,
     description: post.excerpt,
     datePublished: post.published,
-    dateModified: post.published,
+    dateModified: updated,
     mainEntityOfPage: canonical,
     author: organization,
     publisher: organization,
@@ -64,6 +67,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
       <article className="section article-shell">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <meta property="article:published_time" content={post.published} />
+        <meta property="article:modified_time" content={updated} />
         <p className="eyebrow">Philippines staffing research · {post.published === '2026-09-14' ? `Published: ${formatPublicDate(post.published)}` : formatPublicDate(post.published)}</p>
         <h1>{post.title}</h1>
         <p className="lead">{post.excerpt}</p>
