@@ -1,0 +1,89 @@
+{
+  "cycleLabel": "2026-10-05",
+  "family": "blog",
+  "requiredCount": 12,
+  "publicationDate": null,
+  "publicationDateRule": "Set per route only after first successful public verification in the configured site timezone.",
+  "baselineSha": "d805fae407f1a5a56c7d7b7ef2e64bacba79939d",
+  "branch": "routine/outaaaaaaaa-76-20261005",
+  "researchDependency": "OUTAAAAAAAA-75",
+  "topics": [
+    {
+      "slug": "outsourced-payroll-timecard-exception-packet",
+      "title": "Prepare Timecard Exception Packets With Outsourced Payroll Support",
+      "pillar": "finance-operations",
+      "readerOutcome": "Separate missing evidence from payroll decisions and route a reviewable exception before the payroll cutoff."
+    },
+    {
+      "slug": "philippines-customer-support-subscription-cancellation-handoff",
+      "title": "Build a Subscription Cancellation Handoff for Philippines Customer Support",
+      "pillar": "customer-support",
+      "readerOutcome": "Capture entitlement, billing, retention and refund facts without letting support staff make unapproved concessions."
+    },
+    {
+      "slug": "filipino-sales-operations-quote-expiry-follow-up",
+      "title": "Control Quote Expiry Follow-Up With Filipino Sales Operations Support",
+      "pillar": "crm-data-stewardship",
+      "readerOutcome": "Keep expiring quotes visible while preserving pricing and discount authority."
+    },
+    {
+      "slug": "outsourced-recruiting-reference-check-coordination",
+      "title": "Coordinate Candidate Reference Checks With Outsourced Recruiting Support",
+      "pillar": "recruitment-support",
+      "readerOutcome": "Collect consent, schedule checks and preserve attributable notes without outsourcing the hiring judgment."
+    },
+    {
+      "slug": "philippines-ecommerce-address-change-review",
+      "title": "Review Post-Order Address Changes With Philippines Ecommerce Support",
+      "pillar": "order-operations",
+      "readerOutcome": "Verify order and fulfillment state before routing a safe address-change decision."
+    },
+    {
+      "slug": "filipino-admin-board-meeting-action-register",
+      "title": "Maintain a Board Meeting Action Register With Filipino Admin Support",
+      "pillar": "admin-support",
+      "readerOutcome": "Turn approved minutes into owned actions while protecting confidential material and decision authority."
+    },
+    {
+      "slug": "outsourced-crm-territory-assignment-audit",
+      "title": "Audit CRM Territory Assignments With Outsourced Data Support",
+      "pillar": "crm-data-stewardship",
+      "readerOutcome": "Find assignment conflicts, show the governing evidence and route changes to the accountable sales owner."
+    },
+    {
+      "slug": "philippines-qa-mobile-checkout-regression-packet",
+      "title": "Build Mobile Checkout Regression Packets With Philippines QA Support",
+      "pillar": "quality-audit-support",
+      "readerOutcome": "Reproduce device-specific checkout failures and give engineers complete diagnostic evidence."
+    },
+    {
+      "slug": "filipino-workforce-overtime-approval-reconciliation",
+      "title": "Reconcile Overtime Approvals With Filipino Workforce Support",
+      "pillar": "workforce-scheduling",
+      "readerOutcome": "Match schedules, time records and approvals without transferring pay or policy decisions."
+    },
+    {
+      "slug": "outsourced-sop-control-owner-review-calendar",
+      "title": "Run an SOP Control-Owner Review Calendar With Outsourced Documentation Support",
+      "pillar": "sop-documentation",
+      "readerOutcome": "Schedule evidence-based SOP reviews and escalate overdue decisions to named control owners."
+    },
+    {
+      "slug": "philippines-inventory-return-to-vendor-reconciliation",
+      "title": "Reconcile Return-to-Vendor Records With Philippines Inventory Support",
+      "pillar": "inventory-administration",
+      "readerOutcome": "Connect warehouse, carrier, supplier and credit records without assuming that shipment equals settlement."
+    },
+    {
+      "slug": "filipino-procurement-minimum-order-quantity-review",
+      "title": "Prepare Minimum Order Quantity Reviews With Filipino Procurement Support",
+      "pillar": "procurement-follow-up",
+      "readerOutcome": "Compare demand, stock and supplier terms while keeping buying commitments with the authorized owner."
+    }
+  ],
+  "collisionAudit": {
+    "priorCorpusComparedThrough": "2026-10-04",
+    "exactSlugCollisions": 0,
+    "notes": "Topics extend twelve established conversion pillars with new operational decisions. They do not reuse the September 28 or October 2 subjects. Full semantic and prose originality gates remain pending until drafts exist."
+  }
+}
