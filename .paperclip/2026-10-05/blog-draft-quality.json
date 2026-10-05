@@ -1,6 +1,6 @@
 {
   "cycleLabel": "2026-10-05",
-  "scope": "First four of twelve Blog drafts; pre-render editorial checkpoint",
+  "scope": "First six of twelve Blog drafts; pre-render editorial checkpoint",
   "articles": [
     {
       "slug": "outsourced-payroll-timecard-exception-packet",
@@ -21,6 +21,16 @@
       "slug": "outsourced-recruiting-reference-check-coordination",
       "wordCount": 1319,
       "sha256": "378bf66575830200746453f4847fb1b90d7767ca923323751e0e39eaa02ae7cd"
+    },
+    {
+      "slug": "philippines-ecommerce-address-change-review",
+      "wordCount": 1182,
+      "sha256": "f1f69fbf3e9d57156c480a549fb2695f6f290f7c28a1aa816bb1dbdccdc33be6"
+    },
+    {
+      "slug": "filipino-admin-board-meeting-action-register",
+      "wordCount": 1137,
+      "sha256": "45de17832bd061800bd26563f74ecb42e344c53cf1397791c1df19651c4335cf"
     }
   ],
   "originality": {
@@ -30,8 +40,8 @@
       "outsourced-recruiting-reference-check-coordination"
     ],
     "exactRepeatedSubstantiveParagraphs": 0,
-    "sharedArgumentSequenceReview": "Pass at this checkpoint. Payroll is organized around time evidence and payroll cutoff; cancellation follows entitlement, billing, privacy and final-state confirmation; quote expiry follows version history, approval scope and buyer contact; reference-check coordination follows consent, question design, attributable notes and hiring-owner acceptance. Final twelve-article and prior-corpus qualitative review remains required.",
-    "humanizerReview": "No em or en dashes, canned conversational openings, inflated promotional language, or flagged high-frequency AI terms found in the four drafts."
+    "sharedArgumentSequenceReview": "Pass at this checkpoint. Payroll centers on time evidence and cutoff; cancellation on entitlement, billing and privacy; quote expiry on version history and commercial approval; reference checks on consent and attributable notes; address changes on identity and fulfillment state; the board register on authoritative governance records and acceptance. Worked examples and reader outcomes are not reused. Final twelve-article and prior-corpus qualitative review remains required.",
+    "humanizerReview": "No em or en dashes, canned conversational openings, inflated promotional language, or flagged high-frequency AI terms found in the six drafts."
   },
   "sourceHttpChecks": [
     {

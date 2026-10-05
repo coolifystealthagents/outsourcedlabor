@@ -12,7 +12,7 @@
   "counts": {
     "requiredBlog": 12,
     "topicsLocked": 12,
-    "drafted": 4,
+    "drafted": 6,
     "sourceValidated": 0,
     "integratedResearch": 5,
     "liveVerified": 0
@@ -37,6 +37,16 @@
       "slug": "outsourced-recruiting-reference-check-coordination",
       "bodyWords": 1319,
       "path": "content/blog/outsourced-recruiting-reference-check-coordination.md"
+    },
+    {
+      "slug": "philippines-ecommerce-address-change-review",
+      "bodyWords": 1182,
+      "path": "content/blog/philippines-ecommerce-address-change-review.md"
+    },
+    {
+      "slug": "filipino-admin-board-meeting-action-register",
+      "bodyWords": 1137,
+      "path": "content/blog/filipino-admin-board-meeting-action-register.md"
     }
   ],
   "researchHandoff": {
