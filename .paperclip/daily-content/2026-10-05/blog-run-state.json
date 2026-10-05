@@ -12,7 +12,7 @@
   "counts": {
     "requiredBlog": 12,
     "topicsLocked": 12,
-    "drafted": 3,
+    "drafted": 4,
     "sourceValidated": 0,
     "integratedResearch": 5,
     "liveVerified": 0
@@ -32,6 +32,11 @@
       "slug": "filipino-sales-operations-quote-expiry-follow-up",
       "bodyWords": 1302,
       "path": "content/blog/filipino-sales-operations-quote-expiry-follow-up.md"
+    },
+    {
+      "slug": "outsourced-recruiting-reference-check-coordination",
+      "bodyWords": 1319,
+      "path": "content/blog/outsourced-recruiting-reference-check-coordination.md"
     }
   ],
   "researchHandoff": {

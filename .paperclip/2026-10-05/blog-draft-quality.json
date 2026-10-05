@@ -1,6 +1,6 @@
 {
   "cycleLabel": "2026-10-05",
-  "scope": "First three of twelve Blog drafts; pre-render editorial checkpoint",
+  "scope": "First four of twelve Blog drafts; pre-render editorial checkpoint",
   "articles": [
     {
       "slug": "outsourced-payroll-timecard-exception-packet",
@@ -16,17 +16,22 @@
       "slug": "filipino-sales-operations-quote-expiry-follow-up",
       "wordCount": 1302,
       "sha256": "3d4b8c25d23dfdc8ba208e15720cbcfc1d42a8a2637dc1f2f02b4b7bb0d51f98"
+    },
+    {
+      "slug": "outsourced-recruiting-reference-check-coordination",
+      "wordCount": 1319,
+      "sha256": "378bf66575830200746453f4847fb1b90d7767ca923323751e0e39eaa02ae7cd"
     }
   ],
   "originality": {
-    "maximumPairwiseFiveWordShingleOverlap": 0.009112,
+    "maximumPairwiseFiveWordShingleOverlap": 0.014296,
     "maximumPair": [
-      "philippines-customer-support-subscription-cancellation-handoff",
-      "filipino-sales-operations-quote-expiry-follow-up"
+      "outsourced-payroll-timecard-exception-packet",
+      "outsourced-recruiting-reference-check-coordination"
     ],
     "exactRepeatedSubstantiveParagraphs": 0,
-    "sharedArgumentSequenceReview": "Pass at this checkpoint. Payroll is organized around time evidence and payroll cutoff; cancellation follows entitlement, billing, privacy and final-state confirmation; quote expiry follows version history, approval scope and buyer contact. Final twelve-article and prior-corpus qualitative review remains required.",
-    "humanizerReview": "No em or en dashes, canned conversational openings, inflated promotional language, or flagged high-frequency AI terms found in the three drafts."
+    "sharedArgumentSequenceReview": "Pass at this checkpoint. Payroll is organized around time evidence and payroll cutoff; cancellation follows entitlement, billing, privacy and final-state confirmation; quote expiry follows version history, approval scope and buyer contact; reference-check coordination follows consent, question design, attributable notes and hiring-owner acceptance. Final twelve-article and prior-corpus qualitative review remains required.",
+    "humanizerReview": "No em or en dashes, canned conversational openings, inflated promotional language, or flagged high-frequency AI terms found in the four drafts."
   },
   "sourceHttpChecks": [
     {
@@ -42,6 +47,11 @@
     {
       "publisher": "NIST",
       "url": "https://www.nist.gov/privacy-framework",
+      "result": 200
+    },
+    {
+      "publisher": "U.S. Equal Employment Opportunity Commission",
+      "url": "https://www.eeoc.gov/laws/guidance/background-checks-what-employers-need-know",
       "result": 200
     },
     {
