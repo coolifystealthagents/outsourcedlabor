@@ -14,7 +14,7 @@
     "topicsLocked": 12,
     "drafted": 3,
     "sourceValidated": 0,
-    "integratedResearch": 0,
+    "integratedResearch": 5,
     "liveVerified": 0
   },
   "draftReceipts": [
@@ -37,9 +37,9 @@
   "researchHandoff": {
     "issue": "OUTAAAAAAAA-75",
     "required": 5,
-    "received": false,
-    "commitSha": null,
-    "worktree": null
+    "received": true,
+    "commitSha": "27bbd4d44ad9be4c352101454fcd01fddaf444eb",
+    "worktree": "/paperclip/instances/default/projects/25fbd3e3-eecf-4f9b-9ccf-ea1600a9d54f/6a6a4f53-54b4-433a-b095-0df8db02302f/outsourcedlabor-outaaaaaaaa-75-20261005"
   },
   "productionMutation": {
     "pushed": false,

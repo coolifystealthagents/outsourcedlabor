@@ -67,6 +67,5 @@ If quote administration already has clear owners and rules, review OutsourcedLab
 Sources checked for this draft:
 
 - NIST Privacy Framework: https://www.nist.gov/privacy-framework
-- U.S. Federal Trade Commission, CAN-SPAM compliance guidance: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
-- National Privacy Commission of the Philippines, Data Privacy Act: https://privacy.gov.ph/data-privacy-act/
-
+- CAN-SPAM Act requirements, 15 U.S.C. §7704: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section7704&num=0&edition=prelim
+- Republic of the Philippines, Data Privacy Act of 2012 (Lawphil): https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html

@@ -16,16 +16,16 @@
   "deployed": 0,
   "liveVerified": 0,
   "articles": [
-    {"family":"research","slug":"research-outsourced-cash-application-exception-study","bodyWords":1267,"paragraphs":18,"contentHash":"a0516a27f2401811e12050d838a618cf9c94b296bb40af1b3c58fdf80e30c51b","route":"/research/research-outsourced-cash-application-exception-study"},
-    {"family":"research","slug":"research-philippines-payment-dispute-evidence-boundary","bodyWords":1209,"paragraphs":19,"contentHash":"a47a59b04e1ea905a7aef2baf3aee39025fce9a9ff933f95ca82cca3b361ac4a","route":"/research/research-philippines-payment-dispute-evidence-boundary"},
-    {"family":"research","slug":"research-outsourced-supplier-insurance-evidence-monitoring","bodyWords":1201,"paragraphs":19,"contentHash":"a7c2bf82ec1e5fbb6734c7018fb28aee161d06438e408a865141daea2bec5f94","route":"/research/research-outsourced-supplier-insurance-evidence-monitoring"},
+    {"family":"research","slug":"research-outsourced-cash-application-exception-study","bodyWords":1282,"paragraphs":18,"contentHash":"e76baa2315dd673cb4bc6f1c75af1084071c7224b267ec05a09e19a2f75c3a4a","route":"/research/research-outsourced-cash-application-exception-study"},
+    {"family":"research","slug":"research-philippines-payment-dispute-evidence-boundary","bodyWords":1209,"paragraphs":19,"contentHash":"655e0781b0da647dab966d4bfce7c18aae751c78008b3fa99bdfe6235b8af42c","route":"/research/research-philippines-payment-dispute-evidence-boundary"},
+    {"family":"research","slug":"research-outsourced-supplier-insurance-evidence-monitoring","bodyWords":1211,"paragraphs":19,"contentHash":"3a6545226e6a1d090a42ccece48a200383006a6b369b1007a8a400f0aae3f998","route":"/research/research-outsourced-supplier-insurance-evidence-monitoring"},
     {"family":"research","slug":"research-philippines-workforce-offboarding-completeness","bodyWords":1274,"paragraphs":20,"contentHash":"eac0a8aad097d648732910ba32732e5b35e2135c2fbbebc1f2f613cfc90369fb","route":"/research/research-philippines-workforce-offboarding-completeness"},
-    {"family":"research","slug":"research-outsourced-catalog-price-change-control","bodyWords":1241,"paragraphs":20,"contentHash":"270f31151f8d1eec7d7a526fb21f9bd99cad676161269a2e5271718b238890f2","route":"/research/research-outsourced-catalog-price-change-control"}
+    {"family":"research","slug":"research-outsourced-catalog-price-change-control","bodyWords":1246,"paragraphs":20,"contentHash":"b995d79010d3420c922bab4e2c8809ae279b1f6ccf6dc85b9a935e29cff86507","route":"/research/research-outsourced-catalog-price-change-control"}
   ],
   "originality": {
     "metric": "intersection divided by smaller unique five-word-shingle set",
-    "maximumPairwiseOverlap": 0.004177,
-    "maximumPair": ["research-outsourced-cash-application-exception-study","research-outsourced-supplier-insurance-evidence-monitoring"],
+    "maximumPairwiseOverlap": 0.000805,
+    "maximumPair": ["research-outsourced-cash-application-exception-study","research-outsourced-catalog-price-change-control"],
     "repeatedSubstantiveParagraphs": 0,
     "repeatedSubstantiveSentences": 0,
     "qualitativeAudit": "PASS: independent decision units, methods, evidence models, worked examples, argument sequences, and reader outcomes; no shared prose template detected",
@@ -35,7 +35,7 @@
     "validator": "node scripts/validate-oct5-research.mjs",
     "typecheck": "pass",
     "productionBuild": "pass (705 static pages; existing CSS flex-start warning only)",
-    "sourceLinks": "9 reachable with HTTP 200; GAO and 3 FTC URLs return bot-policy 403 to curl; no 404 remains",
+    "sourceLinks": "All formerly blocked GAO/FTC dependencies were replaced with claim-appropriate official OMB or U.S. Code sources returning HTTP 200. The integrated source set has no known 403 or 404 response.",
     "localRoutes": "pass: all five returned HTTP 200 with correct h1 title, canonical, date, datePublished schema, substantive body, and image reference; Research index and sitemap include all five",
     "asset": "pass: /filipino-operations-specialist.svg returned HTTP 200, image/svg+xml, 3384 bytes, valid SVG signature"
   },

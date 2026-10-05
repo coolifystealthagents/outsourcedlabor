@@ -66,7 +66,6 @@ For a defined cancellation queue that needs steady administration, review Outsou
 
 Sources checked for this draft:
 
-- U.S. Federal Trade Commission, negative option guidance: https://www.ftc.gov/business-guidance/resources/negative-options-guide-businesses
-- National Privacy Commission of the Philippines, Data Privacy Act: https://privacy.gov.ph/data-privacy-act/
+- Restore Online Shoppers' Confidence Act, 15 U.S.C. §8403: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section8403&num=0&edition=prelim
+- Republic of the Philippines, Data Privacy Act of 2012 (Lawphil): https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html
 - NIST Privacy Framework: https://www.nist.gov/privacy-framework
-

@@ -5,17 +5,17 @@
     {
       "slug": "outsourced-payroll-timecard-exception-packet",
       "wordCount": 1354,
-      "sha256": "e2e5f1dd719fbcf6607eeef0eb0b6e6ea3c54efe6061a2fdd67ba70614eec3b6"
+      "sha256": "fd1008ebf8f50a7a53ba25c2eccf3e2434d836b81805f81f0b3870df7c2c518c"
     },
     {
       "slug": "philippines-customer-support-subscription-cancellation-handoff",
       "wordCount": 1345,
-      "sha256": "8c0da9b3c65f79d2c5160364c7d3155c5ac481395c91255c93f6acb4ca6431d2"
+      "sha256": "6676cb193ced17ea4dbe430758eefb2f44b91f19180b7a45a67ef4b01970ef49"
     },
     {
       "slug": "filipino-sales-operations-quote-expiry-follow-up",
       "wordCount": 1302,
-      "sha256": "7521d24269aedc5d7a02939db5b7566fad670820b0930f5d95547c1fc0d3c496"
+      "sha256": "3d4b8c25d23dfdc8ba208e15720cbcfc1d42a8a2637dc1f2f02b4b7bb0d51f98"
     }
   ],
   "originality": {
@@ -45,22 +45,22 @@
       "result": 200
     },
     {
-      "publisher": "U.S. Federal Trade Commission",
-      "url": "https://www.ftc.gov/business-guidance/resources/negative-options-guide-businesses",
-      "result": 403,
-      "note": "The authoritative page rejected the automated HEAD/GET client; retain for later browser/operator verification."
+      "publisher": "Office of the Law Revision Counsel, U.S. House of Representatives",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section8403&num=0&edition=prelim",
+      "result": 200,
+      "note": "Claim-appropriate statutory source replaced the automation-blocked FTC guidance page."
     },
     {
-      "publisher": "U.S. Federal Trade Commission",
-      "url": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business",
-      "result": 403,
-      "note": "The authoritative page rejected the automated HEAD/GET client; retain for later browser/operator verification."
+      "publisher": "Office of the Law Revision Counsel, U.S. House of Representatives",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section7704&num=0&edition=prelim",
+      "result": 200,
+      "note": "Claim-appropriate statutory source replaced the automation-blocked FTC guidance page."
     },
     {
-      "publisher": "National Privacy Commission of the Philippines",
-      "url": "https://privacy.gov.ph/data-privacy-act/",
-      "result": "connection-failed",
-      "note": "Public endpoint was unreachable during this bounded check; it is not counted as validated."
+      "publisher": "Republic of the Philippines via Lawphil",
+      "url": "https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html",
+      "result": 200,
+      "note": "Accessible official legal text replaced the unreachable National Privacy Commission page."
     }
   ],
   "pending": [

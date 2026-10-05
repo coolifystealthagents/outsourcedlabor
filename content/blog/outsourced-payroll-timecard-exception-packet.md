@@ -64,5 +64,4 @@ Sources checked for this draft:
 
 - U.S. Department of Labor, FLSA recordkeeping requirements: https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping
 - U.S. Department of Labor, overtime pay guidance: https://www.dol.gov/agencies/whd/overtime
-- National Privacy Commission of the Philippines, Data Privacy Act: https://privacy.gov.ph/data-privacy-act/
-
+- Republic of the Philippines, Data Privacy Act of 2012 (Lawphil): https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html
