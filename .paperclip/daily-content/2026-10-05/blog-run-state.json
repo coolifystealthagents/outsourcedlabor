@@ -12,7 +12,7 @@
   "counts": {
     "requiredBlog": 12,
     "topicsLocked": 12,
-    "drafted": 6,
+    "drafted": 8,
     "sourceValidated": 0,
     "integratedResearch": 5,
     "liveVerified": 0
@@ -47,6 +47,16 @@
       "slug": "filipino-admin-board-meeting-action-register",
       "bodyWords": 1137,
       "path": "content/blog/filipino-admin-board-meeting-action-register.md"
+    },
+    {
+      "slug": "outsourced-crm-territory-assignment-audit",
+      "bodyWords": 1081,
+      "path": "content/blog/outsourced-crm-territory-assignment-audit.md"
+    },
+    {
+      "slug": "philippines-qa-mobile-checkout-regression-packet",
+      "bodyWords": 1122,
+      "path": "content/blog/philippines-qa-mobile-checkout-regression-packet.md"
     }
   ],
   "researchHandoff": {

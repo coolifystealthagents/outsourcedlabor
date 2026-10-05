@@ -1,6 +1,6 @@
 {
   "cycleLabel": "2026-10-05",
-  "scope": "First six of twelve Blog drafts; pre-render editorial checkpoint",
+  "scope": "First eight of twelve Blog drafts; pre-render editorial checkpoint",
   "articles": [
     {
       "slug": "outsourced-payroll-timecard-exception-packet",
@@ -31,17 +31,27 @@
       "slug": "filipino-admin-board-meeting-action-register",
       "wordCount": 1137,
       "sha256": "45de17832bd061800bd26563f74ecb42e344c53cf1397791c1df19651c4335cf"
+    },
+    {
+      "slug": "outsourced-crm-territory-assignment-audit",
+      "wordCount": 1081,
+      "sha256": "6a375c35277ad1de9f9b7840419936430f5186b6a4904b5583001fbc321560f0"
+    },
+    {
+      "slug": "philippines-qa-mobile-checkout-regression-packet",
+      "wordCount": 1122,
+      "sha256": "d33a9a05fa68c5995c7e07adb4fcc711a6939a168aca9de959ef95aef37eaa62"
     }
   ],
   "originality": {
-    "maximumPairwiseFiveWordShingleOverlap": 0.014296,
+    "maximumPairwiseFiveWordShingleOverlap": 0.023148,
     "maximumPair": [
-      "outsourced-payroll-timecard-exception-packet",
-      "outsourced-recruiting-reference-check-coordination"
+      "filipino-admin-board-meeting-action-register",
+      "outsourced-crm-territory-assignment-audit"
     ],
     "exactRepeatedSubstantiveParagraphs": 0,
-    "sharedArgumentSequenceReview": "Pass at this checkpoint. Payroll centers on time evidence and cutoff; cancellation on entitlement, billing and privacy; quote expiry on version history and commercial approval; reference checks on consent and attributable notes; address changes on identity and fulfillment state; the board register on authoritative governance records and acceptance. Worked examples and reader outcomes are not reused. Final twelve-article and prior-corpus qualitative review remains required.",
-    "humanizerReview": "No em or en dashes, canned conversational openings, inflated promotional language, or flagged high-frequency AI terms found in the six drafts."
+    "sharedArgumentSequenceReview": "Pass at this checkpoint. The territory audit uses effective rule versions, sampled routing evidence and downstream reconciliation. Mobile checkout QA uses controlled device profiles, minimal reproduction, safe diagnostic evidence and a focused regression matrix. Neither repeats the governance-register argument despite some shared control vocabulary. Worked examples and reader outcomes remain distinct across all eight drafts. Final twelve-article and prior-corpus qualitative review remains required.",
+    "humanizerReview": "No em or en dashes, canned conversational openings, inflated promotional language, or flagged high-frequency AI terms found in the eight drafts. The only exact repeated long block was a three-item source list, not body prose; exact repeated substantive body paragraphs remain zero."
   },
   "sourceHttpChecks": [
     {
