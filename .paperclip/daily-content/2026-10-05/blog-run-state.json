@@ -12,7 +12,7 @@
   "counts": {
     "requiredBlog": 12,
     "topicsLocked": 12,
-    "drafted": 8,
+    "drafted": 12,
     "sourceValidated": 0,
     "integratedResearch": 5,
     "liveVerified": 0
@@ -20,43 +20,63 @@
   "draftReceipts": [
     {
       "slug": "outsourced-payroll-timecard-exception-packet",
-      "bodyWords": 1354,
+      "bodyWords": 1279,
       "path": "content/blog/outsourced-payroll-timecard-exception-packet.md"
     },
     {
       "slug": "philippines-customer-support-subscription-cancellation-handoff",
-      "bodyWords": 1345,
+      "bodyWords": 1269,
       "path": "content/blog/philippines-customer-support-subscription-cancellation-handoff.md"
     },
     {
       "slug": "filipino-sales-operations-quote-expiry-follow-up",
-      "bodyWords": 1302,
+      "bodyWords": 1239,
       "path": "content/blog/filipino-sales-operations-quote-expiry-follow-up.md"
     },
     {
       "slug": "outsourced-recruiting-reference-check-coordination",
-      "bodyWords": 1319,
+      "bodyWords": 1246,
       "path": "content/blog/outsourced-recruiting-reference-check-coordination.md"
     },
     {
       "slug": "philippines-ecommerce-address-change-review",
-      "bodyWords": 1182,
+      "bodyWords": 1115,
       "path": "content/blog/philippines-ecommerce-address-change-review.md"
     },
     {
       "slug": "filipino-admin-board-meeting-action-register",
-      "bodyWords": 1137,
+      "bodyWords": 1066,
       "path": "content/blog/filipino-admin-board-meeting-action-register.md"
     },
     {
       "slug": "outsourced-crm-territory-assignment-audit",
-      "bodyWords": 1081,
+      "bodyWords": 1005,
       "path": "content/blog/outsourced-crm-territory-assignment-audit.md"
     },
     {
       "slug": "philippines-qa-mobile-checkout-regression-packet",
-      "bodyWords": 1122,
+      "bodyWords": 1049,
       "path": "content/blog/philippines-qa-mobile-checkout-regression-packet.md"
+    },
+    {
+      "slug": "filipino-workforce-overtime-approval-reconciliation",
+      "bodyWords": 952,
+      "path": "content/blog/filipino-workforce-overtime-approval-reconciliation.md"
+    },
+    {
+      "slug": "outsourced-sop-control-owner-review-calendar",
+      "bodyWords": 971,
+      "path": "content/blog/outsourced-sop-control-owner-review-calendar.md"
+    },
+    {
+      "slug": "philippines-inventory-return-to-vendor-reconciliation",
+      "bodyWords": 951,
+      "path": "content/blog/philippines-inventory-return-to-vendor-reconciliation.md"
+    },
+    {
+      "slug": "filipino-procurement-minimum-order-quantity-review",
+      "bodyWords": 977,
+      "path": "content/blog/filipino-procurement-minimum-order-quantity-review.md"
     }
   ],
   "researchHandoff": {

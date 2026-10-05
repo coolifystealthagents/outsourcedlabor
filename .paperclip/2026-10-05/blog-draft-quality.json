@@ -1,57 +1,77 @@
 {
   "cycleLabel": "2026-10-05",
-  "scope": "First eight of twelve Blog drafts; pre-render editorial checkpoint",
+  "scope": "All twelve Blog drafts; pre-render editorial checkpoint",
   "articles": [
     {
       "slug": "outsourced-payroll-timecard-exception-packet",
-      "wordCount": 1354,
+      "wordCount": 1279,
       "sha256": "fd1008ebf8f50a7a53ba25c2eccf3e2434d836b81805f81f0b3870df7c2c518c"
     },
     {
       "slug": "philippines-customer-support-subscription-cancellation-handoff",
-      "wordCount": 1345,
+      "wordCount": 1269,
       "sha256": "6676cb193ced17ea4dbe430758eefb2f44b91f19180b7a45a67ef4b01970ef49"
     },
     {
       "slug": "filipino-sales-operations-quote-expiry-follow-up",
-      "wordCount": 1302,
+      "wordCount": 1239,
       "sha256": "3d4b8c25d23dfdc8ba208e15720cbcfc1d42a8a2637dc1f2f02b4b7bb0d51f98"
     },
     {
       "slug": "outsourced-recruiting-reference-check-coordination",
-      "wordCount": 1319,
+      "wordCount": 1246,
       "sha256": "378bf66575830200746453f4847fb1b90d7767ca923323751e0e39eaa02ae7cd"
     },
     {
       "slug": "philippines-ecommerce-address-change-review",
-      "wordCount": 1182,
+      "wordCount": 1115,
       "sha256": "f1f69fbf3e9d57156c480a549fb2695f6f290f7c28a1aa816bb1dbdccdc33be6"
     },
     {
       "slug": "filipino-admin-board-meeting-action-register",
-      "wordCount": 1137,
+      "wordCount": 1066,
       "sha256": "45de17832bd061800bd26563f74ecb42e344c53cf1397791c1df19651c4335cf"
     },
     {
       "slug": "outsourced-crm-territory-assignment-audit",
-      "wordCount": 1081,
+      "wordCount": 1005,
       "sha256": "6a375c35277ad1de9f9b7840419936430f5186b6a4904b5583001fbc321560f0"
     },
     {
       "slug": "philippines-qa-mobile-checkout-regression-packet",
-      "wordCount": 1122,
+      "wordCount": 1049,
       "sha256": "d33a9a05fa68c5995c7e07adb4fcc711a6939a168aca9de959ef95aef37eaa62"
+    },
+    {
+      "slug": "filipino-workforce-overtime-approval-reconciliation",
+      "wordCount": 952,
+      "sha256": "701afaa1e52938fc61d7dd5180c5f4911511374fd1eada6c7caa981d1a12a140"
+    },
+    {
+      "slug": "outsourced-sop-control-owner-review-calendar",
+      "wordCount": 971,
+      "sha256": "8132d107fffabc6f4f16d79b16b304722cdf66f1c0431131fb39ff54f932a0ba"
+    },
+    {
+      "slug": "philippines-inventory-return-to-vendor-reconciliation",
+      "wordCount": 951,
+      "sha256": "5c1c5c907f95fd6baa2194e43db88c44213a298ef22af39ec9b5e58b73fc883b"
+    },
+    {
+      "slug": "filipino-procurement-minimum-order-quantity-review",
+      "wordCount": 977,
+      "sha256": "90d89d3f3be1680ee8df3f9a1cb680a30c0988613a8d6ec61e09db1a25cb18f6"
     }
   ],
   "originality": {
-    "maximumPairwiseFiveWordShingleOverlap": 0.023148,
+    "maximumPairwiseFiveWordShingleOverlap": 0.007392,
     "maximumPair": [
-      "filipino-admin-board-meeting-action-register",
-      "outsourced-crm-territory-assignment-audit"
+      "outsourced-payroll-timecard-exception-packet",
+      "philippines-inventory-return-to-vendor-reconciliation"
     ],
     "exactRepeatedSubstantiveParagraphs": 0,
-    "sharedArgumentSequenceReview": "Pass at this checkpoint. The territory audit uses effective rule versions, sampled routing evidence and downstream reconciliation. Mobile checkout QA uses controlled device profiles, minimal reproduction, safe diagnostic evidence and a focused regression matrix. Neither repeats the governance-register argument despite some shared control vocabulary. Worked examples and reader outcomes remain distinct across all eight drafts. Final twelve-article and prior-corpus qualitative review remains required.",
-    "humanizerReview": "No em or en dashes, canned conversational openings, inflated promotional language, or flagged high-frequency AI terms found in the eight drafts. The only exact repeated long block was a three-item source list, not body prose; exact repeated substantive body paragraphs remain zero."
+    "sharedArgumentSequenceReview": "PASS for the twelve-draft family. The final four use distinct operational units: overtime joins time, authorization and payroll state; SOP review joins evidence, controlled revision and training feedback; return-to-vendor follows custody and remedy lines; MOQ review compares demand, stock, supplier terms and sensitivity. No worked example or full argument sequence is reused. Prior-corpus topic review remains part of the renderer gate.",
+    "humanizerReview": "No em or en dashes, canned conversational openings, inflated promotional language, or flagged high-frequency AI terms found in the twelve drafts. Exact repeated substantive body paragraphs and sentences are zero. Source lists are excluded from prose originality metrics."
   },
   "sourceHttpChecks": [
     {
