@@ -2,7 +2,7 @@
   "cycleLabel": "2026-10-05",
   "issue": "OUTAAAAAAAA-76",
   "role": "Blog sole integrator",
-  "status": "topic-inventory-locked",
+  "status": "drafting",
   "repository": "coolifystealthagents/outsourcedlabor",
   "productionBranch": "main",
   "baselineSha": "d805fae407f1a5a56c7d7b7ef2e64bacba79939d",
@@ -12,11 +12,28 @@
   "counts": {
     "requiredBlog": 12,
     "topicsLocked": 12,
-    "drafted": 0,
+    "drafted": 3,
     "sourceValidated": 0,
     "integratedResearch": 0,
     "liveVerified": 0
   },
+  "draftReceipts": [
+    {
+      "slug": "outsourced-payroll-timecard-exception-packet",
+      "bodyWords": 1354,
+      "path": "content/blog/outsourced-payroll-timecard-exception-packet.md"
+    },
+    {
+      "slug": "philippines-customer-support-subscription-cancellation-handoff",
+      "bodyWords": 1345,
+      "path": "content/blog/philippines-customer-support-subscription-cancellation-handoff.md"
+    },
+    {
+      "slug": "filipino-sales-operations-quote-expiry-follow-up",
+      "bodyWords": 1302,
+      "path": "content/blog/filipino-sales-operations-quote-expiry-follow-up.md"
+    }
+  ],
   "researchHandoff": {
     "issue": "OUTAAAAAAAA-75",
     "required": 5,

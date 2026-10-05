@@ -1,0 +1,72 @@
+{
+  "cycleLabel": "2026-10-05",
+  "scope": "First three of twelve Blog drafts; pre-render editorial checkpoint",
+  "articles": [
+    {
+      "slug": "outsourced-payroll-timecard-exception-packet",
+      "wordCount": 1354,
+      "sha256": "e2e5f1dd719fbcf6607eeef0eb0b6e6ea3c54efe6061a2fdd67ba70614eec3b6"
+    },
+    {
+      "slug": "philippines-customer-support-subscription-cancellation-handoff",
+      "wordCount": 1345,
+      "sha256": "8c0da9b3c65f79d2c5160364c7d3155c5ac481395c91255c93f6acb4ca6431d2"
+    },
+    {
+      "slug": "filipino-sales-operations-quote-expiry-follow-up",
+      "wordCount": 1302,
+      "sha256": "7521d24269aedc5d7a02939db5b7566fad670820b0930f5d95547c1fc0d3c496"
+    }
+  ],
+  "originality": {
+    "maximumPairwiseFiveWordShingleOverlap": 0.009112,
+    "maximumPair": [
+      "philippines-customer-support-subscription-cancellation-handoff",
+      "filipino-sales-operations-quote-expiry-follow-up"
+    ],
+    "exactRepeatedSubstantiveParagraphs": 0,
+    "sharedArgumentSequenceReview": "Pass at this checkpoint. Payroll is organized around time evidence and payroll cutoff; cancellation follows entitlement, billing, privacy and final-state confirmation; quote expiry follows version history, approval scope and buyer contact. Final twelve-article and prior-corpus qualitative review remains required.",
+    "humanizerReview": "No em or en dashes, canned conversational openings, inflated promotional language, or flagged high-frequency AI terms found in the three drafts."
+  },
+  "sourceHttpChecks": [
+    {
+      "publisher": "U.S. Department of Labor",
+      "url": "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping",
+      "result": 200
+    },
+    {
+      "publisher": "U.S. Department of Labor",
+      "url": "https://www.dol.gov/agencies/whd/overtime",
+      "result": 200
+    },
+    {
+      "publisher": "NIST",
+      "url": "https://www.nist.gov/privacy-framework",
+      "result": 200
+    },
+    {
+      "publisher": "U.S. Federal Trade Commission",
+      "url": "https://www.ftc.gov/business-guidance/resources/negative-options-guide-businesses",
+      "result": 403,
+      "note": "The authoritative page rejected the automated HEAD/GET client; retain for later browser/operator verification."
+    },
+    {
+      "publisher": "U.S. Federal Trade Commission",
+      "url": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business",
+      "result": 403,
+      "note": "The authoritative page rejected the automated HEAD/GET client; retain for later browser/operator verification."
+    },
+    {
+      "publisher": "National Privacy Commission of the Philippines",
+      "url": "https://privacy.gov.ph/data-privacy-act/",
+      "result": "connection-failed",
+      "note": "Public endpoint was unreachable during this bounded check; it is not counted as validated."
+    }
+  ],
+  "pending": [
+    "Draft the remaining nine Blog articles.",
+    "Validate the full authoritative-source set and every internal link.",
+    "Convert approved drafts into the repository renderer and verify full-body equality.",
+    "Run final all-twelve and prior-corpus originality checks."
+  ]
+}
