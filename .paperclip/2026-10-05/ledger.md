@@ -1,6 +1,6 @@
 # October 5, 2026 combined release ledger
 
-This ledger is separate from every September 28, October 2, and earlier cycle record. Site timezone: UTC. The publication date prepared for the release is October 5, 2026, matching the UTC date of the final local gate.
+This ledger is separate from every September 28, October 2, and earlier cycle record. Site timezone: UTC. The publication date prepared for the approved corrective release is October 6, 2026, matching the UTC date of the final local gate. The October 5 text in this ledger's heading is the cycle label, not a publication claim.
 
 The release contains exactly twelve new Blog guides and five new Research studies. Every Blog body has at least 900 body-only words; every Research body has at least 1,200. The complete ordered inventory, lengths, and source/render body hashes are in `combined-release.json`.
 

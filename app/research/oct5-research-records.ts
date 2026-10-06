@@ -1,7 +1,7 @@
 type Source={name:string;publisher:string;url:string;checked:string};
 type Post={slug:string;title:string;excerpt:string;body:string[];sources:Source[];related:string[];cta:string};
 // The integrator must reconcile this value with the first successful UTC publication date before the sole production push.
-const published='2026-10-05',image='/filipino-operations-specialist.svg',checked='2026-10-05';
+const published='2026-10-06',image='/filipino-operations-specialist.svg',checked='2026-10-05';
 const source=(name:string,publisher:string,url:string):Source=>({name,publisher,url,checked});
 const ombControls=source('OMB Circular A-123, Management’s Responsibility for Internal Control','Office of Management and Budget','https://www.whitehouse.gov/omb/information-resources/guidance/circulars/');
 const csf=source('NIST Cybersecurity Framework 2.0','National Institute of Standards and Technology','https://www.nist.gov/cyberframework');

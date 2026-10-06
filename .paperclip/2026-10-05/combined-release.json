@@ -1,11 +1,11 @@
 {
   "cycleLabel": "2026-10-05",
   "timezone": "UTC",
-  "publicationDate": "2026-10-05",
+  "publicationDate": "2026-10-06",
   "repository": "coolifystealthagents/outsourcedlabor",
   "productionBranch": "main",
   "required": {"blog": 12, "research": 5, "combined": 17},
-  "localValidationTime": "2026-10-05T20:00:02.146Z",
+  "localValidationTime": "2026-10-06T08:11:19.607Z",
   "blog": [
     ["outsourced-payroll-timecard-exception-packet",1279,"d74ee4303ef2783d4b553692a98c34547dd8c1409a4db750d18f4926bb6f9005"],
     ["philippines-customer-support-subscription-cancellation-handoff",1269,"5ccbac70dd93e5102d444d7811d644cc22a2563a3b13df1effa77a90cff8bc83"],

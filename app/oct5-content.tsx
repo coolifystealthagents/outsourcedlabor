@@ -6,8 +6,8 @@ import {oct5BlogTopics,oct5Services} from './oct5-records';
 
 const site='https://outsourcedlabor.com';
 // Reconcile immediately before the sole production push if UTC has crossed into another date.
-export const oct5PublicationDate='2026-10-05';
-const visibleDate='Published: October 5, 2026';
+export const oct5PublicationDate='2026-10-06';
+const visibleDate='Published: October 6, 2026';
 const titles=Object.fromEntries(oct5BlogTopics.map(([slug,title])=>[slug,title])) as Record<string,string>;
 export const oct5BlogSlugs=new Set(oct5BlogTopics.map(([slug])=>slug));
 

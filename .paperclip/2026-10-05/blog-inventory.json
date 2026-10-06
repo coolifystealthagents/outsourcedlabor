@@ -2,7 +2,7 @@
   "cycleLabel": "2026-10-05",
   "family": "blog",
   "requiredCount": 12,
-  "publicationDate": null,
+  "publicationDate": "2026-10-06",
   "publicationDateRule": "Set per route only after first successful public verification in the configured site timezone.",
   "baselineSha": "d805fae407f1a5a56c7d7b7ef2e64bacba79939d",
   "branch": "routine/outaaaaaaaa-76-20261005",
