@@ -23,7 +23,14 @@ for (const required of [
 for (const retired of ['guarantee', 'approve the work lane', 'decides whether the sample is correct']) {
   if (handoff.includes(retired)) throw new Error(`QA sample handoff contains unsafe wording: ${retired}`);
 }
-if (!renderer.includes('post.service') || !renderer.includes('href={post.service.href}') || !renderer.includes('modifiedTime: updated') || !renderer.includes('dateModified: updated') || !renderer.includes('article:modified_time')) {
-  throw new Error('Research renderer does not render data-owned service handoffs.');
+for (const required of [
+  "const updated = 'updated' in post",
+  'post.service',
+  'href={post.service.href}',
+  'modifiedTime:',
+  'dateModified:',
+  'article:modified_time',
+]) {
+  if (!renderer.includes(required)) throw new Error(`Research renderer is missing the QA sample handoff contract: ${required}`);
 }
 console.log('PASS: QA sample research record has the bounded Quality Audit Support handoff.');
