@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-08",
+  "requiredCount": 5,
+  "entries": [
+    {
+      "slug": "research-outsourced-labor-manager-decision-latency",
+      "title": "How Long Do Workforce Packets Wait for Manager Decisions?",
+      "route": "/research/research-outsourced-labor-manager-decision-latency",
+      "words": 1435,
+      "sources": [
+        "https://www.nist.gov/cyberframework",
+        "https://www.gao.gov/greenbook",
+        "https://www.dol.gov/agencies/whd/compliance-assistance/handy-reference-guide-flsa",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ]
+    },
+    {
+      "slug": "research-outsourced-labor-record-reconstruction",
+      "title": "Can a Second Reviewer Reconstruct a Workforce Operations Packet?",
+      "route": "/research/research-outsourced-labor-record-reconstruction",
+      "words": 1435,
+      "sources": [
+        "https://www.nist.gov/cyberframework",
+        "https://www.gao.gov/greenbook",
+        "https://www.dol.gov/agencies/whd/compliance-assistance/handy-reference-guide-flsa",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ]
+    },
+    {
+      "slug": "research-outsourced-labor-exception-reviewer-agreement",
+      "title": "Do Reviewers Agree on Workforce Exceptions?",
+      "route": "/research/research-outsourced-labor-exception-reviewer-agreement",
+      "words": 1405,
+      "sources": [
+        "https://www.nist.gov/cyberframework",
+        "https://www.gao.gov/greenbook",
+        "https://www.dol.gov/agencies/whd/compliance-assistance/handy-reference-guide-flsa",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ]
+    },
+    {
+      "slug": "research-outsourced-labor-access-removal-evidence",
+      "title": "Does Workforce Offboarding Prove Access Removal?",
+      "route": "/research/research-outsourced-labor-access-removal-evidence",
+      "words": 1405,
+      "sources": [
+        "https://www.nist.gov/cyberframework",
+        "https://www.gao.gov/greenbook",
+        "https://www.dol.gov/agencies/whd/compliance-assistance/handy-reference-guide-flsa",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ]
+    },
+    {
+      "slug": "research-outsourced-labor-reopened-work-recurrence",
+      "title": "Why Does Workforce Operations Work Reopen After Closure?",
+      "route": "/research/research-outsourced-labor-reopened-work-recurrence",
+      "words": 1425,
+      "sources": [
+        "https://www.nist.gov/cyberframework",
+        "https://www.gao.gov/greenbook",
+        "https://www.dol.gov/agencies/whd/compliance-assistance/handy-reference-guide-flsa",
+        "https://privacy.gov.ph/data-privacy-act/"
+      ]
+    }
+  ]
+}

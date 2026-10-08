@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-08",
+  "requiredCount": 12,
+  "entries": [
+    {
+      "slug": "outsourced-labor-shift-swap-missing-approval",
+      "title": "Hold a Shift Swap When Approval Evidence Is Missing",
+      "route": "/blog/outsourced-labor-shift-swap-missing-approval",
+      "words": 1320
+    },
+    {
+      "slug": "outsourced-labor-payroll-bank-detail-change-route",
+      "title": "Route a Payroll Bank-Detail Change Without Handling It Informally",
+      "route": "/blog/outsourced-labor-payroll-bank-detail-change-route",
+      "words": 1320
+    },
+    {
+      "slug": "outsourced-labor-missed-punch-evidence-packet",
+      "title": "Prepare a Missed-Punch Evidence Packet",
+      "route": "/blog/outsourced-labor-missed-punch-evidence-packet",
+      "words": 1296
+    },
+    {
+      "slug": "outsourced-labor-overtime-forecast-exception",
+      "title": "Separate an Overtime Forecast from Approval",
+      "route": "/blog/outsourced-labor-overtime-forecast-exception",
+      "words": 1302
+    },
+    {
+      "slug": "outsourced-labor-accommodation-request-routing",
+      "title": "Route a Worker Accommodation Request Without Interpreting It",
+      "route": "/blog/outsourced-labor-accommodation-request-routing",
+      "words": 1314
+    },
+    {
+      "slug": "outsourced-labor-offboarding-equipment-return",
+      "title": "Reconcile Equipment Return During Worker Offboarding",
+      "route": "/blog/outsourced-labor-offboarding-equipment-return",
+      "words": 1302
+    },
+    {
+      "slug": "outsourced-labor-qa-sample-denominator-freeze",
+      "title": "Freeze the QA Sample Denominator Before Scoring",
+      "route": "/blog/outsourced-labor-qa-sample-denominator-freeze",
+      "words": 1308
+    },
+    {
+      "slug": "outsourced-labor-sop-exception-version-drift",
+      "title": "Resolve SOP Version Drift in an Exception Queue",
+      "route": "/blog/outsourced-labor-sop-exception-version-drift",
+      "words": 1314
+    },
+    {
+      "slug": "outsourced-labor-absence-notification-handoff",
+      "title": "Build an Absence Notification Handoff",
+      "route": "/blog/outsourced-labor-absence-notification-handoff",
+      "words": 1296
+    },
+    {
+      "slug": "outsourced-labor-vendor-invoice-headcount-reconciliation",
+      "title": "Reconcile Staffing Vendor Invoice Headcount",
+      "route": "/blog/outsourced-labor-vendor-invoice-headcount-reconciliation",
+      "words": 1296
+    },
+    {
+      "slug": "outsourced-labor-training-completion-evidence-conflict",
+      "title": "Preserve Conflicting Training-Completion Evidence",
+      "route": "/blog/outsourced-labor-training-completion-evidence-conflict",
+      "words": 1290
+    },
+    {
+      "slug": "outsourced-labor-role-access-expansion-review",
+      "title": "Review Role Access Before Expanding Outsourced Labor Scope",
+      "route": "/blog/outsourced-labor-role-access-expansion-review",
+      "words": 1314
+    }
+  ]
+}

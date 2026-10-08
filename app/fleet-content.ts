@@ -235,7 +235,8 @@ import { september25ResearchRecords } from './research/sep25-research-records';
 import { september28ResearchRecords } from './research/sep28-research-records';
 import { october2ResearchRecords } from './research/oct2-research-records';
 import { october5ResearchRecords } from './research/oct5-research-records';
-const september18ResearchRecords=[...october5ResearchRecords,...october2ResearchRecords,...september28ResearchRecords,...september25ResearchRecords,...september24ResearchRecords,...september23ResearchRecords,...september22ResearchRecords,...priorSeptember18ResearchRecords] as const;
+import { october8ResearchRecords } from './research/oct8-research-records';
+const september18ResearchRecords=[...october8ResearchRecords,...october5ResearchRecords,...october2ResearchRecords,...september28ResearchRecords,...september25ResearchRecords,...september24ResearchRecords,...september23ResearchRecords,...september22ResearchRecords,...priorSeptember18ResearchRecords] as const;
 type ResearchPost = {slug:string;title:string;excerpt:string;published:string;body:readonly string[];image?:string;sources?:readonly {name:string;url:string}[];related?:readonly string[];cta?:string;service?:{href:string;heading:string;body:string;label:string};headlineStat?:string;keyStats?:readonly string[];takeaways?:readonly string[];faqs?:readonly {q:string;a:string}[]};
 const baseResearchPosts: ReadonlyArray<ResearchPost> = [
   {
