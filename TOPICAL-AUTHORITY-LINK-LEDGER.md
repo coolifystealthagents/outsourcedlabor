@@ -1,6 +1,6 @@
 # Service-led topical map and link ledger
 
-Reviewed: 2026-10-04
+Reviewed: 2026-10-09
 
 This ledger records only routes generated from the current site data. It is a planning record, not a claim that every proposed body link is already live. Each future edit must confirm the source sentence in generated HTML, preserve the article's narrow question, and add only one reader-useful service handoff.
 
@@ -31,6 +31,7 @@ This ledger records only routes generated from the current site data. It is a pl
 - Delivered: `/blog/philippines-weekly-kpi-source-reconciliation` renders one route-local link to `/services/workforce-reporting`. Its narrow question is how to reconcile a weekly KPI worksheet before a manager interprets the result; the specialist prepares evidence while the client owner keeps metric definitions and business decisions. Rendered source: `50148f3af1145c6d2fbadfc695db982eb093059f`.
 - Delivered locally: `/blog/outsourced-labor-shift-handoff` renders one route-local link to `/services/operations-dispatch`. Its narrow question remains how to hand off urgent work across shifts; the manager retains customer, policy, and approval decisions. Rendered source: `d5aeb3564716bedf73102bc039b8863781f6e0e6`.
 - Delivered locally: `/research/research-outsourced-qa-sample-size-decision` renders one route-local Quality Audit Support handoff. Its one question remains how much review a defined outsourced lane needs; the service can prepare the selected records and evidence packet, while the manager retains the review boundary, corrective action, and any lane change. Rendered source: `67fdc4a5ec6dfd3fb6740d68501330b2489bd742`. Do not add a second link to the existing quality-scorecard source.
+- Delivered locally: the October 8 blog batch already renders exactly one route-local service handoff per generated page. Workforce Scheduling: `/blog/outsourced-labor-shift-swap-missing-approval` and `/blog/outsourced-labor-overtime-forecast-exception`; Workforce Reporting: `/blog/outsourced-labor-payroll-bank-detail-change-route`, `/blog/outsourced-labor-missed-punch-evidence-packet`, and `/blog/outsourced-labor-training-completion-evidence-conflict`; Operations Dispatch: `/blog/outsourced-labor-accommodation-request-routing` and `/blog/outsourced-labor-absence-notification-handoff`; Inventory Administration: `/blog/outsourced-labor-offboarding-equipment-return`; Quality Audit Support: `/blog/outsourced-labor-qa-sample-denominator-freeze`; SOP Documentation: `/blog/outsourced-labor-sop-exception-version-drift`; Procurement Follow-Up: `/blog/outsourced-labor-vendor-invoice-headcount-reconciliation`; and CRM Data Stewardship: `/blog/outsourced-labor-role-access-expansion-review`. These are delivered/non-duplicable under source commit `e3c60aad04d9423ff84ee2f9118c09036f38bf65`; each has a self-canonical artifact and sitemap location. This ledger reconciliation does not claim public rollout proof.
 
 ## Public verification status — 2026-09-15
 
