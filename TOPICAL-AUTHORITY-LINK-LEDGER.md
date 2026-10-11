@@ -1,6 +1,6 @@
 # Service-led topical map and link ledger
 
-Reviewed: 2026-10-09
+Reviewed: 2026-10-11
 
 This ledger records only routes generated from the current site data. It is a planning record, not a claim that every proposed body link is already live. Each future edit must confirm the source sentence in generated HTML, preserve the article's narrow question, and add only one reader-useful service handoff.
 
@@ -19,7 +19,7 @@ This ledger records only routes generated from the current site data. It is a pl
 | Workforce Reporting | `/services/workforce-reporting` | `/blog/philippines-weekly-kpi-source-reconciliation` | How can a manager reconcile a weekly KPI before deciding what it means? | Let a reader move from a source-checked KPI worksheet to the reporting support scope without handing over metric definitions or business decisions. |
 | Operations Dispatch | `/services/operations-dispatch` | `/blog/outsourced-labor-shift-handoff` | How can a team keep urgent work moving across changing shifts? | Connect handoff planning to the dispatch support scope without promising coverage outcomes. |
 
-## Delivery record and next execution candidate
+## Delivery record — all mapped pairs currently delivered
 
 - Delivered: `/blog/philippines-operations-support-sop` renders one route-local link to `/services/sop-documentation` after the article body. Its narrow question remains how to write an operations SOP before the work is handed off.
 - Delivered: `/blog/philippines-ecommerce-order-support` renders one route-local link to `/services/order-operations` after the article body. The route keeps refund, pricing, and unusual customer commitments with the manager.
@@ -27,6 +27,7 @@ This ledger records only routes generated from the current site data. It is a pl
 - Delivered: `/blog/outsourced-labor-planning` renders one route-local link to `/services/vendor-coordination` after the article body. Its narrow question remains which recurring vendor follow-ups are ready for a clearly bounded role; the manager retains exceptions and final approval.
 - Delivered: `/blog/filipino-data-entry-quality-checks` renders one route-local link to `/services/inventory-administration` after the article body. Its narrow question remains how a team can check records before inventory updates are accepted. Rendered-source commit: `ecc7c17ec4a315cc8d65dcbf6f21d1d638b2e57a`.
 - Delivered locally: `/blog/philippines-admin-assistant-onboarding` now renders one route-local link to `/services/crm-data-stewardship`. The reader question remains what access, examples, and review should be ready before CRM support begins. Rendered source: `f5d8a154c632a18be3adbc0b100ffb2d5bc2524a`.
+- Delivered locally: `/blog/outsourced-labor-task-queue-design` renders one route-local link to `/services/procurement-follow-up`. Its narrow question remains how a buyer can make follow-up work visible and route blocked items. Rendered source: `0e120b2b1d691196dd64d9c3f4ee13e0ae116688`.
 - Delivered locally: `/blog/outsourced-labor-quality-scorecard` now renders one route-local link to `/services/quality-audit-support`. The scorecard still asks how a manager can review samples before accepting work. Rendered source: `d1a133e7bb86b5d285ef1049e4c51e7bcc9070d2`.
 - Delivered: `/blog/philippines-weekly-kpi-source-reconciliation` renders one route-local link to `/services/workforce-reporting`. Its narrow question is how to reconcile a weekly KPI worksheet before a manager interprets the result; the specialist prepares evidence while the client owner keeps metric definitions and business decisions. Rendered source: `50148f3af1145c6d2fbadfc695db982eb093059f`.
 - Delivered locally: `/blog/outsourced-labor-shift-handoff` renders one route-local link to `/services/operations-dispatch`. Its narrow question remains how to hand off urgent work across shifts; the manager retains customer, policy, and approval decisions. Rendered source: `d5aeb3564716bedf73102bc039b8863781f6e0e6`.
