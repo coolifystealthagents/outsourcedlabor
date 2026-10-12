@@ -1,0 +1,206 @@
+{
+  "site": "OutsourcedLabor.com",
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "branch": "main",
+  "publicationDate": "2026-10-12",
+  "blogCount": 12,
+  "researchCount": 5,
+  "entries": [
+    {
+      "type": "Blog",
+      "slug": "outsourced-labor-coverage-gap-decision-brief",
+      "title": "Prepare a Coverage Gap Decision Brief",
+      "route": "/blog/outsourced-labor-coverage-gap-decision-brief",
+      "thumbnail": "/october-12-2026/outsourced-labor-coverage-gap-decision-brief.svg",
+      "words": 1440
+    },
+    {
+      "type": "Blog",
+      "slug": "outsourced-labor-start-date-dependency-register",
+      "title": "Build a Start-Date Dependency Register for Contingent Workers",
+      "route": "/blog/outsourced-labor-start-date-dependency-register",
+      "thumbnail": "/october-12-2026/outsourced-labor-start-date-dependency-register.svg",
+      "words": 1498
+    },
+    {
+      "type": "Blog",
+      "slug": "outsourced-labor-rate-card-mismatch-packet",
+      "title": "Resolve a Labor Rate-Card Mismatch Before Billing",
+      "route": "/blog/outsourced-labor-rate-card-mismatch-packet",
+      "thumbnail": "/october-12-2026/outsourced-labor-rate-card-mismatch-packet.svg",
+      "words": 1482
+    },
+    {
+      "type": "Blog",
+      "slug": "outsourced-labor-roster-duplicate-identity-review",
+      "title": "Review a Possible Duplicate Worker Identity Without Merging Records",
+      "route": "/blog/outsourced-labor-roster-duplicate-identity-review",
+      "thumbnail": "/october-12-2026/outsourced-labor-roster-duplicate-identity-review.svg",
+      "words": 1544
+    },
+    {
+      "type": "Blog",
+      "slug": "outsourced-labor-safety-first-notice-handoff",
+      "title": "Route a Safety First Notice Without Investigating by Assumption",
+      "route": "/blog/outsourced-labor-safety-first-notice-handoff",
+      "thumbnail": "/october-12-2026/outsourced-labor-safety-first-notice-handoff.svg",
+      "words": 1543
+    },
+    {
+      "type": "Blog",
+      "slug": "outsourced-labor-contract-end-access-removal",
+      "title": "Coordinate Access Removal at a Contractor End Date",
+      "route": "/blog/outsourced-labor-contract-end-access-removal",
+      "thumbnail": "/october-12-2026/outsourced-labor-contract-end-access-removal.svg",
+      "words": 1507
+    },
+    {
+      "type": "Blog",
+      "slug": "outsourced-labor-capacity-promise-gate",
+      "title": "Use a Capacity Gate Before Promising New Labor Coverage",
+      "route": "/blog/outsourced-labor-capacity-promise-gate",
+      "thumbnail": "/october-12-2026/outsourced-labor-capacity-promise-gate.svg",
+      "words": 1535
+    },
+    {
+      "type": "Blog",
+      "slug": "outsourced-labor-quality-defect-remediation-owner",
+      "title": "Assign Ownership for a Repeated Quality Defect",
+      "route": "/blog/outsourced-labor-quality-defect-remediation-owner",
+      "thumbnail": "/october-12-2026/outsourced-labor-quality-defect-remediation-owner.svg",
+      "words": 1483
+    },
+    {
+      "type": "Blog",
+      "slug": "outsourced-labor-worker-data-correction-notice",
+      "title": "Prepare a Worker Data Correction Notice",
+      "route": "/blog/outsourced-labor-worker-data-correction-notice",
+      "thumbnail": "/october-12-2026/outsourced-labor-worker-data-correction-notice.svg",
+      "words": 1447
+    },
+    {
+      "type": "Blog",
+      "slug": "outsourced-labor-cross-region-holiday-calendar",
+      "title": "Reconcile Cross-Region Holiday Coverage Before Scheduling",
+      "route": "/blog/outsourced-labor-cross-region-holiday-calendar",
+      "thumbnail": "/october-12-2026/outsourced-labor-cross-region-holiday-calendar.svg",
+      "words": 1445
+    },
+    {
+      "type": "Blog",
+      "slug": "outsourced-labor-temporary-supervisor-delegation",
+      "title": "Document Temporary Supervisor Delegation",
+      "route": "/blog/outsourced-labor-temporary-supervisor-delegation",
+      "thumbnail": "/october-12-2026/outsourced-labor-temporary-supervisor-delegation.svg",
+      "words": 1379
+    },
+    {
+      "type": "Blog",
+      "slug": "outsourced-labor-performance-feedback-evidence-boundary",
+      "title": "Separate Performance Evidence from Employment Judgment",
+      "route": "/blog/outsourced-labor-performance-feedback-evidence-boundary",
+      "thumbnail": "/october-12-2026/outsourced-labor-performance-feedback-evidence-boundary.svg",
+      "words": 1439
+    },
+    {
+      "type": "Research",
+      "slug": "research-outsourced-labor-availability-missingness",
+      "title": "Missing Availability in Workforce Coverage Forecasts",
+      "route": "/research/research-outsourced-labor-availability-missingness",
+      "thumbnail": "/october-12-2026/research-outsourced-labor-availability-missingness.svg",
+      "words": 1195,
+      "sources": [
+        "https://www.nist.gov/cyberframework",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.gao.gov/greenbook",
+        "https://www.dol.gov/agencies/whd/compliance-assistance/handy-reference-guide-flsa",
+        "https://www.dol.gov/general/topic/workhours/recordkeeping",
+        "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business-0",
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.iso.org/quality-management/principles",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0479"
+      ]
+    },
+    {
+      "type": "Research",
+      "slug": "research-outsourced-labor-identity-collision-protocol",
+      "title": "Worker Record Identity Collisions Across Systems",
+      "route": "/research/research-outsourced-labor-identity-collision-protocol",
+      "thumbnail": "/october-12-2026/research-outsourced-labor-identity-collision-protocol.svg",
+      "words": 1180,
+      "sources": [
+        "https://www.nist.gov/cyberframework",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.gao.gov/greenbook",
+        "https://www.dol.gov/agencies/whd/compliance-assistance/handy-reference-guide-flsa",
+        "https://www.dol.gov/general/topic/workhours/recordkeeping",
+        "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business-0",
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.iso.org/quality-management/principles",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0479"
+      ]
+    },
+    {
+      "type": "Research",
+      "slug": "research-outsourced-labor-invoice-rate-variance",
+      "title": "Rate Variance in Contingent Labor Invoices",
+      "route": "/research/research-outsourced-labor-invoice-rate-variance",
+      "thumbnail": "/october-12-2026/research-outsourced-labor-invoice-rate-variance.svg",
+      "words": 1203,
+      "sources": [
+        "https://www.nist.gov/cyberframework",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.gao.gov/greenbook",
+        "https://www.dol.gov/agencies/whd/compliance-assistance/handy-reference-guide-flsa",
+        "https://www.dol.gov/general/topic/workhours/recordkeeping",
+        "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business-0",
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.iso.org/quality-management/principles",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0479"
+      ]
+    },
+    {
+      "type": "Research",
+      "slug": "research-outsourced-labor-qa-selection-bias",
+      "title": "Selection Bias in Outsourced Labor Quality Samples",
+      "route": "/research/research-outsourced-labor-qa-selection-bias",
+      "thumbnail": "/october-12-2026/research-outsourced-labor-qa-selection-bias.svg",
+      "words": 1205,
+      "sources": [
+        "https://www.nist.gov/cyberframework",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.gao.gov/greenbook",
+        "https://www.dol.gov/agencies/whd/compliance-assistance/handy-reference-guide-flsa",
+        "https://www.dol.gov/general/topic/workhours/recordkeeping",
+        "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business-0",
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.iso.org/quality-management/principles",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0479"
+      ]
+    },
+    {
+      "type": "Research",
+      "slug": "research-outsourced-labor-offboarding-access-residuals",
+      "title": "Residual Access After Outsourced Labor Offboarding",
+      "route": "/research/research-outsourced-labor-offboarding-access-residuals",
+      "thumbnail": "/october-12-2026/research-outsourced-labor-offboarding-access-residuals.svg",
+      "words": 1205,
+      "sources": [
+        "https://www.nist.gov/cyberframework",
+        "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+        "https://www.gao.gov/greenbook",
+        "https://www.dol.gov/agencies/whd/compliance-assistance/handy-reference-guide-flsa",
+        "https://www.dol.gov/general/topic/workhours/recordkeeping",
+        "https://www.cisa.gov/topics/cybersecurity-best-practices/identity-and-access-management",
+        "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business-0",
+        "https://privacy.gov.ph/data-privacy-act/",
+        "https://www.iso.org/quality-management/principles",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0479"
+      ]
+    }
+  ]
+}

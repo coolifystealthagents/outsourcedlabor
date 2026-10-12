@@ -23,6 +23,7 @@ import { sep28BlogArticles, getSep28BlogMetadata, renderSep28BlogArticle } from 
 import { oct2BlogArticles, getOct2BlogMetadata, renderOct2BlogArticle } from '../../oct2-content';
 import { oct5BlogSlugs, getOct5BlogMetadata, renderOct5BlogArticle } from '../../oct5-content';
 import { oct8BlogSlugs, getOct8BlogMetadata, renderOct8BlogArticle } from '../../oct8-content';
+import { oct12BlogSlugs, getOct12BlogMetadata, renderOct12BlogArticle } from '../../oct12-content';
 import PhilippinesContinuityArticle, {
   continuityDescription,
   continuitySlug,
@@ -35,6 +36,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  if (oct12BlogSlugs.has(slug as never)) return getOct12BlogMetadata(slug);
   if (oct8BlogSlugs.has(slug as never)) return getOct8BlogMetadata(slug);
   if (oct5BlogSlugs.has(slug as never)) return getOct5BlogMetadata(slug);
   if (oct2BlogArticles[slug]) return getOct2BlogMetadata(slug);
@@ -107,6 +109,7 @@ const serviceHandoffs: Record<string, { href: string; label: string; copy: strin
 
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  if (oct12BlogSlugs.has(slug as never)) return renderOct12BlogArticle(slug);
   if (oct8BlogSlugs.has(slug as never)) return renderOct8BlogArticle(slug);
   if (oct5BlogSlugs.has(slug as never)) return renderOct5BlogArticle(slug);
   if (oct2BlogArticles[slug]) return renderOct2BlogArticle(slug);
