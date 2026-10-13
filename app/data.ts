@@ -24,6 +24,7 @@ import { oct2BlogPosts } from './oct2-records';
 import { oct5BlogPosts } from './oct5-records';
 import { oct8BlogPosts } from './oct8-records';
 import { oct12BlogPosts } from './oct12-records';
+import { oct13BlogPosts } from './oct13-records';
 
 export const site = {
   "domain": "OutsourcedLabor.com",
@@ -92,6 +93,7 @@ export const services = [
   }
 ] as const;
 const allBlogPosts = [
+  ...oct13BlogPosts,
   ...oct12BlogPosts,
   ...oct8BlogPosts,
   ...oct5BlogPosts,
@@ -304,6 +306,8 @@ const retiredAug13BlogSlugs = new Set([
 ]);
 
 export const blogPosts = [...allBlogPosts].filter((post) => !retiredAug13BlogSlugs.has(post.slug)).sort((a, b) => {
+  const october13Rank = Number(oct13BlogPosts.some((post) => post.slug === b.slug)) - Number(oct13BlogPosts.some((post) => post.slug === a.slug));
+  if (october13Rank) return october13Rank;
   const october12Rank = Number(oct12BlogPosts.some((post) => post.slug === b.slug)) - Number(oct12BlogPosts.some((post) => post.slug === a.slug));
   if (october12Rank) return october12Rank;
   const october8Rank = Number(oct8BlogPosts.some((post) => post.slug === b.slug)) - Number(oct8BlogPosts.some((post) => post.slug === a.slug));

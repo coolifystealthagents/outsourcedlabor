@@ -71,7 +71,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
         <p className="eyebrow">Philippines staffing research · {post.published === '2026-09-14' ? `Published: ${formatPublicDate(post.published)}` : formatPublicDate(post.published)}</p>
         <h1>{post.title}</h1>
         <p className="lead">{post.excerpt}</p>
-        {post.image && <img src={post.image} alt={post.published === '2026-09-14' ? `Illustrated research field note for ${post.title}` : ''} width="1200" height="630" />}
+        {post.image && <img src={post.image} alt={post.published === '2026-10-13' ? post.title : post.published === '2026-09-14' ? `Illustrated research field note for ${post.title}` : ''} width="1200" height="630" />}
         <div className="article-body">{post.body.map((paragraph, index) => <p key={index}>{paragraph}</p>)}</div>
         {post.headlineStat && <><h2>Key statistic</h2><p>{post.headlineStat}</p></>}
         {post.keyStats && <><h2>Key stats</h2><ul>{post.keyStats.map((stat) => <li key={stat}>{stat}</li>)}</ul></>}

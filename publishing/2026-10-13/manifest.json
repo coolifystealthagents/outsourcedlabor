@@ -1,0 +1,165 @@
+{
+  "site": "OutsourcedLabor.com",
+  "canonicalDomain": "https://outsourcedlabor.com",
+  "repository": "coolifystealthagents/outsourcedlabor",
+  "branch": "main",
+  "baseSha": "2a20700d1c7ad3a214b8047cf68ed5fb7b0ba402",
+  "publicationDate": "2026-10-13",
+  "blogCount": 12,
+  "researchCount": 5,
+  "entries": [
+    {
+      "type": "Blog",
+      "title": "Verify Worker Shift Swap Approval",
+      "slug": "outsourced-labor-shift-swap-approval-verification",
+      "route": "/blog/outsourced-labor-shift-swap-approval-verification",
+      "sourcePath": "app/oct13-records.ts",
+      "thumbnail": "/october-13-2026/outsourced-labor-shift-swap-approval-verification.svg",
+      "words": 1394
+    },
+    {
+      "type": "Blog",
+      "title": "Reconcile Timesheet Time Zone Boundaries",
+      "slug": "outsourced-labor-timesheet-time-zone-reconciliation",
+      "route": "/blog/outsourced-labor-timesheet-time-zone-reconciliation",
+      "sourcePath": "app/oct13-records.ts",
+      "thumbnail": "/october-13-2026/outsourced-labor-timesheet-time-zone-reconciliation.svg",
+      "words": 1380
+    },
+    {
+      "type": "Blog",
+      "title": "Route Badge Access Reactivation Requests",
+      "slug": "outsourced-labor-badge-access-reactivation-route",
+      "route": "/blog/outsourced-labor-badge-access-reactivation-route",
+      "sourcePath": "app/oct13-records.ts",
+      "thumbnail": "/october-13-2026/outsourced-labor-badge-access-reactivation-route.svg",
+      "words": 1364
+    },
+    {
+      "type": "Blog",
+      "title": "Control Temporary Team Reassignments",
+      "slug": "outsourced-labor-temporary-team-reassignment-control",
+      "route": "/blog/outsourced-labor-temporary-team-reassignment-control",
+      "sourcePath": "app/oct13-records.ts",
+      "thumbnail": "/october-13-2026/outsourced-labor-temporary-team-reassignment-control.svg",
+      "words": 1346
+    },
+    {
+      "type": "Blog",
+      "title": "Document Vendor Worker Onboarding Delays",
+      "slug": "outsourced-labor-vendor-onboarding-delay-record",
+      "route": "/blog/outsourced-labor-vendor-onboarding-delay-record",
+      "sourcePath": "app/oct13-records.ts",
+      "thumbnail": "/october-13-2026/outsourced-labor-vendor-onboarding-delay-record.svg",
+      "words": 1380
+    },
+    {
+      "type": "Blog",
+      "title": "Verify Break Coverage Handoffs",
+      "slug": "outsourced-labor-break-coverage-handoff-verification",
+      "route": "/blog/outsourced-labor-break-coverage-handoff-verification",
+      "sourcePath": "app/oct13-records.ts",
+      "thumbnail": "/october-13-2026/outsourced-labor-break-coverage-handoff-verification.svg",
+      "words": 1346
+    },
+    {
+      "type": "Blog",
+      "title": "Reconcile Equipment Return Custody",
+      "slug": "outsourced-labor-equipment-return-custody",
+      "route": "/blog/outsourced-labor-equipment-return-custody",
+      "sourcePath": "app/oct13-records.ts",
+      "thumbnail": "/october-13-2026/outsourced-labor-equipment-return-custody.svg",
+      "words": 1362
+    },
+    {
+      "type": "Blog",
+      "title": "Track Schedule Availability Withdrawals",
+      "slug": "outsourced-labor-availability-withdrawal-tracking",
+      "route": "/blog/outsourced-labor-availability-withdrawal-tracking",
+      "sourcePath": "app/oct13-records.ts",
+      "thumbnail": "/october-13-2026/outsourced-labor-availability-withdrawal-tracking.svg",
+      "words": 1346
+    },
+    {
+      "type": "Blog",
+      "title": "Control Labor Roster Export Access",
+      "slug": "outsourced-labor-roster-export-access-control",
+      "route": "/blog/outsourced-labor-roster-export-access-control",
+      "sourcePath": "app/oct13-records.ts",
+      "thumbnail": "/october-13-2026/outsourced-labor-roster-export-access-control.svg",
+      "words": 1364
+    },
+    {
+      "type": "Blog",
+      "title": "Route Incident Witness Record Requests",
+      "slug": "outsourced-labor-incident-witness-record-routing",
+      "route": "/blog/outsourced-labor-incident-witness-record-routing",
+      "sourcePath": "app/oct13-records.ts",
+      "thumbnail": "/october-13-2026/outsourced-labor-incident-witness-record-routing.svg",
+      "words": 1394
+    },
+    {
+      "type": "Blog",
+      "title": "Verify Contractor Extension Evidence",
+      "slug": "outsourced-labor-contractor-extension-evidence",
+      "route": "/blog/outsourced-labor-contractor-extension-evidence",
+      "sourcePath": "app/oct13-records.ts",
+      "thumbnail": "/october-13-2026/outsourced-labor-contractor-extension-evidence.svg",
+      "words": 1374
+    },
+    {
+      "type": "Blog",
+      "title": "Close Duplicate Work Order Assignments",
+      "slug": "outsourced-labor-duplicate-work-order-closure",
+      "route": "/blog/outsourced-labor-duplicate-work-order-closure",
+      "sourcePath": "app/oct13-records.ts",
+      "thumbnail": "/october-13-2026/outsourced-labor-duplicate-work-order-closure.svg",
+      "words": 1380
+    },
+    {
+      "type": "Research",
+      "title": "Study Shift Coverage Denominator Stability",
+      "slug": "research-outsourced-labor-shift-coverage-denominator",
+      "route": "/research/research-outsourced-labor-shift-coverage-denominator",
+      "sourcePath": "app/research/oct13-research-records.ts",
+      "thumbnail": "/october-13-2026/research-outsourced-labor-shift-coverage-denominator.svg",
+      "words": 1197
+    },
+    {
+      "type": "Research",
+      "title": "Measure Timesheet Correction Rework",
+      "slug": "research-outsourced-labor-timesheet-correction-rework",
+      "route": "/research/research-outsourced-labor-timesheet-correction-rework",
+      "sourcePath": "app/research/oct13-research-records.ts",
+      "thumbnail": "/october-13-2026/research-outsourced-labor-timesheet-correction-rework.svg",
+      "words": 1179
+    },
+    {
+      "type": "Research",
+      "title": "Analyze Contractor Extension Decision Lag",
+      "slug": "research-outsourced-labor-extension-decision-lag",
+      "route": "/research/research-outsourced-labor-extension-decision-lag",
+      "sourcePath": "app/research/oct13-research-records.ts",
+      "thumbnail": "/october-13-2026/research-outsourced-labor-extension-decision-lag.svg",
+      "words": 1212
+    },
+    {
+      "type": "Research",
+      "title": "Measure Reviewer Agreement on Roster Conflicts",
+      "slug": "research-outsourced-labor-roster-conflict-agreement",
+      "route": "/research/research-outsourced-labor-roster-conflict-agreement",
+      "sourcePath": "app/research/oct13-research-records.ts",
+      "thumbnail": "/october-13-2026/research-outsourced-labor-roster-conflict-agreement.svg",
+      "words": 1185
+    },
+    {
+      "type": "Research",
+      "title": "Review Workforce Data Export Minimization",
+      "slug": "research-outsourced-labor-export-minimization",
+      "route": "/research/research-outsourced-labor-export-minimization",
+      "sourcePath": "app/research/oct13-research-records.ts",
+      "thumbnail": "/october-13-2026/research-outsourced-labor-export-minimization.svg",
+      "words": 1197
+    }
+  ]
+}
