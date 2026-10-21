@@ -150,7 +150,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
     return (
       <>
         <Header />
-        <main className="section">
+        <main id="main-content" className="section">
           <article className="container article-shell">
             <p className="eyebrow">{site.brand} guide</p>
             <h1>{post.title}</h1>
@@ -225,7 +225,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   return (
     <>
       <Header />
-      <main className="article-page">
+      <main id="main-content" className="article-page">
         <JsonLd data={schema} />
         <article className="container article-shell">
           <header className="article-header">
@@ -264,7 +264,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
               </section>
             ))}
             {serviceHandoff ? <p>{serviceHandoff.copy} <a href={serviceHandoff.href}>{serviceHandoff.label}</a> can turn approved examples, decision lines, and review rules into a draft your manager can check. The manager still owns exceptions and final approval.</p> : null}
-            <p>For the next step, compare this workflow with <a href={`/blog/${bodyLinks[0]?.slug}`}>{bodyLinks[0]?.title || 'the role planning guide'}</a> and <a href={`/blog/${bodyLinks[1]?.slug}`}>{bodyLinks[1]?.title || 'the operations guide'}</a>. For access and oversight, use the <a href={detail.sources[0].url} target="_blank" rel="noreferrer">authoritative planning reference</a> alongside your own policy.</p>
+            <p>For the next step, compare this workflow with <a href={bodyLinks[0] ? `/blog/${bodyLinks[0].slug}` : '/blog'}>{bodyLinks[0]?.title || 'the role planning guide'}</a> and <a href={bodyLinks[1] ? `/blog/${bodyLinks[1].slug}` : '/services'}>{bodyLinks[1]?.title || 'the operations guide'}</a>. For access and oversight, use the <a href={detail.sources[0].url} target="_blank" rel="noreferrer">authoritative planning reference</a> alongside your own policy.</p>
           </div>
 
           <section className="brief-box" aria-labelledby="brief-title">

@@ -11,12 +11,13 @@ export const metadata = {
   title: "Research",
   description:
     "Research notes about Philippines-based staffing and operations.",
+  alternates: { canonical: "/research" },
 };
 export default function Research() {
   return (
     <>
       <Header />
-      <main className="fleet-main">
+      <main id="main-content" className="fleet-main">
         <section className="fleet-hero">
           <div className="container">
             <p className="eyebrow">Research library</p>
@@ -38,7 +39,7 @@ export default function Research() {
                 {p.image && (
                   <img
                     src={p.image}
-                    alt=""
+                    alt={`${p.title} research illustration`}
                     width="640"
                     height="360"
                     loading="lazy"

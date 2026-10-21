@@ -46,6 +46,9 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
 
   const baseUrl = `https://${site.domain.toLowerCase()}`;
   const canonical = `${baseUrl}/research/${post.slug}`;
+  const validResearchSlugs = new Set(allResearchPosts.map((item) => item.slug));
+  const relatedResearch = (post.related || []).filter((related) => related !== post.slug && validResearchSlugs.has(related)).slice(0, 3);
+  const fallbackResearch = allResearchPosts.find((item) => item.slug !== post.slug)?.slug;
   const organization = { '@type': 'Organization', name: site.brand, url: baseUrl };
   const updated = 'updated' in post && typeof post.updated === 'string' ? post.updated : post.published;
   const jsonLd = {
@@ -63,7 +66,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
 
   return <>
     <Header />
-    <main className="fleet-main">
+    <main id="main-content" className="fleet-main">
       <article className="section article-shell">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <meta property="article:published_time" content={post.published} />
@@ -71,7 +74,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
         <p className="eyebrow">Philippines staffing research · {post.published === '2026-09-14' ? `Published: ${formatPublicDate(post.published)}` : formatPublicDate(post.published)}</p>
         <h1>{post.title}</h1>
         <p className="lead">{post.excerpt}</p>
-        {post.image && <img src={post.image} alt={post.published === '2026-10-13' ? post.title : post.published === '2026-09-14' ? `Illustrated research field note for ${post.title}` : ''} width="1200" height="630" />}
+        {post.image && <img src={post.image} alt={`${post.title} research illustration`} width="1200" height="630" />}
         <div className="article-body">{post.body.map((paragraph, index) => <p key={index}>{paragraph}</p>)}</div>
         {post.headlineStat && <><h2>Key statistic</h2><p>{post.headlineStat}</p></>}
         {post.keyStats && <><h2>Key stats</h2><ul>{post.keyStats.map((stat) => <li key={stat}>{stat}</li>)}</ul></>}
@@ -81,9 +84,9 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
         <h2>Sources</h2>
         <ol>{(post.sources || []).map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.name}</a>{hasSourceDetails(source) ? ` — ${source.publisher}; checked ${source.checked}` : ''}</li>)}</ol>
         <h2>Related research</h2>
-        <ul>{(post.related || []).slice(0, 3).map((related) => <li key={related}><a href={`/research/${related}`}>{related}</a></li>)}</ul>
-        <p>Continue with <a href={`/research/${post.related?.[0] || researchPosts[0].slug}`}>a related research note</a> or <a href="/contact">talk with our team</a>.</p>
-        <aside className="card"><h2>Next step</h2><p>{post.cta}</p><a className="btn primary" href="/contact">Plan the work lane →</a></aside>
+        <ul>{relatedResearch.map((related) => <li key={related}><a href={`/research/${related}`}>{allResearchPosts.find((item) => item.slug === related)?.title || related}</a></li>)}</ul>
+        <p>Continue with {relatedResearch[0] || fallbackResearch ? <a href={`/research/${relatedResearch[0] || fallbackResearch}`}>a related research note</a> : <a href="/research">the research library</a>} or <a href="/contact-us">talk with our team</a>.</p>
+        <aside className="card"><h2>Next step</h2><p>{post.cta}</p><a className="btn primary" href="/contact-us">Plan the work lane →</a></aside>
       </article>
     </main>
     <Footer />

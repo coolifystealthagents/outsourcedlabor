@@ -10,9 +10,9 @@ const checkpoints = [
 ];
 
 const launchSteps = [
-  ['01', 'Bring the real work', 'Share a week of tickets, reports, inbox items, or order updates. We use the actual queue, not a vague job title.'],
-  ['02', 'Set the guardrails', 'Write down what the Filipino specialist can finish and what still needs a manager. Keep access narrow at the start.'],
-  ['03', 'Run a short pilot', 'Review the first batch closely. Fix the instructions before adding more tasks or tools.'],
+  ['Bring the real work', 'Share a week of tickets, reports, inbox items, or order updates. We use the actual queue, not a vague job title.'],
+  ['Set the guardrails', 'Write down what the Filipino specialist can finish and what still needs a manager. Keep access narrow at the start.'],
+  ['Run a short pilot', 'Review the first batch closely. Fix the instructions before adding more tasks or tools.'],
 ];
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
 
   return <>
     <Header />
-    <main className="labor-home" data-design="labor-ops-2026-07" data-gi-rollout="two-illustration-packs-one-icon-pack">
+    <main id="main-content" className="labor-home" data-design="labor-ops-2026-07" data-gi-rollout="two-illustration-packs-one-icon-pack">
       <JsonLd data={schema} />
 
       <section className="labor-hero">
@@ -36,7 +36,7 @@ export default function Home() {
             <h1>Build a Filipino operations bench without losing the controls.</h1>
             <p className="hero-deck">Hand off the repeat work, keep the decisions that belong with your team. We help you shape a role for Filipino talent around real tasks, safe access, and a review routine you can stick to.</p>
             <div className="hero-actions">
-              <a className="labor-button primary" href="/contact">Request a labor plan</a>
+              <a className="labor-button primary" href="/contact-us">Request a labor plan</a>
               <a className="labor-button ghost" href="#work-lanes">See the work lanes</a>
             </div>
             <p className="routing-note">This is an independent referral site. Your request may be sent to a staffing partner that sources talent only in the Philippines.</p>
@@ -66,8 +66,7 @@ export default function Home() {
           <p>Filipino talent can take on plenty of recurring work. The safest first role has clear inputs, a visible result, and a manager who knows when to step in.</p>
         </div>
         <div className="work-grid">
-          {roles.map((role, index) => <a className="work-card" href="/services" key={role.slug}>
-            <span className="work-number">0{index + 1}</span>
+          {roles.map((role) => <a className="work-card" href="/services" key={role.slug}>
             <div><h3>{role.title}</h3><p>{role.desc}</p></div>
             <b>Open the handoff guide <span aria-hidden="true">↗</span></b>
           </a>)}
@@ -98,8 +97,8 @@ export default function Home() {
           <p>No grand rollout. Give one Filipino specialist a real work lane, check the output, and widen the scope only when the handoff holds up.</p>
         </div>
         <div className="launch-grid">
-          {launchSteps.map(([number, heading, body]) => <article key={number}>
-            <span>{number}</span><h3>{heading}</h3><p>{body}</p>
+          {launchSteps.map(([heading, body]) => <article key={heading}>
+            <h3>{heading}</h3><p>{body}</p>
           </article>)}
         </div>
       </section>
@@ -115,7 +114,7 @@ export default function Home() {
 
       <section className="labor-shell labor-final">
         <div><p className="labor-kicker light">One role. Clear boundaries.</p><h2>Bring the messy task list. Leave with a workable Filipino staffing brief.</h2></div>
-        <a className="labor-button warm" href="/contact">Request a labor plan</a>
+        <a className="labor-button warm" href="/contact-us">Request a labor plan</a>
       </section>
     </main>
     <Footer />

@@ -1,0 +1,26 @@
+{
+  "domain": "outsourcedlabor.com",
+  "industry": "Philippines-based outsourced labor and operations staffing",
+  "audience": "Operations leaders and small business owners turning recurring work into controlled support roles",
+  "designFamily": "controlled field manual",
+  "heroComposition": "dark operations brief paired with a documentary-style illustrated workbench",
+  "typeCharacter": "humanist sans with compact operational labels",
+  "paletteFamily": "deep forest, field paper, safety orange, and signal yellow",
+  "shapeGrammar": "square-edged ledgers with restrained soft corners and rule lines",
+  "imageTreatment": "topic-specific operational illustrations and verified documentary team photography",
+  "sectionRhythm": "dense working boards alternating with spacious editorial guidance",
+  "navigationTreatment": "persistent paper strip with compact parent-brand plate",
+  "motionSignature": "single horizontal review tape with otherwise restrained state motion",
+  "density": "medium-high information density",
+  "signatureElement": "decision-line boards that separate delegated work from manager approvals",
+  "settings": {
+    "DESIGN_VARIANCE": 8,
+    "MOTION_INTENSITY": 3,
+    "VISUAL_DENSITY": 7,
+    "redesignMode": "evolve",
+    "primaryTheme": "light with deep-forest working surfaces",
+    "primaryAccentStrategy": "safety orange for action and signal yellow for review states",
+    "motionRationale": "Motion is reserved for the required review marquee and small interaction feedback so operational content remains easy to inspect."
+  },
+  "designRead": "Reading this as: an outsourced operations planning site for owners and operations leaders, with a controlled, practical, human visual language, leaning toward a field manual and operations-board design system."
+}

@@ -17,7 +17,7 @@ export function BlogListing({ page = 1 }: { page?: number }) {
   return (
     <>
       <Header />
-      <main className="fleet-main">
+      <main id="main-content" className="fleet-main">
         <section className="fleet-hero">
           <div className="container">
             <p className="eyebrow">Blog</p>

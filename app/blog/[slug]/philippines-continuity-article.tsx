@@ -70,21 +70,21 @@ const schema = {
 };
 
 function ContinuityHeader() {
-  return <header className="nav continuity-nav"><div className="nav-inner"><a className="logo" href="/" aria-label="Outsourced Labor home"><LogoMark /></a><nav className="links" aria-label="Article navigation"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/contact">Contact Us</a></nav></div></header>;
+  return <header className="nav continuity-nav"><div className="nav-inner"><a className="logo" href="/" aria-label="Outsourced Labor home"><LogoMark /></a><nav className="links" aria-label="Article navigation"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/contact-us">Contact Us</a></nav></div></header>;
 }
 
 function ContinuityFooter() {
-  return <footer className="continuity-footer"><div className="container"><a className="footer-logo" href="/"><LogoMark /></a><p>Plan repeat work for Philippines-based specialists with clear owners, safe access, and a review path.</p><nav aria-label="Footer navigation"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/privacy">Privacy Policy</a><a href="/contact">Contact Us</a></nav></div></footer>;
+  return <footer className="continuity-footer"><div className="container"><a className="footer-logo" href="/"><LogoMark /></a><p>Plan repeat work for Philippines-based specialists with clear owners, safe access, and a review path.</p><nav aria-label="Footer navigation"><a href="/services">Services</a><a href="/blog">Blog</a><a href="/privacy">Privacy Policy</a><a href="/contact-us">Contact Us</a></nav></div></footer>;
 }
 
 function Banner({ slot, title, children }: { slot: number; title: string; children: React.ReactNode }) {
-  return <aside className="article-banner" data-banner-slot={slot}><p className="eyebrow">Continuity check</p><h2>{title}</h2><p>{children}</p><a href="/contact">Map the work lane</a></aside>;
+  return <aside className="article-banner" data-banner-slot={slot}><p className="eyebrow">Continuity check</p><h2>{title}</h2><p>{children}</p><a href="/contact-us">Map the work lane</a></aside>;
 }
 
 export default function PhilippinesContinuityArticle() {
   return <>
     <ContinuityHeader />
-    <main className="continuity-page">
+    <main id="main-content" className="continuity-page">
       <JsonLd data={schema} />
       <article className="container article-shell continuity-article" data-article-marker={continuityMarker}>
         <header className="article-header">
