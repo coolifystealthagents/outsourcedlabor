@@ -25,6 +25,7 @@ import { oct5BlogSlugs, getOct5BlogMetadata, renderOct5BlogArticle } from '../..
 import { oct8BlogSlugs, getOct8BlogMetadata, renderOct8BlogArticle } from '../../oct8-content';
 import { oct12BlogSlugs, getOct12BlogMetadata, renderOct12BlogArticle } from '../../oct12-content';
 import { oct13BlogSlugs, getOct13BlogMetadata, renderOct13BlogArticle } from '../../oct13-content';
+import { oct22BlogSlugs, getOct22BlogMetadata, renderOct22BlogArticle } from '../../oct22-content';
 import PhilippinesContinuityArticle, {
   continuityDescription,
   continuitySlug,
@@ -37,6 +38,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  if (oct22BlogSlugs.has(slug as never)) return getOct22BlogMetadata(slug);
   if (oct13BlogSlugs.has(slug as never)) return getOct13BlogMetadata(slug);
   if (oct12BlogSlugs.has(slug as never)) return getOct12BlogMetadata(slug);
   if (oct8BlogSlugs.has(slug as never)) return getOct8BlogMetadata(slug);
@@ -111,6 +113,7 @@ const serviceHandoffs: Record<string, { href: string; label: string; copy: strin
 
 export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  if (oct22BlogSlugs.has(slug as never)) return renderOct22BlogArticle(slug);
   if (oct13BlogSlugs.has(slug as never)) return renderOct13BlogArticle(slug);
   if (oct12BlogSlugs.has(slug as never)) return renderOct12BlogArticle(slug);
   if (oct8BlogSlugs.has(slug as never)) return renderOct8BlogArticle(slug);

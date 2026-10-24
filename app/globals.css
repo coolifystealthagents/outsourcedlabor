@@ -91,3 +91,17 @@ html{scroll-padding-top:88px}body{overflow-x:hidden}.menu-open{overflow:hidden}.
 @media(max-width:1249px){.editorial-navigator{display:none}.editorial-mobile-host{display:block}.editorial-mobile-toc{margin:24px 0;padding:16px;background:#eee3ce;border:1px solid #b7aa8f}.editorial-mobile-toc summary{font-weight:950;cursor:pointer}.editorial-mobile-toc ol{padding-left:22px}.editorial-mobile-toc li{margin:8px 0}.editorial-mobile-toc a{color:#173a31}.editorial-mobile-toc .editorial-support{display:flex;flex-wrap:wrap;gap:12px}}
 
 .sa-testimonials-contact .sa-testimonial-heading h2,.sa-testimonials-contact .sa-testimonial-disclosure,.sa-testimonials-contact .sa-testimonial-source{color:#18332b}.sa-testimonials-contact .sa-testimonial-disclosure,.sa-testimonials-contact .sa-testimonial-source{opacity:.82}@media(prefers-reduced-motion:reduce){.sa-testimonial-track>.sa-testimonial-card:nth-child(n+4){display:flex}.sa-testimonial-viewport{overflow-x:auto;overflow-y:hidden;scrollbar-width:thin}}
+.o22-aside{position:sticky;top:96px;float:none;margin-left:auto;width:250px;max-height:calc(100vh - 120px);overflow:auto;display:grid;gap:6px;padding:14px;background:#fff;border:1px solid #d8d8d8;z-index:5}
+.o22-aside a{font-size:13px;text-decoration:none;color:#333}
+@media(max-width:900px){.o22-aside{display:none}.o22-mobile{position:fixed!important;top:86px;left:12px;right:12px;width:auto!important;max-width:none!important;z-index:60}.o22-mobile>nav{max-height:42vh}}
+.o22-mobile{position:fixed;top:86px;left:12px;right:12px;z-index:70;background:#fff;border:1px solid #d8d8d8;box-shadow:0 10px 20px rgba(0,0,0,.15)}
+.o22-mobile:not([open]){height:52px;overflow:hidden}
+.o22-mobile>summary{display:flex;align-items:center;justify-content:space-between;min-height:52px;padding:0 16px;list-style:none;font-weight:700;cursor:pointer}
+.o22-mobile>summary::-webkit-details-marker{display:none}
+.o22-mobile>nav{max-height:42vh;overflow:auto;padding:8px 16px 12px;display:grid;gap:8px}
+.o22-mobile:not([open])>nav{display:none}
+@media(max-width:900px){.o22-aside{display:none}}
+.article-date{margin:14px 0 22px;font-size:14px;font-weight:700}
+.article-date{margin-top:20px!important;margin-bottom:26px!important}
+.article-shell h2{margin-top:30px}
+.o22-grid h2{margin-top:30px}
