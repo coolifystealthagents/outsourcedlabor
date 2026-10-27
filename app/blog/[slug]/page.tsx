@@ -246,7 +246,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
             <ul>{detail.takeaways.map((item) => <li key={item}>{item}</li>)}</ul>
           </aside>
 
-          <section className="fit-matrix" aria-labelledby="fit-title">
+          {'fitRows' in detail && detail.fitRows ? <section className="fit-matrix" aria-labelledby="fit-title">
             <div className="module-heading">
               <p className="eyebrow">Scope check</p>
               <h2 id="fit-title">Is this work ready to hand off?</h2>
@@ -257,7 +257,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                 <tbody>{detail.fitRows.map((row) => <tr key={row.signal}><th>{row.signal}</th><td>{row.example}</td><td>{row.reason}</td></tr>)}</tbody>
               </table>
             </div>
-          </section>
+          </section> : null}
 
           <div className="article-body">
             {detail.sections.map((section) => (
@@ -270,12 +270,12 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
             <p>For the next step, compare this workflow with <a href={bodyLinks[0] ? `/blog/${bodyLinks[0].slug}` : '/blog'}>{bodyLinks[0]?.title || 'the role planning guide'}</a> and <a href={bodyLinks[1] ? `/blog/${bodyLinks[1].slug}` : '/services'}>{bodyLinks[1]?.title || 'the operations guide'}</a>. For access and oversight, use the <a href={detail.sources[0].url} target="_blank" rel="noreferrer">authoritative planning reference</a> alongside your own policy.</p>
           </div>
 
-          <section className="brief-box" aria-labelledby="brief-title">
+          {'brief' in detail && detail.brief ? <section className="brief-box" aria-labelledby="brief-title">
             <p className="eyebrow">Copy-ready example</p>
             <h2 id="brief-title">A simple role brief</h2>
             <p>Replace the order details with your own work. Keep the decision line.</p>
             <ul>{detail.brief.map((line) => <li key={line}>{line}</li>)}</ul>
-          </section>
+          </section> : null}
 
           <section className="article-faq" aria-labelledby="faq-title">
             <p className="eyebrow">Buyer questions</p>
