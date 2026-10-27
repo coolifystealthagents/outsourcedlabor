@@ -208,11 +208,11 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
       {
         '@type': 'FAQPage',
         '@id': `${postUrl}#faq`,
-        mainEntity: detail.faqs.map((faq) => ({
+        mainEntity: ('faqs' in detail && detail.faqs ? detail.faqs.map((faq) => ({
           '@type': 'Question',
           name: faq.q,
           acceptedAnswer: { '@type': 'Answer', text: faq.a },
-        })),
+        })) : []),
       },
       {
         '@type': 'BreadcrumbList',
@@ -280,7 +280,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
           <section className="article-faq" aria-labelledby="faq-title">
             <p className="eyebrow">Buyer questions</p>
             <h2 id="faq-title">Filipino staffing planning FAQ</h2>
-            <div className="cards">{detail.faqs.map((faq) => <div className="card" key={faq.q}><h3>{faq.q}</h3><p>{faq.a}</p></div>)}</div>
+            {'faqs' in detail && detail.faqs ? <div className="cards">{detail.faqs.map((faq) => <div className="card" key={faq.q}><h3>{faq.q}</h3><p>{faq.a}</p></div>)}</div> : null}
           </section>
 
           <section className="source-list" aria-labelledby="sources-title">
