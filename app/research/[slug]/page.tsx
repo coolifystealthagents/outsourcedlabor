@@ -80,7 +80,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
         {post.headlineStat && <><h2>Key statistic</h2><p>{post.headlineStat}</p></>}
         {post.keyStats && <><h2>Key stats</h2><ul>{post.keyStats.map((stat) => <li key={stat}>{stat}</li>)}</ul></>}
         {post.takeaways && <><h2>Key takeaways</h2><ul>{post.takeaways.map((takeaway) => <li key={takeaway}>{takeaway}</li>)}</ul></>}
-        {post.service && <aside className="card"><h2>{post.service.heading}</h2><p>{post.service.body}</p><a className="btn primary" href={post.service.href}>{post.service.label}</a></aside>}
+        {'service' in post && post.service ? <aside className="card"><h2>{post.service.heading}</h2><p>{post.service.body}</p><a className="btn primary" href={post.service.href}>{post.service.label}</a></aside> : null}
         {post.faqs && <><h2>FAQs</h2>{post.faqs.map((faq) => <section key={faq.q}><h3>{faq.q}</h3><p>{faq.a}</p></section>)}</>}
         <h2>Sources</h2>
         <ol>{(post.sources || []).map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.name}</a>{hasSourceDetails(source) ? ` — ${source.publisher}; checked ${source.checked}` : ''}</li>)}</ol>
