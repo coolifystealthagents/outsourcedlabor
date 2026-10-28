@@ -286,7 +286,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
           <section className="source-list" aria-labelledby="sources-title">
             <p className="eyebrow">Sources</p>
             <h2 id="sources-title">Planning references</h2>
-            <ol>{detail.sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.name}</a><p>{source.note}</p></li>)}</ol>
+            <ol>{detail.sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.name}</a>{(source as any).note ? <p>{(source as any).note}</p> : null}</li>)}</ol>
           </section>
           <section className="article-related" aria-labelledby="related-title">
             <p className="eyebrow">Keep planning</p>
