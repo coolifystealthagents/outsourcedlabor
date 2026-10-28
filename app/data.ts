@@ -28,6 +28,7 @@ import { oct13BlogPosts } from './oct13-records';
 import { oct22BlogPosts } from './oct22-records';
 import { october25BlogPosts, october25BlogDetails } from './oct25-blog-records';
 import { october26BlogPosts, october26BlogDetails } from './oct26-blog-records';
+import { october28BlogPosts, october28BlogDetails } from './oct28-blog-records';
 import { october27BlogPosts, october27BlogDetails } from './oct27-blog-records';
 
 export const site = {
@@ -98,6 +99,7 @@ export const services = [
 ] as const;
 const allBlogPosts = [
   ...october27BlogPosts,
+  ...october28BlogPosts,
   ...october26BlogPosts,
   ...october25BlogPosts,
   ...oct22BlogPosts,
@@ -710,7 +712,7 @@ const replacementDetail = (topic: string, phrase: string, source: { name: string
   sources: [source], related: ['outsourced-labor-planning', 'philippines-operations-support-sop'],
 });
 
-export const blogDetails = { ...october27BlogDetails, ...october26BlogDetails, ...october25BlogDetails, ...baseBlogDetails, ...batchDetails, ...nextBatchDetails, ...aug11Details, ...aug13Details, ...august13BlogDetails, ...august14BlogDetails, ...august17BlogDetails, ...august19BlogDetails } as const;
+export const blogDetails = { ...october28BlogDetails, ...october27BlogDetails, ...october26BlogDetails, ...october25BlogDetails, ...baseBlogDetails, ...batchDetails, ...nextBatchDetails, ...aug11Details, ...aug13Details, ...august13BlogDetails, ...august14BlogDetails, ...august17BlogDetails, ...august19BlogDetails } as const;
 
 export const stats = [{label:'First work lane',value:'One queue',note:'a visible input and finish line make review easier'},{label:'Pilot review',value:'Daily',note:'reduce checks only after the work is steady'},{label:'Decision line',value:'Written',note:'money, policy, access, and customer promises stay controlled'}] as const;
 
