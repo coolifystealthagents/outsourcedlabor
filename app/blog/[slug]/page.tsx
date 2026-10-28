@@ -178,7 +178,13 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   }
 
   const isOctober27 = post.slug.endsWith('-2026-10-27');
-  const heroImage = isOctober27 ? `/daily27/outsourcedlabor/${post.slug}.png` : null;
+  const isOctober28 = post.slug.endsWith('-2026-10-28');
+  const isCurrentBatch = isOctober27 || isOctober28;
+  const heroImage = isOctober27
+    ? `/daily27/outsourcedlabor/${post.slug}.png`
+    : isOctober28
+      ? `/daily28/outsourcedlabor/${post.slug}.png`
+      : null;
   const tocSections = detail.sections.map((section, index) => ({
     id: `section-${index}`,
     heading: section.heading,
@@ -250,7 +256,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
 
           {heroImage ? <img className="article-hero" src={heroImage} alt={`${post.title} article thumbnail`} width="1200" height="630" style={{ width: '100%', height: 'auto', borderRadius: '22px', margin: '0 0 34px' }} /> : null}
 
-          {isOctober27 && tocSections.length >= 3 ? <>
+          {isCurrentBatch && tocSections.length >= 3 ? <>
             <details className="o22-mobile"><summary>On this page</summary><nav aria-label="Table of contents mobile">{tocSections.map((section) => <a key={section.id} href={`#${section.id}`}>{section.heading}</a>)}</nav></details>
             <nav className="o22-aside" aria-label="Table of contents" style={{ position: 'sticky', top: '96px' }}><strong>Contents</strong>{tocSections.map((section) => <a key={section.id} href={`#${section.id}`}>{section.heading}</a>)}</nav>
           </> : null}
