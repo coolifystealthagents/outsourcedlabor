@@ -314,6 +314,12 @@ const retiredAug13BlogSlugs = new Set([
 ]);
 
 export const blogPosts = [...allBlogPosts].filter((post) => !retiredAug13BlogSlugs.has(post.slug)).sort((a, b) => {
+  const october27Rank = Number(october27BlogPosts.some((post) => post.slug === b.slug)) - Number(october27BlogPosts.some((post) => post.slug === a.slug));
+  if (october27Rank) return october27Rank;
+  const october26Rank = Number(october26BlogPosts.some((post) => post.slug === b.slug)) - Number(october26BlogPosts.some((post) => post.slug === a.slug));
+  if (october26Rank) return october26Rank;
+  const october25Rank = Number(october25BlogPosts.some((post) => post.slug === b.slug)) - Number(october25BlogPosts.some((post) => post.slug === a.slug));
+  if (october25Rank) return october25Rank;
   const october13Rank = Number(oct13BlogPosts.some((post) => post.slug === b.slug)) - Number(oct13BlogPosts.some((post) => post.slug === a.slug));
   if (october13Rank) return october13Rank;
   const october12Rank = Number(oct12BlogPosts.some((post) => post.slug === b.slug)) - Number(oct12BlogPosts.some((post) => post.slug === a.slug));

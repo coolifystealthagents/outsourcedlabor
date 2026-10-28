@@ -177,6 +177,13 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
     );
   }
 
+  const isOctober27 = post.slug.endsWith('-2026-10-27');
+  const heroImage = isOctober27 ? `/daily27/outsourcedlabor/${post.slug}.png` : null;
+  const tocSections = detail.sections.map((section, index) => ({
+    id: `section-${index}`,
+    heading: section.heading,
+  }));
+
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -241,6 +248,13 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
             </div>
           </header>
 
+          {heroImage ? <img className="article-hero" src={heroImage} alt={`${post.title} article thumbnail`} width="1200" height="630" style={{ width: '100%', height: 'auto', borderRadius: '22px', margin: '0 0 34px' }} /> : null}
+
+          {isOctober27 && tocSections.length >= 3 ? <>
+            <details className="o22-mobile"><summary>On this page</summary><nav aria-label="Table of contents mobile">{tocSections.map((section) => <a key={section.id} href={`#${section.id}`}>{section.heading}</a>)}</nav></details>
+            <nav className="o22-aside" aria-label="Table of contents" style={{ position: 'sticky', top: '96px' }}><strong>Contents</strong>{tocSections.map((section) => <a key={section.id} href={`#${section.id}`}>{section.heading}</a>)}</nav>
+          </> : null}
+
           <aside className="takeaway-box" aria-labelledby="takeaway-title">
             <p className="eyebrow" id="takeaway-title">Quick takeaways</p>
             <ul>{detail.takeaways.map((item) => <li key={item}>{item}</li>)}</ul>
@@ -260,9 +274,9 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
           </section> : null}
 
           <div className="article-body">
-            {detail.sections.map((section) => (
+            {detail.sections.map((section, index) => (
               <section key={section.heading}>
-                <h2>{section.heading}</h2>
+                <h2 id={isOctober27 ? `section-${index}` : undefined}>{section.heading}</h2>
                 {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </section>
             ))}
