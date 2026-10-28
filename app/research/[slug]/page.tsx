@@ -87,7 +87,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
         <h2>Related research</h2>
         <ul>{relatedResearch.map((related) => <li key={related}><a href={`/research/${related}`}>{allResearchPosts.find((item) => item.slug === related)?.title || related}</a></li>)}</ul>
         <p>Continue with {relatedResearch[0] || fallbackResearch ? <a href={`/research/${relatedResearch[0] || fallbackResearch}`}>a related research note</a> : <a href="/research">the research library</a>} or <a href="/contact-us">talk with our team</a>.</p>
-        <aside className="card"><h2>Next step</h2><p>{post.cta}</p><a className="btn primary" href="/contact-us">Plan the work lane →</a></aside>
+        <aside className="card"><h2>Next step</h2><p>{'cta' in post && post.cta ? post.cta : 'Define the work lane and review owner before expanding scope.'}</p><a className="btn primary" href="/contact-us">Plan the work lane →</a></aside>
       </article>
     </main>
     <Footer />
