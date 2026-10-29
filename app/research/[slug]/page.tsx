@@ -3,7 +3,25 @@ import Oct22Toc from '../../oct22-toc';
 import { Footer, Header } from '../../components';
 import { site } from '../../data';
 import { researchPosts } from '../../fleet-content';
-const allResearchPosts=researchPosts;
+type ResearchSource = { name: string; url: string; publisher?: string; checked?: string };
+type ResearchPost = {
+  slug: string;
+  title: string;
+  excerpt: string;
+  published: string;
+  updated?: string;
+  image?: string;
+  body: readonly string[];
+  sources?: readonly ResearchSource[];
+  related?: readonly string[];
+  cta?: string;
+  service?: { href: string; heading: string; body: string; label: string };
+  headlineStat?: string;
+  keyStats?: readonly string[];
+  takeaways?: readonly string[];
+  faqs?: readonly { q: string; a: string }[];
+};
+const allResearchPosts: ReadonlyArray<ResearchPost> = researchPosts;
 
 const formatPublicDate = (date: string) => new Intl.DateTimeFormat('en-US', {
   month: 'long',

@@ -89,11 +89,22 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-type ServiceHandoff = { href: string; label: string; copy: string };
-type BlogDetail = (typeof blogDetails)[keyof typeof blogDetails];
-type PublishedBlogDetail = BlogDetail & { published?: string };
+type ServiceHandoff = { href: string; label: string; copy?: string; title?: string; body?: string };
+type BlogDetail = {
+  updated: string;
+  takeaways: readonly string[];
+  fitRows?: readonly { signal: string; example: string; reason: string }[];
+  sections: readonly { heading: string; paragraphs: readonly string[] }[];
+  brief?: readonly string[];
+  faqs?: readonly { q: string; a: string }[];
+  sources: readonly { name: string; url: string; note?: string }[];
+  related?: readonly string[];
+  serviceHandoff?: ServiceHandoff;
+  published?: string;
+};
+type PublishedBlogDetail = BlogDetail;
 
-const serviceHandoffs: Record<string, { href: string; label: string; copy: string }> = {
+const serviceHandoffs: Record<string, ServiceHandoff> = {
   'philippines-operations-support-sop': {
     href: '/services/sop-documentation',
     label: 'SOP documentation support',
@@ -148,6 +159,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const relatedSlugs = ((detail as (BlogDetail & { related?: string[] }) | undefined)?.related || blogPosts.filter((item) => item.slug !== post.slug).slice(0, 3).map((item) => item.slug)).slice(0, 3);
   const bodyLinks = relatedSlugs.slice(0, 2).map((relatedSlug) => blogPosts.find((item) => item.slug === relatedSlug)).filter(Boolean);
   const serviceHandoff = (detail as (BlogDetail & { serviceHandoff?: ServiceHandoff }) | undefined)?.serviceHandoff || serviceHandoffs[post.slug];
+  const serviceHandoffCopy = serviceHandoff?.copy || serviceHandoff?.body;
 
   if (!detail) {
     return (
@@ -221,11 +233,11 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
       {
         '@type': 'FAQPage',
         '@id': `${postUrl}#faq`,
-        mainEntity: ('faqs' in detail && detail.faqs ? detail.faqs.map((faq) => ({
+        mainEntity: (detail.faqs ?? []).map((faq) => ({
           '@type': 'Question',
           name: faq.q,
           acceptedAnswer: { '@type': 'Answer', text: faq.a },
-        })) : []),
+        })),
       },
       {
         '@type': 'BreadcrumbList',
@@ -266,7 +278,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
             <ul>{detail.takeaways.map((item) => <li key={item}>{item}</li>)}</ul>
           </aside>
 
-          {'fitRows' in detail && detail.fitRows ? <section className="fit-matrix" aria-labelledby="fit-title">
+          {detail.fitRows?.length ? <section className="fit-matrix" aria-labelledby="fit-title">
             <div className="module-heading">
               <p className="eyebrow">Scope check</p>
               <h2 id="fit-title">Is this work ready to hand off?</h2>
@@ -286,27 +298,27 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
                 {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </section>
             ))}
-            {serviceHandoff ? <p>{serviceHandoff.copy} <a href={serviceHandoff.href}>{serviceHandoff.label}</a> can turn approved examples, decision lines, and review rules into a draft your manager can check. The manager still owns exceptions and final approval.</p> : null}
+            {serviceHandoff && serviceHandoffCopy ? <p>{serviceHandoffCopy} <a href={serviceHandoff.href}>{serviceHandoff.label}</a> can turn approved examples, decision lines, and review rules into a draft your manager can check. The manager still owns exceptions and final approval.</p> : null}
             <p>For the next step, compare this workflow with <a href={bodyLinks[0] ? `/blog/${bodyLinks[0].slug}` : '/blog'}>{bodyLinks[0]?.title || 'the role planning guide'}</a> and <a href={bodyLinks[1] ? `/blog/${bodyLinks[1].slug}` : '/services'}>{bodyLinks[1]?.title || 'the operations guide'}</a>. For access and oversight, use the <a href={detail.sources[0].url} target="_blank" rel="noreferrer">authoritative planning reference</a> alongside your own policy.</p>
           </div>
 
-          {'brief' in detail && detail.brief ? <section className="brief-box" aria-labelledby="brief-title">
+          {detail.brief?.length ? <section className="brief-box" aria-labelledby="brief-title">
             <p className="eyebrow">Copy-ready example</p>
             <h2 id="brief-title">A simple role brief</h2>
             <p>Replace the order details with your own work. Keep the decision line.</p>
             <ul>{detail.brief.map((line) => <li key={line}>{line}</li>)}</ul>
           </section> : null}
 
-          <section className="article-faq" aria-labelledby="faq-title">
+          {detail.faqs?.length ? <section className="article-faq" aria-labelledby="faq-title">
             <p className="eyebrow">Buyer questions</p>
             <h2 id="faq-title">Filipino staffing planning FAQ</h2>
-            {'faqs' in detail && detail.faqs ? <div className="cards">{detail.faqs.map((faq) => <div className="card" key={faq.q}><h3>{faq.q}</h3><p>{faq.a}</p></div>)}</div> : null}
-          </section>
+            <div className="cards">{detail.faqs.map((faq) => <div className="card" key={faq.q}><h3>{faq.q}</h3><p>{faq.a}</p></div>)}</div>
+          </section> : null}
 
           <section className="source-list" aria-labelledby="sources-title">
             <p className="eyebrow">Sources</p>
             <h2 id="sources-title">Planning references</h2>
-            <ol>{detail.sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.name}</a>{(source as any).note ? <p>{(source as any).note}</p> : null}</li>)}</ol>
+            <ol>{detail.sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.name}</a>{source.note ? <p>{source.note}</p> : null}</li>)}</ol>
           </section>
           <section className="article-related" aria-labelledby="related-title">
             <p className="eyebrow">Keep planning</p>
