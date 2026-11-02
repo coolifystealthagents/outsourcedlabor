@@ -191,12 +191,15 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
 
   const isOctober27 = post.slug.endsWith('-2026-10-27');
   const isOctober28 = post.slug.endsWith('-2026-10-28');
-  const isCurrentBatch = isOctober27 || isOctober28;
+  const isNovember02 = post.slug.endsWith('-2026-11-02');
+  const isCurrentBatch = isOctober27 || isOctober28 || isNovember02;
   const heroImage = isOctober27
     ? `/daily27/outsourcedlabor/${post.slug}.png`
     : isOctober28
       ? `/daily28/outsourcedlabor/${post.slug}.png`
-      : null;
+      : isNovember02
+        ? `/daily02/outsourcedlabor/${post.slug}.png`
+        : null;
   const tocSections = detail.sections.map((section, index) => ({
     id: `section-${index}`,
     heading: section.heading,
