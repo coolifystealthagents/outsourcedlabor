@@ -192,14 +192,17 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const isOctober27 = post.slug.endsWith('-2026-10-27');
   const isOctober28 = post.slug.endsWith('-2026-10-28');
   const isNovember02 = post.slug.endsWith('-2026-11-02');
-  const isCurrentBatch = isOctober27 || isOctober28 || isNovember02;
+  const isNovember03 = post.slug.endsWith('-2026-11-03');
+  const isCurrentBatch = isOctober27 || isOctober28 || isNovember02 || isNovember03;
   const heroImage = isOctober27
     ? `/daily27/outsourcedlabor/${post.slug}.png`
     : isOctober28
       ? `/daily28/outsourcedlabor/${post.slug}.png`
       : isNovember02
         ? `/daily02/outsourcedlabor/${post.slug}.png`
-        : null;
+        : isNovember03
+          ? `/daily03/outsourcedlabor/${post.slug}.png`
+          : null;
   const tocSections = detail.sections.map((section, index) => ({
     id: `section-${index}`,
     heading: section.heading,
@@ -265,6 +268,12 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
             <p className="lead">{post.excerpt}</p>
             <div className="article-meta">
               <span>{post.minutes} min read</span>
+              {datedDetail?.published ? <time dateTime={datedDetail.published}>Published {new Date(`${datedDetail.published}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time> : null}
+              {datedDetail?.published ? <time dateTime={datedDetail.published}>Published {new Date(`${datedDetail.published}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time> : null}
+              {datedDetail?.published ? <time dateTime={datedDetail.published}>Published {new Date(`${datedDetail.published}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time> : null}
+              {datedDetail?.published ? <time dateTime={datedDetail.published}>Published {new Date(`${datedDetail.published}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time> : null}
+              {datedDetail?.published ? <time dateTime={datedDetail.published}>Published {new Date(`${datedDetail.published}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time> : null}
+              {datedDetail?.published ? <time dateTime={datedDetail.published}>Published {new Date(`${datedDetail.published}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time> : null}
               <time dateTime={detail.updated}>Updated {new Date(`${detail.updated}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</time>
             </div>
           </header>
@@ -297,7 +306,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
           <div className="article-body">
             {detail.sections.map((section, index) => (
               <section key={section.heading}>
-                <h2 id={isOctober27 ? `section-${index}` : undefined}>{section.heading}</h2>
+                <h2 id={isOctober27 || isNovember02 || isNovember03 ? `section-${index}` : undefined}>{section.heading}</h2>
                 {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </section>
             ))}
