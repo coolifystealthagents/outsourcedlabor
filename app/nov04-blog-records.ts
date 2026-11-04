@@ -1,12 +1,12 @@
 export const november04BlogPosts = [
   {
-    "slug": "philippines-holiday-service-calendar",
+    "slug": "map-philippine-holidays-into-a-client-service-calendar",
     "title": "Map Philippine holidays into a client service calendar",
     "excerpt": "A practical way to align Philippine public holidays with client deadlines, coverage decisions, and payroll cutoffs before the quarter starts.",
     "minutes": 6,
     "publicationDate": "2026-11-04",
     "publishedAt": "2026-11-04",
-    "image": "/daily04/outsourcedlabor/philippines-holiday-service-calendar.png",
+    "image": "/daily04/outsourcedlabor/map-philippine-holidays-into-a-client-service-calendar.png",
     "body": [
       "## Start with the official holiday list",
       "A service calendar is only as reliable as the holiday list behind it, so begin with the official proclamations rather than a remembered list from last year. The Philippine national government publishes regular holidays and special non-working days separately, and the two categories carry different coverage expectations. Ask the provider to attach the source document it used for each date. A calendar that cannot show its source is a guess with a deadline attached.",
@@ -35,13 +35,13 @@ export const november04BlogPosts = [
     ]
   },
   {
-    "slug": "philippines-work-sample-hiring",
+    "slug": "write-a-work-sample-that-predicts-outsourced-performance",
     "title": "Write a work sample that predicts outsourced performance",
     "excerpt": "How to build a paid, time-boxed sample from real queue work, score it against a written rubric, and compare it with the first ninety days.",
     "minutes": 6,
     "publicationDate": "2026-11-04",
     "publishedAt": "2026-11-04",
-    "image": "/daily04/outsourcedlabor/philippines-work-sample-hiring.png",
+    "image": "/daily04/outsourcedlabor/write-a-work-sample-that-predicts-outsourced-performance.png",
     "body": [
       "## Start from a real task in the queue",
       "A work sample should come from the queue the new hire will actually handle, not from a puzzle that only tests general intelligence. Pick two or three ordinary items that a competent specialist would finish in under an hour. Remove client names, account numbers, and anything that would expose a customer. The sample should look like the work, including the tools and the messy inputs.",
@@ -70,13 +70,13 @@ export const november04BlogPosts = [
     ]
   },
   {
-    "slug": "philippines-peak-season-capacity-trigger",
+    "slug": "set-a-capacity-trigger-for-peak-season-staffing",
     "title": "Set a capacity trigger for peak-season staffing",
     "excerpt": "A written trigger that tells a Philippines-based team when to add hours, cross-train a backup, or open a requisition before the queue breaks.",
     "minutes": 6,
     "publicationDate": "2026-11-04",
     "publishedAt": "2026-11-04",
-    "image": "/daily04/outsourcedlabor/philippines-peak-season-capacity-trigger.png",
+    "image": "/daily04/outsourcedlabor/set-a-capacity-trigger-for-peak-season-staffing.png",
     "body": [
       "## Measure the baseline before peak",
       "A capacity trigger needs a baseline, and the baseline should come from ordinary weeks rather than the busiest week on record. Measure the volume, arrival pattern, handling time, and rework rate for each queue over at least four normal weeks. Separate the work that scales with volume from the work that scales with exceptions. Without that split, a peak plan will add people to the wrong queue.",
@@ -105,13 +105,13 @@ export const november04BlogPosts = [
     ]
   },
   {
-    "slug": "philippines-remote-workspace-equipment-check",
+    "slug": "prepare-a-remote-workspace-and-equipment-check",
     "title": "Prepare a remote workspace and equipment check",
     "excerpt": "A pre-shift checklist for Philippines-based staff that covers connectivity, power, privacy, security, and the evidence a client may ask to see.",
     "minutes": 6,
     "publicationDate": "2026-11-04",
     "publishedAt": "2026-11-04",
-    "image": "/daily04/outsourcedlabor/philippines-remote-workspace-equipment-check.png",
+    "image": "/daily04/outsourcedlabor/prepare-a-remote-workspace-and-equipment-check.png",
     "body": [
       "## Define the minimum equipment standard",
       "A remote workspace standard should name the equipment the role actually needs, not a generic list copied from an office policy. Start with the device, the operating system version, the headset, and the screen size required for the task. Add any role-specific item such as a second monitor for reconciliation or a wired connection for calls. The standard should be specific enough that two reviewers reach the same answer.",
@@ -140,13 +140,13 @@ export const november04BlogPosts = [
     ]
   },
   {
-    "slug": "philippines-client-complaint-specialist",
+    "slug": "handle-a-client-complaint-about-an-outsourced-specialist",
     "title": "Handle a client complaint about an outsourced specialist",
     "excerpt": "A fair, documented response that separates the facts from the remedy, protects the worker's record, and fixes the process behind the complaint.",
     "minutes": 6,
     "publicationDate": "2026-11-04",
     "publishedAt": "2026-11-04",
-    "image": "/daily04/outsourcedlabor/philippines-client-complaint-specialist.png",
+    "image": "/daily04/outsourcedlabor/handle-a-client-complaint-about-an-outsourced-specialist.png",
     "body": [
       "## Separate the complaint from the remedy",
       "A complaint usually arrives as a mix of fact, frustration, and a requested remedy. Separate those parts before responding, because a fast apology can commit the company to a remedy that the facts do not support. Write down what the client says happened, what the client wants, and what is still unknown. The first response should acknowledge the concern without promising an outcome.",
@@ -177,7 +177,7 @@ export const november04BlogPosts = [
 ];
 
 export const november04BlogDetails = {
-  "philippines-holiday-service-calendar": {
+  "map-philippine-holidays-into-a-client-service-calendar": {
     "updated": "2026-11-04",
     "published": "2026-11-04",
     "takeaways": [
@@ -268,7 +268,7 @@ export const november04BlogDetails = {
       "body": "If the records and decision rights are already defined but need a steady operator,"
     }
   },
-  "philippines-work-sample-hiring": {
+  "write-a-work-sample-that-predicts-outsourced-performance": {
     "updated": "2026-11-04",
     "published": "2026-11-04",
     "takeaways": [
@@ -350,8 +350,8 @@ export const november04BlogDetails = {
       }
     ],
     "related": [
-      "philippines-holiday-service-calendar",
-      "philippines-client-complaint-specialist"
+      "map-philippine-holidays-into-a-client-service-calendar",
+      "handle-a-client-complaint-about-an-outsourced-specialist"
     ],
     "serviceHandoff": {
       "href": "/services",
@@ -359,7 +359,7 @@ export const november04BlogDetails = {
       "body": "If the records and decision rights are already defined but need a steady operator,"
     }
   },
-  "philippines-peak-season-capacity-trigger": {
+  "set-a-capacity-trigger-for-peak-season-staffing": {
     "updated": "2026-11-04",
     "published": "2026-11-04",
     "takeaways": [
@@ -441,8 +441,8 @@ export const november04BlogDetails = {
       }
     ],
     "related": [
-      "philippines-work-sample-hiring",
-      "philippines-holiday-service-calendar"
+      "write-a-work-sample-that-predicts-outsourced-performance",
+      "map-philippine-holidays-into-a-client-service-calendar"
     ],
     "serviceHandoff": {
       "href": "/services",
@@ -450,7 +450,7 @@ export const november04BlogDetails = {
       "body": "If the records and decision rights are already defined but need a steady operator,"
     }
   },
-  "philippines-remote-workspace-equipment-check": {
+  "prepare-a-remote-workspace-and-equipment-check": {
     "updated": "2026-11-04",
     "published": "2026-11-04",
     "takeaways": [
@@ -532,8 +532,8 @@ export const november04BlogDetails = {
       }
     ],
     "related": [
-      "philippines-work-sample-hiring",
-      "philippines-client-complaint-specialist"
+      "write-a-work-sample-that-predicts-outsourced-performance",
+      "handle-a-client-complaint-about-an-outsourced-specialist"
     ],
     "serviceHandoff": {
       "href": "/services",
@@ -541,7 +541,7 @@ export const november04BlogDetails = {
       "body": "If the records and decision rights are already defined but need a steady operator,"
     }
   },
-  "philippines-client-complaint-specialist": {
+  "handle-a-client-complaint-about-an-outsourced-specialist": {
     "updated": "2026-11-04",
     "published": "2026-11-04",
     "takeaways": [
@@ -623,8 +623,8 @@ export const november04BlogDetails = {
       }
     ],
     "related": [
-      "philippines-remote-workspace-equipment-check",
-      "philippines-peak-season-capacity-trigger"
+      "prepare-a-remote-workspace-and-equipment-check",
+      "set-a-capacity-trigger-for-peak-season-staffing"
     ],
     "serviceHandoff": {
       "href": "/services",

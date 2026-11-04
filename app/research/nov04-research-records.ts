@@ -1,10 +1,10 @@
 export const november04ResearchRecords = [
   {
-    "slug": "philippines-planned-leave-lead-time-research",
+    "slug": "how-much-lead-time-does-planned-leave-get-before-coverage-is-assigned",
     "title": "How much lead time does planned leave get before coverage is assigned?",
     "excerpt": "A measurement protocol for planned leave in Philippines-based teams, separating notice, approval, coverage assignment, and the day the backup actually takes over.",
     "published": "2026-11-04",
-    "image": "/daily04/outsourcedlabor/philippines-planned-leave-lead-time-research.png",
+    "image": "/daily04/outsourcedlabor/how-much-lead-time-does-planned-leave-get-before-coverage-is-assigned.png",
     "body": [
       "## Research question and scope",
       "This protocol asks how much lead time a planned leave receives before a named backup is assigned and before the backup actually takes over the work. The unit is one approved planned leave event inside a defined observation window. The study measures the interval between the request, the approval, the coverage assignment, and the first day of coverage. It does not evaluate whether the leave was deserved, whether the worker gave enough notice for personal reasons, or whether the schedule was fair.",
@@ -54,16 +54,16 @@ export const november04ResearchRecords = [
       }
     ],
     "related": [
-      "philippines-holiday-calendar-handoff-research",
-      "philippines-client-priority-churn-research"
+      "how-complete-is-the-holiday-calendar-handoff-between-client-and-provider",
+      "how-often-do-client-priority-changes-interrupt-a-shared-work-queue"
     ]
   },
   {
-    "slug": "philippines-client-priority-churn-research",
+    "slug": "how-often-do-client-priority-changes-interrupt-a-shared-work-queue",
     "title": "How often do client priority changes interrupt a shared work queue?",
     "excerpt": "A protocol for counting priority changes, measuring the work they displace, and separating a legitimate business change from avoidable queue churn.",
     "published": "2026-11-04",
-    "image": "/daily04/outsourcedlabor/philippines-client-priority-churn-research.png",
+    "image": "/daily04/outsourcedlabor/how-often-do-client-priority-changes-interrupt-a-shared-work-queue.png",
     "body": [
       "## Research question and scope",
       "This protocol asks how often a client changes the priority of work in a shared queue and how much previously planned work is displaced by that change. The unit is one priority-change event that affects at least one item in the queue. The study measures the frequency, the source, the notice given, and the work that moved as a result. It does not judge whether the new priority was correct, because that judgment belongs to the client owner.",
@@ -113,16 +113,16 @@ export const november04ResearchRecords = [
       }
     ],
     "related": [
-      "philippines-planned-leave-lead-time-research",
-      "philippines-complaint-escalation-path-research"
+      "how-much-lead-time-does-planned-leave-get-before-coverage-is-assigned",
+      "what-does-a-client-complaint-reveal-about-escalation-path-design"
     ]
   },
   {
-    "slug": "philippines-work-sample-predictive-research",
+    "slug": "do-work-samples-predict-first-90-day-performance-for-outsourced-hires",
     "title": "Do work samples predict first-90-day performance for outsourced hires?",
     "excerpt": "A validation protocol that compares pre-hire sample scores with quality, rework, and escalation evidence from the first ninety days.",
     "published": "2026-11-04",
-    "image": "/daily04/outsourcedlabor/philippines-work-sample-predictive-research.png",
+    "image": "/daily04/outsourcedlabor/do-work-samples-predict-first-90-day-performance-for-outsourced-hires.png",
     "body": [
       "## Research question and scope",
       "This protocol asks whether a pre-hire work sample predicts the quality and independence a new outsourced hire demonstrates in the first ninety days. The unit is one hired specialist with a scored sample and a complete ninety-day record. The study compares the sample dimensions with later evidence such as accuracy, rework, escalation behavior, and review turnaround. It does not evaluate the person's worth, and it does not assume that a single hiring method explains later performance.",
@@ -171,16 +171,16 @@ export const november04ResearchRecords = [
       }
     ],
     "related": [
-      "philippines-planned-leave-lead-time-research",
-      "philippines-holiday-calendar-handoff-research"
+      "how-much-lead-time-does-planned-leave-get-before-coverage-is-assigned",
+      "how-complete-is-the-holiday-calendar-handoff-between-client-and-provider"
     ]
   },
   {
-    "slug": "philippines-holiday-calendar-handoff-research",
+    "slug": "how-complete-is-the-holiday-calendar-handoff-between-client-and-provider",
     "title": "How complete is the holiday calendar handoff between client and provider?",
     "excerpt": "A protocol for testing whether both sides share the same holiday dates, coverage decisions, and payroll cutoffs before the quarter begins.",
     "published": "2026-11-04",
-    "image": "/daily04/outsourcedlabor/philippines-holiday-calendar-handoff-research.png",
+    "image": "/daily04/outsourcedlabor/how-complete-is-the-holiday-calendar-handoff-between-client-and-provider.png",
     "body": [
       "## Research question and scope",
       "This protocol asks whether the client and the provider hold the same holiday calendar before a quarter begins, including the dates, the coverage decisions, and the payroll cutoffs. The unit is one client-provider calendar handoff for one quarter. The study compares the provider's calendar, the client's calendar, and the decisions recorded for each overlap. It does not evaluate whether either calendar is legally correct, because that depends on the applicable proclamation and contract.",
@@ -230,16 +230,16 @@ export const november04ResearchRecords = [
       }
     ],
     "related": [
-      "philippines-planned-leave-lead-time-research",
-      "philippines-work-sample-predictive-research"
+      "how-much-lead-time-does-planned-leave-get-before-coverage-is-assigned",
+      "do-work-samples-predict-first-90-day-performance-for-outsourced-hires"
     ]
   },
   {
-    "slug": "philippines-complaint-escalation-path-research",
+    "slug": "what-does-a-client-complaint-reveal-about-escalation-path-design",
     "title": "What does a client complaint reveal about escalation-path design?",
     "excerpt": "A protocol for tracing how a complaint moved through the queue, where it waited, and whether the escalation path gave the right person the decision.",
     "published": "2026-11-04",
-    "image": "/daily04/outsourcedlabor/philippines-complaint-escalation-path-research.png",
+    "image": "/daily04/outsourcedlabor/what-does-a-client-complaint-reveal-about-escalation-path-design.png",
     "body": [
       "## Research question and scope",
       "This protocol asks how a client complaint moves through an outsourced service queue and where the escalation path adds delay or loses information. The unit is one complaint that reached a named owner during the observation window. The study traces the first report, each handoff, the decision point, and the client's confirmation of closure. It does not evaluate whether the complaint was justified or whether the remedy was generous enough.",
@@ -289,8 +289,8 @@ export const november04ResearchRecords = [
       }
     ],
     "related": [
-      "philippines-client-priority-churn-research",
-      "philippines-planned-leave-lead-time-research"
+      "how-often-do-client-priority-changes-interrupt-a-shared-work-queue",
+      "how-much-lead-time-does-planned-leave-get-before-coverage-is-assigned"
     ]
   }
 ];
