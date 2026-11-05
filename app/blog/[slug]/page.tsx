@@ -193,10 +193,11 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const isOctober28 = post.slug.endsWith('-2026-10-28');
   const isNovember02 = post.slug.endsWith('-2026-11-02');
   const isNovember03 = post.slug.endsWith('-2026-11-03');
+  const isNovember05 = 'publicationDate' in post && post.publicationDate === '2026-11-05';
   const isNovember04 = 'publicationDate' in post && post.publicationDate === '2026-11-04';
-  const isCurrentBatch = isOctober27 || isOctober28 || isNovember02 || isNovember03 || isNovember04;
+  const isCurrentBatch = isOctober27 || isOctober28 || isNovember02 || isNovember03 || isNovember04 || isNovember05;
   const batchImage = 'image' in post && typeof post.image === 'string' ? post.image : null;
-  const heroImage = isNovember04
+  const heroImage = (isNovember04 || isNovember05)
     ? batchImage
     : isOctober27
       ? `/daily27/outsourcedlabor/${post.slug}.png`
@@ -265,7 +266,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
       <Header />
       <main id="main-content" className="article-page">
         <JsonLd data={schema} />
-        <article className="container article-shell">
+        <article className={`container article-shell${isCurrentBatch ? ' article-shell-toc' : ''}`}>
           <header className="article-header">
             <p className="eyebrow">Role planning guide</p>
             <h1>{post.title}</h1>
@@ -305,7 +306,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
           <div className="article-body">
             {detail.sections.map((section, index) => (
               <section key={section.heading}>
-                <h2 id={isOctober27 || isNovember02 || isNovember03 || isNovember04 ? `section-${index}` : undefined}>{section.heading}</h2>
+                <h2 id={isOctober27 || isNovember02 || isNovember03 || isNovember04 || isNovember05 ? `section-${index}` : undefined}>{section.heading}</h2>
                 {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </section>
             ))}

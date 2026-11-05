@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation';
-import Oct22Toc from '../../oct22-toc';
 import { Footer, Header } from '../../components';
 import { site } from '../../data';
 import { researchPosts } from '../../fleet-content';
@@ -86,7 +85,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
   return <>
     <Header />
     <main id="main-content" className="fleet-main">
-      <article className="section article-shell">
+      <article className="section article-shell article-shell-toc">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <meta property="article:published_time" content={post.published} />
         <meta property="article:modified_time" content={updated} />
@@ -94,7 +93,7 @@ export default async function ResearchArticle({ params }: { params: Promise<{ sl
         <h1>{post.title}</h1>
         <p className="lead">{post.excerpt}</p><p className="article-date"><time dateTime={post.published}>Published {formatPublicDate(post.published)}</time></p>
         {post.image && <img src={post.image} alt={`${post.title} research illustration`} width="1200" height="630" />}
-        <Oct22Toc /><details className="o22-mobile"><summary>On this page</summary><nav aria-label="Table of contents mobile">{post.body.map((paragraph, index) => paragraph.startsWith("## ") ? <a key={index} href={`#section-${index}`}>{paragraph.replace("## ","")}</a> : null)}</nav></details><nav className="o22-aside" aria-label="Table of contents">{post.body.map((paragraph, index) => paragraph.startsWith("## ") ? <a key={index} href={`#section-${index}`}>{paragraph.replace("## ","")}</a> : null)}</nav><div className="article-body">{post.body.map((paragraph, index) => paragraph.startsWith("## ") ? <h2 key={index} id={`section-${index}`}>{paragraph.replace("## ","")}</h2> : <p key={index}>{paragraph}</p>)}</div>
+        <details className="o22-mobile"><summary>On this page</summary><nav aria-label="Table of contents mobile">{post.body.map((paragraph, index) => paragraph.startsWith("## ") ? <a key={index} href={`#section-${index}`}>{paragraph.replace("## ","")}</a> : null)}</nav></details><nav className="o22-aside" aria-label="Table of contents">{post.body.map((paragraph, index) => paragraph.startsWith("## ") ? <a key={index} href={`#section-${index}`}>{paragraph.replace("## ","")}</a> : null)}</nav><div className="article-body">{post.body.map((paragraph, index) => paragraph.startsWith("## ") ? <h2 key={index} id={`section-${index}`}>{paragraph.replace("## ","")}</h2> : <p key={index}>{paragraph}</p>)}</div>
         {post.headlineStat && <><h2>Key statistic</h2><p>{post.headlineStat}</p></>}
         {post.keyStats && <><h2>Key stats</h2><ul>{post.keyStats.map((stat) => <li key={stat}>{stat}</li>)}</ul></>}
         {post.takeaways && <><h2>Key takeaways</h2><ul>{post.takeaways.map((takeaway) => <li key={takeaway}>{takeaway}</li>)}</ul></>}
