@@ -12,4 +12,11 @@ export const metadata: Metadata = {
   openGraph: { title: 'Outsourced Labor', description: 'Practical role planning for businesses hiring talent in the Philippines.', url: 'https://outsourcedlabor.com', siteName: 'Outsourced Labor', type:'website' },
 };
 
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}<VisibleCopySanitizer/><AcrClient/><Script id="acr-tracker-config" strategy="beforeInteractive">{`window.ACR_TRACKER_CONFIG={siteId:'outsourced-labor',endpoint:'/ingest/track',debug:false,funnelSteps:[{path:'/contact-us',step:1,label:'Form Page',event:'funnel_form_page'},{path:'/contact',step:1,label:'Form Page',event:'funnel_form_page'},{path:'/thank-you',step:2,label:'Form Submitted',event:'funnel_form_submitted'},{path:'/thanks-whats-next',step:3,label:'Booking Confirmed',event:'funnel_booking_confirmed'}]};`}</Script><Script src="https://acrtracking.stealthagents.us/v1/tracker.js" strategy="afterInteractive"/></body></html>}
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}<VisibleCopySanitizer/><AcrClient/><Script id="acr-tracker-config" strategy="beforeInteractive">{`window.ACR_TRACKER_CONFIG={siteId:'outsourced-labor',endpoint:'/ingest/track',debug:false,funnelSteps:[{path:'/contact-us',step:1,label:'Form Page',event:'funnel_form_page'},{path:'/contact',step:1,label:'Form Page',event:'funnel_form_page'},{path:'/thank-you',step:2,label:'Form Submitted',event:'funnel_form_submitted'},{path:'/thanks-whats-next',step:3,label:'Booking Confirmed',event:'funnel_booking_confirmed'}]};`}</Script><Script src="https://acrtracking.stealthagents.us/v1/tracker.js" strategy="afterInteractive"/>
+        <Script
+          id="databull-analytics"
+          src="https://databull.stealthagents.us/js/script.js"
+          data-website-id="dc_od1doql2ule18u"
+          data-domain="outsourcedlabor.com"
+          strategy="afterInteractive"
+        /></body></html>}
