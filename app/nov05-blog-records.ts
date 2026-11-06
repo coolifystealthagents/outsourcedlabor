@@ -251,9 +251,9 @@ export const november05BlogDetails = {
       "set-a-decision-limit-for-refunds-in-a-delegated-queue"
     ],
     "serviceHandoff": {
-      "href": "/services",
-      "label": "outsourced operations support",
-      "body": "If the queue and decision rights are already defined but need a steady operator,"
+      "href": "/services/workforce-scheduling",
+      "label": "workforce schedule drafting support",
+      "body": "If your weekend plan is ready for a reviewed draft,"
     }
   },
   "write-a-handover-note-that-survives-a-shift-change": {
