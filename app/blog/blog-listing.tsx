@@ -40,6 +40,15 @@ export function BlogListing({ page = 1 }: { page?: number }) {
                     href={`/blog/${p.slug}`}
                     key={p.slug}
                   >
+                    {'image' in p && typeof p.image === 'string' && (
+                      <img
+                        src={p.image}
+                        alt={`${p.title} article thumbnail`}
+                        width="640"
+                        height="360"
+                        loading="lazy"
+                      />
+                    )}
                     <h2>{p.title}</h2>
                     <p>{p.excerpt}</p>
                     {published && (

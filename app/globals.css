@@ -120,3 +120,5 @@ html{scroll-padding-top:88px}body{overflow-x:clip}.menu-open{overflow:hidden}.fl
   .o22-mobile>nav{max-height:42vh}
   .article-shell-toc{display:block}
 }
+/* 2026-11-06 listing cards: keep generated thumbnails at a landscape ratio */
+.fleet-card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;margin:0 0 1rem}
