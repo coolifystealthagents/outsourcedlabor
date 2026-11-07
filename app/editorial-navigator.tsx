@@ -21,6 +21,10 @@ export function EditorialNavigator({family}:{family:'blog'|'research'}){
     if(!isDetail)return;
     const article=document.querySelector('main article')||document.querySelector('main');
     if(!article)return;
+    // The current batch article shell renders its own sticky desktop ToC and
+    // inline mobile disclosure; skip the legacy navigator so there is exactly
+    // one contents navigation per viewport.
+    if(article.classList.contains('article-shell-toc'))return;
     const headings=Array.from(article.querySelectorAll<HTMLElement>('h2, h3')).filter(heading=>!heading.closest('.editorial-navigator,.editorial-inline-cta'));
     const used=new Set<string>();
     const next=headings.map((heading,index)=>{

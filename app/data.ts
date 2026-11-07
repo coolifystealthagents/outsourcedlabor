@@ -34,6 +34,7 @@ import { november03BlogPosts, november03BlogDetails } from './nov03-blog-records
 import { november04BlogPosts, november04BlogDetails } from './nov04-blog-records';
 import { november05BlogPosts, november05BlogDetails } from './nov05-blog-records';
 import { november06BlogPosts, november06BlogDetails } from './nov06-blog-records';
+import { november07BlogPosts, november07BlogDetails } from './nov07-blog-records';
 import { october27BlogPosts, october27BlogDetails } from './oct27-blog-records';
 
 export const site = {
@@ -103,6 +104,7 @@ export const services = [
   }
 ] as const;
 const allBlogPosts = [
+  ...november07BlogPosts,
   ...november06BlogPosts,
   ...november05BlogPosts,
   ...november04BlogPosts,
@@ -326,6 +328,8 @@ const retiredAug13BlogSlugs = new Set([
 ]);
 
 export const blogPosts = [...allBlogPosts].filter((post) => !retiredAug13BlogSlugs.has(post.slug)).sort((a, b) => {
+  const november07Rank = Number(november07BlogPosts.some((post) => post.slug === b.slug)) - Number(november07BlogPosts.some((post) => post.slug === a.slug));
+  if (november07Rank) return november07Rank;
   const november06Rank = Number(november06BlogPosts.some((post) => post.slug === b.slug)) - Number(november06BlogPosts.some((post) => post.slug === a.slug));
   if (november06Rank) return november06Rank;
   const november05Rank = Number(november05BlogPosts.some((post) => post.slug === b.slug)) - Number(november05BlogPosts.some((post) => post.slug === a.slug));
@@ -734,7 +738,7 @@ const replacementDetail = (topic: string, phrase: string, source: { name: string
   sources: [source], related: ['outsourced-labor-planning', 'philippines-operations-support-sop'],
 });
 
-export const blogDetails = { ...november06BlogDetails, ...november05BlogDetails, ...november04BlogDetails, ...november03BlogDetails, ...november02BlogDetails, ...october28BlogDetails, ...october27BlogDetails, ...october26BlogDetails, ...october25BlogDetails, ...baseBlogDetails, ...batchDetails, ...nextBatchDetails, ...aug11Details, ...aug13Details, ...august13BlogDetails, ...august14BlogDetails, ...august17BlogDetails, ...august19BlogDetails } as const;
+export const blogDetails = { ...november07BlogDetails, ...november06BlogDetails, ...november05BlogDetails, ...november04BlogDetails, ...november03BlogDetails, ...november02BlogDetails, ...october28BlogDetails, ...october27BlogDetails, ...october26BlogDetails, ...october25BlogDetails, ...baseBlogDetails, ...batchDetails, ...nextBatchDetails, ...aug11Details, ...aug13Details, ...august13BlogDetails, ...august14BlogDetails, ...august17BlogDetails, ...august19BlogDetails } as const;
 
 export const stats = [{label:'First work lane',value:'One queue',note:'a visible input and finish line make review easier'},{label:'Pilot review',value:'Daily',note:'reduce checks only after the work is steady'},{label:'Decision line',value:'Written',note:'money, policy, access, and customer promises stay controlled'}] as const;
 

@@ -122,3 +122,5 @@ html{scroll-padding-top:88px}body{overflow-x:clip}.menu-open{overflow:hidden}.fl
 }
 /* 2026-11-06 listing cards: keep generated thumbnails at a landscape ratio */
 .fleet-card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;margin:0 0 1rem}
+/* 2026-11-07 listing cards: keep long linked titles readable, never hero-sized */
+.fleet-card h2{font-size:clamp(1.125rem,1.4vw,1.375rem);line-height:1.3;overflow-wrap:anywhere}
