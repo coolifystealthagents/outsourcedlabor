@@ -1,0 +1,74 @@
+[
+  {
+    "theme": "labor",
+    "path": "/daily09/outsourcedlabor/how-many-backup-assignments-are-untested-before-a-leave.png",
+    "pexelsId": "7707012",
+    "width": 1200,
+    "height": 630,
+    "sha256": "4c9ffe03d313b493309f8a331fcd0a9bc3462b84eb1c936daf1042da93603ac1"
+  },
+  {
+    "theme": "labor",
+    "path": "/daily09/outsourcedlabor/set-a-document-retention-rule-for-outsourced-support-records.png",
+    "pexelsId": "8062282",
+    "width": 1200,
+    "height": 630,
+    "sha256": "eac6aeb10d1fcf8ba470b50587e67a2811619eb3f590d764822abd22871d6f7d"
+  },
+  {
+    "theme": "labor",
+    "path": "/daily09/outsourcedlabor/what-share-of-support-records-lack-a-named-owner.png",
+    "pexelsId": "7653582",
+    "width": 1200,
+    "height": 630,
+    "sha256": "7849b8900a593f7d3cd3582c426075bb9f638b46122ed8a6964e843f8cf60a42"
+  },
+  {
+    "theme": "labor",
+    "path": "/daily08/outsourcedlabor/run-a-weekly-backlog-aging-review-for-a-delegated-queue.png",
+    "pexelsId": "7653575",
+    "width": 1200,
+    "height": 630,
+    "sha256": "8ae2dafd3385b3833c45700fb9eca16f95fca6fee67e08ec92c69bb2c65a0f9f"
+  },
+  {
+    "theme": "labor",
+    "path": "/daily08/outsourcedlabor/create-a-quality-sampling-plan-for-a-new-outsourced-lane.png",
+    "pexelsId": "5668763",
+    "width": 1200,
+    "height": 630,
+    "sha256": "f5c072b7eee1c83330a9e01d97dd235af94650391f28144bcdebfbde4d444db7"
+  },
+  {
+    "theme": "labor",
+    "path": "/daily08/outsourcedlabor/how-often-do-customer-promises-change-after-the-first-reply.png",
+    "pexelsId": "7653582",
+    "width": 1200,
+    "height": 630,
+    "sha256": "7849b8900a593f7d3cd3582c426075bb9f638b46122ed8a6964e843f8cf60a42"
+  },
+  {
+    "theme": "labor",
+    "path": "/daily10/outsourcedlabor/how-many-purchase-orders-need-a-second-approver-before-release.png",
+    "pexelsId": "7651558",
+    "width": 1200,
+    "height": 630,
+    "sha256": "85077e8d89aa9fcf593a9c083fd558fae38660474369f68651c2eed747fd1747"
+  },
+  {
+    "theme": "labor",
+    "path": "/daily10/outsourcedlabor/write-a-correction-memo-after-a-delegated-task-fails-review.png",
+    "pexelsId": "5668763",
+    "width": 1200,
+    "height": 630,
+    "sha256": "f5c072b7eee1c83330a9e01d97dd235af94650391f28144bcdebfbde4d444db7"
+  },
+  {
+    "theme": "labor",
+    "path": "/daily10/outsourcedlabor/what-share-of-delegated-tasks-miss-the-same-day-cutoff.png",
+    "pexelsId": "7653575",
+    "width": 1200,
+    "height": 630,
+    "sha256": "8ae2dafd3385b3833c45700fb9eca16f95fca6fee67e08ec92c69bb2c65a0f9f"
+  }
+]
