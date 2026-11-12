@@ -2,6 +2,7 @@ import { AcrClient } from './acr-client';
 import { VisibleCopySanitizer } from './visible-copy-sanitizer';
 import Script from 'next/script';
 import './globals.css';
+import './refresh.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

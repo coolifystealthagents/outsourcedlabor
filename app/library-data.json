@@ -1,0 +1,55 @@
+{
+  "theme": "labor",
+  "shortBrand": "Outsourced Labor",
+  "ctaText": "Build a dependable Philippines-based operations team around the work that keeps coming back. From schedules and orders to vendor follow-up, give every task a clear owner.",
+  "blog": {
+    "title": "Ideas for an operation that flows.",
+    "intro": "Practical guides for operations managers planning repeatable work and dependable handoffs.",
+    "image": "/refresh-20261113/blog.webp",
+    "alt": "Hands of colleagues working on laptops at a shared office table.",
+    "caption": "More capacity. Less friction.",
+    "ribbon": "People for the everyday work",
+    "search": "Search by topic or workflow",
+    "guideTitle": "Take the idea into your own operation.",
+    "guides": [
+      {
+        "title": "Start with your context",
+        "text": "Compare the workflow with your team\u2019s actual systems, responsibilities, and source records."
+      },
+      {
+        "title": "Keep the evidence close",
+        "text": "Follow the source links and check the scope and date before using a conclusion."
+      },
+      {
+        "title": "Define a useful next step",
+        "text": "Turn the idea into a clear input, an expected output, and a named reviewer."
+      }
+    ],
+    "cta": "Give the work a clear owner."
+  },
+  "research": {
+    "title": "A closer look at the work.",
+    "intro": "Source-led research with clear questions, visible evidence, and practical context for your next staffing conversation.",
+    "image": "/refresh-20261113/research.webp",
+    "alt": "Two colleagues reviewing documents and taking notes at a desk.",
+    "caption": "More capacity. Less friction.",
+    "ribbon": "People for the everyday work",
+    "search": "Search by topic or workflow",
+    "guideTitle": "Take the idea into your own operation.",
+    "guides": [
+      {
+        "title": "Start with your context",
+        "text": "Compare the workflow with your team\u2019s actual systems, responsibilities, and source records."
+      },
+      {
+        "title": "Keep the evidence close",
+        "text": "Follow the source links and check the scope and date before using a conclusion."
+      },
+      {
+        "title": "Define a useful next step",
+        "text": "Turn the idea into a clear input, an expected output, and a named reviewer."
+      }
+    ],
+    "cta": "Give the work a clear owner."
+  }
+}
