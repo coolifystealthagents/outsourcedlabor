@@ -12,7 +12,6 @@ const nextConfig = {
   async redirects() {
     return [
       { source: '/contact', destination: '/contact-us', permanent: true },
-      { source: '/about', destination: '/services', permanent: true },
       { source: '/services/admin-support', destination: '/services/crm-data-stewardship', permanent: true },
       { source: '/services/recruitment-support', destination: '/services/workforce-scheduling', permanent: true },
       { source: '/services/finance-operations', destination: '/services/order-operations', permanent: true },
