@@ -203,10 +203,11 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const isNovember17 = 'publicationDate' in post && post.publicationDate === '2026-11-17';
   const isNovember18 = 'publicationDate' in post && post.publicationDate === '2026-11-18';
   const isNovember19 = 'publicationDate' in post && post.publicationDate === '2026-11-19';
+  const isNovember20 = 'publicationDate' in post && post.publicationDate === '2026-11-20';
   const isNovember04 = 'publicationDate' in post && post.publicationDate === '2026-11-04';
-  const isCurrentBatch = isOctober27 || isOctober28 || isNovember02 || isNovember03 || isNovember04 || isNovember05 || isNovember06 || isNovember07 || isNovember08 || isNovember09 || isNovember10 || isNovember16 || isNovember17 || isNovember18 || isNovember19;
+  const isCurrentBatch = isOctober27 || isOctober28 || isNovember02 || isNovember03 || isNovember04 || isNovember05 || isNovember06 || isNovember07 || isNovember08 || isNovember09 || isNovember10 || isNovember16 || isNovember17 || isNovember18 || isNovember19 || isNovember20;
   const batchImage = 'image' in post && typeof post.image === 'string' ? post.image : null;
-  const heroImage = (isNovember04 || isNovember05 || isNovember06 || isNovember07 || isNovember08 || isNovember09 || isNovember10 || isNovember16 || isNovember17 || isNovember18 || isNovember19)
+  const heroImage = (isNovember04 || isNovember05 || isNovember06 || isNovember07 || isNovember08 || isNovember09 || isNovember10 || isNovember16 || isNovember17 || isNovember18 || isNovember19 || isNovember20)
     ? batchImage
     : isOctober27
       ? `/daily27/outsourcedlabor/${post.slug}.png`
@@ -315,7 +316,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
           <div className="article-body">
             {detail.sections.map((section, index) => (
               <section key={section.heading}>
-                <h2 id={isOctober27 || isNovember02 || isNovember03 || isNovember04 || isNovember05 || isNovember06 || isNovember07 || isNovember08 || isNovember09 || isNovember10 || isNovember16 || isNovember17 || isNovember18 || isNovember19 ? `section-${index}` : undefined}>{section.heading}</h2>
+                <h2 id={isOctober27 || isNovember02 || isNovember03 || isNovember04 || isNovember05 || isNovember06 || isNovember07 || isNovember08 || isNovember09 || isNovember10 || isNovember16 || isNovember17 || isNovember18 || isNovember19 || isNovember20 ? `section-${index}` : undefined}>{section.heading}</h2>
                 {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </section>
             ))}
