@@ -154,11 +154,11 @@ export const november20ResearchRecords = [
     "cta": "Match one day of both queues before the next billing review."
   },
   {
-    "slug": "what-share-of-shift-handovers-name-a-next-owner-and-deadline",
+    "slug": "what-share-of-shift-handovers-name-a-next-owner-and-a-deadline",
     "title": "What share of shift handovers name a next owner and a deadline?",
     "excerpt": "A protocol for sampling handover notes, checking the next action, owner, and deadline, and separating a missing field from a note that was never read.",
     "published": "2026-11-20",
-    "image": "/daily20/outsourcedlabor/what-share-of-shift-handovers-name-a-next-owner-and-deadline.png",
+    "image": "/daily20/outsourcedlabor/what-share-of-shift-handovers-name-a-next-owner-and-a-deadline.png",
     "body": [
       "## Research question and scope",
       "This protocol measures how often a shift handover names a next action, an owner, and a deadline for each open item. The unit is one open item in one handover note. A complete item has all three fields and a case reference. The measure describes handover usability, not the quality of the work described.",
