@@ -110,7 +110,7 @@ export const november21ResearchRecords = [
     "sources": [
       {
         "name": "U.S. Postal Service, tracking and delivery",
-        "url": "https://www.usps.com/manage/track.htm",
+        "url": "https://www.usps.com/help/missing-mail.htm",
         "note": "Public tracking context for parcel status and delivery scans."
       },
       {
@@ -174,7 +174,7 @@ export const november21ResearchRecords = [
     "sources": [
       {
         "name": "U.S. Postal Service, tracking and delivery",
-        "url": "https://www.usps.com/manage/track.htm",
+        "url": "https://www.usps.com/help/missing-mail.htm",
         "note": "Public tracking and missing-mail context for parcel cases."
       },
       {
