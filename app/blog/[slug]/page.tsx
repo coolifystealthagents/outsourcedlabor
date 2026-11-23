@@ -205,10 +205,11 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const isNovember19 = 'publicationDate' in post && post.publicationDate === '2026-11-19';
   const isNovember20 = 'publicationDate' in post && post.publicationDate === '2026-11-20';
   const isNovember21 = 'publicationDate' in post && post.publicationDate === '2026-11-21';
+  const isNovember22 = 'publicationDate' in post && post.publicationDate === '2026-11-22';
   const isNovember04 = 'publicationDate' in post && post.publicationDate === '2026-11-04';
-  const isCurrentBatch = isOctober27 || isOctober28 || isNovember02 || isNovember03 || isNovember04 || isNovember05 || isNovember06 || isNovember07 || isNovember08 || isNovember09 || isNovember10 || isNovember16 || isNovember17 || isNovember18 || isNovember19 || isNovember20 || isNovember21;
+  const isCurrentBatch = isOctober27 || isOctober28 || isNovember02 || isNovember03 || isNovember04 || isNovember05 || isNovember06 || isNovember07 || isNovember08 || isNovember09 || isNovember10 || isNovember16 || isNovember17 || isNovember18 || isNovember19 || isNovember20 || isNovember21 || isNovember22;
   const batchImage = 'image' in post && typeof post.image === 'string' ? post.image : null;
-  const heroImage = (isNovember04 || isNovember05 || isNovember06 || isNovember07 || isNovember08 || isNovember09 || isNovember10 || isNovember16 || isNovember17 || isNovember18 || isNovember19 || isNovember20 || isNovember21)
+  const heroImage = (isNovember04 || isNovember05 || isNovember06 || isNovember07 || isNovember08 || isNovember09 || isNovember10 || isNovember16 || isNovember17 || isNovember18 || isNovember19 || isNovember20 || isNovember21 || isNovember22)
     ? batchImage
     : isOctober27
       ? `/daily27/outsourcedlabor/${post.slug}.png`
@@ -291,7 +292,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
 
           {heroImage ? <img className="article-hero" src={heroImage} alt={`${post.title} article thumbnail`} width="1200" height="630" style={{ width: '100%', height: 'auto', borderRadius: '22px', margin: '0 0 34px' }} /> : null}
 
-          {isCurrentBatch && tocSections.length >= 3 ? <>
+          {isCurrentBatch && tocSections.length >= 1 ? <>
             <details className="o22-mobile"><summary>On this page</summary><nav aria-label="Table of contents mobile">{tocSections.map((section) => <a key={section.id} href={`#${section.id}`}>{section.heading}</a>)}</nav></details>
             <nav className="o22-aside" aria-label="Table of contents" style={{ position: 'sticky', top: '96px' }}><strong>Contents</strong>{tocSections.map((section) => <a key={section.id} href={`#${section.id}`}>{section.heading}</a>)}</nav>
           </> : null}
@@ -317,7 +318,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
           <div className="article-body">
             {detail.sections.map((section, index) => (
               <section key={section.heading}>
-                <h2 id={isOctober27 || isNovember02 || isNovember03 || isNovember04 || isNovember05 || isNovember06 || isNovember07 || isNovember08 || isNovember09 || isNovember10 || isNovember16 || isNovember17 || isNovember18 || isNovember19 || isNovember20 || isNovember21 ? `section-${index}` : undefined}>{section.heading}</h2>
+                <h2 id={isOctober27 || isNovember02 || isNovember03 || isNovember04 || isNovember05 || isNovember06 || isNovember07 || isNovember08 || isNovember09 || isNovember10 || isNovember16 || isNovember17 || isNovember18 || isNovember19 || isNovember20 || isNovember21 || isNovember22 ? `section-${index}` : undefined}>{section.heading}</h2>
                 {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </section>
             ))}
