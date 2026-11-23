@@ -2,6 +2,8 @@
 
 An SOP review date is useful only when someone examines the instruction against current work and accepts the result. Moving a date forward because a document still looks familiar creates false assurance. Outsourced documentation support can coordinate evidence and revisions while control owners retain approval.
 
+If you would rather hand this off, the [virtual assistant directory](https://virtualassistantdirectories.com) lists vetted agencies and specialists you can compare.
+
 ## Build the calendar from accountable records
 
 Inventory each SOP by identifier, title, version, process, control owner, document owner, approver, effective date, last review, next review, linked systems, dependencies, and status. Preserve superseded versions under the retention policy.
