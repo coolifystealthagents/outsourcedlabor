@@ -10,14 +10,14 @@ export const november24BlogPosts: Nov24BlogPost[] = [
     "image": "/daily24/outsourcedlabor/build-a-dock-appointment-sheet-for-a-delegated-receiving-desk.png",
     "body": [
       "## Start the dock appointment sheet at the point of work",
-      "Log the case, the date, and the person handling it. Add the source request and the yard board reference. An entry lacking a source cannot easily be trace. The entry must make the origin.",
-      "Log the the door assignment and arrival window before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry must make the first check.",
+      "Log the case, the date, and the person handling it. Add the source request and the yard board reference. An entry lacking a source cannot easily be trace. The entry should record the origin.",
+      "Log the the door assignment and arrival window before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry should record the first check.",
       "## Match the dock appointment sheet to the evidence",
-      "Compare the written entry with the yard board record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry must make the comparison.",
-      "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry must make the decision.",
+      "Compare the written entry with the yard board record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry should record the comparison.",
+      "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry should record the decision.",
       "## Record the handoff and the owner",
-      "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry must make the transfer.",
-      "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be prove later. The entry must make the message.",
+      "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry should record the transfer.",
+      "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be proven later. The entry should record the message.",
       "## Review the dock appointment sheet each morning",
       "Review the entries by receiving lead, reason, and outcome. A cluster may point to a template or a training gap. Add the pattern and one change. The review should not expose customer data.",
       "Check that each entry has the door assignment and arrival window, an owner, and a close. An entry missing any of them is the finding. Log the gap and assign it. The next review should show a cleaner dock appointment sheet and less a truck idling with no confirmed unloading slot."
@@ -67,14 +67,14 @@ export const november24BlogPosts: Nov24BlogPost[] = [
     "image": "/daily24/outsourcedlabor/set-a-returns-triage-note-for-an-outsourced-support-team.png",
     "body": [
       "## Start the returns triage note at the point of work",
-      "Log the case, the date, and the person handling it. Add the source request and the help desk reference. An entry lacking a source cannot easily be trace. The entry must make the origin.",
-      "Log the the reason code and item condition before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry must make the first check.",
+      "Log the case, the date, and the person handling it. Add the source request and the help desk reference. An entry lacking a source cannot easily be trace. The entry should record the origin.",
+      "Log the the reason code and item condition before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry should record the first check.",
       "## Match the returns triage note to the evidence",
-      "Compare the written entry with the help desk record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry must make the comparison.",
-      "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry must make the decision.",
+      "Compare the written entry with the help desk record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry should record the comparison.",
+      "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry should record the decision.",
       "## Record the handoff and the owner",
-      "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry must make the transfer.",
-      "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be prove later. The entry must make the message.",
+      "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry should record the transfer.",
+      "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be proven later. The entry should record the message.",
       "## Review the returns triage note each shift",
       "Review the entries by support lead, reason, and outcome. A cluster may point to a template or a training gap. Add the pattern and one change. The review should not expose customer data.",
       "Check that each entry has the reason code and item condition, an owner, and a close. An entry missing any of them is the finding. Log the gap and assign it. The next review should show a cleaner returns triage note and less a return sitting in the queue without a disposition."
@@ -124,14 +124,14 @@ export const november24BlogPosts: Nov24BlogPost[] = [
     "image": "/daily24/outsourcedlabor/create-a-pallet-label-exception-log-for-a-delegated-warehouse-desk.png",
     "body": [
       "## Start the pallet label exception log at the point of work",
-      "Log the case, the date, and the person handling it. Add the source request and the warehouse system reference. An entry lacking a source cannot easily be trace. The entry must make the origin.",
-      "Log the the reprinted label and the scan result before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry must make the first check.",
+      "Log the case, the date, and the person handling it. Add the source request and the warehouse system reference. An entry lacking a source cannot easily be trace. The entry should record the origin.",
+      "Log the the reprinted label and the scan result before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry should record the first check.",
       "## Match the pallet label exception log to the evidence",
-      "Compare the written entry with the warehouse system record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry must make the comparison.",
-      "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry must make the decision.",
+      "Compare the written entry with the warehouse system record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry should record the comparison.",
+      "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry should record the decision.",
       "## Record the handoff and the owner",
-      "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry must make the transfer.",
-      "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be prove later. The entry must make the message.",
+      "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry should record the transfer.",
+      "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be proven later. The entry should record the message.",
       "## Review the pallet label exception log each week",
       "Review the entries by warehouse lead, reason, and outcome. A cluster may point to a template or a training gap. Add the pattern and one change. The review should not expose customer data.",
       "Check that each entry has the reprinted label and the scan result, an owner, and a close. An entry missing any of them is the finding. Log the gap and assign it. The next review should show a cleaner pallet label exception log and less a pallet leaving with a label that does not match the load."
@@ -181,14 +181,14 @@ export const november24BlogPosts: Nov24BlogPost[] = [
     "image": "/daily24/outsourcedlabor/track-a-cycle-count-recount-request-from-the-floor.png",
     "body": [
       "## Start the recount request at the point of work",
-      "Log the case, the date, and the person handling it. Add the source request and the inventory system reference. An entry lacking a source cannot easily be trace. The entry must make the origin.",
-      "Log the the second count and the variance reason before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry must make the first check.",
+      "Log the case, the date, and the person handling it. Add the source request and the inventory system reference. An entry lacking a source cannot easily be trace. The entry should record the origin.",
+      "Log the the second count and the variance reason before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry should record the first check.",
       "## Match the recount request to the evidence",
-      "Compare the written entry with the inventory system record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry must make the comparison.",
-      "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry must make the decision.",
+      "Compare the written entry with the inventory system record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry should record the comparison.",
+      "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry should record the decision.",
       "## Record the handoff and the owner",
-      "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry must make the transfer.",
-      "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be prove later. The entry must make the message.",
+      "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry should record the transfer.",
+      "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be proven later. The entry should record the message.",
       "## Review the recount request each week",
       "Review the entries by inventory lead, reason, and outcome. A cluster may point to a template or a training gap. Add the pattern and one change. The review should not expose customer data.",
       "Check that each entry has the second count and the variance reason, an owner, and a close. An entry missing any of them is the finding. Log the gap and assign it. The next review should show a cleaner recount request and less an adjustment made from a single count."
@@ -238,14 +238,14 @@ export const november24BlogPosts: Nov24BlogPost[] = [
     "image": "/daily24/outsourcedlabor/record-a-shift-handover-equipment-check.png",
     "body": [
       "## Start the handover equipment check at the point of work",
-      "Log the case, the date, and the person handling it. Add the source request and the asset register reference. An entry lacking a source cannot easily be trace. The entry must make the origin.",
-      "Log the the asset tag and the fault noted before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry must make the first check.",
+      "Log the case, the date, and the person handling it. Add the source request and the asset register reference. An entry lacking a source cannot easily be trace. The entry should record the origin.",
+      "Log the the asset tag and the fault noted before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry should record the first check.",
       "## Match the handover equipment check to the evidence",
-      "Compare the written entry with the asset register record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry must make the comparison.",
-      "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry must make the decision.",
+      "Compare the written entry with the asset register record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry should record the comparison.",
+      "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry should record the decision.",
       "## Record the handoff and the owner",
-      "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry must make the transfer.",
-      "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be prove later. The entry must make the message.",
+      "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry should record the transfer.",
+      "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be proven later. The entry should record the message.",
       "## Review the handover equipment check at each shift change",
       "Review the entries by shift supervisor, reason, and outcome. A cluster may point to a template or a training gap. Add the pattern and one change. The review should not expose customer data.",
       "Check that each entry has the asset tag and the fault noted, an owner, and a close. An entry missing any of them is the finding. Log the gap and assign it. The next review should show a cleaner handover equipment check and less equipment used after a fault was already known."
@@ -300,22 +300,22 @@ export const november24BlogDetails: Record<string,{updated:string;published:stri
       {
         "heading": "Start the dock appointment sheet at the point of work",
         "paragraphs": [
-          "Log the case, the date, and the person handling it. Add the source request and the yard board reference. An entry lacking a source cannot easily be trace. The entry must make the origin.",
-          "Log the the door assignment and arrival window before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry must make the first check."
+          "Log the case, the date, and the person handling it. Add the source request and the yard board reference. An entry lacking a source cannot easily be trace. The entry should record the origin.",
+          "Log the the door assignment and arrival window before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry should record the first check."
         ]
       },
       {
         "heading": "Match the dock appointment sheet to the evidence",
         "paragraphs": [
-          "Compare the written entry with the yard board record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry must make the comparison.",
-          "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry must make the decision."
+          "Compare the written entry with the yard board record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry should record the comparison.",
+          "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry should record the decision."
         ]
       },
       {
         "heading": "Record the handoff and the owner",
         "paragraphs": [
-          "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry must make the transfer.",
-          "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be prove later. The entry must make the message."
+          "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry should record the transfer.",
+          "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be proven later. The entry should record the message."
         ]
       },
       {
@@ -368,22 +368,22 @@ export const november24BlogDetails: Record<string,{updated:string;published:stri
       {
         "heading": "Start the returns triage note at the point of work",
         "paragraphs": [
-          "Log the case, the date, and the person handling it. Add the source request and the help desk reference. An entry lacking a source cannot easily be trace. The entry must make the origin.",
-          "Log the the reason code and item condition before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry must make the first check."
+          "Log the case, the date, and the person handling it. Add the source request and the help desk reference. An entry lacking a source cannot easily be trace. The entry should record the origin.",
+          "Log the the reason code and item condition before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry should record the first check."
         ]
       },
       {
         "heading": "Match the returns triage note to the evidence",
         "paragraphs": [
-          "Compare the written entry with the help desk record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry must make the comparison.",
-          "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry must make the decision."
+          "Compare the written entry with the help desk record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry should record the comparison.",
+          "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry should record the decision."
         ]
       },
       {
         "heading": "Record the handoff and the owner",
         "paragraphs": [
-          "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry must make the transfer.",
-          "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be prove later. The entry must make the message."
+          "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry should record the transfer.",
+          "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be proven later. The entry should record the message."
         ]
       },
       {
@@ -436,22 +436,22 @@ export const november24BlogDetails: Record<string,{updated:string;published:stri
       {
         "heading": "Start the pallet label exception log at the point of work",
         "paragraphs": [
-          "Log the case, the date, and the person handling it. Add the source request and the warehouse system reference. An entry lacking a source cannot easily be trace. The entry must make the origin.",
-          "Log the the reprinted label and the scan result before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry must make the first check."
+          "Log the case, the date, and the person handling it. Add the source request and the warehouse system reference. An entry lacking a source cannot easily be trace. The entry should record the origin.",
+          "Log the the reprinted label and the scan result before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry should record the first check."
         ]
       },
       {
         "heading": "Match the pallet label exception log to the evidence",
         "paragraphs": [
-          "Compare the written entry with the warehouse system record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry must make the comparison.",
-          "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry must make the decision."
+          "Compare the written entry with the warehouse system record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry should record the comparison.",
+          "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry should record the decision."
         ]
       },
       {
         "heading": "Record the handoff and the owner",
         "paragraphs": [
-          "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry must make the transfer.",
-          "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be prove later. The entry must make the message."
+          "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry should record the transfer.",
+          "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be proven later. The entry should record the message."
         ]
       },
       {
@@ -504,22 +504,22 @@ export const november24BlogDetails: Record<string,{updated:string;published:stri
       {
         "heading": "Start the recount request at the point of work",
         "paragraphs": [
-          "Log the case, the date, and the person handling it. Add the source request and the inventory system reference. An entry lacking a source cannot easily be trace. The entry must make the origin.",
-          "Log the the second count and the variance reason before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry must make the first check."
+          "Log the case, the date, and the person handling it. Add the source request and the inventory system reference. An entry lacking a source cannot easily be trace. The entry should record the origin.",
+          "Log the the second count and the variance reason before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry should record the first check."
         ]
       },
       {
         "heading": "Match the recount request to the evidence",
         "paragraphs": [
-          "Compare the written entry with the inventory system record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry must make the comparison.",
-          "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry must make the decision."
+          "Compare the written entry with the inventory system record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry should record the comparison.",
+          "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry should record the decision."
         ]
       },
       {
         "heading": "Record the handoff and the owner",
         "paragraphs": [
-          "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry must make the transfer.",
-          "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be prove later. The entry must make the message."
+          "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry should record the transfer.",
+          "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be proven later. The entry should record the message."
         ]
       },
       {
@@ -572,22 +572,22 @@ export const november24BlogDetails: Record<string,{updated:string;published:stri
       {
         "heading": "Start the handover equipment check at the point of work",
         "paragraphs": [
-          "Log the case, the date, and the person handling it. Add the source request and the asset register reference. An entry lacking a source cannot easily be trace. The entry must make the origin.",
-          "Log the the asset tag and the fault noted before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry must make the first check."
+          "Log the case, the date, and the person handling it. Add the source request and the asset register reference. An entry lacking a source cannot easily be trace. The entry should record the origin.",
+          "Log the the asset tag and the fault noted before the item moves. Add the time and the condition found. A later reconstruction proves nothing. The entry should record the first check."
         ]
       },
       {
         "heading": "Match the handover equipment check to the evidence",
         "paragraphs": [
-          "Compare the written entry with the asset register record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry must make the comparison.",
-          "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry must make the decision."
+          "Compare the written entry with the asset register record and the physical item. Add every difference and who checked it. A mismatch found after handoff costs more to fix. The entry should record the comparison.",
+          "Log the exception and the reason it occurred. Add the person who approved the exception. An exception lacking an approver becomes a precedent. The entry should record the decision."
         ]
       },
       {
         "heading": "Record the handoff and the owner",
         "paragraphs": [
-          "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry must make the transfer.",
-          "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be prove later. The entry must make the message."
+          "Log the handoff time, the receiving person, and any open item. Add the next action and its deadline. A handoff lacking a named owner proves nothing. The entry should record the transfer.",
+          "Log the customer or internal message that went out. Add the channel and the time. A verbal promise cannot easily be proven later. The entry should record the message."
         ]
       },
       {
