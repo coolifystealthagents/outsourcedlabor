@@ -5,6 +5,8 @@ import './globals.css';
 import './refresh.css';
 import type { Metadata } from 'next';
 
+import "./site-chrome-fixes.css";
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://outsourcedlabor.com'),
   alternates: { canonical: './' },
